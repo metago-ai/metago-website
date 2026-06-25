@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import {
@@ -9,6 +10,11 @@ import {
   Sparkles,
   ArrowRight,
   Mail,
+  Terminal as TerminalIcon,
+  Package,
+  Plug,
+  Copy,
+  Check,
 } from 'lucide-react';
 import ParticleBg from '../components/ParticleBg';
 import Terminal from '../components/Terminal';
@@ -32,6 +38,75 @@ const installLines = [
   'cd metagolifeform',
   '.\\scripts\\install.ps1',
 ];
+
+// MCP Server 客户端配置示例（Claude Desktop / Cursor / Trae）
+const mcpConfigs = [
+  {
+    key: 'claudeDesktop',
+    pathKey: 'claudeDesktopPath',
+    config: {
+      mcpServers: {
+        metago: {
+          command: 'metago-mcp-server',
+        },
+      },
+    },
+  },
+  {
+    key: 'cursor',
+    pathKey: 'cursorPath',
+    config: {
+      mcpServers: {
+        metago: {
+          command: 'metago-mcp-server',
+        },
+      },
+    },
+  },
+  {
+    key: 'trae',
+    pathKey: 'traePath',
+    config: {
+      'mcp.servers': {
+        metago: {
+          command: 'metago-mcp-server',
+        },
+      },
+    },
+  },
+];
+
+// 复制按钮：点击复制文本，2 秒内显示“已复制”反馈
+function CopyButton({
+  text,
+  copyLabel,
+  copiedLabel,
+}: {
+  text: string;
+  copyLabel: string;
+  copiedLabel: string;
+}) {
+  const [copied, setCopied] = useState(false);
+  const handleCopy = async () => {
+    try {
+      await navigator.clipboard.writeText(text);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch {
+      // 剪贴板不可用时静默失败，不影响页面渲染
+    }
+  };
+  return (
+    <button
+      type="button"
+      onClick={handleCopy}
+      className="flex items-center gap-1.5 px-2 py-1 rounded text-xs text-zinc-400 hover:text-accent-blue hover:bg-white/5 transition-colors shrink-0"
+    >
+      {copied ? <Check size={12} /> : <Copy size={12} />}
+      {copied ? copiedLabel : copyLabel}
+    </button>
+  );
+}
 
 interface Metric {
   end?: number;
@@ -156,6 +231,116 @@ export default function Home() {
           <p className="text-zinc-400">{t('home.installSubtitle')}</p>
         </div>
         <Terminal lines={installLines} />
+      </section>
+
+      {/* MCP Server 介绍 */}
+      <section className="max-w-7xl mx-auto px-6 py-24">
+        <div className="text-center mb-14">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-accent-blue/30 bg-accent-blue/5 text-accent-blue text-xs font-mono mb-4">
+            <Package size={14} /> MCP Protocol
+          </div>
+          <h2 className="text-3xl md:text-4xl font-bold mb-3">
+            <span className="gradient-text">{t('mcpServer.title')}</span>
+          </h2>
+          <p className="text-zinc-400 max-w-2xl mx-auto">
+            {t('mcpServer.subtitle')}
+          </p>
+        </div>
+
+        {/* 安装命令 */}
+        <div className="max-w-2xl mx-auto mb-8">
+          <div className="text-xs text-zinc-500 font-mono mb-2 px-1">
+            {t('mcpServer.install')}
+          </div>
+          <div
+            className="rounded-lg overflow-hidden border border-white/10"
+            style={{ background: '#0d1117' }}
+          >
+            <div
+              className="flex items-center justify-between px-4 py-2 border-b border-white/5"
+              style={{ background: '#161b22' }}
+            >
+              <div className="flex items-center gap-2 min-w-0">
+                <TerminalIcon size={14} className="text-accent-green shrink-0" />
+                <span className="text-xs text-zinc-500 font-mono truncate">npm</span>
+              </div>
+              <CopyButton
+                text={t('mcpServer.installCommand')}
+                copyLabel={t('mcpServer.copy')}
+                copiedLabel={t('mcpServer.copied')}
+              />
+            </div>
+            <pre
+              className="p-4 font-mono text-sm overflow-x-auto"
+              style={{ color: '#00ff88' }}
+            >
+              <span className="text-zinc-500 select-none">$ </span>
+              {t('mcpServer.installCommand')}
+            </pre>
+          </div>
+        </div>
+
+        {/* 特性徽章 */}
+        <div className="flex flex-wrap items-center justify-center gap-3 mb-16">
+          {t('mcpServer.features')
+            .split(' · ')
+            .map((f) => (
+              <span
+                key={f}
+                className="px-4 py-1.5 rounded-full border border-white/10 bg-white/5 text-sm text-zinc-200 hover:border-accent-blue/40 transition-colors"
+              >
+                {f}
+              </span>
+            ))}
+        </div>
+
+        {/* 客户端配置示例 */}
+        <div className="text-center mb-10">
+          <h3 className="text-2xl md:text-3xl font-bold mb-2">
+            {t('mcpServer.configure')}
+          </h3>
+          <p className="text-zinc-400 text-sm">{t('mcpServer.configNote')}</p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {mcpConfigs.map((cfg) => {
+            const configText = JSON.stringify(cfg.config, null, 2);
+            return (
+              <div key={cfg.key} className="glass-card overflow-hidden flex flex-col">
+                <div className="px-5 py-4 border-b border-white/5 flex items-center gap-3">
+                  <div
+                    className="w-9 h-9 rounded-lg flex items-center justify-center shrink-0"
+                    style={{
+                      background:
+                        'linear-gradient(135deg, rgba(0,212,255,0.15), rgba(168,85,247,0.15))',
+                    }}
+                  >
+                    <Plug className="text-accent-blue" size={18} />
+                  </div>
+                  <div className="min-w-0 flex-1">
+                    <div className="text-sm font-semibold text-zinc-100 truncate">
+                      {t(`mcpServer.${cfg.key}`)}
+                    </div>
+                    <div className="text-xs text-zinc-500 font-mono truncate">
+                      {t(`mcpServer.${cfg.pathKey}`)}
+                    </div>
+                  </div>
+                </div>
+                <div className="flex-1 relative" style={{ background: '#0d1117' }}>
+                  <div className="absolute top-2 right-2 z-10">
+                    <CopyButton
+                      text={configText}
+                      copyLabel={t('mcpServer.copy')}
+                      copiedLabel={t('mcpServer.copied')}
+                    />
+                  </div>
+                  <pre className="p-4 pr-24 font-mono text-xs leading-relaxed overflow-x-auto text-zinc-300">
+                    {configText}
+                  </pre>
+                </div>
+              </div>
+            );
+          })}
+        </div>
       </section>
 
       {/* Metrics */}
