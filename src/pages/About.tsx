@@ -209,7 +209,7 @@ function About() {
                 {t('about.mcpServer.desc')}
               </p>
               <code className="text-xs font-mono text-accent-green break-all">
-                npm install -g metago-mcp-server
+                npm install -g @metago-ai/mcp-server
               </code>
             </div>
           </div>

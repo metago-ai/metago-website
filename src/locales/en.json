@@ -51,7 +51,7 @@
     "title": "MetaGO MCP Server",
     "subtitle": "22 MetaGO capabilities as MCP tools, works with any MCP client",
     "install": "Install Command",
-    "installCommand": "npm install -g metago-mcp-server",
+    "installCommand": "npm install -g @metago-ai/mcp-server",
     "features": "22 Tools · 8 Prompts · stdio transport · MIT License",
     "configure": "Configuration",
     "claudeDesktop": "Claude Desktop Config",
@@ -101,7 +101,7 @@
     "faq": "FAQ",
     "mcpServer": {
       "title": "MCP Server Quick Start",
-      "desc": "Install metago-mcp-server globally via npm to access 22 Tools and 8 Prompts in any MCP client.",
+      "desc": "Install @metago-ai/mcp-server globally via npm to access 22 Tools and 8 Prompts in any MCP client.",
       "toolsTitle": "22 Tools",
       "toolsDesc": "Wraps 22 core MetaGO skills as MCP tools, covering 7 capability families: cognition, safeguard, governance, evolution, execution, traceability, and value.",
       "promptsTitle": "8 Prompts",

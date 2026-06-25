@@ -47,7 +47,7 @@ const mcpConfigs = [
     config: {
       mcpServers: {
         metago: {
-          command: 'metago-mcp-server',
+          command: '@metago-ai/mcp-server',
         },
       },
     },
@@ -58,7 +58,7 @@ const mcpConfigs = [
     config: {
       mcpServers: {
         metago: {
-          command: 'metago-mcp-server',
+          command: '@metago-ai/mcp-server',
         },
       },
     },
@@ -69,7 +69,7 @@ const mcpConfigs = [
     config: {
       'mcp.servers': {
         metago: {
-          command: 'metago-mcp-server',
+          command: '@metago-ai/mcp-server',
         },
       },
     },
