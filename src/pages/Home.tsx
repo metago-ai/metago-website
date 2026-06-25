@@ -17,18 +17,19 @@ import {
   Check,
 } from 'lucide-react';
 import ParticleBg from '../components/ParticleBg';
+import LifeCore from '../components/LifeCore';
 import Terminal from '../components/Terminal';
 import CountUp from '../components/CountUp';
 
 const GITEE_URL = 'https://gitee.com/metago/metagolifeform';
 
 const features = [
-  { icon: Brain, key: 'feature1' },
-  { icon: Lock, key: 'feature2' },
-  { icon: ScanSearch, key: 'feature3' },
-  { icon: FileSearch, key: 'feature4' },
-  { icon: ShieldCheck, key: 'feature5' },
-  { icon: Sparkles, key: 'feature6' },
+  { icon: Brain, key: 'feature1', hue: 'life' as const },
+  { icon: Lock, key: 'feature2', hue: 'gov' as const },
+  { icon: ScanSearch, key: 'feature3', hue: 'life' as const },
+  { icon: FileSearch, key: 'feature4', hue: 'evo' as const },
+  { icon: ShieldCheck, key: 'feature5', hue: 'gov' as const },
+  { icon: Sparkles, key: 'feature6', hue: 'evo' as const },
 ];
 
 const platforms = ['Trae', 'Claude Code', 'Codex', 'Cursor', 'CodeBuddy', 'Qoder', 'ZCode'];
@@ -93,14 +94,14 @@ function CopyButton({
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     } catch {
-      // 剪贴板不可用时静默失败，不影响页面渲染
+      // 剪贴板不可用时静默失败
     }
   };
   return (
     <button
       type="button"
       onClick={handleCopy}
-      className="flex items-center gap-1.5 px-2 py-1 rounded text-xs text-zinc-400 hover:text-accent-blue hover:bg-white/5 transition-colors shrink-0"
+      className="flex items-center gap-1.5 px-2 py-1 rounded text-xs text-zinc-400 hover:text-life-bright hover:bg-life-bright/5 transition-colors shrink-0"
     >
       {copied ? <Check size={12} /> : <Copy size={12} />}
       {copied ? copiedLabel : copyLabel}
@@ -113,6 +114,9 @@ interface Metric {
   text?: string;
   label: string;
 }
+
+const hueColor = (hue: 'life' | 'evo' | 'gov') =>
+  hue === 'life' ? '#5eead4' : hue === 'evo' ? '#fbbf24' : '#a5b4fc';
 
 export default function Home() {
   const { t } = useTranslation();
@@ -133,116 +137,141 @@ export default function Home() {
 
   return (
     <div className="overflow-hidden">
-      {/* Hero */}
-      <section className="relative min-h-screen flex items-center justify-center text-center px-6 pt-16">
+      {/* ===== Hero：不对称布局（左文右核心） ===== */}
+      <section className="relative min-h-screen flex items-center px-6 pt-20 pb-12">
         <ParticleBg />
-        <div className="relative z-10 max-w-4xl mx-auto animate-fade-in">
-          <img src="./metago-logo.png" alt="MetaGO" className="h-16 md:h-24 mx-auto mb-6 animate-fade-in" />
-          <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
-            {t('home.heroTitle')}{' '}
-            <span className="gradient-text">{t('home.heroTitleHighlight')}</span>
-          </h1>
-          <p className="text-base md:text-lg text-zinc-400 mb-10">
-            {t('home.heroSubtitle')}
-          </p>
-          <div className="flex flex-wrap items-center justify-center gap-4">
-            <Link to="/docs" className="btn-primary">
-              {t('home.heroCtaInstall')}
-            </Link>
-            <Link to="/docs" className="btn-secondary">
-              {t('home.heroCtaDocs')}
-            </Link>
+        <div className="relative z-10 max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          {/* 左：文案区 */}
+          <div className="lg:col-span-7 animate-blur-in">
+            <div className="life-badge mb-6">
+              <span className="inline-block w-1.5 h-1.5 rounded-full bg-life-bright animate-pulse" />
+              {t('home.heroBadge') !== 'home.heroBadge' ? t('home.heroBadge') : 'AI Lifeform · v36.4'}
+            </div>
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight font-display">
+              {t('home.heroTitle')}{' '}
+              <span className="gradient-text">{t('home.heroTitleHighlight')}</span>
+            </h1>
+            <p className="text-base md:text-lg text-text-secondary mb-10 max-w-2xl leading-relaxed">
+              {t('home.heroSubtitle')}
+            </p>
+            <div className="flex flex-wrap items-center gap-4">
+              <Link to="/docs" className="btn-primary inline-flex items-center gap-2">
+                {t('home.heroCtaInstall')} <ArrowRight size={16} />
+              </Link>
+              <Link to="/docs" className="btn-secondary">
+                {t('home.heroCtaDocs')}
+              </Link>
+            </div>
+          </div>
+
+          {/* 右：LifeCore 可视化 */}
+          <div className="lg:col-span-5 flex justify-center animate-fade-in delay-200">
+            <LifeCore size={400} className="hidden lg:block" />
           </div>
         </div>
       </section>
 
-      {/* Core value */}
+      {/* ===== Core value：能力脉络 ===== */}
       <section className="max-w-7xl mx-auto px-6 py-24">
         <div className="text-center mb-14">
-          <h2 className="text-3xl md:text-4xl font-bold mb-3">
+          <div className="evo-badge mb-4">
+            <Sparkles size={12} /> {t('home.featuresTitle') !== 'home.featuresTitle' ? 'Capabilities' : 'Capabilities'}
+          </div>
+          <h2 className="text-3xl md:text-4xl font-bold mb-3 font-display">
             {t('home.featuresTitle')}
           </h2>
-          <p className="text-zinc-400">{t('home.featuresSubtitle')}</p>
+          <p className="text-text-secondary max-w-2xl mx-auto">
+            {t('home.featuresSubtitle')}
+          </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {features.map(({ icon: Icon, key }) => (
-            <div key={key} className="glass-card p-7">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {features.map(({ icon: Icon, key, hue }, idx) => {
+            const color = hueColor(hue);
+            return (
               <div
-                className="w-12 h-12 rounded-xl flex items-center justify-center mb-5"
-                style={{
-                  background:
-                    'linear-gradient(135deg, rgba(0,212,255,0.15), rgba(168,85,247,0.15))',
-                }}
+                key={key}
+                className="glass-card p-7 group animate-slide-up"
+                style={{ animationDelay: `${idx * 0.08}s` }}
               >
-                <Icon className="text-accent-blue" size={24} />
+                <div
+                  className="w-12 h-12 rounded-xl flex items-center justify-center mb-5 transition-all duration-300 group-hover:scale-110"
+                  style={{
+                    background: `linear-gradient(135deg, ${color}22, ${color}11)`,
+                    boxShadow: `inset 0 0 0 1px ${color}33`,
+                  }}
+                >
+                  <Icon style={{ color }} size={24} />
+                </div>
+                <h3 className="text-lg font-semibold mb-2 font-display">
+                  {t(`home.${key}Title`)}
+                </h3>
+                <p className="text-sm text-text-secondary leading-relaxed">
+                  {t(`home.${key}Desc`)}
+                </p>
               </div>
-              <h3 className="text-lg font-semibold mb-2">
-                {t(`home.${key}Title`)}
-              </h3>
-              <p className="text-sm text-zinc-400 leading-relaxed">
-                {t(`home.${key}Desc`)}
-              </p>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </section>
 
-      {/* Platforms */}
+      <div className="hex-divider max-w-5xl mx-auto" />
+
+      {/* ===== Platforms ===== */}
       <section className="max-w-7xl mx-auto px-6 py-24">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-3">
+          <h2 className="text-3xl md:text-4xl font-bold mb-3 font-display">
             {t('home.platformsTitle')}
           </h2>
-          <p className="text-zinc-400">{t('home.platformsSubtitle')}</p>
+          <p className="text-text-secondary">{t('home.platformsSubtitle')}</p>
         </div>
         <div className="flex flex-wrap items-center justify-center gap-3 mb-10">
           {platforms.map((p) => (
             <span
               key={p}
-              className="px-5 py-2 rounded-full border border-white/10 bg-white/5 text-sm text-zinc-200 hover:border-accent-blue hover:text-accent-blue transition-colors"
+              className="px-5 py-2 rounded-full border border-white/10 bg-white/5 text-sm text-zinc-200 transition-all duration-300 hover:border-life-bright/50 hover:text-life-bright hover:bg-life-bright/5 hover:shadow-[0_0_20px_-4px_rgba(94,234,212,0.4)]
+              cursor-default"
             >
               {p}
             </span>
           ))}
         </div>
-        <div
-          className="max-w-2xl mx-auto rounded-lg overflow-hidden border border-white/10"
-          style={{ background: '#0d1117' }}
-        >
+        <div className="code-window max-w-2xl mx-auto">
           <div
             className="px-4 py-2 text-xs text-zinc-500 font-mono border-b border-white/5"
-            style={{ background: '#161b22' }}
+            style={{ background: 'rgba(17, 24, 36, 0.6)' }}
           >
             PowerShell
           </div>
-          <pre className="p-4 font-mono text-sm overflow-x-auto" style={{ color: '#00ff88' }}>
+          <pre className="p-4 font-mono text-sm overflow-x-auto" style={{ color: '#5eead4' }}>
             <span className="text-zinc-500">PS&gt; </span>
             irm https://gitee.com/metago/metagolifeform/raw/main/scripts/install.ps1 | iex
           </pre>
         </div>
       </section>
 
-      {/* Quick install */}
+      {/* ===== Quick install ===== */}
       <section className="max-w-3xl mx-auto px-6 py-24">
         <div className="text-center mb-10">
-          <h2 className="text-3xl md:text-4xl font-bold mb-3">
+          <h2 className="text-3xl md:text-4xl font-bold mb-3 font-display">
             {t('home.installTitle')}
           </h2>
-          <p className="text-zinc-400">{t('home.installSubtitle')}</p>
+          <p className="text-text-secondary">{t('home.installSubtitle')}</p>
         </div>
         <Terminal lines={installLines} />
       </section>
 
-      {/* MCP Server 介绍 */}
+      <div className="hex-divider max-w-5xl mx-auto" />
+
+      {/* ===== MCP Server ===== */}
       <section className="max-w-7xl mx-auto px-6 py-24">
         <div className="text-center mb-14">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-accent-blue/30 bg-accent-blue/5 text-accent-blue text-xs font-mono mb-4">
-            <Package size={14} /> MCP Protocol
+          <div className="life-badge mb-4">
+            <Package size={12} /> MCP Protocol
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-3">
+          <h2 className="text-3xl md:text-4xl font-bold mb-3 font-display">
             <span className="gradient-text">{t('mcpServer.title')}</span>
           </h2>
-          <p className="text-zinc-400 max-w-2xl mx-auto">
+          <p className="text-text-secondary max-w-2xl mx-auto">
             {t('mcpServer.subtitle')}
           </p>
         </div>
@@ -252,16 +281,13 @@ export default function Home() {
           <div className="text-xs text-zinc-500 font-mono mb-2 px-1">
             {t('mcpServer.install')}
           </div>
-          <div
-            className="rounded-lg overflow-hidden border border-white/10"
-            style={{ background: '#0d1117' }}
-          >
+          <div className="code-window">
             <div
               className="flex items-center justify-between px-4 py-2 border-b border-white/5"
-              style={{ background: '#161b22' }}
+              style={{ background: 'rgba(17, 24, 36, 0.6)' }}
             >
               <div className="flex items-center gap-2 min-w-0">
-                <TerminalIcon size={14} className="text-accent-green shrink-0" />
+                <TerminalIcon size={14} className="text-life-bright shrink-0" />
                 <span className="text-xs text-zinc-500 font-mono truncate">npm</span>
               </div>
               <CopyButton
@@ -270,10 +296,7 @@ export default function Home() {
                 copiedLabel={t('mcpServer.copied')}
               />
             </div>
-            <pre
-              className="p-4 font-mono text-sm overflow-x-auto"
-              style={{ color: '#00ff88' }}
-            >
+            <pre className="p-4 font-mono text-sm overflow-x-auto" style={{ color: '#5eead4' }}>
               <span className="text-zinc-500 select-none">$ </span>
               {t('mcpServer.installCommand')}
             </pre>
@@ -287,7 +310,7 @@ export default function Home() {
             .map((f) => (
               <span
                 key={f}
-                className="px-4 py-1.5 rounded-full border border-white/10 bg-white/5 text-sm text-zinc-200 hover:border-accent-blue/40 transition-colors"
+                className="px-4 py-1.5 rounded-full border border-white/10 bg-white/5 text-sm text-zinc-200 hover:border-life-bright/40 hover:bg-life-bright/5 transition-colors"
               >
                 {f}
               </span>
@@ -296,25 +319,28 @@ export default function Home() {
 
         {/* 客户端配置示例 */}
         <div className="text-center mb-10">
-          <h3 className="text-2xl md:text-3xl font-bold mb-2">
+          <h3 className="text-2xl md:text-3xl font-bold mb-2 font-display">
             {t('mcpServer.configure')}
           </h3>
-          <p className="text-zinc-400 text-sm">{t('mcpServer.configNote')}</p>
+          <p className="text-text-secondary text-sm">{t('mcpServer.configNote')}</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {mcpConfigs.map((cfg) => {
+          {mcpConfigs.map((cfg, idx) => {
             const configText = JSON.stringify(cfg.config, null, 2);
             return (
-              <div key={cfg.key} className="glass-card overflow-hidden flex flex-col">
+              <div
+                key={cfg.key}
+                className="glass-card overflow-hidden flex flex-col animate-slide-up"
+                style={{ animationDelay: `${idx * 0.1}s` }}
+              >
                 <div className="px-5 py-4 border-b border-white/5 flex items-center gap-3">
                   <div
                     className="w-9 h-9 rounded-lg flex items-center justify-center shrink-0"
                     style={{
-                      background:
-                        'linear-gradient(135deg, rgba(0,212,255,0.15), rgba(168,85,247,0.15))',
+                      background: 'linear-gradient(135deg, rgba(94,234,212,0.15), rgba(129,140,248,0.15))',
                     }}
                   >
-                    <Plug className="text-accent-blue" size={18} />
+                    <Plug className="text-life-bright" size={18} />
                   </div>
                   <div className="min-w-0 flex-1">
                     <div className="text-sm font-semibold text-zinc-100 truncate">
@@ -325,7 +351,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="flex-1 relative" style={{ background: '#0d1117' }}>
+                <div className="flex-1 relative" style={{ background: '#0a0f16' }}>
                   <div className="absolute top-2 right-2 z-10">
                     <CopyButton
                       text={configText}
@@ -343,39 +369,53 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Metrics */}
+      {/* ===== Metrics：心跳计数器 ===== */}
       <section className="max-w-7xl mx-auto px-6 py-24">
         <div className="text-center mb-14">
-          <h2 className="text-3xl md:text-4xl font-bold mb-3">
+          <h2 className="text-3xl md:text-4xl font-bold mb-3 font-display">
             {t('home.statsTitle')}
           </h2>
-          <p className="text-zinc-400">{t('home.statsSubtitle')}</p>
+          <p className="text-text-secondary">{t('home.statsSubtitle')}</p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-6">
-          {row1.map((s) => (
-            <div key={s.label} className="glass-card p-8 text-center">
-              <div className="text-4xl md:text-5xl font-bold gradient-text mb-2">
+          {row1.map((s, idx) => (
+            <div
+              key={s.label}
+              className="glass-card p-8 text-center animate-slide-up"
+              style={{ animationDelay: `${idx * 0.06}s` }}
+            >
+              <div
+                className="text-4xl md:text-5xl font-bold gradient-text mb-2 font-display"
+                style={{ animation: 'heartbeat 3s ease-in-out infinite', animationDelay: `${idx * 0.4}s` }}
+              >
                 <CountUp end={s.end ?? 0} />
               </div>
-              <div className="text-sm text-zinc-400">{s.label}</div>
+              <div className="text-sm text-text-secondary">{s.label}</div>
             </div>
           ))}
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-          {row2.map((s) => (
-            <div key={s.label} className="glass-card p-8 text-center">
-              <div className="text-4xl md:text-5xl font-bold gradient-text mb-2">
+          {row2.map((s, idx) => (
+            <div
+              key={s.label}
+              className="glass-card p-8 text-center animate-slide-up"
+              style={{ animationDelay: `${0.24 + idx * 0.06}s` }}
+            >
+              <div
+                className="text-4xl md:text-5xl font-bold gradient-text mb-2 font-display"
+                style={{ animation: 'heartbeat 3s ease-in-out infinite', animationDelay: `${0.2 + idx * 0.4}s` }}
+              >
                 {s.text !== undefined ? s.text : <CountUp end={s.end ?? 0} />}
               </div>
-              <div className="text-sm text-zinc-400">{s.label}</div>
+              <div className="text-sm text-text-secondary">{s.label}</div>
             </div>
           ))}
         </div>
       </section>
 
-      {/* Bottom CTA */}
+      {/* ===== Bottom CTA ===== */}
       <section className="max-w-4xl mx-auto px-6 py-24 text-center">
-        <h2 className="text-3xl md:text-5xl font-bold mb-6">
+        <h2 className="text-3xl md:text-5xl font-bold mb-6 font-display">
           {t('home.ctaTitle')}
         </h2>
         <div className="flex flex-wrap items-center justify-center gap-4">
@@ -394,10 +434,10 @@ export default function Home() {
             {t('nav.repo')}
           </a>
           <a
-            href="mailto:researcher.yi@youfer.cn"
+            href="mailto:metago@lifeform.dev"
             className="btn-secondary inline-flex items-center gap-2"
           >
-            <Mail size={18} /> {t('nav.contact')}
+            <Mail size={16} /> {t('nav.contact')}
           </a>
         </div>
       </section>

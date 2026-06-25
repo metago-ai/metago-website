@@ -2,19 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ========================================
+   MetaGO「生命脉动」设计系统 v2.0
+   从"机械科技感"进化为"数字生命感"
+   ======================================== */
+
 @layer base {
   :root {
-    --bg-deep: #0a0a0f;
-    --bg-card: #12121a;
-    --bg-glass: rgba(18, 18, 26, 0.6);
-    --accent-blue: #00d4ff;
-    --accent-purple: #a855f7;
-    --accent-green: #00ff88;
-    --accent-red: #ff3366;
-    --text-primary: #ffffff;
-    --text-secondary: #a1a1aa;
-    --text-muted: #71717a;
-    --border-glow: rgba(0, 212, 255, 0.3);
+    /* —— 背景层 —— */
+    --bg-deep: #080c14;          /* 墨青黑 - 深海/原始汤的深邃感 */
+    --bg-card: #0d1219;          /* 卡片底色 */
+    --bg-glass: rgba(13, 18, 25, 0.55);
+    --bg-elevated: #111824;      /* 浮起元素 */
+
+    /* —— 生命色（Life）—— 薄荷青系 */
+    --life-bright: #5eead4;      /* 亮薄荷 - 生命力 */
+    --life: #06b6d4;             /* 深青 - 流动 */
+    --life-dim: rgba(6, 182, 212, 0.12);
+
+    /* —— 进化色（Evolution）—— 琥珀金系 */
+    --evo-bright: #fbbf24;       /* 琥珀金 - 创造 */
+    --evo: #f97316;              /* 熔岩橙 - 能量 */
+    --evo-dim: rgba(249, 115, 22, 0.12);
+
+    /* —— 治理色（Governance）—— 靛紫系 */
+    --gov-bright: #a5b4fc;       /* 亮靛紫 */
+    --gov: #818cf8;              /* 靛紫罗兰 - 深度思考 */
+    --gov-dim: rgba(129, 140, 248, 0.12);
+
+    /* —— 文字层 —— */
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --text-muted: #64748b;
+
+    /* —— 边框/光晕 —— */
+    --border-subtle: rgba(148, 163, 184, 0.08);
+    --border-glow: rgba(94, 234, 212, 0.25);
+    --border-evo: rgba(251, 191, 36, 0.25);
+
+    /* —— 圆角分层 —— */
+    --r-lg: 24px;   /* 大区块 */
+    --r-md: 16px;   /* 卡片 */
+    --r-sm: 10px;   /* 按钮 */
+    --r-xs: 6px;    /* 标签 */
   }
 
   * {
@@ -31,87 +61,326 @@
     background-color: var(--bg-deep);
     color: var(--text-primary);
     font-family: 'Inter', '思源黑体', system-ui, sans-serif;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+    letter-spacing: -0.01em;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
   }
 
   h1, h2, h3, h4 {
-    font-family: 'Orbitron', '思源黑体', sans-serif;
+    font-family: 'Space Grotesk', '思源黑体', sans-serif;
+    letter-spacing: -0.02em;
   }
 
   code, pre {
     font-family: 'JetBrains Mono', Consolas, monospace;
   }
+
+  /* 六边形网格背景纹理 - 呼应 Logo 六边形 */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background-image:
+      radial-gradient(circle at 20% 50%, rgba(6, 182, 212, 0.06) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(249, 115, 22, 0.04) 0%, transparent 50%),
+      radial-gradient(circle at 50% 80%, rgba(129, 140, 248, 0.05) 0%, transparent 50%);
+    pointer-events: none;
+  }
 }
 
+/* ========================================
+   组件层 - 生命体 UI
+   ======================================== */
+
 @layer components {
+
+  /* —— 生命卡片：呼吸 + 双层光影 —— */
   .glass-card {
     background: var(--bg-glass);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 16px;
-    transition: all 0.3s ease;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--r-md);
+    /* 顶部高光线 - 模拟"光从上方照射" */
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    /* 呼吸动画 */
+    animation: breathe 6s ease-in-out infinite;
+  }
+
+  .glass-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 10%;
+    right: 10%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(94, 234, 212, 0.3), transparent);
+    border-radius: var(--r-md);
   }
 
   .glass-card:hover {
     border-color: var(--border-glow);
-    box-shadow: 0 0 24px rgba(0, 212, 255, 0.15);
-    transform: translateY(-4px);
+    /* 内发光 + 外投影，模拟"光透有机体" */
+    box-shadow:
+      inset 0 1px 0 rgba(94, 234, 212, 0.08),
+      0 0 0 1px rgba(94, 234, 212, 0.1),
+      0 20px 40px -12px rgba(6, 182, 212, 0.15),
+      0 0 60px -20px rgba(94, 234, 212, 0.2);
+    transform: translateY(-6px);
   }
 
+  /* —— 渐变文字：三色径向渐变 —— */
   .gradient-text {
-    background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+    background: linear-gradient(135deg, var(--life-bright) 0%, var(--life) 50%, var(--gov) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
-  .gradient-text-green {
-    background: linear-gradient(135deg, var(--accent-green), var(--accent-blue));
+  .gradient-text-evo {
+    background: linear-gradient(135deg, var(--evo-bright) 0%, var(--evo) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
+  /* —— 主按钮：生命色 + 光晕扩散 —— */
   .btn-primary {
-    background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
-    color: #ffffff;
+    background: linear-gradient(135deg, var(--life-bright), var(--life));
+    color: var(--bg-deep);
     padding: 12px 32px;
-    border-radius: 8px;
+    border-radius: var(--r-sm);
     font-weight: 600;
-    transition: all 0.3s ease;
+    font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: 0.01em;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
     display: inline-block;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    cursor: pointer;
+  }
+
+  .btn-primary::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at var(--rx, 50%) var(--ry, 50%), rgba(255,255,255,0.3) 0%, transparent 60%);
+    opacity: 0;
+    transition: opacity 0.3s;
   }
 
   .btn-primary:hover {
-    box-shadow: 0 0 24px rgba(0, 212, 255, 0.4);
+    box-shadow: 0 0 30px rgba(94, 234, 212, 0.4), 0 0 60px rgba(6, 182, 212, 0.2);
     transform: translateY(-2px);
   }
 
+  .btn-primary:hover::after {
+    opacity: 1;
+  }
+
+  /* —— 次按钮：透明 + 生命色边框 —— */
   .btn-secondary {
     background: transparent;
     color: var(--text-primary);
     padding: 12px 32px;
-    border-radius: 8px;
+    border-radius: var(--r-sm);
     font-weight: 600;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    transition: all 0.3s ease;
+    font-family: 'Space Grotesk', sans-serif;
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
     display: inline-block;
+    cursor: pointer;
   }
 
   .btn-secondary:hover {
-    border-color: var(--accent-blue);
-    color: var(--accent-blue);
+    border-color: var(--life-bright);
+    color: var(--life-bright);
+    box-shadow: 0 0 20px rgba(94, 234, 212, 0.15);
+  }
+
+  /* —— 代码窗口：活体边框光 —— */
+  .code-window {
+    border-radius: var(--r-md);
+    overflow: hidden;
+    border: 1px solid var(--border-subtle);
+    position: relative;
+    background: #0a0f16;
+    transition: border-color 0.3s;
+  }
+
+  .code-window:hover {
+    border-color: rgba(94, 234, 212, 0.2);
+  }
+
+  .code-window::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--life-bright), transparent);
+    opacity: 0.5;
+  }
+
+  /* —— 六边形分隔线 —— */
+  .hex-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--border-subtle) 20%, var(--border-subtle) 80%, transparent);
+    position: relative;
+    margin: 3rem 0;
+  }
+
+  .hex-divider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 8px;
+    height: 8px;
+    border: 1px solid var(--life-bright);
+    opacity: 0.4;
+  }
+
+  /* —— 徽章/标签 —— */
+  .life-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 12px;
+    border-radius: var(--r-xs);
+    font-size: 0.75rem;
+    font-family: 'JetBrains Mono', monospace;
+    background: var(--life-dim);
+    border: 1px solid rgba(94, 234, 212, 0.2);
+    color: var(--life-bright);
+  }
+
+  .evo-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 12px;
+    border-radius: var(--r-xs);
+    font-size: 0.75rem;
+    font-family: 'JetBrains Mono', monospace;
+    background: var(--evo-dim);
+    border: 1px solid rgba(251, 191, 36, 0.2);
+    color: var(--evo-bright);
+  }
+
+  /* —— 滚动进度条 —— */
+  .scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 2px;
+    z-index: 100;
+    background: linear-gradient(90deg, var(--life-bright), var(--life), var(--gov));
+    box-shadow: 0 0 8px rgba(94, 234, 212, 0.5);
+    transition: width 0.1s linear;
   }
 }
 
+/* ========================================
+   动画系统 - 生命脉动
+   ======================================== */
+
 @layer utilities {
-  .text-gradient {
-    background: linear-gradient(135deg, #00d4ff, #a855f7);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+  /* —— 呼吸动画：卡片微脉搏 —— */
+  @keyframes breathe {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.97; }
+  }
+
+  /* —— 模糊进入：从混沌到秩序 —— */
+  @keyframes blurIn {
+    0% { opacity: 0; filter: blur(12px); transform: translateY(20px); }
+    100% { opacity: 1; filter: blur(0); transform: translateY(0); }
+  }
+  .animate-blur-in {
+    animation: blurIn 0.9s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  /* —— 渐入 —— */
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out both;
+  }
+
+  /* —— 上滑进入 —— */
+  @keyframes slideUp {
+    0% { transform: translateY(30px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+  }
+  .animate-slide-up {
+    animation: slideUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  /* —— 脉冲发光 —— */
+  @keyframes pulseGlow {
+    0% { box-shadow: 0 0 5px rgba(94, 234, 212, 0.2); }
+    100% { box-shadow: 0 0 25px rgba(94, 234, 212, 0.5); }
+  }
+  .animate-pulse-glow {
+    animation: pulseGlow 2.5s ease-in-out infinite alternate;
+  }
+
+  /* —— 心跳：统计数字 —— */
+  @keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    15% { transform: scale(1.08); }
+    30% { transform: scale(1); }
+    45% { transform: scale(1.04); }
+    60% { transform: scale(1); }
+  }
+
+  /* —— 光波扩散 —— */
+  @keyframes ripple {
+    0% { transform: scale(0); opacity: 0.6; }
+    100% { transform: scale(4); opacity: 0; }
+  }
+
+  /* —— 旋转光环 —— */
+  @keyframes spinSlow {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  .animate-spin-slow {
+    animation: spinSlow 20s linear infinite;
+  }
+
+  /* —— 浮动 —— */
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  .animate-float {
+    animation: float 4s ease-in-out infinite;
+  }
+
+  /* —— 延迟工具类 —— */
+  .delay-100 { animation-delay: 0.1s; }
+  .delay-200 { animation-delay: 0.2s; }
+  .delay-300 { animation-delay: 0.3s; }
+  .delay-400 { animation-delay: 0.4s; }
+  .delay-500 { animation-delay: 0.5s; }
+
+  /* —— 尊重 reduced-motion —— */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
   }
 }

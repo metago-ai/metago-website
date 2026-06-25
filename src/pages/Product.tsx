@@ -47,23 +47,24 @@ interface ColorStyle {
   border: string;
 }
 
+// 设计系统 v2.0：生命/进化/治理三色语义
 const colorMap: Record<string, ColorStyle> = {
-  'accent-blue': { text: '#00d4ff', bg: 'rgba(0, 212, 255, 0.1)', border: 'rgba(0, 212, 255, 0.3)' },
-  'accent-green': { text: '#00ff88', bg: 'rgba(0, 255, 136, 0.1)', border: 'rgba(0, 255, 136, 0.3)' },
-  'accent-purple': { text: '#a855f7', bg: 'rgba(168, 85, 247, 0.1)', border: 'rgba(168, 85, 247, 0.3)' },
-  'accent-red': { text: '#ff3366', bg: 'rgba(255, 51, 102, 0.1)', border: 'rgba(255, 51, 102, 0.3)' },
-  cyan: { text: '#22d3ee', bg: 'rgba(34, 211, 238, 0.1)', border: 'rgba(34, 211, 238, 0.3)' },
-  yellow: { text: '#eab308', bg: 'rgba(234, 179, 8, 0.1)', border: 'rgba(234, 179, 8, 0.3)' },
+  'accent-blue': { text: '#5eead4', bg: 'rgba(94, 234, 212, 0.1)', border: 'rgba(94, 234, 212, 0.3)' },
+  'accent-green': { text: '#5eead4', bg: 'rgba(94, 234, 212, 0.1)', border: 'rgba(94, 234, 212, 0.3)' },
+  'accent-purple': { text: '#818cf8', bg: 'rgba(129, 140, 248, 0.1)', border: 'rgba(129, 140, 248, 0.3)' },
+  'accent-red': { text: '#f97316', bg: 'rgba(249, 115, 22, 0.1)', border: 'rgba(249, 115, 22, 0.3)' },
+  cyan: { text: '#06b6d4', bg: 'rgba(6, 182, 212, 0.1)', border: 'rgba(6, 182, 212, 0.3)' },
+  yellow: { text: '#fbbf24', bg: 'rgba(251, 191, 36, 0.1)', border: 'rgba(251, 191, 36, 0.3)' },
   orange: { text: '#f97316', bg: 'rgba(249, 115, 22, 0.1)', border: 'rgba(249, 115, 22, 0.3)' },
 };
 
 const protocolColors: ColorStyle[] = [
-  { text: '#00d4ff', bg: 'rgba(0, 212, 255, 0.1)', border: 'rgba(0, 212, 255, 0.3)' },
-  { text: '#a855f7', bg: 'rgba(168, 85, 247, 0.1)', border: 'rgba(168, 85, 247, 0.3)' },
-  { text: '#ff3366', bg: 'rgba(255, 51, 102, 0.1)', border: 'rgba(255, 51, 102, 0.3)' },
-  { text: '#00ff88', bg: 'rgba(0, 255, 136, 0.1)', border: 'rgba(0, 255, 136, 0.3)' },
-  { text: '#eab308', bg: 'rgba(234, 179, 8, 0.1)', border: 'rgba(234, 179, 8, 0.3)' },
-  { text: '#22d3ee', bg: 'rgba(34, 211, 238, 0.1)', border: 'rgba(34, 211, 238, 0.3)' },
+  { text: '#5eead4', bg: 'rgba(94, 234, 212, 0.1)', border: 'rgba(94, 234, 212, 0.3)' },   // P1 进化 — Life
+  { text: '#818cf8', bg: 'rgba(129, 140, 248, 0.1)', border: 'rgba(129, 140, 248, 0.3)' },  // P2 决策锁 — Gov
+  { text: '#f97316', bg: 'rgba(249, 115, 22, 0.1)', border: 'rgba(249, 115, 22, 0.3)' },    // P3 批判 — Evo
+  { text: '#a5b4fc', bg: 'rgba(165, 180, 252, 0.1)', border: 'rgba(165, 180, 252, 0.3)' },  // P4 合规 — Gov-bright
+  { text: '#fbbf24', bg: 'rgba(251, 191, 36, 0.1)', border: 'rgba(251, 191, 36, 0.3)' },    // P5 频率 — Evo-bright
+  { text: '#5eead4', bg: 'rgba(94, 234, 212, 0.1)', border: 'rgba(94, 234, 212, 0.3)' },    // P6 溯源 — Life
 ];
 
 const Product = () => {
@@ -128,7 +129,7 @@ const Product = () => {
       {/* 区块2：五层架构 */}
       <section className="max-w-5xl mx-auto px-6 mb-24">
         <div className="flex items-center gap-3 mb-10">
-          <Layers className="w-8 h-8 text-accent-blue" />
+          <Layers className="w-8 h-8 text-life-bright" />
           <h2 className="text-3xl font-bold text-white">{t('product.layerTitle')}</h2>
         </div>
         <div className="space-y-4">
@@ -140,7 +141,7 @@ const Product = () => {
                   <span className="text-4xl font-bold gradient-text">{layer.level}</span>
                 </div>
                 <div className="flex-shrink-0 hidden sm:block">
-                  <Icon className="w-8 h-8 text-accent-purple" />
+                  <Icon className="w-8 h-8 text-gov-bright" />
                 </div>
                 <div className="flex-1 min-w-0">
                   <h3 className="text-xl font-semibold text-white mb-1">{layer.name}</h3>
@@ -172,7 +173,7 @@ const Product = () => {
       {/* 区块3：22个技能 */}
       <section className="max-w-7xl mx-auto px-6 mb-24">
         <div className="flex items-center gap-3 mb-10">
-          <Cpu className="w-8 h-8 text-accent-green" />
+          <Cpu className="w-8 h-8 text-life-bright" />
           <h2 className="text-3xl font-bold text-white">{t('product.skillsTitle')}</h2>
         </div>
         <div className="grid md:grid-cols-2 gap-6">
@@ -206,7 +207,7 @@ const Product = () => {
       {/* 区块4：8条核心公理 */}
       <section className="max-w-5xl mx-auto px-6 mb-24">
         <div className="flex items-center gap-3 mb-10">
-          <BookOpen className="w-8 h-8 text-accent-purple" />
+          <BookOpen className="w-8 h-8 text-gov-bright" />
           <h2 className="text-3xl font-bold text-white">{t('product.axiomsTitle')}</h2>
         </div>
         <div className="glass-card overflow-hidden">
@@ -238,7 +239,7 @@ const Product = () => {
       {/* 区块5：7条根本属性 */}
       <section className="max-w-5xl mx-auto px-6 mb-24">
         <div className="flex items-center gap-3 mb-10">
-          <Shield className="w-8 h-8 text-accent-red" />
+          <Shield className="w-8 h-8 text-evo-bright" />
           <h2 className="text-3xl font-bold text-white">{t('product.attributesTitle')}</h2>
         </div>
         <div className="glass-card overflow-hidden">
@@ -270,7 +271,7 @@ const Product = () => {
       {/* 区块6：6项运行协议 */}
       <section className="max-w-7xl mx-auto px-6 mb-12">
         <div className="flex items-center gap-3 mb-10">
-          <Workflow className="w-8 h-8 text-accent-blue" />
+          <Workflow className="w-8 h-8 text-life-bright" />
           <h2 className="text-3xl font-bold text-white">{t('product.protocolsTitle')}</h2>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -300,7 +301,7 @@ const Product = () => {
       <section className="max-w-7xl mx-auto px-6 mb-24">
         <div className="glass-card p-8 md:p-12">
           <div className="text-center mb-10">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-accent-blue/30 bg-accent-blue/5 text-accent-blue text-xs font-mono mb-4">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-life-bright/30 bg-life-bright/5 text-life-bright text-xs font-mono mb-4">
               <Package size={14} /> {t('product.mcpServer.badge')}
             </div>
             <h2 className="text-3xl md:text-4xl font-bold mb-3">
@@ -318,7 +319,7 @@ const Product = () => {
               .map((f) => (
                 <span
                   key={f}
-                  className="px-4 py-1.5 rounded-full border border-white/10 bg-white/5 text-sm text-zinc-200 hover:border-accent-blue/40 transition-colors"
+                  className="px-4 py-1.5 rounded-full border border-white/10 bg-white/5 text-sm text-zinc-200 hover:border-life-bright/40 transition-colors"
                 >
                   {f}
                 </span>

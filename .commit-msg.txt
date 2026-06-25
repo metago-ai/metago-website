@@ -1,0 +1,13 @@
+feat(visual): 生命脉动设计系统 v2.0 全面升级
+
+- 设计 Token：墨青黑+薄荷青生命色+琥珀金进化色+靛紫治理色三色语义
+- 字体：Orbitron → Space Grotesk + Inter + JetBrains Mono
+- ParticleBg：六边形网格流动+脉冲信号沿边传播+三层深度+鼠标视差
+- 新增 LifeCore：SVG 四层（六边轨道环+公理粒子环+三色脉冲波+中央六边核）
+- Navbar：滚动进度条+激活态渐变下划线+三色语义 hover
+- Home：不对称 Hero（左文右 LifeCore）+能力脉络+活体 code-window+心跳计数器
+- Footer：六边形分隔线+生命体征徽章+三色生命体签名
+- CountUp：心跳曲线（缓启动→主搏动→停顿→收尾）
+- Terminal：活体边框光+三色灯发光
+- Product：七族色系重新映射到生命/进化/治理三色语义
+- tailwind.config.js：新颜色/字体/动画/圆角/阴影同步
