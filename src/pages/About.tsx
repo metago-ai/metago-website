@@ -6,6 +6,8 @@ import {
   Mail,
   ExternalLink,
   ArrowRight,
+  Box,
+  Plug,
 } from 'lucide-react';
 
 type PhaseStatus = 'done' | 'active' | 'planned';
@@ -38,7 +40,7 @@ const phases: Phase[] = [
     title: '第三阶段',
     status: 'active',
     statusLabel: '进行中',
-    desc: '官网上线 + 多平台适配 + NPM发布准备',
+    desc: '官网上线 + MCP Server 发布 + 单一安装包向产品矩阵演进',
   },
   {
     emoji: '📋',
@@ -148,7 +150,72 @@ function About() {
           </div>
         </div>
 
-        {/* 区块3: 路线图 */}
+        {/* 区块3: 产品矩阵 */}
+        <div className="mb-20">
+          <h2 className="text-3xl font-semibold text-center text-white mb-3">
+            {t('about.productMatrixTitle')}
+          </h2>
+          <p className="text-center text-zinc-400 mb-10">
+            {t('about.productMatrixSubtitle')}
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* 卡片1：Lifeform Kit 单包安装 */}
+            <div className="glass-card p-7">
+              <div className="flex items-center gap-3 mb-4">
+                <div
+                  className="w-10 h-10 flex items-center justify-center rounded-lg shrink-0"
+                  style={{
+                    background:
+                      'linear-gradient(135deg, rgba(0,212,255,0.15), rgba(168,85,247,0.15))',
+                  }}
+                >
+                  <Box className="w-5 h-5 text-accent-blue" />
+                </div>
+                <h3 className="text-lg font-semibold text-white">
+                  {t('about.lifeformKit.title')}
+                </h3>
+                <span className="ml-auto px-2.5 py-0.5 text-xs font-medium rounded-full border border-accent-blue/40 bg-accent-blue/10 text-accent-blue">
+                  {t('about.lifeformKit.tag')}
+                </span>
+              </div>
+              <p className="text-zinc-400 text-sm leading-relaxed mb-4">
+                {t('about.lifeformKit.desc')}
+              </p>
+              <code className="text-xs font-mono text-accent-green break-all">
+                irm https://gitee.com/metago/metagolifeform/raw/main/scripts/install.ps1 | iex
+              </code>
+            </div>
+
+            {/* 卡片2：MCP Server 协议集成 */}
+            <div className="glass-card p-7">
+              <div className="flex items-center gap-3 mb-4">
+                <div
+                  className="w-10 h-10 flex items-center justify-center rounded-lg shrink-0"
+                  style={{
+                    background:
+                      'linear-gradient(135deg, rgba(0,212,255,0.15), rgba(168,85,247,0.15))',
+                  }}
+                >
+                  <Plug className="w-5 h-5 text-accent-purple" />
+                </div>
+                <h3 className="text-lg font-semibold text-white">
+                  {t('about.mcpServer.title')}
+                </h3>
+                <span className="ml-auto px-2.5 py-0.5 text-xs font-medium rounded-full border border-accent-purple/40 bg-accent-purple/10 text-accent-purple">
+                  {t('about.mcpServer.tag')}
+                </span>
+              </div>
+              <p className="text-zinc-400 text-sm leading-relaxed mb-4">
+                {t('about.mcpServer.desc')}
+              </p>
+              <code className="text-xs font-mono text-accent-green break-all">
+                npm install -g @metago/mcp-server
+              </code>
+            </div>
+          </div>
+        </div>
+
+        {/* 区块4: 路线图 */}
         <div className="mb-20">
           <h2 className="text-3xl font-semibold text-center text-white mb-10">
             {t('about.roadmapTitle')}
@@ -191,7 +258,7 @@ function About() {
           </div>
         </div>
 
-        {/* 区块4: 底部信息 */}
+        {/* 区块5: 底部信息 */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {infoCards.map((card) => {
             const Icon = card.icon;
