@@ -51,7 +51,7 @@
     "title": "MetaGO MCP Server",
     "subtitle": "将22项元构能力封装为MCP工具，任何MCP客户端即开即用",
     "install": "安装命令",
-    "installCommand": "npm install -g @metago/mcp-server",
+    "installCommand": "npm install -g metago-mcp-server",
     "features": "22 Tools · 8 Prompts · stdio传输 · MIT开源",
     "configure": "配置示例",
     "claudeDesktop": "Claude Desktop 配置",
@@ -101,7 +101,7 @@
     "faq": "常见问题",
     "mcpServer": {
       "title": "MCP Server 快速开始",
-      "desc": "通过 npm 全局安装 @metago/mcp-server，即可在任何 MCP 客户端中调用 22 个 Tools 与 8 个 Prompts。",
+      "desc": "通过 npm 全局安装 metago-mcp-server，即可在任何 MCP 客户端中调用 22 个 Tools 与 8 个 Prompts。",
       "toolsTitle": "22 Tools",
       "toolsDesc": "封装元构 22 项核心技能为 MCP 工具，覆盖认知、保障、治理、进化、执行、溯源、价值七大能力族。",
       "promptsTitle": "8 Prompts",
