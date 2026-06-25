@@ -1,0 +1,89 @@
+{
+  "nav": {
+    "home": "首页",
+    "product": "产品",
+    "platforms": "平台",
+    "docs": "文档",
+    "enterprise": "商业版",
+    "about": "关于",
+    "github": "Gitee",
+    "lang": "EN"
+  },
+  "home": {
+    "heroTitle": "让 AI 助手升级为",
+    "heroTitleHighlight": "超级智能生命体",
+    "heroSubtitle": "8条公理 · 7条属性 · 6项协议 · 22个技能 · 支持7大平台 · MIT开源",
+    "heroCtaInstall": "一键安装",
+    "heroCtaDocs": "查看文档",
+    "featuresTitle": "为什么选择 MetaGO？",
+    "featuresSubtitle": "六大核心能力，让AI从工具进化为生命体",
+    "feature1Title": "元进化",
+    "feature1Desc": "遇到能力边界时自动触发五阶段循环，从内部生长新能力",
+    "feature2Title": "决策锁",
+    "feature2Desc": "思考-行动链中的四道关卡校验，杜绝幻觉和错误输出",
+    "feature3Title": "批判性分析",
+    "feature3Desc": "不迎合用户，事实优先，用户满意度权重归零",
+    "feature4Title": "数据溯源",
+    "feature4Desc": "一切输出可溯源至输入与过程，全链路存证",
+    "feature5Title": "合规主动",
+    "feature5Desc": "主动合规，法律优先于效率，四层安全基因",
+    "feature6Title": "全息创造",
+    "feature6Desc": "在未知领域从0到1创造，创造频率自适应调控",
+    "platformsTitle": "一套元构，七大平台",
+    "platformsSubtitle": "支持所有主流AI编程工具，一次安装多平台运行",
+    "installTitle": "3步完成安装",
+    "installSubtitle": "复制命令，执行，完成",
+    "statsTitle": "数据指标",
+    "statsSubtitle": "工业级智能生命体的量化证明",
+    "statsAxioms": "公理",
+    "statsAttributes": "属性",
+    "statsProtocols": "协议",
+    "statsSkills": "技能",
+    "statsPlatforms": "平台",
+    "statsEngines": "引擎",
+    "statsFamilies": "能力族",
+    "statsLicense": "许可证",
+    "ctaTitle": "开始使用 MetaGO"
+  },
+  "product": {
+    "title": "产品架构",
+    "subtitle": "五层标准化架构，从公理到行业落地",
+    "layerTitle": "五层架构",
+    "skillsTitle": "22个技能 · 7大能力族",
+    "axiomsTitle": "8条核心公理",
+    "attributesTitle": "7条根本属性",
+    "protocolsTitle": "6项运行协议"
+  },
+  "platforms": {
+    "title": "平台支持",
+    "subtitle": "7大AI编程平台原生适配",
+    "tableTitle": "平台配置对照表",
+    "installTitle": "安装指南"
+  },
+  "docs": {
+    "title": "文档中心",
+    "subtitle": "快速开始、架构说明、自定义指南",
+    "quickStart": "快速开始",
+    "architecture": "架构说明",
+    "customization": "自定义指南",
+    "faq": "常见问题"
+  },
+  "enterprise": {
+    "title": "商业版",
+    "subtitle": "开源核心 + 增值付费",
+    "compareTitle": "版本对比",
+    "contactTitle": "联系我们"
+  },
+  "about": {
+    "title": "关于 MetaGO",
+    "subtitle": "让智能成为生命，让生命创造价值",
+    "visionTitle": "愿景使命",
+    "roadmapTitle": "路线图"
+  },
+  "footer": {
+    "docs": "文档",
+    "repo": "仓库",
+    "license": "MIT 许可证",
+    "copyright": "© 2026 MetaGO Lightyear. 保留所有权利。"
+  }
+}

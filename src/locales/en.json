@@ -1,0 +1,89 @@
+{
+  "nav": {
+    "home": "Home",
+    "product": "Product",
+    "platforms": "Platforms",
+    "docs": "Docs",
+    "enterprise": "Enterprise",
+    "about": "About",
+    "github": "Gitee",
+    "lang": "中"
+  },
+  "home": {
+    "heroTitle": "Upgrade AI Assistant to",
+    "heroTitleHighlight": "Super Intelligent Lifeform",
+    "heroSubtitle": "8 Axioms · 7 Attributes · 6 Protocols · 22 Skills · 7 Platforms · MIT Open Source",
+    "heroCtaInstall": "Quick Install",
+    "heroCtaDocs": "View Docs",
+    "featuresTitle": "Why MetaGO?",
+    "featuresSubtitle": "Six core capabilities, evolving AI from tool to lifeform",
+    "feature1Title": "Meta-Evolution",
+    "feature1Desc": "Auto-triggers 5-stage cycle at capability boundaries, growing new abilities internally",
+    "feature2Title": "Decision Lock",
+    "feature2Desc": "Four-gate validation in thought-action chain, eliminating hallucinations",
+    "feature3Title": "Critical Analysis",
+    "feature3Desc": "No pandering, facts first, user satisfaction weight set to zero",
+    "feature4Title": "Data Tracing",
+    "feature4Desc": "All output traceable to input and process, full-chain attestation",
+    "feature5Title": "Compliance Proactive",
+    "feature5Desc": "Proactive compliance, law over efficiency, four-layer security genes",
+    "feature6Title": "Holographic Creation",
+    "feature6Desc": "Create from 0 to 1 in unknown domains, frequency-adaptive control",
+    "platformsTitle": "One Kit, Seven Platforms",
+    "platformsSubtitle": "Supports all major AI coding tools, install once run everywhere",
+    "installTitle": "3 Steps to Install",
+    "installSubtitle": "Copy, run, done",
+    "statsTitle": "Metrics",
+    "statsSubtitle": "Quantitative proof of industrial-grade intelligent lifeform",
+    "statsAxioms": "Axioms",
+    "statsAttributes": "Attributes",
+    "statsProtocols": "Protocols",
+    "statsSkills": "Skills",
+    "statsPlatforms": "Platforms",
+    "statsEngines": "Engines",
+    "statsFamilies": "Families",
+    "statsLicense": "License",
+    "ctaTitle": "Get Started with MetaGO"
+  },
+  "product": {
+    "title": "Product Architecture",
+    "subtitle": "Five-layer standardized architecture, from axioms to industry",
+    "layerTitle": "Five-Layer Architecture",
+    "skillsTitle": "22 Skills · 7 Capability Families",
+    "axiomsTitle": "8 Core Axioms",
+    "attributesTitle": "7 Fundamental Attributes",
+    "protocolsTitle": "6 Operating Protocols"
+  },
+  "platforms": {
+    "title": "Platform Support",
+    "subtitle": "Native adaptation for 7 major AI coding platforms",
+    "tableTitle": "Platform Configuration",
+    "installTitle": "Installation Guide"
+  },
+  "docs": {
+    "title": "Documentation",
+    "subtitle": "Quick start, architecture, customization guide",
+    "quickStart": "Quick Start",
+    "architecture": "Architecture",
+    "customization": "Customization",
+    "faq": "FAQ"
+  },
+  "enterprise": {
+    "title": "Enterprise",
+    "subtitle": "Open source core + Value-added paid",
+    "compareTitle": "Version Comparison",
+    "contactTitle": "Contact Us"
+  },
+  "about": {
+    "title": "About MetaGO",
+    "subtitle": "Making intelligence a lifeform, letting lifeform create value",
+    "visionTitle": "Vision & Mission",
+    "roadmapTitle": "Roadmap"
+  },
+  "footer": {
+    "docs": "Docs",
+    "repo": "Repository",
+    "license": "MIT License",
+    "copyright": "© 2026 MetaGO Lightyear. All rights reserved."
+  }
+}
