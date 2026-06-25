@@ -47,6 +47,23 @@
     "statsLicense": "License",
     "ctaTitle": "Get Started with MetaGO"
   },
+  "mcpServer": {
+    "title": "MetaGO MCP Server",
+    "subtitle": "22 MetaGO capabilities as MCP tools, works with any MCP client",
+    "install": "Install Command",
+    "installCommand": "npm install -g @metago/mcp-server",
+    "features": "22 Tools · 8 Prompts · stdio transport · MIT License",
+    "configure": "Configuration",
+    "claudeDesktop": "Claude Desktop Config",
+    "cursor": "Cursor Config",
+    "trae": "Trae Config",
+    "claudeDesktopPath": "~/Library/Application Support/Claude/claude_desktop_config.json",
+    "cursorPath": ".cursor/mcp.json",
+    "traePath": "settings.json",
+    "configNote": "Add the following to the config file",
+    "copy": "Copy",
+    "copied": "Copied"
+  },
   "product": {
     "title": "Product Architecture",
     "subtitle": "Five-layer standardized architecture, from axioms to industry",
