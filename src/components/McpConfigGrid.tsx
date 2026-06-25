@@ -17,7 +17,7 @@ const mcpConfigs: McpConfig[] = [
     config: {
       mcpServers: {
         metago: {
-          command: 'metago-mcp-server',
+          command: '@metago-ai/mcp-server',
         },
       },
     },
@@ -28,7 +28,7 @@ const mcpConfigs: McpConfig[] = [
     config: {
       mcpServers: {
         metago: {
-          command: 'metago-mcp-server',
+          command: '@metago-ai/mcp-server',
         },
       },
     },
@@ -39,7 +39,7 @@ const mcpConfigs: McpConfig[] = [
     config: {
       'mcp.servers': {
         metago: {
-          command: 'metago-mcp-server',
+          command: '@metago-ai/mcp-server',
         },
       },
     },
