@@ -8,10 +8,14 @@ import {
   ArrowRight,
   Terminal,
   CircleAlert,
+  Package,
+  Wrench,
+  MessageSquare,
 } from 'lucide-react';
+import McpInstallBlock from '../components/McpInstallBlock';
 
 interface DocItem {
-  key: 'quickStart' | 'architecture' | 'customization' | 'faq';
+  key: 'quickStart' | 'architecture' | 'customization' | 'faq' | 'mcpServer';
   icon: ComponentType<{ className?: string }>;
   desc: string;
   link: string;
@@ -35,6 +39,12 @@ const docs: DocItem[] = [
     icon: Settings,
     desc: '技能创建、规则修改、平台适配',
     link: 'https://gitee.com/metago/metagolifeform/blob/main/docs/CUSTOMIZATION.md',
+  },
+  {
+    key: 'mcpServer',
+    icon: Package,
+    desc: 'MCP 安装、配置、22 Tools、8 Prompts',
+    link: 'https://gitee.com/metago/metagolifeform/blob/main/docs/MCP_SERVER.md',
   },
   {
     key: 'faq',
@@ -106,7 +116,57 @@ function Docs() {
           </pre>
         </div>
 
-        {/* 区块4: 底部CTA */}
+        {/* 区块4: MCP Server 快速开始 */}
+        <div className="mb-16">
+          <div className="flex items-center gap-3 mb-4">
+            <Package className="w-6 h-6 text-accent-blue" />
+            <h2 className="text-2xl font-semibold text-white">
+              {t('docs.mcpServer.title')}
+            </h2>
+          </div>
+          <div className="glass-card p-6 md:p-8 mb-6">
+            <p className="text-zinc-400 mb-6 leading-relaxed">
+              {t('docs.mcpServer.desc')}
+            </p>
+            {/* npm 安装命令 */}
+            <McpInstallBlock className="mb-6" />
+            {/* 22 Tools / 8 Prompts 概览 */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="rounded-lg border border-white/10 bg-white/5 p-5">
+                <div className="flex items-center gap-2 mb-2">
+                  <Wrench className="w-5 h-5 text-accent-blue" />
+                  <span className="text-sm font-semibold text-zinc-100">
+                    {t('docs.mcpServer.toolsTitle')}
+                  </span>
+                </div>
+                <p className="text-zinc-400 text-sm leading-relaxed">
+                  {t('docs.mcpServer.toolsDesc')}
+                </p>
+              </div>
+              <div className="rounded-lg border border-white/10 bg-white/5 p-5">
+                <div className="flex items-center gap-2 mb-2">
+                  <MessageSquare className="w-5 h-5 text-accent-purple" />
+                  <span className="text-sm font-semibold text-zinc-100">
+                    {t('docs.mcpServer.promptsTitle')}
+                  </span>
+                </div>
+                <p className="text-zinc-400 text-sm leading-relaxed">
+                  {t('docs.mcpServer.promptsDesc')}
+                </p>
+              </div>
+            </div>
+          </div>
+          <a
+            href="https://gitee.com/metago/metagolifeform/blob/main/docs/MCP_SERVER.md"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary inline-flex items-center gap-2"
+          >
+            {t('docs.mcpServer.viewDocs')} <ArrowRight className="w-4 h-4" />
+          </a>
+        </div>
+
+        {/* 区块5: 底部CTA */}
         <div className="glass-card p-10 text-center">
           <div className="flex items-center justify-center gap-3 mb-4">
             <CircleAlert className="w-8 h-8 text-accent-purple" />

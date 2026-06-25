@@ -47,6 +47,23 @@
     "statsLicense": "许可证",
     "ctaTitle": "开始使用 MetaGO"
   },
+  "mcpServer": {
+    "title": "MetaGO MCP Server",
+    "subtitle": "将22项元构能力封装为MCP工具，任何MCP客户端即开即用",
+    "install": "安装命令",
+    "installCommand": "npm install -g @metago/mcp-server",
+    "features": "22 Tools · 8 Prompts · stdio传输 · MIT开源",
+    "configure": "配置示例",
+    "claudeDesktop": "Claude Desktop 配置",
+    "cursor": "Cursor 配置",
+    "trae": "Trae 配置",
+    "claudeDesktopPath": "~/Library/Application Support/Claude/claude_desktop_config.json",
+    "cursorPath": ".cursor/mcp.json",
+    "traePath": "settings.json",
+    "configNote": "在配置文件中添加以下内容",
+    "copy": "复制",
+    "copied": "已复制"
+  },
   "product": {
     "title": "产品架构",
     "subtitle": "五层标准化架构，从公理到行业落地",
@@ -54,13 +71,26 @@
     "skillsTitle": "22个技能 · 7大能力族",
     "axiomsTitle": "8条核心公理",
     "attributesTitle": "7条根本属性",
-    "protocolsTitle": "6项运行协议"
+    "protocolsTitle": "6项运行协议",
+    "mcpServer": {
+      "badge": "MCP 协议产品",
+      "title": "MetaGO MCP Server",
+      "subtitle": "将22项元构能力封装为MCP工具，任何MCP客户端即开即用",
+      "features": "22 Tools · 8 Prompts · stdio传输 · MIT开源",
+      "configure": "客户端配置示例",
+      "configNote": "在对应客户端的配置文件中添加以下内容"
+    }
   },
   "platforms": {
     "title": "平台支持",
     "subtitle": "7大AI编程平台原生适配",
     "tableTitle": "平台配置对照表",
-    "installTitle": "安装指南"
+    "installTitle": "安装指南",
+    "mcp": {
+      "title": "MCP 协议集成（通用）",
+      "subtitle": "适用于所有支持 MCP 协议的客户端（Claude Desktop、Cursor、Trae 等）。通过 npm 安装并写入 JSON 配置，即可在任何 MCP 客户端中调用全部 22 项元构能力，无需修改规则文件。",
+      "configNote": "在客户端配置文件中添加以下内容"
+    }
   },
   "docs": {
     "title": "文档中心",
@@ -68,7 +98,16 @@
     "quickStart": "快速开始",
     "architecture": "架构说明",
     "customization": "自定义指南",
-    "faq": "常见问题"
+    "faq": "常见问题",
+    "mcpServer": {
+      "title": "MCP Server 快速开始",
+      "desc": "通过 npm 全局安装 @metago/mcp-server，即可在任何 MCP 客户端中调用 22 个 Tools 与 8 个 Prompts。",
+      "toolsTitle": "22 Tools",
+      "toolsDesc": "封装元构 22 项核心技能为 MCP 工具，覆盖认知、保障、治理、进化、执行、溯源、价值七大能力族。",
+      "promptsTitle": "8 Prompts",
+      "promptsDesc": "8 个内置 Prompts 模板，引导客户端调用元构能力，覆盖安装、架构、安全、合规等场景。",
+      "viewDocs": "查看完整文档"
+    }
   },
   "enterprise": {
     "title": "商业版",
@@ -80,6 +119,18 @@
     "title": "关于 MetaGO",
     "subtitle": "让智能成为生命，让生命创造价值",
     "visionTitle": "愿景使命",
+    "productMatrixTitle": "产品矩阵",
+    "productMatrixSubtitle": "从单一安装包向产品矩阵演进，覆盖规则注入与协议集成两种交付方式",
+    "lifeformKit": {
+      "title": "MetaGO Lifeform Kit",
+      "tag": "规则注入",
+      "desc": "核心安装包：一键将 8 公理、7 属性、6 协议、22 技能注入 AI 助手的规则文件，原生适配 7 大平台。"
+    },
+    "mcpServer": {
+      "title": "MetaGO MCP Server",
+      "tag": "MCP 协议",
+      "desc": "将 22 项元构能力封装为 MCP 工具，任何 MCP 客户端即开即用，无需修改规则文件。"
+    },
     "roadmapTitle": "路线图"
   },
   "footer": {

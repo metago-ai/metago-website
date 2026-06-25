@@ -3,8 +3,10 @@ import type { ElementType } from 'react';
 import {
   Layers, Box, Cpu, Brain, Database, Network, Sparkles, Scale,
   GitBranch, Target, Zap, BookOpen, Shield, Workflow, Repeat,
-  Lock, Eye, Activity, FileCheck, Check, Coins,
+  Lock, Eye, Activity, FileCheck, Check, Coins, Package,
 } from 'lucide-react';
+import McpInstallBlock from '../components/McpInstallBlock';
+import McpConfigGrid from '../components/McpConfigGrid';
 
 interface Layer {
   level: string;
@@ -291,6 +293,49 @@ const Product = () => {
               </div>
             );
           })}
+        </div>
+      </section>
+
+      {/* 区块7：MCP Server 产品介绍 */}
+      <section className="max-w-7xl mx-auto px-6 mb-24">
+        <div className="glass-card p-8 md:p-12">
+          <div className="text-center mb-10">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-accent-blue/30 bg-accent-blue/5 text-accent-blue text-xs font-mono mb-4">
+              <Package size={14} /> {t('product.mcpServer.badge')}
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold mb-3">
+              <span className="gradient-text">{t('product.mcpServer.title')}</span>
+            </h2>
+            <p className="text-zinc-400 max-w-2xl mx-auto">
+              {t('product.mcpServer.subtitle')}
+            </p>
+          </div>
+
+          {/* 特性徽章：22 Tools · 8 Prompts 等 */}
+          <div className="flex flex-wrap items-center justify-center gap-3 mb-10">
+            {t('product.mcpServer.features')
+              .split(' · ')
+              .map((f) => (
+                <span
+                  key={f}
+                  className="px-4 py-1.5 rounded-full border border-white/10 bg-white/5 text-sm text-zinc-200 hover:border-accent-blue/40 transition-colors"
+                >
+                  {f}
+                </span>
+              ))}
+          </div>
+
+          {/* 安装命令 */}
+          <McpInstallBlock className="max-w-2xl mx-auto mb-10" />
+
+          {/* 客户端配置示例 */}
+          <div className="text-center mb-8">
+            <h3 className="text-2xl font-bold text-white mb-2">
+              {t('product.mcpServer.configure')}
+            </h3>
+            <p className="text-zinc-400 text-sm">{t('product.mcpServer.configNote')}</p>
+          </div>
+          <McpConfigGrid />
         </div>
       </section>
     </div>

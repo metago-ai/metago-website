@@ -71,13 +71,26 @@
     "skillsTitle": "22 Skills · 7 Capability Families",
     "axiomsTitle": "8 Core Axioms",
     "attributesTitle": "7 Fundamental Attributes",
-    "protocolsTitle": "6 Operating Protocols"
+    "protocolsTitle": "6 Operating Protocols",
+    "mcpServer": {
+      "badge": "MCP Protocol Product",
+      "title": "MetaGO MCP Server",
+      "subtitle": "22 MetaGO capabilities packaged as MCP tools, ready to use in any MCP client",
+      "features": "22 Tools · 8 Prompts · stdio transport · MIT License",
+      "configure": "Client Configuration",
+      "configNote": "Add the following to the client's config file"
+    }
   },
   "platforms": {
     "title": "Platform Support",
     "subtitle": "Native adaptation for 7 major AI coding platforms",
     "tableTitle": "Platform Configuration",
-    "installTitle": "Installation Guide"
+    "installTitle": "Installation Guide",
+    "mcp": {
+      "title": "MCP Protocol Integration (Universal)",
+      "subtitle": "Works with any MCP-compatible client (Claude Desktop, Cursor, Trae, etc.). Install via npm and add a JSON config to access all 22 MetaGO capabilities in any MCP client, with no rule files to modify.",
+      "configNote": "Add the following to the client config file"
+    }
   },
   "docs": {
     "title": "Documentation",
@@ -85,7 +98,16 @@
     "quickStart": "Quick Start",
     "architecture": "Architecture",
     "customization": "Customization",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "mcpServer": {
+      "title": "MCP Server Quick Start",
+      "desc": "Install @metago/mcp-server globally via npm to access 22 Tools and 8 Prompts in any MCP client.",
+      "toolsTitle": "22 Tools",
+      "toolsDesc": "Wraps 22 core MetaGO skills as MCP tools, covering 7 capability families: cognition, safeguard, governance, evolution, execution, traceability, and value.",
+      "promptsTitle": "8 Prompts",
+      "promptsDesc": "8 built-in prompt templates that guide clients to invoke MetaGO capabilities, covering installation, architecture, security, and compliance scenarios.",
+      "viewDocs": "View Full Docs"
+    }
   },
   "enterprise": {
     "title": "Enterprise",
@@ -97,6 +119,18 @@
     "title": "About MetaGO",
     "subtitle": "Making intelligence a lifeform, letting lifeform create value",
     "visionTitle": "Vision & Mission",
+    "productMatrixTitle": "Product Matrix",
+    "productMatrixSubtitle": "Evolving from a single install package to a product matrix, covering both rule-injection and protocol-integration delivery",
+    "lifeformKit": {
+      "title": "MetaGO Lifeform Kit",
+      "tag": "Rule Injection",
+      "desc": "Core install kit: one command injects 8 axioms, 7 attributes, 6 protocols, and 22 skills into the AI assistant's rule files, with native support for 7 platforms."
+    },
+    "mcpServer": {
+      "title": "MetaGO MCP Server",
+      "tag": "MCP Protocol",
+      "desc": "Wraps 22 MetaGO capabilities as MCP tools, ready to use in any MCP client without modifying rule files."
+    },
     "roadmapTitle": "Roadmap"
   },
   "footer": {

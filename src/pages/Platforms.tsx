@@ -1,5 +1,7 @@
 import { useTranslation } from 'react-i18next';
-import { Table, Terminal, FileText, Check } from 'lucide-react';
+import { Table, Terminal, FileText, Check, Plug } from 'lucide-react';
+import McpInstallBlock from '../components/McpInstallBlock';
+import McpConfigGrid from '../components/McpConfigGrid';
 
 interface PlatformRow {
   name: string;
@@ -91,7 +93,29 @@ const Platforms = () => {
         </div>
       </section>
 
-      {/* 区块3：安装指南 */}
+      {/* 区块3：MCP 协议集成（通用） */}
+      <section className="max-w-6xl mx-auto px-6 mb-24">
+        <div className="flex items-center gap-3 mb-10">
+          <Plug className="w-8 h-8 text-accent-purple" />
+          <h2 className="text-3xl font-bold text-white">{t('platforms.mcp.title')}</h2>
+        </div>
+        <div className="glass-card p-8">
+          <p className="text-zinc-300 leading-relaxed mb-8">
+            {t('platforms.mcp.subtitle')}
+          </p>
+
+          {/* 安装命令 */}
+          <McpInstallBlock className="mb-8" />
+
+          {/* 客户端配置示例 */}
+          <div className="text-sm text-zinc-400 mb-4">
+            {t('platforms.mcp.configNote')}
+          </div>
+          <McpConfigGrid />
+        </div>
+      </section>
+
+      {/* 区块4：安装指南 */}
       <section className="max-w-4xl mx-auto px-6 mb-24">
         <div className="flex items-center gap-3 mb-10">
           <Terminal className="w-8 h-8 text-accent-green" />
@@ -117,7 +141,7 @@ const Platforms = () => {
         </div>
       </section>
 
-      {/* 区块4：AGENTS.md 开放标准说明 */}
+      {/* 区块5：AGENTS.md 开放标准说明 */}
       <section className="max-w-4xl mx-auto px-6 mb-12">
         <div className="glass-card p-8">
           <div className="flex items-center gap-3 mb-4">
