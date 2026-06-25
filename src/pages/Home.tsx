@@ -137,7 +137,7 @@ export default function Home() {
       <section className="relative min-h-screen flex items-center justify-center text-center px-6 pt-16">
         <ParticleBg />
         <div className="relative z-10 max-w-4xl mx-auto animate-fade-in">
-          <img src="/metago-logo.png" alt="MetaGO" className="h-16 md:h-24 mx-auto mb-6 animate-fade-in" />
+          <img src="./metago-logo.png" alt="MetaGO" className="h-16 md:h-24 mx-auto mb-6 animate-fade-in" />
           <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
             {t('home.heroTitle')}{' '}
             <span className="gradient-text">{t('home.heroTitleHighlight')}</span>

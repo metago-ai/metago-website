@@ -40,7 +40,7 @@ export default function Navbar() {
       }}
     >
       <Link to="/">
-        <img src="/metago-logo.png" alt="MetaGO" className="h-8" />
+        <img src="./metago-logo.png" alt="MetaGO" className="h-8" />
       </Link>
 
       <nav className="hidden md:flex items-center gap-8">
