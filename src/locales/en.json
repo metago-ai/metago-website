@@ -6,7 +6,8 @@
     "docs": "Docs",
     "enterprise": "Enterprise",
     "about": "About",
-    "github": "Gitee",
+    "repo": "Gitee",
+    "contact": "Contact",
     "lang": "中"
   },
   "home": {
@@ -40,7 +41,7 @@
     "statsProtocols": "Protocols",
     "statsSkills": "Skills",
     "statsPlatforms": "Platforms",
-    "statsEngines": "Engines",
+    "statsLayers": "Layers",
     "statsFamilies": "Families",
     "statsLicense": "License",
     "ctaTitle": "Get Started with MetaGO"

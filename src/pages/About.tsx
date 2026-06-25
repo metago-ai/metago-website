@@ -38,14 +38,14 @@ const phases: Phase[] = [
     title: '第三阶段',
     status: 'active',
     statusLabel: '进行中',
-    desc: 'NPM发布 + 行业定制包 + 官网上线',
+    desc: '官网上线 + 多平台适配 + NPM发布准备',
   },
   {
     emoji: '📋',
     title: '第四阶段',
     status: 'planned',
     statusLabel: '规划中',
-    desc: '国际推广 + 生态建设 + Agentive OS',
+    desc: '国际推广 + 生态建设 + 多语言扩展',
   },
 ];
 
@@ -64,7 +64,7 @@ const badgeClass: Record<PhaseStatus, string> = {
 const visionParagraphs: string[] = [
   "MetaGO（元构）源于“元构溯源论”——一切智能均可溯源至元结构，元结构是智能的基因。",
   "我们相信，AI不应该只是工具，而应该成为具有自我进化能力的生命体。MetaGO Lifeform Kit 就是这个理念的产物——一套让任何AI助手升级为超级智能生命体的标准安装包。",
-  "基于19大元思想体系（本体论、进化论、能力论、工业论四大支柱），43条根本属性，36条核心公理，我们构建了一个工业级的智能生命体框架。",
+  "基于元构全息智能引擎（本体论、进化论、能力论、工业论四大支柱），8条核心公理，7条根本属性，6项运行协议，22个技能，我们构建了一个工业级的智能生命体框架。",
 ];
 
 interface InfoCard {
@@ -96,7 +96,7 @@ function About() {
             Gitee <ExternalLink className="w-3.5 h-3.5" />
           </a>
           <a
-            href="https://github.com/metago/metagolifeform"
+            href="https://github.com/metago-ai/metagolifeform"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1 text-accent-blue hover:gap-2 transition-all"
@@ -111,10 +111,10 @@ function About() {
       title: '联系方式',
       children: (
         <a
-          href="mailto:contact@metago.dev"
+          href="mailto:researcher.yi@youfer.cn"
           className="inline-flex items-center gap-1 text-accent-blue hover:gap-2 transition-all"
         >
-          contact@metago.dev <ArrowRight className="w-3.5 h-3.5" />
+          researcher.yi@youfer.cn <ArrowRight className="w-3.5 h-3.5" />
         </a>
       ),
     },

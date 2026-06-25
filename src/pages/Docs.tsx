@@ -40,7 +40,7 @@ const docs: DocItem[] = [
     key: 'faq',
     icon: CircleQuestionMark,
     desc: '安装问题、平台差异、升级方法',
-    link: 'https://gitee.com/metago/metagolifeform/blob/main/docs/GETTING_STARTED.md#faq',
+    link: 'https://gitee.com/metago/metagolifeform/blob/main/docs/GETTING_STARTED.md#常见问题-faq',
   },
 ];
 

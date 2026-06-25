@@ -159,15 +159,15 @@ function Enterprise() {
             联系我们获取企业版方案和报价
           </p>
           <a
-            href="mailto:contact@metago.dev"
+            href="mailto:researcher.yi@youfer.cn"
             className="inline-flex items-center gap-2 text-accent-blue mb-6 hover:gap-3 transition-all"
           >
             <Mail className="w-5 h-5" />
-            contact@metago.dev
+            researcher.yi@youfer.cn
           </a>
           <div>
             <a
-              href="mailto:contact@metago.dev"
+              href="mailto:researcher.yi@youfer.cn"
               className="btn-primary inline-flex items-center gap-2"
             >
               联系我们 <ArrowRight className="w-4 h-4" />

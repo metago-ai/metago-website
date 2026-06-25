@@ -12,7 +12,7 @@ const navItems = [
   { key: 'nav.about', path: '/about' },
 ];
 
-const GITEE_URL = 'https://gitee.com/metago/metago';
+const GITEE_URL = 'https://gitee.com/metago/metagolifeform';
 
 export default function Navbar() {
   const { t, i18n } = useTranslation();
@@ -65,7 +65,7 @@ export default function Navbar() {
           rel="noreferrer"
           className="flex items-center gap-2 px-4 py-2 rounded-lg border border-white/10 text-sm text-zinc-200 hover:border-accent-blue hover:text-accent-blue transition-colors"
         >
-          <GitFork size={16} /> {t('nav.github')}
+          <GitFork size={16} /> {t('nav.repo')}
         </a>
         <button
           onClick={toggleLang}
@@ -112,7 +112,7 @@ export default function Navbar() {
               rel="noreferrer"
               className="btn-secondary text-sm"
             >
-              {t('nav.github')}
+              {t('nav.repo')}
             </a>
             <button onClick={toggleLang} className="btn-secondary text-sm">
               {t('nav.lang')}

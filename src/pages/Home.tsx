@@ -8,12 +8,13 @@ import {
   ShieldCheck,
   Sparkles,
   ArrowRight,
+  Mail,
 } from 'lucide-react';
 import ParticleBg from '../components/ParticleBg';
 import Terminal from '../components/Terminal';
 import CountUp from '../components/CountUp';
 
-const GITEE_URL = 'https://gitee.com/metago/metago';
+const GITEE_URL = 'https://gitee.com/metago/metagolifeform';
 
 const features = [
   { icon: Brain, key: 'feature1' },
@@ -27,9 +28,9 @@ const features = [
 const platforms = ['Trae', 'Claude Code', 'Codex', 'Cursor', 'CodeBuddy', 'Qoder', 'ZCode'];
 
 const installLines = [
-  'git clone https://gitee.com/metago/metago.git',
-  'cd metago',
-  './install.ps1',
+  'git clone https://gitee.com/metago/metagolifeform.git',
+  'cd metagolifeform',
+  '.\\scripts\\install.ps1',
 ];
 
 interface Metric {
@@ -50,8 +51,8 @@ export default function Home() {
 
   const row2: Metric[] = [
     { end: 7, label: t('home.statsPlatforms') },
-    { end: 125, label: t('home.statsEngines') },
-    { end: 13, label: t('home.statsFamilies') },
+    { end: 5, label: t('home.statsLayers') },
+    { end: 7, label: t('home.statsFamilies') },
     { text: 'MIT', label: t('home.statsLicense') },
   ];
 
@@ -141,7 +142,7 @@ export default function Home() {
           </div>
           <pre className="p-4 font-mono text-sm overflow-x-auto" style={{ color: '#00ff88' }}>
             <span className="text-zinc-500">PS&gt; </span>
-            irm https://gitee.com/metago/metago/raw/main/install.ps1 | iex
+            irm https://gitee.com/metago/metagolifeform/raw/main/scripts/install.ps1 | iex
           </pre>
         </div>
       </section>
@@ -205,7 +206,13 @@ export default function Home() {
             rel="noreferrer"
             className="btn-secondary"
           >
-            {t('nav.github')}
+            {t('nav.repo')}
+          </a>
+          <a
+            href="mailto:researcher.yi@youfer.cn"
+            className="btn-secondary inline-flex items-center gap-2"
+          >
+            <Mail size={18} /> {t('nav.contact')}
           </a>
         </div>
       </section>

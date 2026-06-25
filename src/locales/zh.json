@@ -6,7 +6,8 @@
     "docs": "文档",
     "enterprise": "商业版",
     "about": "关于",
-    "github": "Gitee",
+    "repo": "Gitee",
+    "contact": "联系我们",
     "lang": "EN"
   },
   "home": {
@@ -40,7 +41,7 @@
     "statsProtocols": "协议",
     "statsSkills": "技能",
     "statsPlatforms": "平台",
-    "statsEngines": "引擎",
+    "statsLayers": "架构层",
     "statsFamilies": "能力族",
     "statsLicense": "许可证",
     "ctaTitle": "开始使用 MetaGO"

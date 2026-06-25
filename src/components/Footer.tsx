@@ -2,8 +2,8 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { GitFork, ExternalLink } from 'lucide-react';
 
-const GITEE_URL = 'https://gitee.com/metago/metago';
-const GITHUB_URL = 'https://github.com/metago/metago';
+const GITEE_URL = 'https://gitee.com/metago/metagolifeform';
+const GITHUB_URL = 'https://github.com/metago-ai/metagolifeform';
 
 export default function Footer() {
   const { t } = useTranslation();

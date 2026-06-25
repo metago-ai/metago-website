@@ -76,13 +76,13 @@ const Product = () => {
   ];
 
   const skillFamilies: SkillFamily[] = [
-    { name: '认知族', color: 'accent-blue', skills: ['metago-critique', 'metago-whatif', 'metago-objectivity'], icon: Brain },
+    { name: '认知族', color: 'accent-blue', skills: ['metago-critique', 'metago-whatif', 'metago-emotion', 'metago-objectivity'], icon: Brain },
+    { name: '保障族', color: 'accent-red', skills: ['metago-decision-lock', 'metago-output-integrity', 'metago-self-check'], icon: Shield },
+    { name: '治理族', color: 'accent-purple', skills: ['metago-compliance', 'metago-value-align'], icon: Scale },
     { name: '进化族', color: 'accent-green', skills: ['metago-meta-evolve', 'metago-meta-create', 'metago-frequency-adapt'], icon: Sparkles },
-    { name: '治理族', color: 'accent-purple', skills: ['metago-decision-lock', 'metago-compliance'], icon: Scale },
-    { name: '保障族', color: 'accent-red', skills: ['metago-output-integrity', 'metago-self-check', 'metago-fact-check'], icon: Shield },
-    { name: '溯源族', color: 'cyan', skills: ['metago-data-provenance', 'metago-problem-trace'], icon: GitBranch },
-    { name: '价值族', color: 'yellow', skills: ['metago-value-align', 'metago-emotion'], icon: Target },
-    { name: '执行族', color: 'orange', skills: ['metago-holistic-task', 'metago-action-plan', 'metago-decision-eval', 'metago-developer-response', 'metago-scene-adapt', 'metago-negentropy-monitor', 'metago-coupling-optimize'], icon: Zap },
+    { name: '执行族', color: 'orange', skills: ['metago-action-plan', 'metago-decision-eval', 'metago-holistic-task', 'metago-developer-response'], icon: Zap },
+    { name: '溯源族', color: 'cyan', skills: ['metago-data-provenance', 'metago-problem-trace', 'metago-fact-check'], icon: GitBranch },
+    { name: '价值族', color: 'yellow', skills: ['metago-coupling-optimize', 'metago-negentropy-monitor', 'metago-scene-adapt'], icon: Target },
   ];
 
   const axioms: Axiom[] = [
