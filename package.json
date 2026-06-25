@@ -1,7 +1,7 @@
 {
   "name": "metago-website",
   "private": true,
-  "version": "36.3.0",
+  "version": "36.4.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
