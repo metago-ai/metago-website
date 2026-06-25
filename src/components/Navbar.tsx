@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { Menu, X, GitFork } from 'lucide-react';
+import { Menu, X, GitFork, Star } from 'lucide-react';
 
 const navItems = [
   { key: 'nav.home', path: '/' },
@@ -13,6 +13,7 @@ const navItems = [
 ];
 
 const GITEE_URL = 'https://gitee.com/metago/metagolifeform';
+const GITHUB_URL = 'https://github.com/metago-ai/metagolifeform';
 
 export default function Navbar() {
   const { t, i18n } = useTranslation();
@@ -67,6 +68,14 @@ export default function Navbar() {
         >
           <GitFork size={16} /> {t('nav.repo')}
         </a>
+        <a
+          href={GITHUB_URL}
+          target="_blank"
+          rel="noreferrer"
+          className="flex items-center gap-2 px-4 py-2 rounded-lg border border-white/10 text-sm text-zinc-200 hover:border-accent-purple hover:text-accent-purple transition-colors"
+        >
+          <Star size={16} /> {t('nav.github')}
+        </a>
         <button
           onClick={toggleLang}
           className="px-4 py-2 rounded-lg border border-white/10 text-sm text-zinc-200 hover:border-accent-purple hover:text-accent-purple transition-colors"
@@ -113,6 +122,14 @@ export default function Navbar() {
               className="btn-secondary text-sm"
             >
               {t('nav.repo')}
+            </a>
+            <a
+              href={GITHUB_URL}
+              target="_blank"
+              rel="noreferrer"
+              className="btn-secondary text-sm"
+            >
+              {t('nav.github')}
             </a>
             <button onClick={toggleLang} className="btn-secondary text-sm">
               {t('nav.lang')}
