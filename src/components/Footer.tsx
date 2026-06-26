@@ -111,7 +111,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="mailto:metago@lifeform.dev"
+                  href="mailto:researcher.yi@youfer.cn"
                   className="flex items-center gap-2 hover:text-evo-bright transition-colors"
                 >
                   <Mail size={14} /> {t('nav.contact')}
