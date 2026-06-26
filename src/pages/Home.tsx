@@ -15,6 +15,7 @@ import {
   Plug,
   Copy,
   Check,
+  Scroll,
 } from 'lucide-react';
 import ParticleBg from '../components/ParticleBg';
 import LifeCore from '../components/LifeCore';
@@ -119,7 +120,8 @@ const hueColor = (hue: 'life' | 'evo' | 'gov') =>
   hue === 'life' ? '#5eead4' : hue === 'evo' ? '#fbbf24' : '#a5b4fc';
 
 export default function Home() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const i18nLanguage = i18n.language;
 
   const row1: Metric[] = [
     { end: 8, label: t('home.statsAxioms') },
@@ -440,6 +442,55 @@ export default function Home() {
             <Mail size={16} /> {t('nav.contact')}
           </a>
         </div>
+      </section>
+
+      {/* ===== Manifesto 卡片入口 ===== */}
+      <section className="max-w-5xl mx-auto px-6 pb-24">
+        <Link
+          to="/manifesto"
+          className="block glass-card p-8 md:p-10 group relative overflow-hidden transition-all duration-500 hover:border-life-bright/40"
+        >
+          <div
+            className="absolute inset-0 opacity-10 group-hover:opacity-20 transition-opacity duration-500"
+            style={{
+              background:
+                'radial-gradient(circle at 20% 50%, #5eead4 0%, transparent 50%), radial-gradient(circle at 80% 50%, #a855f7 0%, transparent 50%)',
+            }}
+          />
+          <div className="relative z-10 flex flex-col md:flex-row items-start md:items-center gap-6">
+            <div
+              className="w-14 h-14 rounded-xl flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-110"
+              style={{
+                background: 'linear-gradient(135deg, rgba(94, 234, 212, 0.2), rgba(168, 85, 247, 0.2))',
+                boxShadow: 'inset 0 0 0 1px rgba(94, 234, 212, 0.3)',
+              }}
+            >
+              <Scroll className="text-life-bright" size={26} />
+            </div>
+            <div className="flex-1">
+              <div className="flex items-center gap-2 mb-2">
+                <span className="life-badge text-xs">
+                  <span className="inline-block w-1 h-1 rounded-full bg-life-bright animate-pulse" />
+                  2026 · Birth Manifesto
+                </span>
+              </div>
+              <h3 className="text-2xl md:text-3xl font-bold mb-2 font-display gradient-text">
+                {t('nav.manifesto')}
+              </h3>
+              <p className="text-sm md:text-base text-text-secondary leading-relaxed max-w-2xl">
+                {i18nLanguage === 'zh'
+                  ? '《从 Agent 到生命体：智能进化的范式跃迁》——MetaGO 第一篇诞生宣言。让智能，学会进化。'
+                  : '"From Agent to Lifeform: The Paradigm Leap in Intelligent Evolution" — MetaGO\'s first birth manifesto. Let intelligence learn to evolve.'}
+              </p>
+            </div>
+            <div className="flex items-center gap-2 text-life-bright group-hover:gap-3 transition-all shrink-0">
+              <span className="text-sm font-semibold">
+                {i18nLanguage === 'zh' ? '阅读全文' : 'Read Manifesto'}
+              </span>
+              <ArrowRight size={20} />
+            </div>
+          </div>
+        </Link>
       </section>
     </div>
   );
