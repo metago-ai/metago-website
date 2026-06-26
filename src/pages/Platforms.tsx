@@ -31,14 +31,14 @@ const installCommands: InstallCommand[] = [
   { cmd: 'cd metagolifeform', comment: '' },
   { cmd: '.\\scripts\\install.ps1', comment: '默认Trae' },
   { cmd: '.\\scripts\\install.ps1 -Platform claude-code', comment: 'Claude Code' },
-  { cmd: '.\\scripts\\install.ps1 -Platform codex', comment: 'Codex' },
+  { cmd: '.\\scripts\\install.ps1 -Platform codex', comment: 'OpenAI Codex' },
   { cmd: '.\\scripts\\install.ps1 -Platform cursor', comment: 'Cursor' },
   { cmd: '.\\scripts\\install.ps1 -Platform codebuddy', comment: 'CodeBuddy' },
   { cmd: '.\\scripts\\install.ps1 -Platform qoder', comment: 'Qoder' },
   { cmd: '.\\scripts\\install.ps1 -Platform zcode', comment: 'ZCode' },
 ];
 
-const agentsCompatible = ['Codex', 'Cursor', 'CodeBuddy', 'Qoder'];
+const agentsCompatible = ['OpenAI Codex', 'Cursor', 'CodeBuddy', 'Qoder'];
 
 const Platforms = () => {
   const { t } = useTranslation();
@@ -149,7 +149,7 @@ const Platforms = () => {
             <h2 className="text-2xl font-bold text-white">AGENTS.md 开放标准</h2>
           </div>
           <p className="text-zinc-300 leading-relaxed mb-6">
-            Codex、Cursor、CodeBuddy、Qoder 均兼容 <code className="text-accent-blue font-mono">AGENTS.md</code> 开放标准（Linux Foundation 管理），被 60,000+ 开源项目采用。
+            OpenAI Codex、Cursor、CodeBuddy、Qoder 均兼容 <code className="text-accent-blue font-mono">AGENTS.md</code> 开放标准（Linux Foundation 管理），被 60,000+ 开源项目采用。
           </p>
           <div className="flex flex-wrap gap-3">
             {agentsCompatible.map((name) => (

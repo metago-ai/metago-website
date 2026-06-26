@@ -149,7 +149,7 @@ const ZH_CONTENT = {
     ['MetaGO Skills Hub', '生态基础设施', '技能市场，浏览与发现'],
     ['MetaGO Certify', '生态基础设施', '6 项检查认证体系'],
   ],
-  sec5Note: '原生适配 7 大平台：Trae / Claude Code / Codex / Cursor / CodeBuddy / Qoder / ZCode。',
+  sec5Note: '原生适配 7 大平台：Trae / Claude Code / OpenAI Codex / Cursor / CodeBuddy / Qoder / ZCode。',
   sec5Note2: '一次安装，多平台运行。MIT 开源，社区驱动。',
 
   sec6Title: '六、召唤：加入进化',
@@ -316,7 +316,7 @@ Self-proof capability: ✅ Available`,
     ['MetaGO Skills Hub', 'Ecosystem infrastructure', 'Skill marketplace, browse and discover'],
     ['MetaGO Certify', 'Ecosystem infrastructure', '6-check certification system'],
   ],
-  sec5Note: 'Native adaptation to 7 major platforms: Trae / Claude Code / Codex / Cursor / CodeBuddy / Qoder / ZCode.',
+  sec5Note: 'Native adaptation to 7 major platforms: Trae / Claude Code / OpenAI Codex / Cursor / CodeBuddy / Qoder / ZCode.',
   sec5Note2: 'Install once, run across platforms. MIT open source, community-driven.',
 
   sec6Title: 'VI. Summoning: Join the Evolution',
