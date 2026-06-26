@@ -6,15 +6,17 @@
     "docs": "文档",
     "enterprise": "商业版",
     "about": "关于",
+    "manifesto": "诞生宣言",
     "repo": "Gitee",
     "github": "GitHub",
     "contact": "联系我们",
-    "lang": "EN"
+    "lang": "EN",
+    "npm": "NPM"
   },
   "home": {
     "heroTitle": "让智能",
     "heroTitleHighlight": "学会进化",
-    "heroSubtitle": "8条公理 · 7条属性 · 6项协议 · 22个技能 · 支持7大平台 · MIT开源",
+    "heroSubtitle": "从 Agent 到生命体的范式跃迁",
     "heroCtaInstall": "一键安装",
     "heroCtaDocs": "查看文档",
     "featuresTitle": "为什么选择 MetaGO？",
@@ -120,7 +122,7 @@
     "subtitle": "让智能成为生命，让生命创造价值",
     "visionTitle": "愿景使命",
     "productMatrixTitle": "产品矩阵",
-    "productMatrixSubtitle": "从单一安装包向产品矩阵演进，覆盖规则注入与协议集成两种交付方式",
+    "productMatrixSubtitle": "从单一 Kit 进化为 8 大产品矩阵，覆盖规则注入、协议集成、开发工具与生态基础设施",
     "lifeformKit": {
       "title": "MetaGO Lifeform Kit",
       "tag": "规则注入",
@@ -131,12 +133,43 @@
       "tag": "MCP 协议",
       "desc": "将 22 项元构能力封装为 MCP 工具，任何 MCP 客户端即开即用，无需修改规则文件。"
     },
-    "roadmapTitle": "路线图"
+    "roadmapTitle": "路线图",
+    "devKit": {
+      "title": "MetaGO Dev Kit",
+      "tag": "垂直场景包",
+      "desc": "开发者增强包：4 复用 + 4 新增技能，覆盖架构设计、代码审查、重构建议、安全审计。"
+    },
+    "cli": {
+      "title": "MetaGO CLI",
+      "tag": "平台工具",
+      "desc": "跨平台命令行工具，在终端与 CI/CD 流水线中调用 22 项元构技能。"
+    },
+    "studio": {
+      "title": "MetaGO Studio",
+      "tag": "平台工具",
+      "desc": "可视化技能编排平台，拖拽组合技能生成定制 Kit，实时预览与导出。"
+    },
+    "skillsSdk": {
+      "title": "MetaGO Skills SDK",
+      "tag": "生态基础设施",
+      "desc": "TypeScript SDK，用于开发、校验、打包自定义元构技能，构建你的能力生态。"
+    },
+    "skillsHub": {
+      "title": "MetaGO Skills Hub",
+      "tag": "生态基础设施",
+      "desc": "技能市场：浏览、搜索、发现官方与社区技能，一键复制 SKILL.md。"
+    },
+    "certify": {
+      "title": "MetaGO Certify",
+      "tag": "生态基础设施",
+      "desc": "6 项检查技能认证体系，Gold/Silver 分级，确保技能质量达标。"
+    }
   },
   "footer": {
     "docs": "文档",
     "repo": "仓库",
     "license": "MIT 许可证",
-    "copyright": "© 2026 MetaGO Lightyear. 保留所有权利。"
+    "copyright": "© 2026 MetaGO Lightyear. 保留所有权利。",
+    "npm": "NPM 包"
   }
 }
