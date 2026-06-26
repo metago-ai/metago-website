@@ -90,7 +90,7 @@ function Docs() {
                   </div>
                   <div className="flex-1">
                     <h3 className="text-2xl font-semibold text-white mb-2">
-                      {t(`docs.${doc.key}`)}
+                      {doc.key === 'mcpServer' ? t('docs.mcpServer.title') : t(`docs.${doc.key}`)}
                     </h3>
                     <p className="text-zinc-400 mb-4">{doc.desc}</p>
                     <span className="inline-flex items-center gap-1 text-accent-blue group-hover:gap-2 transition-all">
