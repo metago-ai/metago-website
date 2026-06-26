@@ -16,6 +16,7 @@ import {
   Copy,
   Check,
   Scroll,
+  Star,
 } from 'lucide-react';
 import ParticleBg from '../components/ParticleBg';
 import LifeCore from '../components/LifeCore';
@@ -23,6 +24,7 @@ import Terminal from '../components/Terminal';
 import CountUp from '../components/CountUp';
 
 const GITEE_URL = 'https://gitee.com/metago/metagolifeform';
+const GITHUB_URL = 'https://github.com/metago-ai/metagolifeform';
 
 const features = [
   { icon: Brain, key: 'feature1', hue: 'life' as const },
@@ -33,7 +35,7 @@ const features = [
   { icon: Sparkles, key: 'feature6', hue: 'evo' as const },
 ];
 
-const platforms = ['Trae', 'Claude Code', 'Codex', 'Cursor', 'CodeBuddy', 'Qoder', 'ZCode'];
+const platforms = ['Trae', 'Claude Code', 'OpenAI Codex', 'Cursor', 'CodeBuddy', 'Qoder', 'ZCode'];
 
 const installLines = [
   'git clone https://gitee.com/metago/metagolifeform.git',
@@ -436,7 +438,15 @@ export default function Home() {
             {t('nav.repo')}
           </a>
           <a
-            href="mailto:metago@lifeform.dev"
+            href={GITHUB_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="btn-secondary inline-flex items-center gap-2"
+          >
+            <Star size={16} /> {t('nav.github')}
+          </a>
+          <a
+            href="mailto:researcher.yi@youfer.cn"
             className="btn-secondary inline-flex items-center gap-2"
           >
             <Mail size={16} /> {t('nav.contact')}
