@@ -12,8 +12,8 @@
     "lang": "EN"
   },
   "home": {
-    "heroTitle": "让 AI 助手升级为",
-    "heroTitleHighlight": "超级智能生命体",
+    "heroTitle": "让智能",
+    "heroTitleHighlight": "学会进化",
     "heroSubtitle": "8条公理 · 7条属性 · 6项协议 · 22个技能 · 支持7大平台 · MIT开源",
     "heroCtaInstall": "一键安装",
     "heroCtaDocs": "查看文档",
@@ -124,7 +124,7 @@
     "lifeformKit": {
       "title": "MetaGO Lifeform Kit",
       "tag": "规则注入",
-      "desc": "核心安装包：一键将 8 公理、7 属性、6 协议、22 技能注入 AI 助手的规则文件，原生适配 7 大平台。"
+      "desc": "核心安装包：一键将 8 公理、7 属性、6 协议、22 技能注入 Agent 的规则文件，原生适配 7 大平台。"
     },
     "mcpServer": {
       "title": "MetaGO MCP Server",
