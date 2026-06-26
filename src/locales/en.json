@@ -12,8 +12,8 @@
     "lang": "中"
   },
   "home": {
-    "heroTitle": "Upgrade AI Assistant to",
-    "heroTitleHighlight": "Super Intelligent Lifeform",
+    "heroTitle": "Teach Intelligence",
+    "heroTitleHighlight": "to Evolve",
     "heroSubtitle": "8 Axioms · 7 Attributes · 6 Protocols · 22 Skills · 7 Platforms · MIT Open Source",
     "heroCtaInstall": "Quick Install",
     "heroCtaDocs": "View Docs",
@@ -124,7 +124,7 @@
     "lifeformKit": {
       "title": "MetaGO Lifeform Kit",
       "tag": "Rule Injection",
-      "desc": "Core install kit: one command injects 8 axioms, 7 attributes, 6 protocols, and 22 skills into the AI assistant's rule files, with native support for 7 platforms."
+      "desc": "Core install kit: one command injects 8 axioms, 7 attributes, 6 protocols, and 22 skills into the Agent's rule files, with native support for 7 platforms."
     },
     "mcpServer": {
       "title": "MetaGO MCP Server",
