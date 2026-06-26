@@ -6,15 +6,17 @@
     "docs": "Docs",
     "enterprise": "Enterprise",
     "about": "About",
+    "manifesto": "Manifesto",
     "repo": "Gitee",
     "github": "GitHub",
     "contact": "Contact",
-    "lang": "中"
+    "lang": "中",
+    "npm": "NPM"
   },
   "home": {
     "heroTitle": "Teach Intelligence",
     "heroTitleHighlight": "to Evolve",
-    "heroSubtitle": "8 Axioms · 7 Attributes · 6 Protocols · 22 Skills · 7 Platforms · MIT Open Source",
+    "heroSubtitle": "From Agent to Lifeform",
     "heroCtaInstall": "Quick Install",
     "heroCtaDocs": "View Docs",
     "featuresTitle": "Why MetaGO?",
@@ -120,7 +122,7 @@
     "subtitle": "Making intelligence a lifeform, letting lifeform create value",
     "visionTitle": "Vision & Mission",
     "productMatrixTitle": "Product Matrix",
-    "productMatrixSubtitle": "Evolving from a single install package to a product matrix, covering both rule-injection and protocol-integration delivery",
+    "productMatrixSubtitle": "Evolved from a single Kit to an 8-product matrix, covering rule injection, protocol integration, dev tools, and ecosystem infrastructure",
     "lifeformKit": {
       "title": "MetaGO Lifeform Kit",
       "tag": "Rule Injection",
@@ -131,12 +133,43 @@
       "tag": "MCP Protocol",
       "desc": "Wraps 22 MetaGO capabilities as MCP tools, ready to use in any MCP client without modifying rule files."
     },
-    "roadmapTitle": "Roadmap"
+    "roadmapTitle": "Roadmap",
+    "devKit": {
+      "title": "MetaGO Dev Kit",
+      "tag": "Scenario Pack",
+      "desc": "Developer enhancement pack: 4 reused + 4 new skills, covering architecture design, code review, refactor suggestions, and security audit."
+    },
+    "cli": {
+      "title": "MetaGO CLI",
+      "tag": "Platform Tool",
+      "desc": "Cross-platform CLI tool to invoke 22 MetaGO skills in terminal and CI/CD pipelines."
+    },
+    "studio": {
+      "title": "MetaGO Studio",
+      "tag": "Platform Tool",
+      "desc": "Visual skill orchestration platform: drag-and-drop to compose skills into custom Kits with live preview and export."
+    },
+    "skillsSdk": {
+      "title": "MetaGO Skills SDK",
+      "tag": "Ecosystem",
+      "desc": "TypeScript SDK to develop, validate, and package custom MetaGO skills—build your own capability ecosystem."
+    },
+    "skillsHub": {
+      "title": "MetaGO Skills Hub",
+      "tag": "Ecosystem",
+      "desc": "Skills marketplace: browse, search, and discover official and community skills; copy SKILL.md in one click."
+    },
+    "certify": {
+      "title": "MetaGO Certify",
+      "tag": "Ecosystem",
+      "desc": "6-check skill certification system with Gold/Silver tiers, ensuring skill quality standards."
+    }
   },
   "footer": {
     "docs": "Docs",
     "repo": "Repository",
     "license": "MIT License",
-    "copyright": "© 2026 MetaGO Lightyear. All rights reserved."
+    "copyright": "© 2026 MetaGO Lightyear. All rights reserved.",
+    "npm": "NPM Package"
   }
 }
