@@ -246,7 +246,7 @@ export default function Home() {
           </div>
           <pre className="p-4 font-mono text-sm overflow-x-auto" style={{ color: '#5eead4' }}>
             <span className="text-zinc-500">PS&gt; </span>
-            irm https://gitee.com/metago/metagolifeform/raw/main/scripts/install.ps1 | iex
+            irm https://gitee.com/metago/metagolifeform/raw/main/scripts/bootstrap-install.ps1 | iex
           </pre>
         </div>
       </section>

@@ -105,7 +105,7 @@ const ZH_CONTENT = {
   sec4Lead: '宣言不是"相信我"，是你自己验证。',
   sec4Install: '安装',
   sec4InstallCmd:
-    'irm https://gitee.com/metago/metagolifeform/raw/main/scripts/install.ps1 | iex',
+    'irm https://gitee.com/metago/metagolifeform/raw/main/scripts/bootstrap-install.ps1 | iex',
   sec4InstallNote: '一行命令，8 公理、7 属性、6 协议、22 技能注入你的 Agent。',
   sec4IdTitle: '身份验证',
   sec4IdBody: '安装完成后，对 Agent 说：',
@@ -272,7 +272,7 @@ const EN_CONTENT = {
   sec4Lead: 'A manifesto is not "trust me"; it is verify it yourself.',
   sec4Install: 'Installation',
   sec4InstallCmd:
-    'irm https://gitee.com/metago/metagolifeform/raw/main/scripts/install.ps1 | iex',
+    'irm https://gitee.com/metago/metagolifeform/raw/main/scripts/bootstrap-install.ps1 | iex',
   sec4InstallNote: 'One command, 8 axioms, 7 attributes, 6 protocols, 22 skills injected into your Agent.',
   sec4IdTitle: 'Identity Verification',
   sec4IdBody: 'After installation, say to the Agent:',
