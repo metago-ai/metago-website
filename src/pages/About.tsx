@@ -196,7 +196,7 @@ function About() {
                 {t('about.lifeformKit.desc')}
               </p>
               <code className="text-xs font-mono text-accent-green break-all">
-                irm https://gitee.com/metago/metagolifeform/raw/main/scripts/install.ps1 | iex
+                irm https://gitee.com/metago/metagolifeform/raw/main/scripts/bootstrap-install.ps1 | iex
               </code>
             </div>
 
