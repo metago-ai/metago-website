@@ -8,6 +8,12 @@ import {
   ArrowRight,
   Box,
   Plug,
+  Code,
+  Terminal,
+  Palette,
+  Package,
+  Store,
+  Award,
 } from 'lucide-react';
 
 type PhaseStatus = 'done' | 'active' | 'planned';
@@ -104,6 +110,14 @@ function About() {
             className="inline-flex items-center gap-1 text-accent-blue hover:gap-2 transition-all"
           >
             GitHub <ExternalLink className="w-3.5 h-3.5" />
+          </a>
+          <a
+            href="https://www.npmjs.com/package/metago-lifeform"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1 text-accent-blue hover:gap-2 transition-all"
+          >
+            NPM <ExternalLink className="w-3.5 h-3.5" />
           </a>
         </div>
       ),
@@ -211,6 +225,150 @@ function About() {
               <code className="text-xs font-mono text-accent-green break-all">
                 npm install -g @metago-ai/mcp-server
               </code>
+            </div>
+
+            {/* 卡片3：Dev Kit 垂直场景包 */}
+            <div className="glass-card p-7">
+              <div className="flex items-center gap-3 mb-4">
+                <div
+                  className="w-10 h-10 flex items-center justify-center rounded-lg shrink-0"
+                  style={{
+                    background:
+                      'linear-gradient(135deg, rgba(0,212,255,0.15), rgba(168,85,247,0.15))',
+                  }}
+                >
+                  <Code className="w-5 h-5 text-accent-green" />
+                </div>
+                <h3 className="text-lg font-semibold text-white">
+                  {t('about.devKit.title')}
+                </h3>
+                <span className="ml-auto px-2.5 py-0.5 text-xs font-medium rounded-full border border-accent-green/40 bg-accent-green/10 text-accent-green">
+                  {t('about.devKit.tag')}
+                </span>
+              </div>
+              <p className="text-zinc-400 text-sm leading-relaxed">
+                {t('about.devKit.desc')}
+              </p>
+            </div>
+
+            {/* 卡片4：CLI 平台工具 */}
+            <div className="glass-card p-7">
+              <div className="flex items-center gap-3 mb-4">
+                <div
+                  className="w-10 h-10 flex items-center justify-center rounded-lg shrink-0"
+                  style={{
+                    background:
+                      'linear-gradient(135deg, rgba(0,212,255,0.15), rgba(168,85,247,0.15))',
+                  }}
+                >
+                  <Terminal className="w-5 h-5 text-accent-blue" />
+                </div>
+                <h3 className="text-lg font-semibold text-white">
+                  {t('about.cli.title')}
+                </h3>
+                <span className="ml-auto px-2.5 py-0.5 text-xs font-medium rounded-full border border-accent-blue/40 bg-accent-blue/10 text-accent-blue">
+                  {t('about.cli.tag')}
+                </span>
+              </div>
+              <p className="text-zinc-400 text-sm leading-relaxed">
+                {t('about.cli.desc')}
+              </p>
+            </div>
+
+            {/* 卡片5：Studio 平台工具 */}
+            <div className="glass-card p-7">
+              <div className="flex items-center gap-3 mb-4">
+                <div
+                  className="w-10 h-10 flex items-center justify-center rounded-lg shrink-0"
+                  style={{
+                    background:
+                      'linear-gradient(135deg, rgba(0,212,255,0.15), rgba(168,85,247,0.15))',
+                  }}
+                >
+                  <Palette className="w-5 h-5 text-accent-purple" />
+                </div>
+                <h3 className="text-lg font-semibold text-white">
+                  {t('about.studio.title')}
+                </h3>
+                <span className="ml-auto px-2.5 py-0.5 text-xs font-medium rounded-full border border-accent-purple/40 bg-accent-purple/10 text-accent-purple">
+                  {t('about.studio.tag')}
+                </span>
+              </div>
+              <p className="text-zinc-400 text-sm leading-relaxed">
+                {t('about.studio.desc')}
+              </p>
+            </div>
+
+            {/* 卡片6：Skills SDK 生态基础设施 */}
+            <div className="glass-card p-7">
+              <div className="flex items-center gap-3 mb-4">
+                <div
+                  className="w-10 h-10 flex items-center justify-center rounded-lg shrink-0"
+                  style={{
+                    background:
+                      'linear-gradient(135deg, rgba(0,212,255,0.15), rgba(168,85,247,0.15))',
+                  }}
+                >
+                  <Package className="w-5 h-5 text-accent-blue" />
+                </div>
+                <h3 className="text-lg font-semibold text-white">
+                  {t('about.skillsSdk.title')}
+                </h3>
+                <span className="ml-auto px-2.5 py-0.5 text-xs font-medium rounded-full border border-accent-blue/40 bg-accent-blue/10 text-accent-blue">
+                  {t('about.skillsSdk.tag')}
+                </span>
+              </div>
+              <p className="text-zinc-400 text-sm leading-relaxed">
+                {t('about.skillsSdk.desc')}
+              </p>
+            </div>
+
+            {/* 卡片7：Skills Hub 生态基础设施 */}
+            <div className="glass-card p-7">
+              <div className="flex items-center gap-3 mb-4">
+                <div
+                  className="w-10 h-10 flex items-center justify-center rounded-lg shrink-0"
+                  style={{
+                    background:
+                      'linear-gradient(135deg, rgba(0,212,255,0.15), rgba(168,85,247,0.15))',
+                  }}
+                >
+                  <Store className="w-5 h-5 text-accent-green" />
+                </div>
+                <h3 className="text-lg font-semibold text-white">
+                  {t('about.skillsHub.title')}
+                </h3>
+                <span className="ml-auto px-2.5 py-0.5 text-xs font-medium rounded-full border border-accent-green/40 bg-accent-green/10 text-accent-green">
+                  {t('about.skillsHub.tag')}
+                </span>
+              </div>
+              <p className="text-zinc-400 text-sm leading-relaxed">
+                {t('about.skillsHub.desc')}
+              </p>
+            </div>
+
+            {/* 卡片8：Certify 生态基础设施 */}
+            <div className="glass-card p-7">
+              <div className="flex items-center gap-3 mb-4">
+                <div
+                  className="w-10 h-10 flex items-center justify-center rounded-lg shrink-0"
+                  style={{
+                    background:
+                      'linear-gradient(135deg, rgba(0,212,255,0.15), rgba(168,85,247,0.15))',
+                  }}
+                >
+                  <Award className="w-5 h-5 text-accent-purple" />
+                </div>
+                <h3 className="text-lg font-semibold text-white">
+                  {t('about.certify.title')}
+                </h3>
+                <span className="ml-auto px-2.5 py-0.5 text-xs font-medium rounded-full border border-accent-purple/40 bg-accent-purple/10 text-accent-purple">
+                  {t('about.certify.tag')}
+                </span>
+              </div>
+              <p className="text-zinc-400 text-sm leading-relaxed">
+                {t('about.certify.desc')}
+              </p>
             </div>
           </div>
         </div>

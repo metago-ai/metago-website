@@ -7,6 +7,7 @@ import Platforms from './pages/Platforms';
 import Docs from './pages/Docs';
 import Enterprise from './pages/Enterprise';
 import About from './pages/About';
+import Manifesto from './pages/Manifesto';
 
 function NotFound() {
   return (
@@ -38,6 +39,7 @@ function App() {
             <Route path="/docs" element={<Docs />} />
             <Route path="/enterprise" element={<Enterprise />} />
             <Route path="/about" element={<About />} />
+            <Route path="/manifesto" element={<Manifesto />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>

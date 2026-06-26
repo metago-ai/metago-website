@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { Menu, X, GitFork, Star } from 'lucide-react';
+import { Menu, X, GitFork, Star, Package } from 'lucide-react';
 
 const navItems = [
   { key: 'nav.home', path: '/' },
@@ -10,10 +10,12 @@ const navItems = [
   { key: 'nav.docs', path: '/docs' },
   { key: 'nav.enterprise', path: '/enterprise' },
   { key: 'nav.about', path: '/about' },
+  { key: 'nav.manifesto', path: '/manifesto' },
 ];
 
 const GITEE_URL = 'https://gitee.com/metago/metagolifeform';
 const GITHUB_URL = 'https://github.com/metago-ai/metagolifeform';
+const NPM_URL = 'https://www.npmjs.com/package/metago-lifeform';
 
 export default function Navbar() {
   const { t, i18n } = useTranslation();
@@ -124,6 +126,14 @@ export default function Navbar() {
           >
             <Star size={15} /> {t('nav.github')}
           </a>
+          <a
+            href={NPM_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="flex items-center gap-2 px-3.5 py-2 rounded-lg border border-white/10 text-sm text-zinc-200 transition-all duration-300 hover:border-evo-bright/60 hover:text-evo-bright hover:bg-evo-bright/5"
+          >
+            <Package size={15} /> {t('nav.npm')}
+          </a>
           <button
             onClick={toggleLang}
             className="px-3.5 py-2 rounded-lg border border-white/10 text-sm text-zinc-200 transition-all duration-300 hover:border-evo-bright/60 hover:text-evo-bright hover:bg-evo-bright/5"
@@ -181,6 +191,14 @@ export default function Navbar() {
                 className="btn-secondary text-sm"
               >
                 {t('nav.github')}
+              </a>
+              <a
+                href={NPM_URL}
+                target="_blank"
+                rel="noreferrer"
+                className="btn-secondary text-sm"
+              >
+                {t('nav.npm')}
               </a>
               <button onClick={toggleLang} className="btn-secondary text-sm">
                 {t('nav.lang')}

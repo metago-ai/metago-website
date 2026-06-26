@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { GitFork, ExternalLink, Mail } from 'lucide-react';
+import { GitFork, ExternalLink, Mail, Package } from 'lucide-react';
 
 const GITEE_URL = 'https://gitee.com/metago/metagolifeform';
 const GITHUB_URL = 'https://github.com/metago-ai/metagolifeform';
+const NPM_URL = 'https://www.npmjs.com/package/metago-lifeform';
 
 export default function Footer() {
   const { t } = useTranslation();
@@ -96,6 +97,16 @@ export default function Footer() {
                   className="flex items-center gap-2 hover:text-gov-bright transition-colors"
                 >
                   <GitFork size={14} /> GitHub <ExternalLink size={11} />
+                </a>
+              </li>
+              <li>
+                <a
+                  href={NPM_URL}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center gap-2 hover:text-evo-bright transition-colors"
+                >
+                  <Package size={14} /> {t('footer.npm')} <ExternalLink size={11} />
                 </a>
               </li>
               <li>
