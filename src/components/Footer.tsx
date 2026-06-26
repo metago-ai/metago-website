@@ -24,7 +24,7 @@ export default function Footer() {
           {/* 品牌 */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <img src="./metago-logo.png" alt="MetaGO" className="h-7" />
+              <img src="/metago-logo.png" alt="MetaGO" className="h-7" />
               <div className="text-2xl font-display font-bold gradient-text">
                 MetaGO
               </div>

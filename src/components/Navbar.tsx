@@ -71,7 +71,7 @@ export default function Navbar() {
       >
         <Link to="/" className="flex items-center group">
           <img
-            src="./metago-logo.png"
+            src="/metago-logo.png"
             alt="MetaGO"
             className="h-8 transition-transform duration-300 group-hover:scale-105"
           />
