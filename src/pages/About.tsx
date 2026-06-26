@@ -46,7 +46,7 @@ const phases: Phase[] = [
     title: '第三阶段',
     status: 'active',
     statusLabel: '进行中',
-    desc: '官网上线 + MCP Server 发布 + 单一安装包向产品矩阵演进',
+    desc: '官网上线+多平台适配+NPM发布准备',
   },
   {
     emoji: '📋',
