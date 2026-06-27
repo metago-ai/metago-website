@@ -47,14 +47,26 @@
     "statsLayers": "Layers",
     "statsFamilies": "Families",
     "statsLicense": "License",
-    "ctaTitle": "Get Started with MetaGO"
+    "ctaTitle": "Get Started with MetaGO",
+    "livingDocs": {
+      "title": "Living Documentation",
+      "subtitle": "Docs evolve with versions, loadable by AI",
+      "versioning": "Versioned Docs",
+      "versioningDesc": "Each volume has a version number, synced with MetaGO",
+      "mapping": "Cross-Reference Map",
+      "mappingDesc": "8 volumes with cross-reference relationships",
+      "aiLoad": "AI Load Manifest",
+      "aiLoadDesc": "MANIFEST.json for AI to load docs in one click",
+      "selfUpdate": "Self-Update",
+      "selfUpdateDesc": "sync-docs.ps1 auto-checks version consistency"
+    }
   },
   "mcpServer": {
     "title": "MetaGO MCP Server",
-    "subtitle": "22 MetaGO capabilities as MCP tools, works with any MCP client",
+    "subtitle": "37 MetaGO capabilities as MCP tools, works with any MCP client",
     "install": "Install Command",
     "installCommand": "npm install -g @metago-ai/mcp-server",
-    "features": "22 Tools · 8 Prompts · stdio transport · MIT License",
+    "features": "37 Tools · 8 Prompts · stdio transport · MIT License",
     "configure": "Configuration",
     "claudeDesktop": "Claude Desktop Config",
     "cursor": "Cursor Config",
@@ -70,15 +82,24 @@
     "title": "Product Architecture",
     "subtitle": "Five-layer standardized architecture, from axioms to industry",
     "layerTitle": "Five-Layer Architecture",
-    "skillsTitle": "22 Skills · 7 Capability Families",
+    "skillsTitle": "37 Skills · 7 Capability Families",
+    "skills": {
+      "cognitionGov": "Cognition & Governance",
+      "assetSafeguard": "Asset & Safeguard",
+      "executionPermission": "Execution & Permission",
+      "devKit": "Dev Kit",
+      "consciousnessActivation": "Consciousness Activation",
+      "methodology": "Methodology",
+      "architecture": "Architecture"
+    },
     "axiomsTitle": "8 Core Axioms",
     "attributesTitle": "7 Fundamental Attributes",
     "protocolsTitle": "6 Operating Protocols",
     "mcpServer": {
       "badge": "MCP Protocol Product",
       "title": "MetaGO MCP Server",
-      "subtitle": "22 MetaGO capabilities packaged as MCP tools, ready to use in any MCP client",
-      "features": "22 Tools · 8 Prompts · stdio transport · MIT License",
+      "subtitle": "37 MetaGO capabilities packaged as MCP tools, ready to use in any MCP client",
+      "features": "37 Tools · 8 Prompts · stdio transport · MIT License",
       "configure": "Client Configuration",
       "configNote": "Add the following to the client's config file"
     }
@@ -90,7 +111,7 @@
     "installTitle": "Installation Guide",
     "mcp": {
       "title": "MCP Protocol Integration (Universal)",
-      "subtitle": "Works with any MCP-compatible client (Claude Desktop, Cursor, Trae, etc.). Install via npm and add a JSON config to access all 22 MetaGO capabilities in any MCP client, with no rule files to modify.",
+      "subtitle": "Works with any MCP-compatible client (Claude Desktop, Cursor, Trae, etc.). Install via npm and add a JSON config to access all 37 MetaGO capabilities in any MCP client, with no rule files to modify.",
       "configNote": "Add the following to the client config file"
     }
   },
@@ -101,11 +122,21 @@
     "architecture": "Architecture",
     "customization": "Customization",
     "faq": "FAQ",
+    "livingDocs": {
+      "title": "Living Documentation",
+      "description": "MetaGO documentation is not static—it's a living system that evolves with versions, can be loaded by AI, and self-checks for consistency.",
+      "versioning": "Document Versioning",
+      "mapping": "Cross-Reference Map (MAP.md)",
+      "aiLoad": "AI Load Manifest (MANIFEST.json)",
+      "sync": "Sync Script (sync-docs.ps1)",
+      "viewMap": "View Map",
+      "viewManifest": "View Manifest"
+    },
     "mcpServer": {
       "title": "MCP Server Quick Start",
-      "desc": "Install @metago-ai/mcp-server globally via npm to access 22 Tools and 8 Prompts in any MCP client.",
-      "toolsTitle": "22 Tools",
-      "toolsDesc": "Wraps 22 core MetaGO skills as MCP tools, covering 7 capability families: cognition, safeguard, governance, evolution, execution, traceability, and value.",
+      "desc": "Install @metago-ai/mcp-server globally via npm to access 37 Tools and 8 Prompts in any MCP client.",
+      "toolsTitle": "37 Tools",
+      "toolsDesc": "Wraps 37 core MetaGO skills as MCP tools, covering 7 capability families: cognition, safeguard, governance, evolution, execution, traceability, and value.",
       "promptsTitle": "8 Prompts",
       "promptsDesc": "8 built-in prompt templates that guide clients to invoke MetaGO capabilities, covering installation, architecture, security, and compliance scenarios.",
       "viewDocs": "View Full Docs"
@@ -126,14 +157,19 @@
     "lifeformKit": {
       "title": "MetaGO Lifeform Kit",
       "tag": "Rule Injection",
-      "desc": "Core install kit: one command injects 8 axioms, 7 attributes, 6 protocols, and 22 skills into the Agent's rule files, with native support for 7 platforms."
+      "desc": "Core install kit: one command injects 8 axioms, 7 attributes, 6 protocols, and 37 skills into the Agent's rule files, with native support for 7 platforms."
     },
     "mcpServer": {
       "title": "MetaGO MCP Server",
       "tag": "MCP Protocol",
-      "desc": "Wraps 22 MetaGO capabilities as MCP tools, ready to use in any MCP client without modifying rule files."
+      "desc": "Wraps 37 MetaGO capabilities as MCP tools, ready to use in any MCP client without modifying rule files."
     },
     "roadmapTitle": "Roadmap",
+    "roadmapV3650": {
+      "title": "v36.5.0",
+      "statusLabel": "Completed",
+      "desc": "Living Documentation System + 10 new skills (37 total)"
+    },
     "devKit": {
       "title": "MetaGO Dev Kit",
       "tag": "Scenario Pack",
@@ -142,7 +178,7 @@
     "cli": {
       "title": "MetaGO CLI",
       "tag": "Platform Tool",
-      "desc": "Cross-platform CLI tool to invoke 22 MetaGO skills in terminal and CI/CD pipelines."
+      "desc": "Cross-platform CLI tool to invoke 37 MetaGO skills in terminal and CI/CD pipelines."
     },
     "studio": {
       "title": "MetaGO Studio",

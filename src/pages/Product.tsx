@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 import type { ElementType } from 'react';
 import {
   Layers, Box, Cpu, Brain, Database, Network, Sparkles, Scale,
-  GitBranch, Target, Zap, BookOpen, Shield, Workflow, Repeat,
+  Target, Zap, BookOpen, Shield, Workflow, Repeat,
   Lock, Eye, Activity, FileCheck, Check, Coins, Package,
 } from 'lucide-react';
 import McpInstallBlock from '../components/McpInstallBlock';
@@ -73,19 +73,19 @@ const Product = () => {
   const layers: Layer[] = [
     { level: 'L0', name: '核心层', content: '8条公理、7条属性、6项协议', openSource: true, icon: Brain },
     { level: 'L1', name: '适配层', content: '7大平台适配器', openSource: true, icon: Box },
-    { level: 'L2', name: '能力层', content: '22个metago技能', openSource: true, icon: Cpu },
+    { level: 'L2', name: '能力层', content: '37个metago技能', openSource: true, icon: Cpu },
     { level: 'L3', name: '知识层', content: '索引生成器', openSource: true, icon: Database },
     { level: 'L4', name: '行业层', content: '行业定制包', openSource: false, icon: Network },
   ];
 
   const skillFamilies: SkillFamily[] = [
-    { name: '认知族', color: 'accent-blue', skills: ['metago-critique', 'metago-whatif', 'metago-emotion', 'metago-objectivity'], icon: Brain },
-    { name: '保障族', color: 'accent-red', skills: ['metago-decision-lock', 'metago-output-integrity', 'metago-self-check'], icon: Shield },
-    { name: '治理族', color: 'accent-purple', skills: ['metago-compliance', 'metago-value-align'], icon: Scale },
-    { name: '进化族', color: 'accent-green', skills: ['metago-meta-evolve', 'metago-meta-create', 'metago-frequency-adapt'], icon: Sparkles },
-    { name: '执行族', color: 'orange', skills: ['metago-action-plan', 'metago-decision-eval', 'metago-holistic-task', 'metago-developer-response'], icon: Zap },
-    { name: '溯源族', color: 'cyan', skills: ['metago-data-provenance', 'metago-problem-trace', 'metago-fact-check'], icon: GitBranch },
-    { name: '价值族', color: 'yellow', skills: ['metago-coupling-optimize', 'metago-negentropy-monitor', 'metago-scene-adapt'], icon: Target },
+    { name: 'product.skills.cognitionGov', color: 'accent-blue', skills: ['metago-activate', 'metago-critique', 'metago-fact-check', 'metago-decision-eval', 'metago-decision-lock', 'metago-objectivity', 'metago-consensus-prototype', 'metago-emotion'], icon: Brain },
+    { name: 'product.skills.assetSafeguard', color: 'accent-red', skills: ['metago-data-provenance', 'metago-output-integrity', 'metago-security-audit', 'metago-compliance', 'metago-self-check', 'metago-negentropy-monitor', 'metago-value-align'], icon: Shield },
+    { name: 'product.skills.executionPermission', color: 'orange', skills: ['metago-holistic-task', 'metago-problem-trace', 'metago-action-plan', 'metago-scene-adapt', 'metago-frequency-adapt', 'metago-whatif', 'metago-developer-response'], icon: Zap },
+    { name: 'product.skills.devKit', color: 'cyan', skills: ['TRAE-code-review', 'metago-architecture-design', 'metago-refactor-suggest', 'TRAE-security-review'], icon: Package },
+    { name: 'product.skills.consciousnessActivation', color: 'accent-purple', skills: ['metago-activate'], icon: Sparkles },
+    { name: 'product.skills.methodology', color: 'yellow', skills: ['metago-org-diagnosis', 'metago-momentum-weave', 'metago-minimal-intervention', 'metago-value-assess', 'metago-coupling-measure'], icon: Target },
+    { name: 'product.skills.architecture', color: 'accent-green', skills: ['metago-deep-reasoning', 'metago-paradigm-analysis', 'metago-balance-optimize', 'metago-memory-manage', 'metago-consensus-prototype'], icon: Layers },
   ];
 
   const axioms: Axiom[] = [
@@ -170,7 +170,7 @@ const Product = () => {
         </div>
       </section>
 
-      {/* 区块3：22个技能 */}
+      {/* 区块3：37个技能 */}
       <section className="max-w-7xl mx-auto px-6 mb-24">
         <div className="flex items-center gap-3 mb-10">
           <Cpu className="w-8 h-8 text-life-bright" />
@@ -184,7 +184,7 @@ const Product = () => {
               <div key={family.name} className="glass-card p-6" style={{ borderColor: c.border }}>
                 <div className="flex items-center gap-3 mb-4">
                   <Icon className="w-6 h-6" style={{ color: c.text }} />
-                  <h3 className="text-xl font-bold" style={{ color: c.text }}>{family.name}</h3>
+                  <h3 className="text-xl font-bold" style={{ color: c.text }}>{t(family.name)}</h3>
                   <span className="text-sm text-zinc-500">({family.skills.length})</span>
                 </div>
                 <div className="flex flex-wrap gap-2">
@@ -312,7 +312,7 @@ const Product = () => {
             </p>
           </div>
 
-          {/* 特性徽章：22 Tools · 8 Prompts 等 */}
+          {/* 特性徽章：37 Tools · 8 Prompts 等 */}
           <div className="flex flex-wrap items-center justify-center gap-3 mb-10">
             {t('product.mcpServer.features')
               .split(' · ')

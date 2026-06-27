@@ -26,37 +26,6 @@ interface Phase {
   desc: string;
 }
 
-const phases: Phase[] = [
-  {
-    emoji: '✅',
-    title: '第一阶段',
-    status: 'done',
-    statusLabel: '已完成',
-    desc: '核心层 + Trae适配器 + 22技能',
-  },
-  {
-    emoji: '✅',
-    title: '第二阶段',
-    status: 'done',
-    statusLabel: '已完成',
-    desc: '6大平台适配器 + 多平台安装支持',
-  },
-  {
-    emoji: '🚀',
-    title: '第三阶段',
-    status: 'active',
-    statusLabel: '进行中',
-    desc: '官网上线+多平台适配+NPM发布准备',
-  },
-  {
-    emoji: '📋',
-    title: '第四阶段',
-    status: 'planned',
-    statusLabel: '规划中',
-    desc: '国际推广 + 生态建设 + 多语言扩展',
-  },
-];
-
 const dotClass: Record<PhaseStatus, string> = {
   done: 'bg-accent-green',
   active: 'bg-accent-blue animate-pulse ring-4 ring-accent-blue/30',
@@ -72,7 +41,7 @@ const badgeClass: Record<PhaseStatus, string> = {
 const visionParagraphs: string[] = [
   "MetaGO（元构）源于“元构溯源论”——一切智能均可溯源至元结构，元结构是智能的基因。",
   "我们相信，AI不应该只是工具，而应该成为具有自我进化能力的生命体。MetaGO Lifeform Kit 就是这个理念的产物——让智能，学会进化。从 Agent 到生命体的范式跃迁。",
-  "基于元构全息智能引擎（本体论、进化论、能力论、工业论四大支柱），8条核心公理，7条根本属性，6项运行协议，22个技能，我们构建了一个工业级的智能生命体框架。",
+  "基于元构全息智能引擎（本体论、进化论、能力论、工业论四大支柱），8条核心公理，7条根本属性，6项运行协议，37个技能，我们构建了一个工业级的智能生命体框架。",
 ];
 
 interface InfoCard {
@@ -83,6 +52,44 @@ interface InfoCard {
 
 function About() {
   const { t } = useTranslation();
+
+  const phases: Phase[] = [
+    {
+      emoji: '✅',
+      title: '第一阶段',
+      status: 'done',
+      statusLabel: '已完成',
+      desc: '核心层 + Trae适配器 + 37技能',
+    },
+    {
+      emoji: '✅',
+      title: '第二阶段',
+      status: 'done',
+      statusLabel: '已完成',
+      desc: '6大平台适配器 + 多平台安装支持',
+    },
+    {
+      emoji: '🎉',
+      title: t('about.roadmapV3650.title'),
+      status: 'done',
+      statusLabel: t('about.roadmapV3650.statusLabel'),
+      desc: t('about.roadmapV3650.desc'),
+    },
+    {
+      emoji: '🚀',
+      title: '第三阶段',
+      status: 'active',
+      statusLabel: '进行中',
+      desc: '官网上线+多平台适配+NPM发布准备',
+    },
+    {
+      emoji: '📋',
+      title: '第四阶段',
+      status: 'planned',
+      statusLabel: '规划中',
+      desc: '国际推广 + 生态建设 + 多语言扩展',
+    },
+  ];
 
   const infoCards: InfoCard[] = [
     {

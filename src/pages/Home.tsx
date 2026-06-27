@@ -17,6 +17,11 @@ import {
   Check,
   Scroll,
   Star,
+  GitBranch,
+  Network,
+  FileJson,
+  RefreshCw,
+  BookOpen,
 } from 'lucide-react';
 import ParticleBg from '../components/ParticleBg';
 import LifeCore from '../components/LifeCore';
@@ -36,6 +41,13 @@ const features = [
 ];
 
 const platforms = ['Trae', 'Claude Code', 'OpenAI Codex', 'Cursor', 'CodeBuddy', 'Qoder', 'ZCode'];
+
+const livingDocsFeatures = [
+  { icon: GitBranch, key: 'versioning', hue: 'life' as const },
+  { icon: Network, key: 'mapping', hue: 'evo' as const },
+  { icon: FileJson, key: 'aiLoadable', hue: 'gov' as const },
+  { icon: RefreshCw, key: 'selfUpdate', hue: 'life' as const },
+];
 
 const installLines = [
   'git clone https://gitee.com/metago/metagolifeform.git',
@@ -129,7 +141,7 @@ export default function Home() {
     { end: 8, label: t('home.statsAxioms') },
     { end: 7, label: t('home.statsAttributes') },
     { end: 6, label: t('home.statsProtocols') },
-    { end: 22, label: t('home.statsSkills') },
+    { end: 37, label: t('home.statsSkills') },
   ];
 
   const row2: Metric[] = [
@@ -149,7 +161,7 @@ export default function Home() {
           <div className="lg:col-span-7 animate-blur-in">
             <div className="life-badge mb-6">
               <span className="inline-block w-1.5 h-1.5 rounded-full bg-life-bright animate-pulse" />
-              {t('home.heroBadge') !== 'home.heroBadge' ? t('home.heroBadge') : 'AI Lifeform · v36.4'}
+              {t('home.heroBadge') !== 'home.heroBadge' ? t('home.heroBadge') : 'AI Lifeform · v36.5.0'}
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight font-display">
               {t('home.heroTitle')}{' '}
@@ -219,6 +231,59 @@ export default function Home() {
       </section>
 
       <div className="hex-divider max-w-5xl mx-auto" />
+
+      {/* ===== Living Docs System：活文档系统 ===== */}
+      <section className="max-w-7xl mx-auto px-6 py-24">
+        <div className="text-center mb-14">
+          <div className="life-badge mb-4">
+            <BookOpen size={12} /> {t('home.livingDocs.badge')}
+          </div>
+          <h2 className="text-3xl md:text-4xl font-bold mb-3 font-display">
+            <span className="gradient-text">{t('home.livingDocs.title')}</span>
+          </h2>
+          <p className="text-text-secondary max-w-2xl mx-auto">
+            {t('home.livingDocs.subtitle')}
+          </p>
+          {/* 100万字理论体系亮点 */}
+          <div className="inline-flex items-center gap-3 mt-6 px-6 py-3 rounded-full border border-life-bright/30 bg-life-bright/5">
+            <span
+              className="text-3xl md:text-4xl font-bold gradient-text font-display"
+              style={{ animation: 'heartbeat 3s ease-in-out infinite' }}
+            >
+              <CountUp end={100} />万+
+            </span>
+            <span className="text-sm text-text-secondary">{t('home.statsTheoryWords')}</span>
+          </div>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {livingDocsFeatures.map(({ icon: Icon, key, hue }, idx) => {
+            const color = hueColor(hue);
+            return (
+              <div
+                key={key}
+                className="glass-card p-6 group animate-slide-up"
+                style={{ animationDelay: `${idx * 0.08}s` }}
+              >
+                <div
+                  className="w-12 h-12 rounded-xl flex items-center justify-center mb-4 transition-all duration-300 group-hover:scale-110"
+                  style={{
+                    background: `linear-gradient(135deg, ${color}22, ${color}11)`,
+                    boxShadow: `inset 0 0 0 1px ${color}33`,
+                  }}
+                >
+                  <Icon style={{ color }} size={22} />
+                </div>
+                <h3 className="text-base font-semibold mb-2 font-display">
+                  {t(`home.livingDocs.${key}Title`)}
+                </h3>
+                <p className="text-sm text-text-secondary leading-relaxed">
+                  {t(`home.livingDocs.${key}Desc`)}
+                </p>
+              </div>
+            );
+          })}
+        </div>
+      </section>
 
       {/* ===== Platforms ===== */}
       <section className="max-w-7xl mx-auto px-6 py-24">

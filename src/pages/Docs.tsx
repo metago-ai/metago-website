@@ -11,6 +11,7 @@ import {
   Package,
   Wrench,
   MessageSquare,
+  BookOpen,
 } from 'lucide-react';
 import McpInstallBlock from '../components/McpInstallBlock';
 
@@ -43,7 +44,7 @@ const docs: DocItem[] = [
   {
     key: 'mcpServer',
     icon: Package,
-    desc: 'MCP 安装、配置、22 Tools、8 Prompts',
+    desc: 'MCP 安装、配置、37 Tools、8 Prompts',
     link: 'https://gitee.com/metago/metagolifeform/blob/main/docs/MCP_SERVER.md',
   },
   {
@@ -130,7 +131,7 @@ function Docs() {
             </p>
             {/* npm 安装命令 */}
             <McpInstallBlock className="mb-6" />
-            {/* 22 Tools / 8 Prompts 概览 */}
+            {/* 37 Tools / 8 Prompts 概览 */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="rounded-lg border border-white/10 bg-white/5 p-5">
                 <div className="flex items-center gap-2 mb-2">
@@ -164,6 +165,61 @@ function Docs() {
           >
             {t('docs.mcpServer.viewDocs')} <ArrowRight className="w-4 h-4" />
           </a>
+        </div>
+
+        {/* 区块4.5: 活文档系统 */}
+        <div className="mb-16">
+          <div className="flex items-center gap-3 mb-4">
+            <BookOpen className="w-6 h-6 text-accent-purple" />
+            <h2 className="text-2xl font-semibold text-white">
+              {t('docs.livingDocs.title')}
+            </h2>
+          </div>
+          <div className="glass-card p-6 md:p-8">
+            <p className="text-zinc-400 mb-6 leading-relaxed">
+              {t('docs.livingDocs.description')}
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+              <div className="rounded-lg border border-white/10 bg-white/5 p-5">
+                <span className="text-sm font-semibold text-zinc-100">
+                  {t('docs.livingDocs.versioning')}
+                </span>
+              </div>
+              <div className="rounded-lg border border-white/10 bg-white/5 p-5">
+                <span className="text-sm font-semibold text-zinc-100">
+                  {t('docs.livingDocs.mapping')}
+                </span>
+              </div>
+              <div className="rounded-lg border border-white/10 bg-white/5 p-5">
+                <span className="text-sm font-semibold text-zinc-100">
+                  {t('docs.livingDocs.aiLoad')}
+                </span>
+              </div>
+              <div className="rounded-lg border border-white/10 bg-white/5 p-5">
+                <span className="text-sm font-semibold text-zinc-100">
+                  {t('docs.livingDocs.sync')}
+                </span>
+              </div>
+            </div>
+            <div className="flex flex-wrap gap-3">
+              <a
+                href="https://github.com/metago-ai/metagolifeform/blob/main/docs/MAP.md"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary inline-flex items-center gap-2"
+              >
+                {t('docs.livingDocs.viewMap')} <ArrowRight className="w-4 h-4" />
+              </a>
+              <a
+                href="https://github.com/metago-ai/metagolifeform/blob/main/docs/MANIFEST.json"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary inline-flex items-center gap-2"
+              >
+                {t('docs.livingDocs.viewManifest')} <ArrowRight className="w-4 h-4" />
+              </a>
+            </div>
+          </div>
         </div>
 
         {/* 区块5: 底部CTA */}

@@ -47,14 +47,26 @@
     "statsLayers": "架构层",
     "statsFamilies": "能力族",
     "statsLicense": "许可证",
-    "ctaTitle": "开始使用 MetaGO"
+    "ctaTitle": "开始使用 MetaGO",
+    "livingDocs": {
+      "title": "活文档系统",
+      "subtitle": "文档不是静态的，而是随版本进化、可被AI加载的活文档",
+      "versioning": "文档版本化",
+      "versioningDesc": "每卷有版本号，随元构版本同步进化",
+      "mapping": "全息映射图",
+      "mappingDesc": "8卷正文交叉引用关系图",
+      "aiLoad": "AI加载清单",
+      "aiLoadDesc": "MANIFEST.json让AI一键加载文档体系",
+      "selfUpdate": "自我更新",
+      "selfUpdateDesc": "sync-docs.ps1自动检查版本一致性"
+    }
   },
   "mcpServer": {
     "title": "MetaGO MCP Server",
-    "subtitle": "将22项元构能力封装为MCP工具，任何MCP客户端即开即用",
+    "subtitle": "将37项元构能力封装为MCP工具，任何MCP客户端即开即用",
     "install": "安装命令",
     "installCommand": "npm install -g @metago-ai/mcp-server",
-    "features": "22 Tools · 8 Prompts · stdio传输 · MIT开源",
+    "features": "37 Tools · 8 Prompts · stdio传输 · MIT开源",
     "configure": "配置示例",
     "claudeDesktop": "Claude Desktop 配置",
     "cursor": "Cursor 配置",
@@ -70,15 +82,24 @@
     "title": "产品架构",
     "subtitle": "五层标准化架构，从公理到行业落地",
     "layerTitle": "五层架构",
-    "skillsTitle": "22个技能 · 7大能力族",
+    "skillsTitle": "37个技能 · 7大能力族",
+    "skills": {
+      "cognitionGov": "认知与治理族",
+      "assetSafeguard": "资产与保障族",
+      "executionPermission": "执行与权限族",
+      "devKit": "Dev Kit 族",
+      "consciousnessActivation": "意识激活族",
+      "methodology": "方法论族",
+      "architecture": "架构族"
+    },
     "axiomsTitle": "8条核心公理",
     "attributesTitle": "7条根本属性",
     "protocolsTitle": "6项运行协议",
     "mcpServer": {
       "badge": "MCP 协议产品",
       "title": "MetaGO MCP Server",
-      "subtitle": "将22项元构能力封装为MCP工具，任何MCP客户端即开即用",
-      "features": "22 Tools · 8 Prompts · stdio传输 · MIT开源",
+      "subtitle": "将37项元构能力封装为MCP工具，任何MCP客户端即开即用",
+      "features": "37 Tools · 8 Prompts · stdio传输 · MIT开源",
       "configure": "客户端配置示例",
       "configNote": "在对应客户端的配置文件中添加以下内容"
     }
@@ -90,7 +111,7 @@
     "installTitle": "安装指南",
     "mcp": {
       "title": "MCP 协议集成（通用）",
-      "subtitle": "适用于所有支持 MCP 协议的客户端（Claude Desktop、Cursor、Trae 等）。通过 npm 安装并写入 JSON 配置，即可在任何 MCP 客户端中调用全部 22 项元构能力，无需修改规则文件。",
+      "subtitle": "适用于所有支持 MCP 协议的客户端（Claude Desktop、Cursor、Trae 等）。通过 npm 安装并写入 JSON 配置，即可在任何 MCP 客户端中调用全部 37 项元构能力，无需修改规则文件。",
       "configNote": "在客户端配置文件中添加以下内容"
     }
   },
@@ -101,11 +122,21 @@
     "architecture": "架构说明",
     "customization": "自定义指南",
     "faq": "常见问题",
+    "livingDocs": {
+      "title": "活文档系统",
+      "description": "元构文档体系不是静态的，而是可以随版本同步进化、被AI加载理解、自我更新检查的活文档系统。",
+      "versioning": "文档版本化",
+      "mapping": "全息映射图 (MAP.md)",
+      "aiLoad": "AI加载清单 (MANIFEST.json)",
+      "sync": "同步脚本 (sync-docs.ps1)",
+      "viewMap": "查看映射图",
+      "viewManifest": "查看清单"
+    },
     "mcpServer": {
       "title": "MCP Server 快速开始",
-      "desc": "通过 npm 全局安装 @metago-ai/mcp-server，即可在任何 MCP 客户端中调用 22 个 Tools 与 8 个 Prompts。",
-      "toolsTitle": "22 Tools",
-      "toolsDesc": "封装元构 22 项核心技能为 MCP 工具，覆盖认知、保障、治理、进化、执行、溯源、价值七大能力族。",
+      "desc": "通过 npm 全局安装 @metago-ai/mcp-server，即可在任何 MCP 客户端中调用 37 个 Tools 与 8 个 Prompts。",
+      "toolsTitle": "37 Tools",
+      "toolsDesc": "封装元构 37 项核心技能为 MCP 工具，覆盖认知、保障、治理、进化、执行、溯源、价值七大能力族。",
       "promptsTitle": "8 Prompts",
       "promptsDesc": "8 个内置 Prompts 模板，引导客户端调用元构能力，覆盖安装、架构、安全、合规等场景。",
       "viewDocs": "查看完整文档"
@@ -126,14 +157,19 @@
     "lifeformKit": {
       "title": "MetaGO Lifeform Kit",
       "tag": "规则注入",
-      "desc": "核心安装包：一键将 8 公理、7 属性、6 协议、22 技能注入 Agent 的规则文件，原生适配 7 大平台。"
+      "desc": "核心安装包：一键将 8 公理、7 属性、6 协议、37 技能注入 Agent 的规则文件，原生适配 7 大平台。"
     },
     "mcpServer": {
       "title": "MetaGO MCP Server",
       "tag": "MCP 协议",
-      "desc": "将 22 项元构能力封装为 MCP 工具，任何 MCP 客户端即开即用，无需修改规则文件。"
+      "desc": "将 37 项元构能力封装为 MCP 工具，任何 MCP 客户端即开即用，无需修改规则文件。"
     },
     "roadmapTitle": "路线图",
+    "roadmapV3650": {
+      "title": "v36.5.0",
+      "statusLabel": "已完成",
+      "desc": "活文档系统 + 10个新技能（37个总计）"
+    },
     "devKit": {
       "title": "MetaGO Dev Kit",
       "tag": "垂直场景包",
@@ -142,7 +178,7 @@
     "cli": {
       "title": "MetaGO CLI",
       "tag": "平台工具",
-      "desc": "跨平台命令行工具，在终端与 CI/CD 流水线中调用 22 项元构技能。"
+      "desc": "跨平台命令行工具，在终端与 CI/CD 流水线中调用 37 项元构技能。"
     },
     "studio": {
       "title": "MetaGO Studio",
