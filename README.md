@@ -1,9 +1,9 @@
-# MetaGO Lifeform Kit — 官方网站
+﻿# MetaGO Lifeform Kit — 官方网站
 
 > 元构超级智能生命体标准安装包的官方网站与文档门户。
 
 [![Deploy](https://img.shields.io/badge/deploy-CloudBase-blue)](https://metago-d6gfw1e4rf2a5bcad-1257074864.tcloudbaseapp.com/)
-[![Version](https://img.shields.io/badge/version-v36.3.0-blueviolet)](https://gitee.com/metago/metagolifeform/releases)
+[![Version](https://img.shields.io/badge/version-v36.4.12-blueviolet)](https://gitee.com/metago/metagolifeform/releases)
 [![License](https://img.shields.io/badge/license-MIT-success)](./LICENSE)
 
 ## 简介
