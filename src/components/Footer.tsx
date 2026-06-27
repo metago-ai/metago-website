@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { GitFork, ExternalLink, Mail, Package } from 'lucide-react';
+import logoUrl from '../assets/metago-logo.png';
 
 const GITEE_URL = 'https://gitee.com/metago/metagolifeform';
 const GITHUB_URL = 'https://github.com/metago-ai/metagolifeform';
@@ -25,7 +26,7 @@ export default function Footer() {
           {/* 品牌 */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <img src="/metago-logo.png" alt="MetaGO" className="h-7" />
+              <img src={logoUrl} alt="MetaGO" className="h-7" />
               <div className="text-2xl font-display font-bold gradient-text">
                 MetaGO
               </div>

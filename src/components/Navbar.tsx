@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Menu, X, GitFork, Star, Package } from 'lucide-react';
+import logoUrl from '../assets/metago-logo.png';
 
 const navItems = [
   { key: 'nav.home', path: '/' },
@@ -73,7 +74,7 @@ export default function Navbar() {
       >
         <Link to="/" className="flex items-center group">
           <img
-            src="/metago-logo.png"
+            src={logoUrl}
             alt="MetaGO"
             className="h-8 transition-transform duration-300 group-hover:scale-105"
           />
