@@ -22,6 +22,13 @@ import {
   FileJson,
   RefreshCw,
   BookOpen,
+  Cpu,
+  Dna,
+  Atom,
+  Scale,
+  GitCommit,
+  Boxes,
+  Layers,
 } from 'lucide-react';
 import ParticleBg from '../components/ParticleBg';
 import LifeCore from '../components/LifeCore';
@@ -167,15 +174,24 @@ export default function Home() {
               {t('home.heroTitle')}{' '}
               <span className="gradient-text">{t('home.heroTitleHighlight')}</span>
             </h1>
-            <p className="text-base md:text-lg text-text-secondary mb-10 max-w-2xl leading-relaxed">
+            <p className="text-base md:text-lg text-text-secondary mb-4 max-w-2xl leading-relaxed">
               {t('home.heroSubtitle')}
             </p>
+            <p
+              className="text-base md:text-lg mb-10 max-w-2xl leading-relaxed font-display italic"
+              style={{ color: '#5eead4' }}
+            >
+              "{t('home.heroPhilosophy')}"
+            </p>
             <div className="flex flex-wrap items-center gap-4">
-              <Link to="/docs" className="btn-primary inline-flex items-center gap-2">
-                {t('home.heroCtaInstall')} <ArrowRight size={16} />
+              <Link to="/whitepaper" className="btn-primary inline-flex items-center gap-2">
+                {t('home.heroCtaWhitepaper')} <ArrowRight size={16} />
+              </Link>
+              <Link to="/engine" className="btn-secondary inline-flex items-center gap-2">
+                <Cpu size={16} /> {t('home.heroCtaEngine')}
               </Link>
               <Link to="/docs" className="btn-secondary">
-                {t('home.heroCtaDocs')}
+                {t('home.heroCtaInstall')}
               </Link>
             </div>
           </div>
@@ -184,6 +200,231 @@ export default function Home() {
           <div className="lg:col-span-5 flex justify-center animate-fade-in delay-200">
             <LifeCore size={400} className="hidden lg:block" />
           </div>
+        </div>
+      </section>
+
+      {/* ===== 全息数据矩阵：9 大核心数据 ===== */}
+      <section className="max-w-7xl mx-auto px-6 py-20">
+        <div className="text-center mb-12">
+          <div className="patent-badge mb-4 inline-flex">
+            <Sparkles size={12} /> {t('home.matrixBadge')}
+          </div>
+          <h2 className="text-3xl md:text-4xl font-bold mb-3 font-display">
+            <span className="gradient-text">{t('home.matrixTitle')}</span>
+          </h2>
+          <p className="text-text-secondary max-w-2xl mx-auto">
+            {t('home.matrixSubtitle')}
+          </p>
+        </div>
+
+        <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-9 gap-3">
+          {[
+            { end: 125, label: 'engines', icon: Cpu, hue: 'patent' as const },
+            { end: 927, label: 'algorithms', icon: Atom, hue: 'evo' as const },
+            { end: 984, label: 'atoms', icon: Boxes, hue: 'life' as const },
+            { end: 108, label: 'protocols', icon: Scale, hue: 'gov' as const },
+            { end: 754, label: 'patents', icon: ShieldCheck, hue: 'patent' as const },
+            { end: 36, label: 'axioms', icon: Dna, hue: 'gov' as const },
+            { end: 43, label: 'attributes', icon: Layers, hue: 'life' as const },
+            { end: 19, label: 'metaIdeas', icon: Sparkles, hue: 'evo' as const },
+            { end: 13, label: 'families', icon: GitBranch, hue: 'life' as const },
+          ].map(({ end, label, icon: Icon, hue }, idx) => {
+            const color =
+              hue === 'patent'
+                ? '#FFD700'
+                : hue === 'evo'
+                  ? '#fbbf24'
+                  : hue === 'gov'
+                    ? '#a5b4fc'
+                    : '#5eead4';
+            return (
+              <div
+                key={label}
+                className="engine-meter p-4 text-center animate-slide-up"
+                style={{
+                  animationDelay: `${idx * 0.04}s`,
+                  borderColor: `${color}22`,
+                }}
+              >
+                <div
+                  className="w-8 h-8 rounded-lg flex items-center justify-center mx-auto mb-2"
+                  style={{
+                    background: `linear-gradient(135deg, ${color}22, ${color}08)`,
+                    boxShadow: `inset 0 0 0 1px ${color}33`,
+                  }}
+                >
+                  <Icon style={{ color }} size={16} />
+                </div>
+                <div
+                  className="text-2xl md:text-3xl font-bold mb-0.5 font-display"
+                  style={{
+                    color,
+                    animation: 'heartbeat 3s ease-in-out infinite',
+                    animationDelay: `${idx * 0.2}s`,
+                  }}
+                >
+                  <CountUp end={end} />
+                </div>
+                <div className="text-[10px] font-mono text-text-secondary">
+                  {t(`home.matrix.${label}`)}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+
+      <div className="hex-divider max-w-5xl mx-auto" />
+
+      {/* ===== 范式跃迁对比：Agent vs Lifeform ===== */}
+      <section className="max-w-7xl mx-auto px-6 py-24">
+        <div className="text-center mb-14">
+          <div className="quantum-badge mb-4 inline-flex">
+            <GitCommit size={12} /> {t('home.paradigmBadge')}
+          </div>
+          <h2 className="text-3xl md:text-4xl font-bold mb-3 font-display">
+            {t('home.paradigmTitle')}
+          </h2>
+          <p className="text-text-secondary max-w-2xl mx-auto">
+            {t('home.paradigmSubtitle')}
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {/* Agent 范式 */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-5">
+              <div
+                className="w-11 h-11 rounded-xl flex items-center justify-center"
+                style={{
+                  background: 'linear-gradient(135deg, rgba(148, 163, 184, 0.15), rgba(148, 163, 184, 0.05))',
+                  boxShadow: 'inset 0 0 0 1px rgba(148, 163, 184, 0.2)',
+                }}
+              >
+                <TerminalIcon size={20} className="text-zinc-400" />
+              </div>
+              <div>
+                <div className="text-xs font-mono text-text-muted">PARADIGM 1.0</div>
+                <h3 className="text-xl font-bold font-display text-zinc-300">
+                  {t('home.paradigmAgentTitle')}
+                </h3>
+              </div>
+            </div>
+            <ul className="space-y-2.5">
+              {['agent1', 'agent2', 'agent3', 'agent4'].map((k) => (
+                <li key={k} className="flex items-start gap-2 text-sm text-text-secondary">
+                  <span className="text-zinc-500 mt-0.5">·</span>
+                  {t(`home.paradigmAgent.${k}`)}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Lifeform 范式 */}
+          <div
+            className="gene-card p-8"
+            style={{ borderColor: 'rgba(94, 234, 212, 0.3)' }}
+          >
+            <div className="flex items-center gap-3 mb-5">
+              <div
+                className="w-11 h-11 rounded-xl flex items-center justify-center"
+                style={{
+                  background: 'linear-gradient(135deg, rgba(94, 234, 212, 0.22), rgba(94, 234, 212, 0.08))',
+                  boxShadow: 'inset 0 0 0 1px rgba(94, 234, 212, 0.35)',
+                }}
+              >
+                <Dna size={20} className="text-life-bright" />
+              </div>
+              <div>
+                <div className="text-xs font-mono text-life-bright">PARADIGM 2.0</div>
+                <h3 className="text-xl font-bold font-display">
+                  <span className="gradient-text">{t('home.paradigmLifeformTitle')}</span>
+                </h3>
+              </div>
+            </div>
+            <ul className="space-y-2.5">
+              {['lifeform1', 'lifeform2', 'lifeform3', 'lifeform4'].map((k) => (
+                <li key={k} className="flex items-start gap-2 text-sm text-text-secondary">
+                  <span className="text-life-bright mt-0.5">→</span>
+                  {t(`home.paradigmLifeform.${k}`)}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== 三大入口卡片 ===== */}
+      <section className="max-w-7xl mx-auto px-6 py-20">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold mb-3 font-display">
+            {t('home.entriesTitle')}
+          </h2>
+          <p className="text-text-secondary">{t('home.entriesSubtitle')}</p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {[
+            {
+              to: '/whitepaper',
+              icon: BookOpen,
+              hue: 'quantum' as const,
+              titleKey: 'home.entryWhitepaperTitle',
+              descKey: 'home.entryWhitepaperDesc',
+              ctaKey: 'home.entryWhitepaperCta',
+            },
+            {
+              to: '/engine',
+              icon: Cpu,
+              hue: 'patent' as const,
+              titleKey: 'home.entryEngineTitle',
+              descKey: 'home.entryEngineDesc',
+              ctaKey: 'home.entryEngineCta',
+            },
+            {
+              to: '/evolution',
+              icon: GitCommit,
+              hue: 'life' as const,
+              titleKey: 'home.entryEvolutionTitle',
+              descKey: 'home.entryEvolutionDesc',
+              ctaKey: 'home.entryEvolutionCta',
+            },
+          ].map((entry, idx) => {
+            const color =
+              entry.hue === 'quantum'
+                ? '#00D4FF'
+                : entry.hue === 'patent'
+                  ? '#FFD700'
+                  : '#5eead4';
+            const Icon = entry.icon;
+            return (
+              <Link
+                key={entry.to}
+                to={entry.to}
+                className="glass-card p-7 group animate-slide-up block transition-all duration-500 hover:border-life-bright/30"
+                style={{ animationDelay: `${idx * 0.08}s` }}
+              >
+                <div
+                  className="w-12 h-12 rounded-xl flex items-center justify-center mb-5 transition-transform duration-300 group-hover:scale-110"
+                  style={{
+                    background: `linear-gradient(135deg, ${color}22, ${color}08)`,
+                    boxShadow: `inset 0 0 0 1px ${color}33`,
+                  }}
+                >
+                  <Icon style={{ color }} size={24} />
+                </div>
+                <h3 className="text-lg font-bold mb-2 font-display">
+                  {t(entry.titleKey)}
+                </h3>
+                <p className="text-sm text-text-secondary leading-relaxed mb-4">
+                  {t(entry.descKey)}
+                </p>
+                <div className="flex items-center gap-2 text-sm font-semibold" style={{ color }}>
+                  {t(entry.ctaKey)}
+                  <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+                </div>
+              </Link>
+            );
+          })}
         </div>
       </section>
 

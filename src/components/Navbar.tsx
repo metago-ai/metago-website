@@ -4,14 +4,30 @@ import { useTranslation } from 'react-i18next';
 import { Menu, X, GitFork, Star, Package } from 'lucide-react';
 import logoUrl from '../assets/metago-logo.png';
 
-const navItems = [
-  { key: 'nav.home', path: '/' },
-  { key: 'nav.product', path: '/product' },
-  { key: 'nav.platforms', path: '/platforms' },
-  { key: 'nav.docs', path: '/docs' },
-  { key: 'nav.enterprise', path: '/enterprise' },
-  { key: 'nav.about', path: '/about' },
-  { key: 'nav.manifesto', path: '/manifesto' },
+type NavGroup = 'home' | 'paradigm' | 'product' | 'practice' | 'meta';
+
+interface NavItem {
+  key: string;
+  path: string;
+  group: NavGroup;
+}
+
+const navItems: NavItem[] = [
+  { key: 'nav.home', path: '/', group: 'home' },
+  // 范式组
+  { key: 'nav.whitepaper', path: '/whitepaper', group: 'paradigm' },
+  { key: 'nav.engine', path: '/engine', group: 'paradigm' },
+  { key: 'nav.axioms', path: '/axioms', group: 'paradigm' },
+  { key: 'nav.evolution', path: '/evolution', group: 'paradigm' },
+  // 产品组
+  { key: 'nav.product', path: '/product', group: 'product' },
+  { key: 'nav.platforms', path: '/platforms', group: 'product' },
+  // 实践组
+  { key: 'nav.docs', path: '/docs', group: 'practice' },
+  { key: 'nav.enterprise', path: '/enterprise', group: 'practice' },
+  // 元信息
+  { key: 'nav.about', path: '/about', group: 'meta' },
+  { key: 'nav.manifesto', path: '/manifesto', group: 'meta' },
 ];
 
 const GITEE_URL = 'https://gitee.com/metago/metagolifeform';
@@ -80,37 +96,66 @@ export default function Navbar() {
           />
         </Link>
 
-        <nav className="hidden md:flex items-center gap-1">
-          {navItems.map((item) => {
-            const active = isActive(item.path);
+        <nav className="hidden lg:flex items-center gap-1">
+          {(['home', 'paradigm', 'product', 'practice', 'meta'] as NavGroup[]).map((group, gIdx) => {
+            const items = navItems.filter((i) => i.group === group);
+            if (items.length === 0) return null;
             return (
-              <Link
-                key={item.path}
-                to={item.path}
-                className={`relative px-4 py-2 text-sm font-medium transition-colors duration-200 ${
-                  active
-                    ? 'text-life-bright'
-                    : 'text-zinc-300 hover:text-white'
-                }`}
-              >
-                {t(item.key)}
-                {/* 激活态下划线：渐变细线 + 光晕 */}
-                {active && (
+              <div key={group} className="flex items-center">
+                {/* 组间分隔符 */}
+                {gIdx > 0 && (
                   <span
-                    className="absolute left-1/2 -translate-x-1/2 bottom-0 h-px w-8 rounded-full"
-                    style={{
-                      background:
-                        'linear-gradient(90deg, transparent, #5eead4, transparent)',
-                      boxShadow: '0 0 6px rgba(94, 234, 212, 0.6)',
-                    }}
+                    className="mx-1 h-4 w-px shrink-0"
+                    style={{ background: 'rgba(148, 163, 184, 0.15)' }}
+                    aria-hidden="true"
                   />
                 )}
-              </Link>
+                {/* 范式组前缀小标识 */}
+                {group === 'paradigm' && (
+                  <span
+                    className="mx-1 px-1.5 py-0.5 rounded text-[9px] font-mono shrink-0"
+                    style={{
+                      background: 'rgba(255, 215, 0, 0.08)',
+                      border: '1px solid rgba(255, 215, 0, 0.2)',
+                      color: '#FFD700',
+                    }}
+                  >
+                    {t('nav.paradigmTag')}
+                  </span>
+                )}
+                {items.map((item) => {
+                  const active = isActive(item.path);
+                  return (
+                    <Link
+                      key={item.path}
+                      to={item.path}
+                      className={`relative px-3 py-2 text-sm font-medium transition-colors duration-200 ${
+                        active
+                          ? 'text-life-bright'
+                          : 'text-zinc-300 hover:text-white'
+                      }`}
+                    >
+                      {t(item.key)}
+                      {/* 激活态下划线：渐变细线 + 光晕 */}
+                      {active && (
+                        <span
+                          className="absolute left-1/2 -translate-x-1/2 bottom-0 h-px w-8 rounded-full"
+                          style={{
+                            background:
+                              'linear-gradient(90deg, transparent, #5eead4, transparent)',
+                            boxShadow: '0 0 6px rgba(94, 234, 212, 0.6)',
+                          }}
+                        />
+                      )}
+                    </Link>
+                  );
+                })}
+              </div>
             );
           })}
         </nav>
 
-        <div className="hidden md:flex items-center gap-3">
+        <div className="hidden lg:flex items-center gap-3">
           <a
             href={GITEE_URL}
             target="_blank"
@@ -144,7 +189,7 @@ export default function Navbar() {
         </div>
 
         <button
-          className="md:hidden text-zinc-200"
+          className="lg:hidden text-zinc-200"
           onClick={() => setOpen((v) => !v)}
           aria-label="menu"
         >
@@ -153,7 +198,7 @@ export default function Navbar() {
 
         {open && (
           <div
-            className="md:hidden absolute top-16 left-0 right-0 px-6 py-4 flex flex-col gap-3"
+            className="lg:hidden absolute top-16 left-0 right-0 px-6 py-4 flex flex-col gap-2 max-h-[80vh] overflow-y-auto"
             style={{
               background: 'rgba(8, 12, 20, 0.96)',
               backdropFilter: 'blur(18px)',
@@ -161,22 +206,38 @@ export default function Navbar() {
               borderBottom: '1px solid rgba(148, 163, 184, 0.08)',
             }}
           >
-            {navItems.map((item) => {
-              const active = isActive(item.path);
+            {(['home', 'paradigm', 'product', 'practice', 'meta'] as NavGroup[]).map((group) => {
+              const items = navItems.filter((i) => i.group === group);
+              if (items.length === 0) return null;
               return (
-                <Link
-                  key={item.path}
-                  to={item.path}
-                  onClick={() => setOpen(false)}
-                  className={`text-sm py-1 ${
-                    active ? 'text-life-bright' : 'text-zinc-300'
-                  }`}
-                >
-                  {t(item.key)}
-                </Link>
+                <div key={group} className="py-1">
+                  {group !== 'home' && (
+                    <div
+                      className="text-[10px] font-mono px-1 mb-1.5"
+                      style={{ color: 'rgba(148, 163, 184, 0.5)' }}
+                    >
+                      {t(`nav.groupLabel.${group}`)}
+                    </div>
+                  )}
+                  {items.map((item) => {
+                    const active = isActive(item.path);
+                    return (
+                      <Link
+                        key={item.path}
+                        to={item.path}
+                        onClick={() => setOpen(false)}
+                        className={`block text-sm py-1.5 ${
+                          active ? 'text-life-bright' : 'text-zinc-300'
+                        }`}
+                      >
+                        {t(item.key)}
+                      </Link>
+                    );
+                  })}
+                </div>
               );
             })}
-            <div className="flex gap-3 pt-2">
+            <div className="flex flex-wrap gap-2 pt-3">
               <a
                 href={GITEE_URL}
                 target="_blank"

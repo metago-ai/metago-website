@@ -25,7 +25,10 @@ export default defineConfig({
           /((?:src|href)\s*=\s*")\.\/([^"]*")/g,
           '$1../$2',
         )
-        const routes = ['product', 'platforms', 'docs', 'enterprise', 'about', 'manifesto']
+        const routes = [
+          'whitepaper', 'engine', 'axioms', 'evolution',
+          'product', 'platforms', 'docs', 'enterprise', 'about', 'manifesto',
+        ]
         for (const r of routes) {
           const dir = resolve(__dirname, 'dist', r)
           if (!existsSync(dir)) mkdirSync(dir, { recursive: true })

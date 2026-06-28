@@ -24,6 +24,14 @@ export default {
         'gov-bright': '#a5b4fc',
         'gov': '#818cf8',
 
+        /* —— 专利金（Patent）—— 数据高亮 / 引擎仪表盘 */
+        'patent': '#FFD700',
+        'patent-dim': 'rgba(255, 215, 0, 0.12)',
+
+        /* —— 量子蓝（Quantum）—— 范式层 / 白皮书强调 */
+        'quantum': '#00D4FF',
+        'quantum-dim': 'rgba(0, 212, 255, 0.12)',
+
         /* —— 文字层（语义别名，用于 Tailwind class 调用）—— */
         'text-primary': '#f8fafc',
         'text-secondary': '#94a3b8',

@@ -8,6 +8,10 @@ import Docs from './pages/Docs';
 import Enterprise from './pages/Enterprise';
 import About from './pages/About';
 import Manifesto from './pages/Manifesto';
+import Whitepaper from './pages/Whitepaper';
+import Engine from './pages/Engine';
+import Axioms from './pages/Axioms';
+import Evolution from './pages/Evolution';
 
 function NotFound() {
   return (
@@ -34,6 +38,10 @@ function App() {
         <main className="flex-1">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/whitepaper" element={<Whitepaper />} />
+            <Route path="/engine" element={<Engine />} />
+            <Route path="/axioms" element={<Axioms />} />
+            <Route path="/evolution" element={<Evolution />} />
             <Route path="/product" element={<Product />} />
             <Route path="/platforms" element={<Platforms />} />
             <Route path="/docs" element={<Docs />} />
