@@ -32,7 +32,7 @@ const docs: DocItem[] = [
   {
     key: 'architecture',
     icon: Layers,
-    desc: '五层架构、22技能、公理属性',
+    desc: '五层架构、37技能、公理属性',
     link: 'https://gitee.com/metago/metagolifeform/blob/main/docs/ARCHITECTURE.md',
   },
   {

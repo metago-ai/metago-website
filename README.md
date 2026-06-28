@@ -3,7 +3,7 @@
 > 元构超级智能生命体标准安装包的官方网站与文档门户。
 
 [![Deploy](https://img.shields.io/badge/deploy-CloudBase-blue)](https://metago-d6gfw1e4rf2a5bcad-1257074864.tcloudbaseapp.com/)
-[![Version](https://img.shields.io/badge/version-v36.4.13-blueviolet)](https://gitee.com/metago/metagolifeform/releases)
+[![Version](https://img.shields.io/badge/version-v36.5.1-blueviolet)](https://gitee.com/metago/metagolifeform/releases)
 [![License](https://img.shields.io/badge/license-MIT-success)](./LICENSE)
 
 ## 简介
@@ -28,7 +28,7 @@
 | 路由 | 页面 | 说明 |
 |------|------|------|
 | `/` | 首页 | Hero、核心特性、平台支持、快速安装、指标统计 |
-| `/product` | 产品 | 22 技能族分组、五大能力支柱 |
+| `/product` | 产品 | 37 技能族分组、五大能力支柱 |
 | `/platforms` | 平台支持 | 7 大平台安装命令与配置路径 |
 | `/docs` | 文档 | 快速开始、安装指南、FAQ 链接 |
 | `/enterprise` | 企业版 | 商业版能力与联系方式 |

@@ -166,9 +166,9 @@
     },
     "roadmapTitle": "Roadmap",
     "roadmapV3650": {
-      "title": "v36.5.0",
+      "title": "v36.5.1",
       "statusLabel": "Completed",
-      "desc": "Living Documentation System + 10 new skills (37 total)"
+      "desc": "Living Documentation System + 10 new skills (37 total) + Full doc audit"
     },
     "devKit": {
       "title": "MetaGO Dev Kit",

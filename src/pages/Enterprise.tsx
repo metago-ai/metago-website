@@ -24,7 +24,7 @@ interface FeatureRow {
 
 const features: FeatureRow[] = [
   { label: '核心公理+属性+协议', openSource: true, enterprise: true },
-  { label: '22个技能', openSource: true, enterprise: true },
+  { label: '37个技能', openSource: true, enterprise: true },
   { label: '7大平台适配', openSource: true, enterprise: true },
   { label: '一键安装脚本', openSource: true, enterprise: true },
   { label: '行业定制包', openSource: false, enterprise: true },

@@ -166,9 +166,9 @@
     },
     "roadmapTitle": "路线图",
     "roadmapV3650": {
-      "title": "v36.5.0",
+      "title": "v36.5.1",
       "statusLabel": "已完成",
-      "desc": "活文档系统 + 10个新技能（37个总计）"
+      "desc": "活文档系统 + 10个新技能（37个总计）+ 文档全面审计"
     },
     "devKit": {
       "title": "MetaGO Dev Kit",
