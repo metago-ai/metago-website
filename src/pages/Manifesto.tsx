@@ -141,7 +141,7 @@ const ZH_CONTENT = {
   table5Header: ['产品', '形态', '定位'],
   table5Rows: [
     ['MetaGO Lifeform Kit', '规则注入', '核心安装包，8 公理一键注入'],
-    ['MetaGO MCP Server', 'MCP 协议', '22 项能力封装为 MCP 工具'],
+    ['MetaGO MCP Server', 'MCP 协议', '42 项能力封装为 MCP 工具'],
     ['MetaGO Dev Kit', '垂直场景包', '开发者增强技能包'],
     ['MetaGO CLI', '平台工具', '跨平台命令行，CI/CD 集成'],
     ['MetaGO Studio', '平台工具', '可视化技能编排平台'],
