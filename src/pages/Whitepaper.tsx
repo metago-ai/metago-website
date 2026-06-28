@@ -119,11 +119,20 @@ export default function Whitepaper() {
             const Icon = c.icon;
             const isActive = idx === activeIdx;
             const color = hueColor(c.hue);
+            const handleClick = (e: React.MouseEvent) => {
+              e.preventDefault();
+              const target = document.getElementById(`chapter-${idx + 1}`);
+              if (target) {
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                setActiveIdx(idx);
+              }
+            };
             return (
-              <a
+              <button
+                type="button"
                 key={c.key}
-                href={`#chapter-${idx + 1}`}
-                className="flex items-center gap-2 px-4 py-2 rounded-full border text-xs font-mono transition-all duration-300"
+                onClick={handleClick}
+                className="flex items-center gap-2 px-4 py-2 rounded-full border text-xs font-mono transition-all duration-300 cursor-pointer"
                 style={{
                   borderColor: isActive ? color : 'rgba(148, 163, 184, 0.15)',
                   background: isActive ? `${color}1A` : 'rgba(255,255,255,0.02)',
@@ -136,7 +145,7 @@ export default function Whitepaper() {
                 <span className="hidden md:inline">
                   {t(`whitepaper.chapterList.${c.key}`)}
                 </span>
-              </a>
+              </button>
             );
           })}
         </div>
