@@ -131,7 +131,7 @@ export default function Footer() {
               <span className="inline-block w-1 h-1 rounded-full bg-life-bright" />
               <span className="inline-block w-1 h-1 rounded-full bg-evo-bright" />
               <span className="inline-block w-1 h-1 rounded-full bg-gov-bright" />
-              <span className="ml-2">Lifeform v36.7.4</span>
+              <span className="ml-2">Lifeform v36.7.5</span>
             </span>
           </div>
         </div>
