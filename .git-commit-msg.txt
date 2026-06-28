@@ -1,0 +1,23 @@
+fix(website): P0-P2 全站一次性修复 - 7页面 i18n 化+数据同步+视觉统一
+
+P0 修复:
+- About.tsx: 愿景段落双语+数据过时修复+内容重写+路线图重排+引擎卡
+- Manifesto.tsx: 中英文 MCP 数据不一致(22→42)+closing.body4 完整数据+9大产品矩阵
+- Product.tsx: 新增引擎段落(36公理/125引擎/927算法/984原子/754专利)+npm安装
+
+P1 修复:
+- Home.tsx: 6处硬编码字符串走 i18n+row1 数据语义修复(避免与全息矩阵重复)
+- 视觉风格统一到 Hue 设计系统(5色:life/evo/gov/patent/quantum)
+
+P2 修复:
+- Product.tsx: 五个数组(层/技能/公理/属性/协议)走 i18n 翻译键
+- Platforms.tsx: installCommands/MCP协议/AGENTS.md 走 i18n
+- Docs.tsx: desc 走 i18n+MCP 数据更新(37→42)+视觉统一
+- Enterprise.tsx: features/industries 数组走 i18n+returnObjects 模式
+
+技术修复:
+- About.tsx: Stat 接口添加 size 属性
+- Docs.tsx: DocItem 接口添加 style 属性
+
+数据同步:
+- 36公理/43属性/108协议/37技能/42 MCP工具/125引擎/927算法/984原子/754专利/7平台/9产品
