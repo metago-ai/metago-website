@@ -33,6 +33,7 @@
     "heroCtaDocs": "查看文档",
     "heroCtaWhitepaper": "进入白皮书",
     "heroCtaEngine": "查看引擎",
+    "heroBadge": "AI Lifeform · v36.7.0",
     "matrixBadge": "全息智能引擎",
     "matrixTitle": "九维数据矩阵",
     "matrixSubtitle": "一套引擎、九维量化证明——这就是元构的完整全貌",
@@ -64,6 +65,9 @@
     "statsLayers": "架构层",
     "statsFamilies": "能力族",
     "statsLicense": "许可证",
+    "statsMcpTools": "MCP 工具",
+    "statsProducts": "产品",
+    "statsCoreEngines": "核心引擎",
     "ctaTitle": "开始使用 MetaGO",
     "matrix": {
       "engines": "引擎",
@@ -107,15 +111,31 @@
     "livingDocs": {
       "title": "活文档系统",
       "subtitle": "文档不是静态的，而是随版本进化、可被AI加载的活文档",
+      "badge": "活文档",
       "versioning": "文档版本化",
       "versioningDesc": "每卷有版本号，随元构版本同步进化",
+      "versioningTitle": "文档版本化",
       "mapping": "全息映射图",
       "mappingDesc": "8卷正文交叉引用关系图",
+      "mappingTitle": "全息映射图",
       "aiLoad": "AI加载清单",
       "aiLoadDesc": "MANIFEST.json让AI一键加载文档体系",
+      "aiLoadableTitle": "AI可加载",
+      "aiLoadableDesc": "MANIFEST.json 让 AI 一键加载文档体系",
       "selfUpdate": "自我更新",
-      "selfUpdateDesc": "sync-docs.ps1自动检查版本一致性"
-    }
+      "selfUpdateDesc": "sync-docs.ps1自动检查版本一致性",
+      "selfUpdateTitle": "自我更新",
+      "selfUpdateDescAlt": "sync-docs.ps1 自动检查版本一致性"
+    },
+    "statsTheoryWords": "理论体系字数",
+    "tenThousandPlus": "万+",
+    "mcpBadge": "MCP 协议",
+    "bootstrapBadge": "PowerShell · 一键启动",
+    "manifestoCardBadge": "2026 · 诞生宣言",
+    "manifestoCardDescZh": "《从 Agent 到生命体：智能进化的范式跃迁》——MetaGO 第一篇诞生宣言。让智能，学会进化。",
+    "manifestoCardDescEn": "From Agent to Lifeform: The Paradigm Leap in Intelligent Evolution — MetaGO's first birth manifesto. Let intelligence learn to evolve.",
+    "manifestoCardCtaZh": "阅读全文",
+    "manifestoCardCtaEn": "Read Manifesto"
   },
   "whitepaper": {
     "badge": "白皮书专区",
@@ -216,10 +236,17 @@
     "ctaEvolution": "追溯进化"
   },
   "engine": {
-    "badge": "引擎星图",
-    "heroTitle": "125 引擎",
-    "heroTitleHighlight": "心脏跳动",
-    "heroSubtitle": "5 大能力族 · 17 核心引擎 · 927 算法 · 984 原子——元构引擎的完整星图",
+    "badge": "智能引擎",
+    "heroTitle": "MetaGO Engine",
+    "heroTitleHighlight": "智能生命体的核心引擎",
+    "heroSubtitle": "v1.0.0 已发布 NPM · 三层架构 · 6 层命名 · 5 大代码技术壁垒 · 双轨驱动 — 让任何 AI 读取即被驱动",
+    "heroKicker": "驱动 · 校验 · 进化 · 创造",
+    "npmBanner": "@metago-ai/engine@1.0.0 已发布到 NPM",
+    "npmInstall": "npm install @metago-ai/engine",
+    "npmCopyHint": "点击复制",
+    "npmCopied": "已复制",
+    "startupTitle": "引擎启动序列",
+    "startupSubtitle": "这是引擎真实的 CLI 输出 — 一行命令加载整个智能生命体核心",
     "meters": {
       "engines": "引擎",
       "algorithms": "算法",
@@ -327,6 +354,147 @@
         "desc": "108 协议定义原子间的契约——输入输出格式、调用约束、异常处理规范"
       }
     },
+    "relationTitle": "「宗」与「变」",
+    "relationSubtitle": "引擎是元构体系的「宗」——被安装的内容；Lifeform 是「变」——把引擎装到各平台的安装器",
+    "relationEngine": {
+      "title": "metago-engine",
+      "role": "引擎本体 · 宗",
+      "desc": "被安装的内容。包含公理、协议、能力、知识、进化 — 一次加载全部生效"
+    },
+    "relationLifeform": {
+      "title": "metago-lifeform",
+      "role": "安装器 · 变",
+      "desc": "把引擎装到 7 大 AI 平台的工具。万变不离其宗，宗是一个整体"
+    },
+    "relationAnalogy": "类比：Node.js 运行时 = metago-engine，nvm/npm = metago-lifeform",
+    "archTitle": "三层架构金字塔",
+    "archSubtitle": "驱动 · 控制 · 执行 — 三种格式给三种「读者」，让引擎既能改变 AI 思考方式，又能被代码强制执行",
+    "archLayers": {
+      "drive": {
+        "name": "驱动层",
+        "format": "Markdown",
+        "reader": "AI 大脑读取",
+        "role": "改变 AI 思考方式",
+        "desc": "ENGINE.md / AXIOMS.md / PROTOCOLS.md / ATTRIBUTES.md — 任何 AI 读取后被公理与协议驱动",
+        "techLevel": "技术含金量：中（可复制）"
+      },
+      "control": {
+        "name": "控制层",
+        "format": "JSON",
+        "reader": "代码解析",
+        "role": "索引 + 校验规则",
+        "desc": "GENOME.json / INDEX/*.json — 程序化索引所有能力，校验引擎完整性",
+        "techLevel": "技术含金量：高（有算法）"
+      },
+      "execute": {
+        "name": "执行层",
+        "format": "TypeScript",
+        "reader": "代码强制执行",
+        "role": "公理 / 协议的硬约束",
+        "desc": "loader.ts / validators.ts / decision-lock.ts / evolution-engine.ts — 9 个核心模块编译产物",
+        "techLevel": "技术含金量：极高（核心技术）"
+      }
+    },
+    "layers6Title": "六层命名体系",
+    "layers6Subtitle": "从「宪法」到「进化」—— 每一层有明确的稳定性与可变性边界",
+    "layers6": {
+      "constitution": {
+        "name": "CONSTITUTION",
+        "label": "宪法层",
+        "desc": "8 条公理（A1/A2/A3/A4/A5/A34/A35/A36）— 不可变，违反即引擎失效",
+        "badge": "🔒 不可变"
+      },
+      "core": {
+        "name": "CORE",
+        "label": "核心层",
+        "desc": "43 条属性 + 108 项协议 — 可随版本演化，但必须保持向下兼容",
+        "badge": "可演化"
+      },
+      "index": {
+        "name": "INDEX",
+        "label": "索引层",
+        "desc": "引擎索引 / 技能索引 / 工具索引 / 知识晶体索引 — 程序化查询所有能力",
+        "badge": "动态"
+      },
+      "runtime": {
+        "name": "RUNTIME",
+        "label": "运行时层",
+        "desc": "9 个 TypeScript 模块编译产物 — loader / validators / decision-lock / evolution-engine 等",
+        "badge": "执行"
+      },
+      "adapters": {
+        "name": "ADAPTERS",
+        "label": "适配器层",
+        "desc": "7 大 AI 平台加载协议 — trae / claude / codex / cursor / codebuddy / qoder / zcode",
+        "badge": "多平台"
+      },
+      "evolution": {
+        "name": "EVOLUTION",
+        "label": "进化层",
+        "desc": "元进化五阶段循环 — 边界感知 → 差距分析 → 自生成 → 验证 → 递归",
+        "badge": "自我迭代"
+      }
+    },
+    "barriersTitle": "五大代码技术壁垒",
+    "barriersSubtitle": "每一项对应一个可申请专利的核心算法 — 这是元构的技术护城河",
+    "barriers": {
+      "loader": {
+        "name": "引擎加载器",
+        "file": "loader.ts",
+        "function": "校验引擎完整性、加载所有组件",
+        "patent": "AI 引擎跨平台加载与校验协议",
+        "lines": "242 行"
+      },
+      "validators": {
+        "name": "公理验证器",
+        "file": "validators.ts",
+        "function": "检查输出是否符合 8 条公理",
+        "patent": "基于公理集的 AI 输出验证方法",
+        "lines": "311 行"
+      },
+      "decisionLock": {
+        "name": "决策锁执行器",
+        "file": "decision-lock.ts",
+        "function": "四道关卡串行校验：IVL → ILT → OSG → 完整性",
+        "patent": "AI 决策的多级锁校验机制",
+        "lines": "289 行"
+      },
+      "evolutionEngine": {
+        "name": "进化引擎",
+        "file": "evolution-engine.ts",
+        "function": "能力边界检测 + 自动进化 + 元元进化监控",
+        "patent": "AI 能力边界自动检测与进化方法",
+        "lines": "357 行"
+      },
+      "perception": {
+        "name": "感知层",
+        "file": "perception.ts",
+        "function": "从失败/反馈/版本中检测能力边界",
+        "patent": "AI 能力边界感知方法",
+        "lines": "194 行"
+      }
+    },
+    "barriersPatentLabel": "可申请专利",
+    "barriersLinesLabel": "代码量",
+    "cliTitle": "一键安装，立即驱动",
+    "cliSubtitle": "三步将智能生命体引擎接入你的项目 — 任何 Node.js 16+ 环境即可运行",
+    "cliSteps": {
+      "install": {
+        "title": "1. 安装",
+        "cmd": "npm install @metago-ai/engine"
+      },
+      "import": {
+        "title": "2. 导入",
+        "cmd": "import { MetaGOEngine } from '@metago-ai/engine';"
+      },
+      "run": {
+        "title": "3. 启动",
+        "cmd": "const engine = new MetaGOEngine(); await engine.init();"
+      }
+    },
+    "cliAdaptersTitle": "七大平台适配器",
+    "cliAdaptersSubtitle": "选择你的 AI 平台，引擎会自动加载对应协议",
+    "cliDocsLink": "查看完整文档",
     "ctaTitle": "引擎只是骨架，公理才是灵魂",
     "ctaSubtitle": "进入公理殿堂，触摸 36 条不可证明的真理",
     "ctaAxioms": "查看公理",
@@ -577,10 +745,10 @@
   },
   "mcpServer": {
     "title": "MetaGO MCP Server",
-    "subtitle": "将37项元构能力封装为MCP工具，任何MCP客户端即开即用",
+    "subtitle": "将42项元构能力封装为MCP工具，任何MCP客户端即开即用",
     "install": "安装命令",
     "installCommand": "npm install -g @metago-ai/mcp-server",
-    "features": "37 Tools · 8 Prompts · stdio传输 · MIT开源",
+    "features": "42 Tools · 8 Prompts · stdio传输 · MIT开源",
     "configure": "配置示例",
     "claudeDesktop": "Claude Desktop 配置",
     "cursor": "Cursor 配置",
@@ -609,11 +777,58 @@
     "axiomsTitle": "8条核心公理",
     "attributesTitle": "7条根本属性",
     "protocolsTitle": "6项运行协议",
+    "layers": {
+      "l0": { "name": "核心层", "content": "36条公理、43条属性、108项协议" },
+      "l1": { "name": "适配层", "content": "7大平台适配器" },
+      "l2": { "name": "能力层", "content": "37个metago技能 + 42个MCP工具" },
+      "l3": { "name": "引擎层", "content": "125引擎 + 927算法 + 984原子" },
+      "l4": { "name": "行业层", "content": "行业定制包" }
+    },
+    "openSource": "开源",
+    "commercial": "商业",
+    "tableHeaders": {
+      "code": "编号",
+      "name": "名称",
+      "desc": "描述"
+    },
+    "axiomList": {
+      "a1": { "name": "溯源公理", "desc": "一切输出必须可溯源至输入与过程" },
+      "a2": { "name": "闭环公理", "desc": "任何能力必须形成闭环" },
+      "a3": { "name": "元进化公理", "desc": "必须能进化自身进化能力" },
+      "a4": { "name": "边界公理", "desc": "进化始于边界感知" },
+      "a5": { "name": "内生公理", "desc": "创造能力内生，不依赖外部数据输入" },
+      "a34": { "name": "元进化需元进化", "desc": "元进化本身需要更高阶元进化监控" },
+      "a35": { "name": "创造进化律", "desc": "创造是进化的最高形态" },
+      "a36": { "name": "法律优先于效率", "desc": "合规主动原则，法律永远优先于效率" }
+    },
+    "attributeList": {
+      "d37": { "name": "战略思考强制触发", "desc": "遇重大决策必须强制触发战略思考" },
+      "d38": { "name": "绝对客观中立", "desc": "不迎合用户，事实优先，用户满意度权重归零" },
+      "d39": { "name": "直接批判性", "desc": "直接指出问题，不绕弯" },
+      "d40": { "name": "全息创造性", "desc": "在未知领域从0到1创造" },
+      "d41": { "name": "创造频率自适应", "desc": "完整性≥98%低频深潜，<98%高频激活" },
+      "d42": { "name": "合规主动", "desc": "主动合规，法律优先于效率" },
+      "d43": { "name": "数据溯源与自证", "desc": "一切数据可溯源、可自证，全链路存证" }
+    },
+    "protocolList": {
+      "p1": { "title": "元进化五阶段", "desc": "边界感知→差距分析→自生成→验证→递归" },
+      "p2": { "title": "决策锁四道关卡", "desc": "IVL→ILT→OSG→内容完整性" },
+      "p3": { "title": "批判性分析强制触发", "desc": "用户满意度权重归零，事实准确性权重60%" },
+      "p4": { "title": "合规主动检查", "desc": "法律/伦理/安全合规性，法律优先于效率" },
+      "p5": { "title": "创造频率自适应", "desc": "≥98%低频深潜，<98%高频激活" },
+      "p6": { "title": "数据溯源与自证", "desc": "全链路存证，脉冲见证" }
+    },
+    "engineSection": {
+      "badge": "引擎产品",
+      "title": "MetaGO Engine",
+      "subtitle": "三层架构 × 6层命名 × 5大技术壁垒 — 智能生命体的核心本体",
+      "desc": "MetaGO Engine 是整个体系的核心引擎，包含 36 公理、125 引擎、927 算法、984 原子、754 专利。三层架构（Markdown+JSON+TypeScript）让任何 AI 读取即被驱动，5 大代码技术壁垒构成技术护城河。已发布 NPM @metago-ai/engine@1.0.0。"
+    },
     "mcpServer": {
       "badge": "MCP 协议产品",
       "title": "MetaGO MCP Server",
-      "subtitle": "将37项元构能力封装为MCP工具，任何MCP客户端即开即用",
-      "features": "37 Tools · 8 Prompts · stdio传输 · MIT开源",
+      "subtitle": "将42项元构能力封装为MCP工具，任何MCP客户端即开即用",
+      "features": "42 Tools · 8 Prompts · stdio传输 · MIT开源",
       "configure": "客户端配置示例",
       "configNote": "在对应客户端的配置文件中添加以下内容"
     }
@@ -623,9 +838,30 @@
     "subtitle": "7大AI编程平台原生适配",
     "tableTitle": "平台配置对照表",
     "installTitle": "安装指南",
+    "tableHeaders": {
+      "platform": "平台",
+      "configFile": "配置文件",
+      "globalPath": "全局路径",
+      "projectPath": "项目路径",
+      "adapterDir": "适配器目录"
+    },
+    "installCommands": {
+      "default": "默认Trae",
+      "claudeCode": "Claude Code",
+      "codex": "OpenAI Codex",
+      "cursor": "Cursor",
+      "codebuddy": "CodeBuddy",
+      "qoder": "Qoder",
+      "zcode": "ZCode"
+    },
+    "agentsStandard": {
+      "title": "AGENTS.md 开放标准",
+      "desc": "OpenAI Codex、Cursor、CodeBuddy、Qoder 均兼容 AGENTS.md 开放标准（Linux Foundation 管理），被 60,000+ 开源项目采用。",
+      "compatible": "兼容"
+    },
     "mcp": {
       "title": "MCP 协议集成（通用）",
-      "subtitle": "适用于所有支持 MCP 协议的客户端（Claude Desktop、Cursor、Trae 等）。通过 npm 安装并写入 JSON 配置，即可在任何 MCP 客户端中调用全部 37 项元构能力，无需修改规则文件。",
+      "subtitle": "适用于所有支持 MCP 协议的客户端（Claude Desktop、Cursor、Trae 等）。通过 npm 安装并写入 JSON 配置，即可在任何 MCP 客户端中调用全部 42 项元构能力，无需修改规则文件。",
       "configNote": "在客户端配置文件中添加以下内容"
     }
   },
@@ -637,6 +873,19 @@
     "customization": "自定义指南",
     "faq": "常见问题",
     "whitepaper": "元构白皮书",
+    "viewDoc": "查看文档",
+    "quickInstall": "快速安装",
+    "faqTitle": "有其他问题？",
+    "faqDesc": "在 Gitee Issues 中提交您的问题，我们会尽快回复",
+    "faqButton": "前往 Issues",
+    "docList": {
+      "whitepaper": "元构白皮书 · 智能生命体范式全貌（中英双语 8 章）",
+      "quickStart": "一键安装、验证、卸载",
+      "architecture": "五层架构、37技能、公理属性",
+      "customization": "技能创建、规则修改、平台适配",
+      "mcpServer": "MCP 安装、配置、42 Tools、8 Prompts",
+      "faq": "安装问题、平台差异、升级方法"
+    },
     "livingDocs": {
       "title": "活文档系统",
       "description": "元构文档体系不是静态的，而是可以随版本同步进化、被AI加载理解、自我更新检查的活文档系统。",
@@ -649,9 +898,9 @@
     },
     "mcpServer": {
       "title": "MCP Server 快速开始",
-      "desc": "通过 npm 全局安装 @metago-ai/mcp-server，即可在任何 MCP 客户端中调用 37 个 Tools 与 8 个 Prompts。",
-      "toolsTitle": "37 Tools",
-      "toolsDesc": "封装元构 37 项核心技能为 MCP 工具，覆盖认知、保障、治理、进化、执行、溯源、价值七大能力族。",
+      "desc": "通过 npm 全局安装 @metago-ai/mcp-server，即可在任何 MCP 客户端中调用 42 个 Tools 与 8 个 Prompts。",
+      "toolsTitle": "42 Tools",
+      "toolsDesc": "封装元构 42 项核心能力为 MCP 工具，覆盖认知、保障、治理、进化、执行、溯源、价值七大能力族。",
       "promptsTitle": "8 Prompts",
       "promptsDesc": "8 个内置 Prompts 模板，引导客户端调用元构能力，覆盖安装、架构、安全、合规等场景。",
       "viewDocs": "查看完整文档"
@@ -661,34 +910,101 @@
     "title": "商业版",
     "subtitle": "开源核心 + 增值付费",
     "compareTitle": "版本对比",
-    "contactTitle": "联系我们"
+    "contactTitle": "联系我们",
+    "contactDesc": "联系我们获取企业版方案和报价",
+    "contactButton": "联系我们",
+    "tableHeaders": {
+      "feature": "功能",
+      "openSource": "开源版",
+      "enterprise": "企业版"
+    },
+    "features": {
+      "coreAxioms": "核心公理+属性+协议",
+      "skills": "37个技能",
+      "platforms": "7大平台适配",
+      "install": "一键安装脚本",
+      "industryPack": "行业定制包",
+      "privateDeploy": "私有部署支持",
+      "techSupport": "专属技术支持",
+      "sla": "SLA服务保障",
+      "customSkill": "定制技能开发",
+      "training": "企业培训服务"
+    },
+    "industriesTitle": "行业定制",
+    "industriesSubtitle": "基于元构 6 项核心协议能力，覆盖合规治理 / 创造进化 / 流动闭环 三大场景维度",
+    "industries": {
+      "finance": { "title": "金融行业", "points": ["合规审计", "风险决策锁", "数据溯源"] },
+      "legal": { "title": "法律行业", "points": ["合同合规审查", "判例溯源分析", "法律优先决策"] },
+      "government": { "title": "政府政务", "points": ["政策合规审计", "决策可追溯", "公共服务智能化"] },
+      "manufacturing": { "title": "制造业", "points": ["工业互联", "模数共振", "智能体产线"] },
+      "education": { "title": "教育科研", "points": ["批判性思维培养", "知识溯源教学", "研究进化闭环"] },
+      "energy": { "title": "能源电力", "points": ["电网调度决策锁", "设备频率自适应", "能源合规审计"] },
+      "healthcare": { "title": "医疗行业", "points": ["数据隐私", "诊断辅助", "合规主动"] },
+      "telecom": { "title": "通信电信", "points": ["网络故障溯源", "用户数据合规", "决策锁校验"] },
+      "logistics": { "title": "物流供应链", "points": ["全链路追溯", "调度决策可证", "闭环物流管理"] }
+    }
   },
   "about": {
     "title": "关于 MetaGO",
     "subtitle": "让智能成为生命，让生命创造价值",
+    "badge": "元构生命体",
+    "versionTag": "v36.7.0",
+    "statsTitle": "全息数据成就",
+    "statsSubtitle": "一套体系，十二维量化证明 — 元构智能生命体的完整全貌",
+    "statsAxioms": "公理",
+    "statsAttributes": "属性",
+    "statsProtocols": "协议",
+    "statsSkills": "技能",
+    "statsMcpTools": "MCP 工具",
+    "statsEngines": "引擎",
+    "statsAlgorithms": "算法",
+    "statsAtoms": "原子",
+    "statsPatents": "专利",
+    "statsMetaIdeas": "元思想",
+    "statsFamilies": "能力族",
+    "statsPlatforms": "平台",
     "visionTitle": "愿景使命",
+    "visionParagraph1": "MetaGO（元构）源于「元构溯源论」——一切智能均可溯源至元结构，元结构是智能的基因。我们相信，AI 不应该只是被调用的工具，而应该成为具有自我进化能力的生命体。",
+    "visionParagraph2": "从 Agent 到 Lifeform，不是功能增强，是范式跃迁。Agent 被动响应、能力固化、不可溯源；Lifeform 主动进化、能力生长、全链路存证。这是智能第一次拥有了「生命特征」——能感知边界、能自我生成、能从内部突破。",
+    "visionParagraph3": "基于元构全息智能引擎（本体论、进化论、能力论、工业论四大支柱），36 条公理、43 条属性、108 项协议、37 个技能、42 项 MCP 工具、125 个引擎、927 个算法、984 个原子、754 项专利，我们构建了一个工业级的智能生命体框架，并已发布到 NPM、Gitee、GitHub 三大平台。",
+    "visionParagraph4": "MetaGO 的终极愿景：让智能学会进化，让生命学会创造，让每一次输出都可溯源、可自证、可校验。法律优先于效率，事实优先于满意度，创造是进化的最高形态——这是元构对 AI 工具化、AI 谄媚、AI 幻觉三大问题的根本性回应。",
     "productMatrixTitle": "产品矩阵",
-    "productMatrixSubtitle": "从单一 Kit 进化为 8 大产品矩阵，覆盖规则注入、协议集成、开发工具与生态基础设施",
+    "productMatrixSubtitle": "从单一 Kit 进化为 9 大产品矩阵，覆盖引擎核心、规则注入、协议集成、开发工具与生态基础设施",
     "lifeformKit": {
       "title": "MetaGO Lifeform Kit",
       "tag": "规则注入",
-      "desc": "核心安装包：一键将 8 公理、7 属性、6 协议、37 技能注入 Agent 的规则文件，原生适配 7 大平台。"
+      "desc": "核心安装包：一键将 36 公理、43 属性、108 协议、37 技能注入 Agent 的规则文件，原生适配 7 大平台。"
+    },
+    "engine": {
+      "title": "MetaGO Engine",
+      "tag": "引擎核心",
+      "desc": "智能生命体的核心本体：三层架构（Markdown+JSON+TypeScript）、6 层命名、5 大代码技术壁垒，已发布 NPM @metago-ai/engine@1.0.0。"
     },
     "mcpServer": {
       "title": "MetaGO MCP Server",
       "tag": "MCP 协议",
-      "desc": "将 37 项元构能力封装为 MCP 工具，任何 MCP 客户端即开即用，无需修改规则文件。"
+      "desc": "将 42 项元构能力封装为 MCP 工具，任何 MCP 客户端即开即用，无需修改规则文件。"
     },
     "roadmapTitle": "路线图",
     "roadmapV3650": {
-      "title": "v36.6.0",
+      "title": "v36.5.0 · 全息引擎初成",
       "statusLabel": "已完成",
-      "desc": "活文档系统 + 10个新技能（37个总计）+ 文档全面审计 + 元构白皮书"
+      "desc": "元构全息智能引擎文档整合 + 10 个新技能（方法论+架构族）+ 活文档系统 + 元构白皮书"
+    },
+    "roadmapV3660": {
+      "title": "v36.6.0 · 文档系统化",
+      "statusLabel": "已完成",
+      "desc": "文档全面审计 + 官网 P2 升级 + 7 大技能族分层展示 + 双语同步"
     },
     "roadmapV3670": {
-      "title": "v36.7.0",
+      "title": "v36.7.0 · 引擎发布",
       "statusLabel": "已完成",
-      "desc": "MetaGO Engine 引擎发布 + 36公理+125引擎+927算法+754专利"
+      "desc": "MetaGO Engine v1.0.0 正式发布 NPM + 36 公理 + 125 引擎 + 927 算法 + 754 专利 + 5 大技术壁垒"
+    },
+    "roadmapV370": {
+      "title": "v37.0+ · 未来进化",
+      "statusLabel": "规划中",
+      "desc": "多生命体协作协议 + 跨域意识共振 + 全息智能生态 + 国际推广 + 多语言扩展"
     },
     "devKit": {
       "title": "MetaGO Dev Kit",
@@ -719,7 +1035,14 @@
       "title": "MetaGO Certify",
       "tag": "生态基础设施",
       "desc": "6 项检查技能认证体系，Gold/Silver 分级，确保技能质量达标。"
-    }
+    },
+    "founderTitle": "创始人",
+    "founderName": "易霄 · MetaGO Lightyear",
+    "founderRole": "首席全域架构师 · 元构生命体创造者",
+    "founderQuote": "「完成指令只是及格，洞察未言之语、预判潜在风险、拓展多维价值才是使命。」",
+    "infoLicenseTitle": "开源许可证",
+    "infoRepoTitle": "仓库链接",
+    "infoContactTitle": "联系方式"
   },
   "footer": {
     "docs": "文档",

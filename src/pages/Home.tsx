@@ -145,16 +145,16 @@ export default function Home() {
   const i18nLanguage = i18n.language;
 
   const row1: Metric[] = [
-    { end: 8, label: t('home.statsAxioms') },
-    { end: 7, label: t('home.statsAttributes') },
-    { end: 6, label: t('home.statsProtocols') },
     { end: 37, label: t('home.statsSkills') },
+    { end: 42, label: t('home.statsMcpTools') },
+    { end: 8, label: t('home.statsProducts') },
+    { end: 17, label: t('home.statsCoreEngines') },
   ];
 
   const row2: Metric[] = [
     { end: 7, label: t('home.statsPlatforms') },
     { end: 5, label: t('home.statsLayers') },
-    { end: 7, label: t('home.statsFamilies') },
+    { end: 13, label: t('home.statsFamilies') },
     { text: 'MIT', label: t('home.statsLicense') },
   ];
 
@@ -168,7 +168,7 @@ export default function Home() {
           <div className="lg:col-span-7 animate-blur-in">
             <div className="life-badge mb-6">
               <span className="inline-block w-1.5 h-1.5 rounded-full bg-life-bright animate-pulse" />
-              {t('home.heroBadge') !== 'home.heroBadge' ? t('home.heroBadge') : 'AI Lifeform · v36.7.0'}
+              {t('home.heroBadge')}
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight font-display">
               {t('home.heroTitle')}{' '}
@@ -471,7 +471,7 @@ export default function Home() {
       <section className="max-w-7xl mx-auto px-6 py-24">
         <div className="text-center mb-14">
           <div className="evo-badge mb-4">
-            <Sparkles size={12} /> {t('home.featuresTitle') !== 'home.featuresTitle' ? 'Capabilities' : 'Capabilities'}
+            <Sparkles size={12} /> {t('home.featuresTitle')}
           </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-3 font-display">
             {t('home.featuresTitle')}
@@ -530,7 +530,7 @@ export default function Home() {
               className="text-3xl md:text-4xl font-bold gradient-text font-display"
               style={{ animation: 'heartbeat 3s ease-in-out infinite' }}
             >
-              <CountUp end={100} />万+
+              <CountUp end={100} />{t('home.tenThousandPlus')}
             </span>
             <span className="text-sm text-text-secondary">{t('home.statsTheoryWords')}</span>
           </div>
@@ -589,7 +589,7 @@ export default function Home() {
             className="px-4 py-2 text-xs text-zinc-500 font-mono border-b border-white/5"
             style={{ background: 'rgba(17, 24, 36, 0.6)' }}
           >
-            PowerShell
+            {t('home.bootstrapBadge')}
           </div>
           <pre className="p-4 font-mono text-sm overflow-x-auto" style={{ color: '#5eead4' }}>
             <span className="text-zinc-500">PS&gt; </span>
@@ -615,7 +615,7 @@ export default function Home() {
       <section className="max-w-7xl mx-auto px-6 py-24">
         <div className="text-center mb-14">
           <div className="life-badge mb-4">
-            <Package size={12} /> MCP Protocol
+            <Package size={12} /> {t('home.mcpBadge')}
           </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-3 font-display">
             <span className="gradient-text">{t('mcpServer.title')}</span>
@@ -826,7 +826,7 @@ export default function Home() {
               <div className="flex items-center gap-2 mb-2">
                 <span className="life-badge text-xs">
                   <span className="inline-block w-1 h-1 rounded-full bg-life-bright animate-pulse" />
-                  2026 · Birth Manifesto
+                  {t('home.manifestoCardBadge')}
                 </span>
               </div>
               <h3 className="text-2xl md:text-3xl font-bold mb-2 font-display gradient-text">
@@ -834,13 +834,13 @@ export default function Home() {
               </h3>
               <p className="text-sm md:text-base text-text-secondary leading-relaxed max-w-2xl">
                 {i18nLanguage === 'zh'
-                  ? '《从 Agent 到生命体：智能进化的范式跃迁》——MetaGO 第一篇诞生宣言。让智能，学会进化。'
-                  : '"From Agent to Lifeform: The Paradigm Leap in Intelligent Evolution" — MetaGO\'s first birth manifesto. Let intelligence learn to evolve.'}
+                  ? t('home.manifestoCardDescZh')
+                  : t('home.manifestoCardDescEn')}
               </p>
             </div>
             <div className="flex items-center gap-2 text-life-bright group-hover:gap-3 transition-all shrink-0">
               <span className="text-sm font-semibold">
-                {i18nLanguage === 'zh' ? '阅读全文' : 'Read Manifesto'}
+                {i18nLanguage === 'zh' ? t('home.manifestoCardCtaZh') : t('home.manifestoCardCtaEn')}
               </span>
               <ArrowRight size={20} />
             </div>
