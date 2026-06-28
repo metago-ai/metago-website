@@ -122,6 +122,7 @@
     "architecture": "Architecture",
     "customization": "Customization",
     "faq": "FAQ",
+    "whitepaper": "Whitepaper",
     "livingDocs": {
       "title": "Living Documentation",
       "description": "MetaGO documentation is not static—it's a living system that evolves with versions, can be loaded by AI, and self-checks for consistency.",
@@ -166,9 +167,9 @@
     },
     "roadmapTitle": "Roadmap",
     "roadmapV3650": {
-      "title": "v36.5.1",
+      "title": "v36.6.0",
       "statusLabel": "Completed",
-      "desc": "Living Documentation System + 10 new skills (37 total) + Full doc audit"
+      "desc": "Living Documentation System + 10 new skills (37 total) + Full doc audit + MetaGO Whitepaper"
     },
     "devKit": {
       "title": "MetaGO Dev Kit",

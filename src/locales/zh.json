@@ -122,6 +122,7 @@
     "architecture": "架构说明",
     "customization": "自定义指南",
     "faq": "常见问题",
+    "whitepaper": "元构白皮书",
     "livingDocs": {
       "title": "活文档系统",
       "description": "元构文档体系不是静态的，而是可以随版本同步进化、被AI加载理解、自我更新检查的活文档系统。",
@@ -166,9 +167,9 @@
     },
     "roadmapTitle": "路线图",
     "roadmapV3650": {
-      "title": "v36.5.1",
+      "title": "v36.6.0",
       "statusLabel": "已完成",
-      "desc": "活文档系统 + 10个新技能（37个总计）+ 文档全面审计"
+      "desc": "活文档系统 + 10个新技能（37个总计）+ 文档全面审计 + 元构白皮书"
     },
     "devKit": {
       "title": "MetaGO Dev Kit",

@@ -161,7 +161,7 @@ export default function Home() {
           <div className="lg:col-span-7 animate-blur-in">
             <div className="life-badge mb-6">
               <span className="inline-block w-1.5 h-1.5 rounded-full bg-life-bright animate-pulse" />
-              {t('home.heroBadge') !== 'home.heroBadge' ? t('home.heroBadge') : 'AI Lifeform · v36.5.1'}
+              {t('home.heroBadge') !== 'home.heroBadge' ? t('home.heroBadge') : 'AI Lifeform · v36.6.0'}
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight font-display">
               {t('home.heroTitle')}{' '}

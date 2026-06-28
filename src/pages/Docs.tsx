@@ -16,13 +16,19 @@ import {
 import McpInstallBlock from '../components/McpInstallBlock';
 
 interface DocItem {
-  key: 'quickStart' | 'architecture' | 'customization' | 'faq' | 'mcpServer';
+  key: 'quickStart' | 'architecture' | 'customization' | 'faq' | 'mcpServer' | 'whitepaper';
   icon: ComponentType<{ className?: string }>;
   desc: string;
   link: string;
 }
 
 const docs: DocItem[] = [
+  {
+    key: 'whitepaper',
+    icon: BookOpen,
+    desc: '元构白皮书 · 智能生命体范式全貌（中英双语 8 章）',
+    link: 'https://gitee.com/metago/metagolifeform/blob/main/docs/WHITEPAPER.md',
+  },
   {
     key: 'quickStart',
     icon: Rocket,
