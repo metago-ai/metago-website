@@ -685,6 +685,11 @@
       "statusLabel": "已完成",
       "desc": "活文档系统 + 10个新技能（37个总计）+ 文档全面审计 + 元构白皮书"
     },
+    "roadmapV3670": {
+      "title": "v36.7.0",
+      "statusLabel": "已完成",
+      "desc": "MetaGO Engine 引擎发布 + 36公理+125引擎+927算法+754专利"
+    },
     "devKit": {
       "title": "MetaGO Dev Kit",
       "tag": "垂直场景包",

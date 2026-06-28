@@ -97,10 +97,27 @@ const meters = [
 ];
 
 export default function Engine() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <div className="overflow-hidden">
+      {/* ===== NPM 发布公告 ===== */}
+      <div
+        className="w-full px-6 py-3 text-center text-sm"
+        style={{
+          background:
+            'linear-gradient(90deg, rgba(94, 234, 212, 0.12), rgba(251, 191, 36, 0.08), rgba(94, 234, 212, 0.12))',
+          borderBottom: '1px solid rgba(94, 234, 212, 0.2)',
+        }}
+      >
+        <span className="font-mono">📦</span>{' '}
+        <span className="text-zinc-200">
+          {i18n.language === 'zh'
+            ? '@metago-ai/engine@1.0.0 已发布到 NPM — 智能生命体的核心引擎，npm install @metago-ai/engine 即可使用'
+            : '@metago-ai/engine@1.0.0 released on NPM — the core engine of the intelligent lifeform, npm install @metago-ai/engine'}
+        </span>
+      </div>
+
       {/* ===== Hero：心脏跳动仪表盘 ===== */}
       <section className="relative min-h-[80vh] flex items-center px-6 pt-32 pb-16">
         <ParticleBg />

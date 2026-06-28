@@ -685,6 +685,11 @@
       "statusLabel": "Completed",
       "desc": "Living Documentation System + 10 new skills (37 total) + Full doc audit + MetaGO Whitepaper"
     },
+    "roadmapV3670": {
+      "title": "v36.7.0",
+      "statusLabel": "Completed",
+      "desc": "MetaGO Engine released + 36 axioms + 125 engines + 927 algorithms + 754 patents"
+    },
     "devKit": {
       "title": "MetaGO Dev Kit",
       "tag": "Scenario Pack",

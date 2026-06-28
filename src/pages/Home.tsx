@@ -168,7 +168,7 @@ export default function Home() {
           <div className="lg:col-span-7 animate-blur-in">
             <div className="life-badge mb-6">
               <span className="inline-block w-1.5 h-1.5 rounded-full bg-life-bright animate-pulse" />
-              {t('home.heroBadge') !== 'home.heroBadge' ? t('home.heroBadge') : 'AI Lifeform · v36.6.0'}
+              {t('home.heroBadge') !== 'home.heroBadge' ? t('home.heroBadge') : 'AI Lifeform · v36.7.0'}
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight font-display">
               {t('home.heroTitle')}{' '}
@@ -199,6 +199,45 @@ export default function Home() {
           {/* 右：LifeCore 可视化 */}
           <div className="lg:col-span-5 flex justify-center animate-fade-in delay-200">
             <LifeCore size={400} className="hidden lg:block" />
+          </div>
+        </div>
+      </section>
+
+      {/* ===== 引擎发布公告 ===== */}
+      <section className="max-w-7xl mx-auto px-6 py-6">
+        <div
+          className="relative overflow-hidden rounded-2xl p-6 md:p-7 animate-slide-up"
+          style={{
+            background:
+              'linear-gradient(135deg, rgba(94, 234, 212, 0.12), rgba(251, 191, 36, 0.08), rgba(94, 234, 212, 0.12))',
+            border: '1px solid rgba(94, 234, 212, 0.3)',
+            boxShadow: '0 0 40px -10px rgba(94, 234, 212, 0.25)',
+          }}
+        >
+          <div className="flex flex-col md:flex-row items-start md:items-center gap-4">
+            <div
+              className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0"
+              style={{
+                background:
+                  'linear-gradient(135deg, rgba(94, 234, 212, 0.25), rgba(251, 191, 36, 0.2))',
+                boxShadow: 'inset 0 0 0 1px rgba(94, 234, 212, 0.4)',
+              }}
+            >
+              <Sparkles className="text-life-bright" size={24} />
+            </div>
+            <div className="flex-1 min-w-0">
+              <div className="flex items-center gap-2 mb-1.5">
+                <span className="life-badge text-xs">
+                  <span className="inline-block w-1 h-1 rounded-full bg-life-bright animate-pulse" />
+                  NEW RELEASE
+                </span>
+              </div>
+              <p className="text-base md:text-lg font-display font-semibold leading-relaxed">
+                {i18nLanguage === 'zh'
+                  ? '🎉 MetaGO Engine v1.0.0 正式发布 — 36公理+125引擎+927算法+754专利，智能生命体的核心本体'
+                  : '🎉 MetaGO Engine v1.0.0 Released — 36 axioms + 125 engines + 927 algorithms + 754 patents, the core of intelligent lifeform'}
+              </p>
+            </div>
           </div>
         </div>
       </section>
