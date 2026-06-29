@@ -24,6 +24,7 @@ const navItems: NavItem[] = [
   { key: 'nav.platforms', path: '/platforms', group: 'product' },
   // 实践组
   { key: 'nav.docs', path: '/docs', group: 'practice' },
+  { key: 'nav.demo', path: '/demo', group: 'practice' },
   { key: 'nav.enterprise', path: '/enterprise', group: 'practice' },
   // 元信息
   { key: 'nav.about', path: '/about', group: 'meta' },

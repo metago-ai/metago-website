@@ -12,6 +12,7 @@ import Whitepaper from './pages/Whitepaper';
 import Engine from './pages/Engine';
 import Axioms from './pages/Axioms';
 import Evolution from './pages/Evolution';
+import Demo from './pages/Demo';
 
 function NotFound() {
   return (
@@ -45,6 +46,7 @@ function App() {
             <Route path="/product" element={<Product />} />
             <Route path="/platforms" element={<Platforms />} />
             <Route path="/docs" element={<Docs />} />
+            <Route path="/demo" element={<Demo />} />
             <Route path="/enterprise" element={<Enterprise />} />
             <Route path="/about" element={<About />} />
             <Route path="/manifesto" element={<Manifesto />} />

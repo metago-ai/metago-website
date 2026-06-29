@@ -27,7 +27,7 @@ export default defineConfig({
         )
         const routes = [
           'whitepaper', 'engine', 'axioms', 'evolution',
-          'product', 'platforms', 'docs', 'enterprise', 'about', 'manifesto',
+          'product', 'platforms', 'docs', 'demo', 'enterprise', 'about', 'manifesto',
         ]
         for (const r of routes) {
           const dir = resolve(__dirname, 'dist', r)

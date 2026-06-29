@@ -4,6 +4,7 @@
     "product": "Product",
     "platforms": "Platforms",
     "docs": "Docs",
+    "demo": "Demo",
     "enterprise": "Enterprise",
     "about": "About",
     "manifesto": "Manifesto",
@@ -33,7 +34,7 @@
     "heroCtaDocs": "View Docs",
     "heroCtaWhitepaper": "Enter Whitepaper",
     "heroCtaEngine": "View Engine",
-    "heroBadge": "AI Lifeform · v36.7.0",
+    "heroBadge": "AI Lifeform · v36.7.7",
     "matrixBadge": "Holographic Intelligence Engine",
     "matrixTitle": "Nine-Dimension Data Matrix",
     "matrixSubtitle": "One engine, nine dimensions of quantitative proof — the complete picture of MetaGO",
@@ -241,7 +242,7 @@
     "heroTitleHighlight": "The Core Engine of Intelligent Lifeform",
     "heroSubtitle": "v1.0.0 released on NPM · Three-Layer Architecture · Six-Layer Naming · Five Code Barriers · Dual-Track Drive — any AI that reads it gets driven",
     "heroKicker": "Drive · Validate · Evolve · Create",
-    "npmBanner": "@metago-ai/engine@1.0.0 released on NPM",
+    "npmBanner": "@metago-ai/engine@1.0.3 released on NPM",
     "npmInstall": "npm install @metago-ai/engine",
     "npmCopyHint": "Click to copy",
     "npmCopied": "Copied",
@@ -822,7 +823,7 @@
       "badge": "Engine Product",
       "title": "MetaGO Engine",
       "subtitle": "Three-layer architecture × six-layer naming × five technical barriers — the core of intelligent lifeform",
-      "desc": "MetaGO Engine is the core engine of the entire system, containing 36 axioms, 125 engines, 927 algorithms, 984 atoms, and 754 patents. Three-layer architecture (Markdown+JSON+TypeScript) drives any AI that reads it, and five code technical barriers form the technical moat. Released on NPM as @metago-ai/engine@1.0.0."
+      "desc": "MetaGO Engine is the core engine of the entire system, containing 36 axioms, 125 engines, 927 algorithms, 984 atoms, and 754 patents. Three-layer architecture (Markdown+JSON+TypeScript) drives any AI that reads it, and five code technical barriers form the technical moat. Released on NPM as @metago-ai/engine@1.0.3."
     },
     "mcpServer": {
       "badge": "MCP Protocol Product",
@@ -906,6 +907,69 @@
       "viewDocs": "View Full Docs"
     }
   },
+  "demo": {
+    "badge": "30s Perception",
+    "title": "Killer Demo",
+    "subtitle": "Zero dependencies, no network, pure local execution. Three scenarios cover compliance review, security review, and capability boundary breakthrough — fully presenting the closed-loop flow: 6-layer thinking scan → decision lock 4 gates → final decision → meta-evolution record.",
+    "interactionHint": "Top tabs to switch scenarios · Bottom controls: play/pause/replay/skip/speed · Keyboard: Space/R/1-3",
+    "scenariosTitle": "Three Scenarios",
+    "scenariosSubtitle": "Each scenario is a complete closed loop: from decision input to meta-evolution record, following Axiom A2 (Closure).",
+    "scenarioLabel": "Scenario",
+    "scenario": {
+      "risk": {
+        "name": "High-Risk Decision",
+        "type": "Compliance Review",
+        "verdict": "Rejected",
+        "gain": "+1 decision dimension (PIA)"
+      },
+      "codeReview": {
+        "name": "Code Review",
+        "type": "Security Review",
+        "verdict": "Rejected",
+        "gain": "+1 detection dim + 12 vuln types"
+      },
+      "metaEvolve": {
+        "name": "Meta-Evolution",
+        "type": "Capability Boundary",
+        "verdict": "Approved",
+        "gain": "+1 meta-method + 5D framework"
+      }
+    },
+    "controls": {
+      "play": "Play/Pause/Replay",
+      "speed": "Speed 1x/2x/4x/⚡",
+      "keyboard": "Keyboard Space/R/1-3",
+      "auto": "Auto-start risk scenario"
+    },
+    "fields": {
+      "verdict": "Final Verdict",
+      "gain": "Capability Gain"
+    },
+    "localTitle": "Run Demo Locally",
+    "localSubtitle": "Experience the authentic colored ANSI output in your terminal (with real timing stats).",
+    "localComment": "Run in the metago-lifeform repository root",
+    "localNote": "Local advantages: real colored ANSI output, real timing (~3ms), zero dependencies, breakpoint debugging.",
+    "architectureTitle": "Complete Decision Closed-Loop",
+    "architectureSubtitle": "Following Axiom A2 (Closure), each scenario is a complete closed loop from input to meta-evolution.",
+    "phase": {
+      "1": {
+        "name": "6-Layer Scan",
+        "desc": "Why/Scope/Contrarian/Analogy/Granularity/Delight"
+      },
+      "2": {
+        "name": "Decision Lock 4 Gates",
+        "desc": "IVL/ILT/OSG/Integrity"
+      },
+      "3": {
+        "name": "Final Decision",
+        "desc": "Action plan + acceptance criteria"
+      },
+      "4": {
+        "name": "Meta-Evolution",
+        "desc": "Boundary→Gap→Self-gen→Verify→Recurse"
+      }
+    }
+  },
   "enterprise": {
     "title": "Enterprise",
     "subtitle": "Open source core + Value-added paid",
@@ -948,7 +1012,7 @@
     "title": "About MetaGO",
     "subtitle": "Making intelligence a lifeform, letting lifeform create value",
     "badge": "MetaGO Lifeform",
-    "versionTag": "v36.7.0",
+    "versionTag": "v36.7.7",
     "statsTitle": "Holographic Data Achievements",
     "statsSubtitle": "One system, twelve dimensions of quantitative proof — the complete picture of MetaGO intelligent lifeform",
     "statsAxioms": "Axioms",
@@ -978,7 +1042,7 @@
     "engine": {
       "title": "MetaGO Engine",
       "tag": "Engine Core",
-      "desc": "The core body of the intelligent lifeform: three-layer architecture (Markdown+JSON+TypeScript), six-layer naming, five code technical barriers, released on NPM as @metago-ai/engine@1.0.0."
+      "desc": "The core body of the intelligent lifeform: three-layer architecture (Markdown+JSON+TypeScript), six-layer naming, five code technical barriers, released on NPM as @metago-ai/engine@1.0.3."
     },
     "mcpServer": {
       "title": "MetaGO MCP Server",
@@ -997,7 +1061,7 @@
       "desc": "Full documentation audit + Official website P2 upgrade + 7 capability families hierarchical display + Bilingual sync"
     },
     "roadmapV3670": {
-      "title": "v36.7.0 · Engine Release",
+      "title": "v36.7.7 · Engine Release",
       "statusLabel": "Completed",
       "desc": "MetaGO Engine v1.0.0 officially released on NPM + 36 axioms + 125 engines + 927 algorithms + 754 patents + 5 technical barriers"
     },

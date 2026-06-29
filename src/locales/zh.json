@@ -4,6 +4,7 @@
     "product": "产品",
     "platforms": "平台",
     "docs": "文档",
+    "demo": "演示",
     "enterprise": "商业版",
     "about": "关于",
     "manifesto": "诞生宣言",
@@ -33,7 +34,7 @@
     "heroCtaDocs": "查看文档",
     "heroCtaWhitepaper": "进入白皮书",
     "heroCtaEngine": "查看引擎",
-    "heroBadge": "AI Lifeform · v36.7.0",
+    "heroBadge": "AI Lifeform · v36.7.7",
     "matrixBadge": "全息智能引擎",
     "matrixTitle": "九维数据矩阵",
     "matrixSubtitle": "一套引擎、九维量化证明——这就是元构的完整全貌",
@@ -241,7 +242,7 @@
     "heroTitleHighlight": "智能生命体的核心引擎",
     "heroSubtitle": "v1.0.0 已发布 NPM · 三层架构 · 6 层命名 · 5 大代码技术壁垒 · 双轨驱动 — 让任何 AI 读取即被驱动",
     "heroKicker": "驱动 · 校验 · 进化 · 创造",
-    "npmBanner": "@metago-ai/engine@1.0.0 已发布到 NPM",
+    "npmBanner": "@metago-ai/engine@1.0.3 已发布到 NPM",
     "npmInstall": "npm install @metago-ai/engine",
     "npmCopyHint": "点击复制",
     "npmCopied": "已复制",
@@ -822,7 +823,7 @@
       "badge": "引擎产品",
       "title": "MetaGO Engine",
       "subtitle": "三层架构 × 6层命名 × 5大技术壁垒 — 智能生命体的核心本体",
-      "desc": "MetaGO Engine 是整个体系的核心引擎，包含 36 公理、125 引擎、927 算法、984 原子、754 专利。三层架构（Markdown+JSON+TypeScript）让任何 AI 读取即被驱动，5 大代码技术壁垒构成技术护城河。已发布 NPM @metago-ai/engine@1.0.0。"
+      "desc": "MetaGO Engine 是整个体系的核心引擎，包含 36 公理、125 引擎、927 算法、984 原子、754 专利。三层架构（Markdown+JSON+TypeScript）让任何 AI 读取即被驱动，5 大代码技术壁垒构成技术护城河。已发布 NPM @metago-ai/engine@1.0.3。"
     },
     "mcpServer": {
       "badge": "MCP 协议产品",
@@ -906,6 +907,69 @@
       "viewDocs": "查看完整文档"
     }
   },
+  "demo": {
+    "badge": "30 秒感知",
+    "title": "杀手级 Demo 演示",
+    "subtitle": "零依赖、无网络、纯本地运行。三个场景覆盖合规审查、安全审查、能力边界突破三大核心能力维度，完整呈现 6 层思维扫描 → 决策锁 4 关卡 → 最终决策 → 元进化记录的闭环流程。",
+    "interactionHint": "顶部 Tab 切换场景 · 底部控制条播放/暂停/重播/跳过/速度 · 键盘 Space/R/1-3",
+    "scenariosTitle": "三场景对比",
+    "scenariosSubtitle": "每个场景完整闭环：从决策输入到元进化记录，遵循 A2 闭环公理。",
+    "scenarioLabel": "场景",
+    "scenario": {
+      "risk": {
+        "name": "高风险决策评估",
+        "type": "合规审查",
+        "verdict": "否决",
+        "gain": "+1 决策维度（PIA）"
+      },
+      "codeReview": {
+        "name": "代码审查实战",
+        "type": "安全审查",
+        "verdict": "否决",
+        "gain": "+1 检测维度 + 12 类漏洞"
+      },
+      "metaEvolve": {
+        "name": "元进化触发",
+        "type": "能力边界突破",
+        "verdict": "通过",
+        "gain": "+1 元方法论 + 5 维框架"
+      }
+    },
+    "controls": {
+      "play": "播放/暂停/重播",
+      "speed": "速度控制 1x/2x/4x/⚡",
+      "keyboard": "键盘快捷键 Space/R/1-3",
+      "auto": "自动启动 risk 场景"
+    },
+    "fields": {
+      "verdict": "最终决策",
+      "gain": "能力增益"
+    },
+    "localTitle": "本地运行 Demo",
+    "localSubtitle": "在终端中体验原汁原味的彩色 ANSI 输出（含真实耗时统计）。",
+    "localComment": "在 metago-lifeform 仓库根目录运行",
+    "localNote": "本地运行优势：真实彩色 ANSI 输出、真实耗时统计（约 3ms）、零依赖零网络、可断点调试。",
+    "architectureTitle": "完整决策闭环架构",
+    "architectureSubtitle": "遵循 A2 闭环公理，每个场景从输入到元进化完整闭环，无遗漏。",
+    "phase": {
+      "1": {
+        "name": "6 层思维扫描",
+        "desc": "本质/维度/反向/类比/落地/超预期"
+      },
+      "2": {
+        "name": "决策锁 4 关卡",
+        "desc": "IVL/ILT/OSG/完整性"
+      },
+      "3": {
+        "name": "最终决策",
+        "desc": "行动计划 + 验收标准"
+      },
+      "4": {
+        "name": "元进化记录",
+        "desc": "边界→差距→自生成→验证→递归"
+      }
+    }
+  },
   "enterprise": {
     "title": "商业版",
     "subtitle": "开源核心 + 增值付费",
@@ -948,7 +1012,7 @@
     "title": "关于 MetaGO",
     "subtitle": "让智能成为生命，让生命创造价值",
     "badge": "元构生命体",
-    "versionTag": "v36.7.0",
+    "versionTag": "v36.7.7",
     "statsTitle": "全息数据成就",
     "statsSubtitle": "一套体系，十二维量化证明 — 元构智能生命体的完整全貌",
     "statsAxioms": "公理",
@@ -978,7 +1042,7 @@
     "engine": {
       "title": "MetaGO Engine",
       "tag": "引擎核心",
-      "desc": "智能生命体的核心本体：三层架构（Markdown+JSON+TypeScript）、6 层命名、5 大代码技术壁垒，已发布 NPM @metago-ai/engine@1.0.0。"
+      "desc": "智能生命体的核心本体：三层架构（Markdown+JSON+TypeScript）、6 层命名、5 大代码技术壁垒，已发布 NPM @metago-ai/engine@1.0.3。"
     },
     "mcpServer": {
       "title": "MetaGO MCP Server",
@@ -997,7 +1061,7 @@
       "desc": "文档全面审计 + 官网 P2 升级 + 7 大技能族分层展示 + 双语同步"
     },
     "roadmapV3670": {
-      "title": "v36.7.0 · 引擎发布",
+      "title": "v36.7.7 · 引擎发布",
       "statusLabel": "已完成",
       "desc": "MetaGO Engine v1.0.0 正式发布 NPM + 36 公理 + 125 引擎 + 927 算法 + 754 专利 + 5 大技术壁垒"
     },
