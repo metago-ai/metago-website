@@ -1,11 +1,12 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { GitFork, ExternalLink, Mail, Package } from 'lucide-react';
+import { GitFork, ExternalLink, Mail, Package, Globe } from 'lucide-react';
 import logoUrl from '../assets/metago-logo.png';
 
 const GITEE_URL = 'https://gitee.com/metago/metagolifeform';
 const GITHUB_URL = 'https://github.com/metago-ai/metagolifeform';
 const NPM_URL = 'https://www.npmjs.com/package/metago-lifeform';
+const GITHUB_PAGES_URL = 'https://metago-ai.github.io/metago-website/';
 
 export default function Footer() {
   const { t } = useTranslation();
@@ -102,6 +103,16 @@ export default function Footer() {
               </li>
               <li>
                 <a
+                  href={GITHUB_PAGES_URL}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center gap-2 hover:text-life-bright transition-colors"
+                >
+                  <Globe size={14} /> GitHub Pages 官网 <ExternalLink size={11} />
+                </a>
+              </li>
+              <li>
+                <a
                   href={NPM_URL}
                   target="_blank"
                   rel="noreferrer"
@@ -131,7 +142,7 @@ export default function Footer() {
               <span className="inline-block w-1 h-1 rounded-full bg-life-bright" />
               <span className="inline-block w-1 h-1 rounded-full bg-evo-bright" />
               <span className="inline-block w-1 h-1 rounded-full bg-gov-bright" />
-              <span className="ml-2">Lifeform v36.7.5</span>
+              <span className="ml-2">Lifeform v36.7.9</span>
             </span>
           </div>
         </div>

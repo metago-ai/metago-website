@@ -1,5 +1,6 @@
 # MetaGO Lifeform Kit 官方网站 robots.txt
-# https://metago-d6gfw1e4rf2a5bcad-1257074864.tcloudbaseapp.com/
+# 主源：https://metago-ai.github.io/metago-website/
+# 镜像：https://metago-d6gfw1e4rf2a5bcad-1257074864.tcloudbaseapp.com/
 
 User-agent: *
 Allow: /
@@ -7,7 +8,10 @@ Allow: /
 # 爬取延迟（秒）
 Crawl-delay: 1
 
-# 站点地图
+# 站点地图（主）
+Sitemap: https://metago-ai.github.io/metago-website/sitemap.xml
+
+# 站点地图（镜像）
 Sitemap: https://metago-d6gfw1e4rf2a5bcad-1257074864.tcloudbaseapp.com/sitemap.xml
 
 # 禁止爬取的路径

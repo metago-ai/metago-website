@@ -56,7 +56,7 @@ function Demo() {
             }}
           >
             <iframe
-              src="/demo-animation.html"
+              src="./demo-animation.html"
               title="MetaGO Lifeform Demo"
               style={{
                 width: '100%',
