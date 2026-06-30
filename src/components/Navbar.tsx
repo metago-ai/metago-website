@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { Menu, X, GitFork, Star, Package } from 'lucide-react';
+import { Menu, X, GitFork, Star, Package, ExternalLink } from 'lucide-react';
 import logoUrl from '../assets/metago-logo.png';
 
 type NavGroup = 'home' | 'paradigm' | 'product' | 'practice' | 'meta';
@@ -34,6 +34,7 @@ const navItems: NavItem[] = [
 const GITEE_URL = 'https://gitee.com/metago/metagolifeform';
 const GITHUB_URL = 'https://github.com/metago-ai/metagolifeform';
 const NPM_URL = 'https://www.npmjs.com/package/metago-lifeform';
+const STUDIO_URL = 'https://metago-ai.github.io/metago-studio/';
 
 export default function Navbar() {
   const { t, i18n } = useTranslation();
@@ -158,6 +159,20 @@ export default function Navbar() {
 
         <div className="hidden lg:flex items-center gap-3">
           <a
+            href={STUDIO_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="flex items-center gap-2 px-3.5 py-2 rounded-lg text-sm font-medium transition-all duration-300"
+            style={{
+              background: 'linear-gradient(135deg, rgba(94, 234, 212, 0.15), rgba(94, 234, 212, 0.05))',
+              border: '1px solid rgba(94, 234, 212, 0.4)',
+              color: '#5eead4',
+            }}
+            title="MetaGO Studio 可视化操作台"
+          >
+            <ExternalLink size={15} /> {t('nav.studio')}
+          </a>
+          <a
             href={GITEE_URL}
             target="_blank"
             rel="noreferrer"
@@ -239,6 +254,20 @@ export default function Navbar() {
               );
             })}
             <div className="flex flex-wrap gap-2 pt-3">
+              <a
+                href={STUDIO_URL}
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center gap-2 px-3.5 py-2 rounded-lg text-sm font-medium transition-all duration-300"
+                style={{
+                  background: 'linear-gradient(135deg, rgba(94, 234, 212, 0.15), rgba(94, 234, 212, 0.05))',
+                  border: '1px solid rgba(94, 234, 212, 0.4)',
+                  color: '#5eead4',
+                }}
+                title="MetaGO Studio 可视化操作台"
+              >
+                <ExternalLink size={15} /> {t('nav.studio')}
+              </a>
               <a
                 href={GITEE_URL}
                 target="_blank"
