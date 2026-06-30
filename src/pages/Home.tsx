@@ -146,7 +146,7 @@ export default function Home() {
 
   const row1: Metric[] = [
     { end: 37, label: t('home.statsSkills') },
-    { end: 42, label: t('home.statsMcpTools') },
+    { end: 35, label: t('home.statsMcpTools') },
     { end: 8, label: t('home.statsProducts') },
     { end: 17, label: t('home.statsCoreEngines') },
   ];

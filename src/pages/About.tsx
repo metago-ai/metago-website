@@ -128,7 +128,7 @@ const stats: Stat[] = [
   { end: 43, labelKey: 'about.statsAttributes', hue: 'life', icon: Sparkles },
   { end: 108, labelKey: 'about.statsProtocols', hue: 'gov', icon: ShieldCheck },
   { end: 37, labelKey: 'about.statsSkills', hue: 'evo', icon: Cpu },
-  { end: 42, labelKey: 'about.statsMcpTools', hue: 'life', icon: Plug },
+  { end: 35, labelKey: 'about.statsMcpTools', hue: 'life', icon: Plug },
   { end: 125, labelKey: 'about.statsEngines', hue: 'patent', icon: Layers },
   { end: 927, labelKey: 'about.statsAlgorithms', hue: 'evo', icon: Atom },
   { end: 984, labelKey: 'about.statsAtoms', hue: 'life', icon: Box },
