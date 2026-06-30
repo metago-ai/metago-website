@@ -7,6 +7,22 @@ import { resolve } from 'node:path'
 export default defineConfig({
   // 相对路径，同时兼容 CloudBase 根路径部署与 GitHub Pages 子路径部署
   base: './',
+  build: {
+    rollupOptions: {
+      output: {
+        // vendor 分割：核心库单独打包，利用浏览器长期缓存
+        manualChunks(id: string) {
+          if (id.includes('node_modules')) {
+            if (id.includes('react') || id.includes('scheduler')) return 'react-vendor'
+            if (id.includes('i18next')) return 'i18n-vendor'
+            if (id.includes('lucide-react')) return 'icons'
+          }
+        },
+      },
+    },
+    // 提高警告阈值，避免 vendor 分割后仍报警告
+    chunkSizeWarningLimit: 600,
+  },
   plugins: [
     react(),
     {

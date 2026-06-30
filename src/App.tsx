@@ -1,18 +1,28 @@
+import { lazy, Suspense } from 'react';
 import { HashRouter, Routes, Route, Link } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
-import Product from './pages/Product';
-import Platforms from './pages/Platforms';
-import Docs from './pages/Docs';
-import Enterprise from './pages/Enterprise';
-import About from './pages/About';
-import Manifesto from './pages/Manifesto';
-import Whitepaper from './pages/Whitepaper';
-import Engine from './pages/Engine';
-import Axioms from './pages/Axioms';
-import Evolution from './pages/Evolution';
-import Demo from './pages/Demo';
+
+const Whitepaper = lazy(() => import('./pages/Whitepaper'));
+const Engine = lazy(() => import('./pages/Engine'));
+const Axioms = lazy(() => import('./pages/Axioms'));
+const Evolution = lazy(() => import('./pages/Evolution'));
+const Product = lazy(() => import('./pages/Product'));
+const Platforms = lazy(() => import('./pages/Platforms'));
+const Docs = lazy(() => import('./pages/Docs'));
+const Demo = lazy(() => import('./pages/Demo'));
+const Enterprise = lazy(() => import('./pages/Enterprise'));
+const About = lazy(() => import('./pages/About'));
+const Manifesto = lazy(() => import('./pages/Manifesto'));
+
+function PageLoading() {
+  return (
+    <div className="min-h-[60vh] flex items-center justify-center">
+      <div className="w-10 h-10 border-2 border-zinc-700 border-t-[#5eead4] rounded-full animate-spin" />
+    </div>
+  );
+}
 
 function NotFound() {
   return (
@@ -37,21 +47,23 @@ function App() {
       <div className="min-h-screen flex flex-col bg-bg-deep">
         <Navbar />
         <main className="flex-1">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/whitepaper" element={<Whitepaper />} />
-            <Route path="/engine" element={<Engine />} />
-            <Route path="/axioms" element={<Axioms />} />
-            <Route path="/evolution" element={<Evolution />} />
-            <Route path="/product" element={<Product />} />
-            <Route path="/platforms" element={<Platforms />} />
-            <Route path="/docs" element={<Docs />} />
-            <Route path="/demo" element={<Demo />} />
-            <Route path="/enterprise" element={<Enterprise />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/manifesto" element={<Manifesto />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
+          <Suspense fallback={<PageLoading />}>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/whitepaper" element={<Whitepaper />} />
+              <Route path="/engine" element={<Engine />} />
+              <Route path="/axioms" element={<Axioms />} />
+              <Route path="/evolution" element={<Evolution />} />
+              <Route path="/product" element={<Product />} />
+              <Route path="/platforms" element={<Platforms />} />
+              <Route path="/docs" element={<Docs />} />
+              <Route path="/demo" element={<Demo />} />
+              <Route path="/enterprise" element={<Enterprise />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/manifesto" element={<Manifesto />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </Suspense>
         </main>
         <Footer />
       </div>
