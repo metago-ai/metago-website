@@ -34,7 +34,7 @@ const navItems: NavItem[] = [
 const GITEE_URL = 'https://gitee.com/metago/metagolifeform';
 const GITHUB_URL = 'https://github.com/metago-ai/metagolifeform';
 const NPM_URL = 'https://www.npmjs.com/package/metago-lifeform';
-const STUDIO_URL = 'https://metago-ai.github.io/metago-studio/';
+const STUDIO_URL = '/studio/';
 
 export default function Navbar() {
   const { t, i18n } = useTranslation();

@@ -2,7 +2,7 @@
 
 > 元构超级智能生命体标准安装包的官方网站与文档门户。
 
-[![Deploy](https://img.shields.io/badge/deploy-CloudBase-blue)](https://metago-d6gfw1e4rf2a5bcad-1257074864.tcloudbaseapp.com/)
+[![Deploy](https://img.shields.io/badge/deploy-CloudBase-blue)](https://metago.life/)
 [![Version](https://img.shields.io/badge/version-v36.7.0-blueviolet)](https://gitee.com/metago/metagolifeform/releases)
 [![License](https://img.shields.io/badge/license-MIT-success)](./LICENSE)
 
@@ -10,7 +10,7 @@
 
 本仓库托管 MetaGO Lifeform Kit 的官方网站源码，提供产品介绍、平台支持、文档入口与企业服务对接。网站采用中英双语，已部署至腾讯云 CloudBase。
 
-- 官方线上地址：<https://metago-d6gfw1e4rf2a5bcad-1257074864.tcloudbaseapp.com/>
+- 官方线上地址：<https://metago.life/>
 - GitHub Pages 备用：<https://metago-ai.github.io/metago-website/>
 - 产品仓库：<https://gitee.com/metago/metagolifeform>
 
