@@ -137,7 +137,17 @@ export default function Footer() {
         {/* 底部：生命体签名 */}
         <div className="border-t border-white/5">
           <div className="max-w-7xl mx-auto px-6 py-5 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-zinc-500">
-            <span>{t('footer.copyright')}</span>
+            <div className="flex flex-col md:flex-row items-center gap-2 md:gap-4">
+              <span>{t('footer.copyright')}</span>
+              <a
+                href="https://beian.miit.gov.cn"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-zinc-300 transition-colors"
+              >
+                蜀ICP备2026035958号
+              </a>
+            </div>
             <span className="font-mono flex items-center gap-2">
               <span className="inline-block w-1 h-1 rounded-full bg-life-bright" />
               <span className="inline-block w-1 h-1 rounded-full bg-evo-bright" />

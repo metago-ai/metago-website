@@ -35,7 +35,7 @@
     "heroCtaDocs": "View Docs",
     "heroCtaWhitepaper": "Enter Whitepaper",
     "heroCtaEngine": "View Engine",
-    "heroBadge": "AI Lifeform · v36.7.7",
+    "heroBadge": "AI Lifeform · v36.7.11",
     "matrixBadge": "Holographic Intelligence Engine",
     "matrixTitle": "Nine-Dimension Data Matrix",
     "matrixSubtitle": "One engine, nine dimensions of quantitative proof — the complete picture of MetaGO",
@@ -132,7 +132,7 @@
     "statsTheoryWords": "theoretical word count",
     "tenThousandPlus": "M+",
     "mcpBadge": "MCP Protocol",
-    "bootstrapBadge": "PowerShell · One-click Boot",
+    "bootstrapBadge": "Cross-platform · One-click Boot",
     "manifestoCardBadge": "2026 · Birth Manifesto",
     "manifestoCardDescZh": "From Agent to Lifeform: The Paradigm Leap in Intelligent Evolution — MetaGO's first birth manifesto. Let intelligence learn to evolve.",
     "manifestoCardDescEn": "From Agent to Lifeform: The Paradigm Leap in Intelligent Evolution — MetaGO's first birth manifesto. Let intelligence learn to evolve.",
@@ -1013,7 +1013,7 @@
     "title": "About MetaGO",
     "subtitle": "Making intelligence a lifeform, letting lifeform create value",
     "badge": "MetaGO Lifeform",
-    "versionTag": "v36.7.7",
+    "versionTag": "v36.7.11",
     "statsTitle": "Holographic Data Achievements",
     "statsSubtitle": "One system, twelve dimensions of quantitative proof — the complete picture of MetaGO intelligent lifeform",
     "statsAxioms": "Axioms",
@@ -1062,7 +1062,7 @@
       "desc": "Full documentation audit + Official website P2 upgrade + 7 capability families hierarchical display + Bilingual sync"
     },
     "roadmapV3670": {
-      "title": "v36.7.7 · Engine Release",
+      "title": "v36.7.11 · Engine Release",
       "statusLabel": "Completed",
       "desc": "MetaGO Engine v1.0.0 officially released on NPM + 36 axioms + 125 engines + 927 algorithms + 754 patents + 5 technical barriers"
     },

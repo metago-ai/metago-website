@@ -43,7 +43,12 @@ const docs: DocItem[] = [
 
 const installCommands = `git clone https://gitee.com/metago/metagolifeform.git
 cd metagolifeform
-.\\scripts\\install.ps1`;
+
+# Windows (PowerShell)
+.\\scripts\\install.ps1
+
+# macOS/Linux (Bash)
+bash scripts/install.sh`;
 
 function Docs() {
   const { t } = useTranslation();

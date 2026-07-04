@@ -59,7 +59,8 @@ const livingDocsFeatures = [
 const installLines = [
   'git clone https://gitee.com/metago/metagolifeform.git',
   'cd metagolifeform',
-  '.\\scripts\\install.ps1',
+  '.\\scripts\\install.ps1         # Windows (PowerShell)',
+  'bash scripts/install.sh        # macOS/Linux (Bash)',
 ];
 
 // MCP Server 客户端配置示例（Claude Desktop / Cursor / Trae）
@@ -592,7 +593,7 @@ export default function Home() {
             {t('home.bootstrapBadge')}
           </div>
           <pre className="p-4 font-mono text-sm overflow-x-auto" style={{ color: '#5eead4' }}>
-            <span className="text-zinc-500">PS&gt; </span>
+            <span className="text-zinc-500">$ </span>
             irm https://gitee.com/metago/metagolifeform/raw/main/scripts/bootstrap-install.ps1 | iex
           </pre>
         </div>

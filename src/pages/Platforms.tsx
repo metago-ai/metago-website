@@ -33,19 +33,20 @@ const platforms: PlatformRow[] = [
 
 interface InstallCommand {
   cmd: string;
+  bashCmd?: string;
   commentKey?: string;
 }
 
 const installCommands: InstallCommand[] = [
   { cmd: 'git clone https://gitee.com/metago/metagolifeform.git' },
   { cmd: 'cd metagolifeform' },
-  { cmd: '.\\scripts\\install.ps1', commentKey: 'platforms.installCommands.default' },
-  { cmd: '.\\scripts\\install.ps1 -Platform claude-code', commentKey: 'platforms.installCommands.claudeCode' },
-  { cmd: '.\\scripts\\install.ps1 -Platform codex', commentKey: 'platforms.installCommands.codex' },
-  { cmd: '.\\scripts\\install.ps1 -Platform cursor', commentKey: 'platforms.installCommands.cursor' },
-  { cmd: '.\\scripts\\install.ps1 -Platform codebuddy', commentKey: 'platforms.installCommands.codebuddy' },
-  { cmd: '.\\scripts\\install.ps1 -Platform qoder', commentKey: 'platforms.installCommands.qoder' },
-  { cmd: '.\\scripts\\install.ps1 -Platform zcode', commentKey: 'platforms.installCommands.zcode' },
+  { cmd: '.\\scripts\\install.ps1', bashCmd: 'bash scripts/install.sh', commentKey: 'platforms.installCommands.default' },
+  { cmd: '.\\scripts\\install.ps1 -Platform claude-code', bashCmd: 'bash scripts/install.sh --platform claude-code', commentKey: 'platforms.installCommands.claudeCode' },
+  { cmd: '.\\scripts\\install.ps1 -Platform codex', bashCmd: 'bash scripts/install.sh --platform codex', commentKey: 'platforms.installCommands.codex' },
+  { cmd: '.\\scripts\\install.ps1 -Platform cursor', bashCmd: 'bash scripts/install.sh --platform cursor', commentKey: 'platforms.installCommands.cursor' },
+  { cmd: '.\\scripts\\install.ps1 -Platform codebuddy', bashCmd: 'bash scripts/install.sh --platform codebuddy', commentKey: 'platforms.installCommands.codebuddy' },
+  { cmd: '.\\scripts\\install.ps1 -Platform qoder', bashCmd: 'bash scripts/install.sh --platform qoder', commentKey: 'platforms.installCommands.qoder' },
+  { cmd: '.\\scripts\\install.ps1 -Platform zcode', bashCmd: 'bash scripts/install.sh --platform zcode', commentKey: 'platforms.installCommands.zcode' },
 ];
 
 const agentsCompatible = ['OpenAI Codex', 'Cursor', 'CodeBuddy', 'Qoder'];
@@ -141,14 +142,21 @@ const Platforms = () => {
             <div className="w-3 h-3 rounded-full" style={{ background: '#f97316' }}></div>
             <div className="w-3 h-3 rounded-full" style={{ background: '#fbbf24' }}></div>
             <div className="w-3 h-3 rounded-full" style={{ background: '#5eead4' }}></div>
-            <span className="ml-2 text-sm text-zinc-500 font-mono">PowerShell</span>
+            <span className="ml-2 text-sm text-zinc-500 font-mono">Terminal</span>
           </div>
           <pre className="overflow-x-auto"><code className="text-sm font-mono leading-relaxed block">
             {installCommands.map((line, i) => (
               <div key={i}>
+                <span className="text-zinc-500 select-none"># Windows (PowerShell)</span>{' '}
                 <span className="text-zinc-200">{line.cmd}</span>
                 {line.commentKey && (
                   <span className="text-zinc-500">{'  # '}{t(line.commentKey)}</span>
+                )}
+                {line.bashCmd && (
+                  <div>
+                    <span className="text-zinc-500 select-none"># macOS/Linux (Bash)</span>{' '}
+                    <span className="text-zinc-200">{line.bashCmd}</span>
+                  </div>
                 )}
               </div>
             ))}

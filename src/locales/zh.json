@@ -35,7 +35,7 @@
     "heroCtaDocs": "查看文档",
     "heroCtaWhitepaper": "进入白皮书",
     "heroCtaEngine": "查看引擎",
-    "heroBadge": "AI Lifeform · v36.7.7",
+    "heroBadge": "AI Lifeform · v36.7.11",
     "matrixBadge": "全息智能引擎",
     "matrixTitle": "九维数据矩阵",
     "matrixSubtitle": "一套引擎、九维量化证明——这就是元构的完整全貌",
@@ -132,7 +132,7 @@
     "statsTheoryWords": "理论体系字数",
     "tenThousandPlus": "万+",
     "mcpBadge": "MCP 协议",
-    "bootstrapBadge": "PowerShell · 一键启动",
+    "bootstrapBadge": "跨平台 · 一键启动",
     "manifestoCardBadge": "2026 · 诞生宣言",
     "manifestoCardDescZh": "《从 Agent 到生命体：智能进化的范式跃迁》——MetaGO 第一篇诞生宣言。让智能，学会进化。",
     "manifestoCardDescEn": "From Agent to Lifeform: The Paradigm Leap in Intelligent Evolution — MetaGO's first birth manifesto. Let intelligence learn to evolve.",
@@ -1013,7 +1013,7 @@
     "title": "关于 MetaGO",
     "subtitle": "让智能成为生命，让生命创造价值",
     "badge": "元构生命体",
-    "versionTag": "v36.7.7",
+    "versionTag": "v36.7.11",
     "statsTitle": "全息数据成就",
     "statsSubtitle": "一套体系，十二维量化证明 — 元构智能生命体的完整全貌",
     "statsAxioms": "公理",
@@ -1062,7 +1062,7 @@
       "desc": "文档全面审计 + 官网 P2 升级 + 7 大技能族分层展示 + 双语同步"
     },
     "roadmapV3670": {
-      "title": "v36.7.7 · 引擎发布",
+      "title": "v36.7.11 · 引擎发布",
       "statusLabel": "已完成",
       "desc": "MetaGO Engine v1.0.0 正式发布 NPM + 36 公理 + 125 引擎 + 927 算法 + 754 专利 + 5 大技术壁垒"
     },

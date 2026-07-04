@@ -45,19 +45,19 @@ export default function Terminal({ lines, className = '' }: TerminalProps) {
         <span className="w-3 h-3 rounded-full" style={{ background: '#ff5f56', boxShadow: '0 0 6px rgba(255,95,86,0.4)' }} />
         <span className="w-3 h-3 rounded-full" style={{ background: '#ffbd2e', boxShadow: '0 0 6px rgba(255,189,46,0.4)' }} />
         <span className="w-3 h-3 rounded-full" style={{ background: '#27c93f', boxShadow: '0 0 6px rgba(39,201,63,0.4)' }} />
-        <span className="ml-2 text-xs text-zinc-500 font-mono">PowerShell</span>
+        <span className="ml-2 text-xs text-zinc-500 font-mono">Terminal</span>
       </div>
 
       <div className="p-4 font-mono text-sm leading-relaxed">
         {displayed.map((l, i) => (
           <div key={i} style={{ color: '#5eead4' }}>
-            <span className="text-zinc-500 select-none">PS C:\metago&gt; </span>
+            <span className="text-zinc-500 select-none">metago@dev:~$ </span>
             {l}
           </div>
         ))}
         {lineIdx < lines.length && (
           <div style={{ color: '#5eead4' }}>
-            <span className="text-zinc-500 select-none">PS C:\metago&gt; </span>
+            <span className="text-zinc-500 select-none">metago@dev:~$ </span>
             {current}
             <span
               className="inline-block w-2 h-4 ml-0.5 align-middle animate-pulse"
