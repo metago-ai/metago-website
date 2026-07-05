@@ -37,7 +37,6 @@ import CountUp from '../components/CountUp';
 
 const GITEE_URL = 'https://gitee.com/metago/metagolifeform';
 const GITHUB_URL = 'https://github.com/metago-ai/metagolifeform';
-
 const features = [
   { icon: Brain, key: 'feature1', hue: 'life' as const },
   { icon: Lock, key: 'feature2', hue: 'gov' as const },
@@ -57,10 +56,14 @@ const livingDocsFeatures = [
 ];
 
 const installLines = [
+  '# ===== 方式一：Gitee 源码安装 =====',
   'git clone https://gitee.com/metago/metagolifeform.git',
   'cd metagolifeform',
   '.\\scripts\\install.ps1         # Windows (PowerShell)',
   'bash scripts/install.sh        # macOS/Linux (Bash)',
+  '',
+  '# ===== 方式二：npm 包 =====',
+  'npm install metago-lifeform',
 ];
 
 // MCP Server 客户端配置示例（Claude Desktop / Cursor / Trae）
@@ -146,16 +149,16 @@ export default function Home() {
   const i18nLanguage = i18n.language;
 
   const row1: Metric[] = [
-    { end: 37, label: t('home.statsSkills') },
-    { end: 35, label: t('home.statsMcpTools') },
-    { end: 8, label: t('home.statsProducts') },
+    { end: 39, label: t('home.statsSkills') },
+    { end: 37, label: t('home.statsMcpTools') },
+    { end: 10, label: t('home.statsProducts') },
     { end: 17, label: t('home.statsCoreEngines') },
   ];
 
   const row2: Metric[] = [
     { end: 7, label: t('home.statsPlatforms') },
     { end: 5, label: t('home.statsLayers') },
-    { end: 13, label: t('home.statsFamilies') },
+    { end: 11, label: t('home.statsFamilies') },
     { text: 'MIT', label: t('home.statsLicense') },
   ];
 
@@ -185,7 +188,20 @@ export default function Home() {
               "{t('home.heroPhilosophy')}"
             </p>
             <div className="flex flex-wrap items-center gap-4">
-              <Link to="/whitepaper" className="btn-primary inline-flex items-center gap-2">
+              {/* 🌟 醒目入口：直跳 Agent 工作台（不是 Studio 首页） */}
+              <a
+                href="https://metago.life/studio/#/agent"
+                className="btn-primary inline-flex items-center gap-2 px-6 py-3 text-base font-bold relative overflow-hidden"
+                style={{
+                  background: 'linear-gradient(135deg, #10b981 0%, #06b6d4 100%)',
+                  boxShadow: '0 0 30px rgba(16,185,129,0.4)',
+                }}
+              >
+                <Sparkles size={18} className="animate-pulse" />
+                立即体验 Agent 工作台
+                <ArrowRight size={18} />
+              </a>
+              <Link to="/whitepaper" className="btn-secondary inline-flex items-center gap-2">
                 {t('home.heroCtaWhitepaper')} <ArrowRight size={16} />
               </Link>
               <Link to="/engine" className="btn-secondary inline-flex items-center gap-2">
@@ -206,6 +222,44 @@ export default function Home() {
 
       {/* ===== 引擎发布公告 ===== */}
       <section className="max-w-7xl mx-auto px-6 py-6">
+        {/* 🌟 Agent 工作台横幅 —— 直跳工作台（不是 Studio 首页） */}
+        <a
+          href="https://metago.life/studio/#/agent"
+          className="block mb-6 relative overflow-hidden rounded-2xl p-8 md:p-10 transition-transform hover:scale-[1.01]"
+          style={{
+            background: 'linear-gradient(120deg, #059669 0%, #0d9488 50%, #0891b2 100%)',
+            boxShadow: '0 10px 50px -10px rgba(13,148,136,0.5)',
+          }}
+        >
+          <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div className="text-white">
+              <div className="flex items-center gap-2 mb-3">
+                <Sparkles size={16} className="opacity-80" />
+                <span className="text-sm font-medium opacity-90 tracking-wider">NEW · 全新上线</span>
+              </div>
+              <h2 className="text-2xl md:text-4xl font-bold mb-3 font-display">
+                MetaGO Agent 智能体工作台
+              </h2>
+              <p className="text-white/85 text-sm md:text-base max-w-xl leading-relaxed">
+                AI 直接读写文件、执行搜索、运行 Git 操作。
+                内置 DeepSeek V4 Pro + GLM-5V Turbo 双模型，
+                支持 37 MCP 工具、39 元构技能自动调用。
+                Web 端在线使用，桌面端 exe 完整体验。
+              </p>
+            </div>
+            <div className="flex-shrink-0 flex items-center gap-3 text-white">
+              <span className="px-6 py-3 rounded-xl bg-white/15 backdrop-blur-sm font-bold text-lg flex items-center gap-2 border border-white/20">
+                打开工作台 <ArrowRight size={20} />
+              </span>
+            </div>
+          </div>
+          {/* 装饰光效 */}
+          <div
+            className="absolute -top-20 -right-20 w-60 h-60 rounded-full opacity-30"
+            style={{ background: 'radial-gradient(circle, white 0%, transparent 70%)' }}
+          />
+        </a>
+
         <div
           className="relative overflow-hidden rounded-2xl p-6 md:p-7 animate-slide-up"
           style={{
@@ -267,7 +321,7 @@ export default function Home() {
             { end: 36, label: 'axioms', icon: Dna, hue: 'gov' as const },
             { end: 43, label: 'attributes', icon: Layers, hue: 'life' as const },
             { end: 19, label: 'metaIdeas', icon: Sparkles, hue: 'evo' as const },
-            { end: 13, label: 'families', icon: GitBranch, hue: 'life' as const },
+            { end: 11, label: 'families', icon: GitBranch, hue: 'life' as const },
           ].map(({ end, label, icon: Icon, hue }, idx) => {
             const color =
               hue === 'patent'

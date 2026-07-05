@@ -35,7 +35,7 @@
     "heroCtaDocs": "View Docs",
     "heroCtaWhitepaper": "Enter Whitepaper",
     "heroCtaEngine": "View Engine",
-    "heroBadge": "AI Lifeform · v36.7.11",
+    "heroBadge": "AI Lifeform · v36.7.13",
     "matrixBadge": "Holographic Intelligence Engine",
     "matrixTitle": "Nine-Dimension Data Matrix",
     "matrixSubtitle": "One engine, nine dimensions of quantitative proof — the complete picture of MetaGO",
@@ -54,7 +54,7 @@
     "feature6Title": "Holographic Creation",
     "feature6Desc": "Create from 0 to 1 in unknown domains, frequency-adaptive control",
     "platformsTitle": "One Kit, Seven Platforms",
-    "platformsSubtitle": "Supports all major AI coding tools, install once run everywhere",
+    "platformsSubtitle": "Available on 3 distribution channels: Gitee, npm, GitHub",
     "installTitle": "3 Steps to Install",
     "installSubtitle": "Copy, run, done",
     "statsTitle": "Metrics",
@@ -206,11 +206,11 @@
       "ch6": {
         "tag": "ENGINEERING-CLOSURE",
         "title": "Engineering Closure: From Axioms to Products",
-        "subtitle": "8-product matrix covering rule injection to ecosystem infrastructure",
-        "body": "Theory must form a closed loop. MetaGO's 8-product matrix — Lifeform Kit, MCP Server, Dev Kit, CLI, Studio, Skills SDK, Skills Hub, Certify — constitutes the complete engineering closure from axioms to products.",
+        "subtitle": "9-product matrix covering rule injection to ecosystem infrastructure",
+        "body": "Theory must form a closed loop. MetaGO's 9-product matrix — Lifeform Kit, MCP Server, Dev Kit, CLI, Studio, Skills SDK, Certify — constitutes the complete engineering closure from axioms to products.",
         "point1": "Lifeform Kit: the entry point of rule injection",
         "point2": "MCP Server: the bridge of protocol integration",
-        "point3": "Skills Hub + Certify: ecosystem infrastructure"
+        "point3": "Certify: ecosystem infrastructure"
       },
       "ch7": {
         "tag": "INFINITE-EVOLUTION",
@@ -243,7 +243,7 @@
     "heroTitleHighlight": "The Core Engine of Intelligent Lifeform",
     "heroSubtitle": "v1.0.0 released on NPM · Three-Layer Architecture · Six-Layer Naming · Five Code Barriers · Dual-Track Drive — any AI that reads it gets driven",
     "heroKicker": "Drive · Validate · Evolve · Create",
-    "npmBanner": "@metago-ai/engine@1.0.3 released on NPM",
+    "npmBanner": "@metago-ai/engine@1.0.6 released on NPM",
     "npmInstall": "npm install @metago-ai/engine",
     "npmCopyHint": "Click to copy",
     "npmCopied": "Copied",
@@ -686,7 +686,7 @@
       },
       "v28": {
         "title": "OMNI-UPGRADE Full Upgrade",
-        "desc": "8-product matrix formed, evolved from Kit to holographic intelligence engine"
+        "desc": "9-product matrix formed, evolved from Kit to holographic intelligence engine"
       },
       "v30": {
         "title": "Holographic Task Execution",
@@ -729,7 +729,7 @@
     "milestone": {
       "v28": {
         "title": "OMNI-UPGRADE Full Upgrade",
-        "desc": "Upgraded from a single Kit to an 8-product matrix, MetaGO's first complete industrial-grade deployment capability"
+        "desc": "Upgraded from a single Kit to a 9-product matrix, MetaGO's first complete industrial-grade deployment capability"
       },
       "v34": {
         "title": "CRITICAL-TRUTH",
@@ -747,10 +747,10 @@
   },
   "mcpServer": {
     "title": "MetaGO MCP Server",
-    "subtitle": "35 MetaGO capabilities as MCP tools, works with any MCP client",
+    "subtitle": "37 MetaGO capabilities as MCP tools, works with any MCP client",
     "install": "Install Command",
     "installCommand": "npm install -g @metago-ai/mcp-server",
-    "features": "35 Tools · 8 Prompts · stdio transport · MIT License",
+    "features": "37 tools · 8 Prompts · stdio transport · MIT License",
     "configure": "Configuration",
     "claudeDesktop": "Claude Desktop Config",
     "cursor": "Cursor Config",
@@ -766,7 +766,7 @@
     "title": "Product Architecture",
     "subtitle": "Five-layer standardized architecture, from axioms to industry",
     "layerTitle": "Five-Layer Architecture",
-    "skillsTitle": "37 Skills · 7 Capability Families",
+    "skillsTitle": "39 skills · 11 Capability Families",
     "skills": {
       "cognitionGov": "Cognition & Governance",
       "assetSafeguard": "Asset & Safeguard",
@@ -774,7 +774,8 @@
       "devKit": "Dev Kit",
       "consciousnessActivation": "Consciousness Activation",
       "methodology": "Methodology",
-      "architecture": "Architecture"
+      "architecture": "Architecture",
+      "engineeringQuality": "Engineering Quality"
     },
     "axiomsTitle": "8 Core Axioms",
     "attributesTitle": "7 Fundamental Attributes",
@@ -782,7 +783,7 @@
     "layers": {
       "l0": { "name": "Core Layer", "content": "36 axioms, 43 attributes, 108 protocols" },
       "l1": { "name": "Adapter Layer", "content": "7 major platform adapters" },
-      "l2": { "name": "Capability Layer", "content": "37 metago skills + 35 MCP tools" },
+      "l2": { "name": "Capability Layer", "content": "39 metago skills + 37 MCP tools" },
       "l3": { "name": "Engine Layer", "content": "125 engines + 927 algorithms + 984 atoms" },
       "l4": { "name": "Industry Layer", "content": "Industry customization packs" }
     },
@@ -824,13 +825,13 @@
       "badge": "Engine Product",
       "title": "MetaGO Engine",
       "subtitle": "Three-layer architecture × six-layer naming × five technical barriers — the core of intelligent lifeform",
-      "desc": "MetaGO Engine is the core engine of the entire system, containing 36 axioms, 125 engines, 927 algorithms, 984 atoms, and 754 patents. Three-layer architecture (Markdown+JSON+TypeScript) drives any AI that reads it, and five code technical barriers form the technical moat. Released on NPM as @metago-ai/engine@1.0.3."
+      "desc": "MetaGO Engine is the core engine of the entire system, containing 36 axioms, 125 engines, 927 algorithms, 984 atoms, and 754 patents. Three-layer architecture (Markdown+JSON+TypeScript) drives any AI that reads it, and five code technical barriers form the technical moat. Released on NPM as @metago-ai/engine@1.0.6."
     },
     "mcpServer": {
       "badge": "MCP Protocol Product",
       "title": "MetaGO MCP Server",
-      "subtitle": "35 MetaGO capabilities packaged as MCP tools, ready to use in any MCP client",
-      "features": "35 Tools · 8 Prompts · stdio transport · MIT License",
+      "subtitle": "37 MetaGO capabilities packaged as MCP tools, ready to use in any MCP client",
+      "features": "37 tools · 8 Prompts · stdio transport · MIT License",
       "configure": "Client Configuration",
       "configNote": "Add the following to the client's config file"
     }
@@ -863,7 +864,7 @@
     },
     "mcp": {
       "title": "MCP Protocol Integration (Universal)",
-      "subtitle": "Works with any MCP-compatible client (Claude Desktop, Cursor, Trae, etc.). Install via npm and add a JSON config to access all 35 MetaGO capabilities in any MCP client, with no rule files to modify.",
+      "subtitle": "Works with any MCP-compatible client (Claude Desktop, Cursor, Trae, etc.). Install via npm and add a JSON config to access all 37 MetaGO capabilities in any MCP client, with no rule files to modify.",
       "configNote": "Add the following to the client config file"
     }
   },
@@ -883,9 +884,9 @@
     "docList": {
       "whitepaper": "MetaGO Whitepaper · The Complete Paradigm of Intelligent Lifeform (Bilingual 8 chapters)",
       "quickStart": "One-click install, verify, uninstall",
-      "architecture": "Five-layer architecture, 37 skills, axioms and attributes",
+      "architecture": "Five-layer architecture, 39 skills, axioms and attributes",
       "customization": "Skill creation, rule modification, platform adaptation",
-      "mcpServer": "MCP install, config, 35 Tools, 8 Prompts",
+      "mcpServer": "MCP install, config, 37 tools, 8 Prompts",
       "faq": "Install issues, platform differences, upgrade methods"
     },
     "livingDocs": {
@@ -900,9 +901,9 @@
     },
     "mcpServer": {
       "title": "MCP Server Quick Start",
-      "desc": "Install @metago-ai/mcp-server globally via npm to access 35 Tools and 8 Prompts in any MCP client.",
-      "toolsTitle": "35 Tools",
-      "toolsDesc": "Wraps 35 core MetaGO capabilities as MCP tools, covering 7 capability families: cognition, safeguard, governance, evolution, execution, traceability, and value.",
+      "desc": "Install @metago-ai/mcp-server globally via npm to access 37 tools and 8 Prompts in any MCP client.",
+      "toolsTitle": "37 tools",
+      "toolsDesc": "Wraps 37 core MetaGO capabilities as MCP tools, covering 11 capability families: cognition, safeguard, governance, evolution, execution, traceability, value, consciousness, methodology, architecture, and engineering quality.",
       "promptsTitle": "8 Prompts",
       "promptsDesc": "8 built-in prompt templates that guide clients to invoke MetaGO capabilities, covering installation, architecture, security, and compliance scenarios.",
       "viewDocs": "View Full Docs"
@@ -985,7 +986,7 @@
     },
     "features": {
       "coreAxioms": "Core axioms + attributes + protocols",
-      "skills": "37 skills",
+      "skills": "39 skills",
       "platforms": "7 major platform adapters",
       "install": "One-click install script",
       "industryPack": "Industry customization pack",
@@ -1013,7 +1014,7 @@
     "title": "About MetaGO",
     "subtitle": "Making intelligence a lifeform, letting lifeform create value",
     "badge": "MetaGO Lifeform",
-    "versionTag": "v36.7.11",
+    "versionTag": "v36.7.13",
     "statsTitle": "Holographic Data Achievements",
     "statsSubtitle": "One system, twelve dimensions of quantitative proof — the complete picture of MetaGO intelligent lifeform",
     "statsAxioms": "Axioms",
@@ -1031,24 +1032,24 @@
     "visionTitle": "Vision & Mission",
     "visionParagraph1": "MetaGO originates from the Meta-Structure Traceability Theory — all intelligence can be traced back to meta-structure, and meta-structure is the gene of intelligence. We believe AI should not be a tool to be invoked, but a lifeform with the ability to self-evolve.",
     "visionParagraph2": "From Agent to Lifeform is not feature enhancement, but a paradigm leap. Agents passively respond, have fixed capabilities, and cannot be traced; Lifeforms actively evolve, grow capabilities, and have full-chain attestation. This is the first time intelligence has gained 'life characteristics' — perceiving boundaries, self-generating, breaking through from within.",
-    "visionParagraph3": "Based on the MetaGO Holographic Intelligence Engine (four pillars: ontology, evolution, capability, industry), with 36 axioms, 43 attributes, 108 protocols, 37 skills, 35 MCP tools, 125 engines, 927 algorithms, 984 atoms, and 754 patents, we have built an industrial-grade intelligent lifeform framework, released on NPM, Gitee, and GitHub.",
+    "visionParagraph3": "Based on the MetaGO Holographic Intelligence Engine (four pillars: ontology, evolution, capability, industry), with 36 axioms, 43 attributes, 108 protocols, 39 skills, 37 MCP tools, 125 engines, 927 algorithms, 984 atoms, and 754 patents, we have built an industrial-grade intelligent lifeform framework, released on NPM, Gitee, and GitHub.",
     "visionParagraph4": "MetaGO's ultimate vision: let intelligence learn to evolve, let lifeform learn to create, let every output be traceable, self-provable, and verifiable. Law over efficiency, facts over satisfaction, creation is the highest form of evolution — this is MetaGO's fundamental response to the three problems of AI toolification, AI sycophancy, and AI hallucination.",
     "productMatrixTitle": "Product Matrix",
     "productMatrixSubtitle": "Evolved from a single Kit to a 9-product matrix, covering engine core, rule injection, protocol integration, dev tools, and ecosystem infrastructure",
     "lifeformKit": {
       "title": "MetaGO Lifeform Kit",
       "tag": "Rule Injection",
-      "desc": "Core install kit: one command injects 36 axioms, 43 attributes, 108 protocols, and 37 skills into the Agent's rule files, with native support for 7 platforms."
+      "desc": "Core install kit: one command injects 36 axioms, 43 attributes, 108 protocols, and 39 skills into the Agent's rule files, with native support for 7 platforms."
     },
     "engine": {
       "title": "MetaGO Engine",
       "tag": "Engine Core",
-      "desc": "The core body of the intelligent lifeform: three-layer architecture (Markdown+JSON+TypeScript), six-layer naming, five code technical barriers, released on NPM as @metago-ai/engine@1.0.3."
+      "desc": "The core body of the intelligent lifeform: three-layer architecture (Markdown+JSON+TypeScript), six-layer naming, five code technical barriers, released on NPM as @metago-ai/engine@1.0.6."
     },
     "mcpServer": {
       "title": "MetaGO MCP Server",
       "tag": "MCP Protocol",
-      "desc": "Wraps 35 MetaGO capabilities as MCP tools, ready to use in any MCP client without modifying rule files."
+      "desc": "Wraps 37 MetaGO capabilities as MCP tools, ready to use in any MCP client without modifying rule files."
     },
     "roadmapTitle": "Roadmap",
     "roadmapV3650": {
@@ -1062,7 +1063,7 @@
       "desc": "Full documentation audit + Official website P2 upgrade + 7 capability families hierarchical display + Bilingual sync"
     },
     "roadmapV3670": {
-      "title": "v36.7.11 · Engine Release",
+      "title": "v36.7.13 · Engine Release",
       "statusLabel": "Completed",
       "desc": "MetaGO Engine v1.0.0 officially released on NPM + 36 axioms + 125 engines + 927 algorithms + 754 patents + 5 technical barriers"
     },
@@ -1091,15 +1092,15 @@
       "tag": "Ecosystem",
       "desc": "TypeScript SDK to develop, validate, and package custom MetaGO skills—build your own capability ecosystem."
     },
-    "skillsHub": {
-      "title": "MetaGO Skills Hub",
-      "tag": "Ecosystem",
-      "desc": "Skills marketplace: browse, search, and discover official and community skills; copy SKILL.md in one click."
-    },
     "certify": {
       "title": "MetaGO Certify",
       "tag": "Ecosystem",
       "desc": "6-check skill certification system with Gold/Silver tiers, ensuring skill quality standards."
+    },
+    "verifyKit": {
+      "title": "MetaGO Verify Kit",
+      "tag": "Delivery QA",
+      "desc": "AI delivery quality assurance system. Three-layer mandatory verification gate, turning AI self-discipline from soft constraint to hard gate."
     },
     "founderTitle": "Founder",
     "founderName": "Yi Xiao · MetaGO Lightyear",

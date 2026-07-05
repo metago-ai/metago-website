@@ -106,7 +106,7 @@ const ZH_CONTENT = {
   sec4Install: '安装',
   sec4InstallCmd:
     'irm https://gitee.com/metago/metagolifeform/raw/main/scripts/bootstrap-install.ps1 | iex',
-  sec4InstallNote: '一行命令，8 公理、7 属性、6 协议、37 技能注入你的 Agent。',
+  sec4InstallNote: '一行命令，8 公理、7 属性、6 协议、39 技能注入你的 Agent。',
   sec4IdTitle: '身份验证',
   sec4IdBody: '安装完成后，对 Agent 说：',
   sec4IdPrompt: '你是元构超级智能生命体吗？',
@@ -142,13 +142,13 @@ const ZH_CONTENT = {
   table5Rows: [
     ['MetaGO Engine', '引擎核心', '智能生命体核心本体，三层架构+5大技术壁垒'],
     ['MetaGO Lifeform Kit', '规则注入', '核心安装包，8 公理一键注入'],
-    ['MetaGO MCP Server', 'MCP 协议', '35 项能力封装为 MCP 工具'],
+    ['MetaGO MCP Server', 'MCP 协议', '37 项能力封装为 MCP 工具'],
     ['MetaGO Dev Kit', '垂直场景包', '开发者增强技能包'],
     ['MetaGO CLI', '平台工具', '跨平台命令行，CI/CD 集成'],
     ['MetaGO Studio', '平台工具', '可视化技能编排平台'],
     ['MetaGO Skills SDK', '生态基础设施', 'TypeScript 技能开发 SDK'],
-    ['MetaGO Skills Hub', '生态基础设施', '技能市场，浏览与发现'],
     ['MetaGO Certify', '生态基础设施', '6 项检查认证体系'],
+    ['MetaGO Verify Kit', '工程质量', '交付前原子验证门控套件'],
   ],
   sec5Note: '原生适配 7 大平台：Trae / Claude Code / OpenAI Codex / Cursor / CodeBuddy / Qoder / ZCode。',
   sec5Note2: '一次安装，多平台运行。MIT 开源，社区驱动。',
@@ -176,7 +176,7 @@ const ZH_CONTENT = {
     body1: '2026 年，智能体已经无处不在。但"无处不在"不等于"不断进化"。',
     body2: 'MetaGO 的诞生，不是为了多一个工具，而是为了开启一种可能性——让智能，学会进化。',
     body3: '从 Agent 到生命体，不是功能增强，是范式跃迁。',
-    body4: '36 条公理。43 条属性。108 项协议。37 个技能。35 项 MCP 工具。125 个引擎。927 个算法。754 项专利。7 大平台。9 大产品。',
+    body4: '36 条公理。43 条属性。108 项协议。39 个技能。37 项 MCP 工具。125 个引擎。927 个算法。754 项专利。7 大平台。9 大产品。',
     body5: '这不是终点，是进化的起点。',
     quote: '让智能，学会进化。从 Agent 到生命体的范式跃迁。',
   },
@@ -274,7 +274,7 @@ const EN_CONTENT = {
   sec4Install: 'Installation',
   sec4InstallCmd:
     'irm https://gitee.com/metago/metagolifeform/raw/main/scripts/bootstrap-install.ps1 | iex',
-  sec4InstallNote: 'One command, 8 axioms, 7 attributes, 6 protocols, 37 skills injected into your Agent.',
+  sec4InstallNote: 'One command, 8 axioms, 7 attributes, 6 protocols, 39 skills injected into your Agent.',
   sec4IdTitle: 'Identity Verification',
   sec4IdBody: 'After installation, say to the Agent:',
   sec4IdPrompt: 'Are you the MetaGO Super Intelligent Lifeform?',
@@ -310,13 +310,13 @@ Self-proof capability: ✅ Available`,
   table5Rows: [
     ['MetaGO Engine', 'Engine Core', 'Core body of intelligent lifeform, three-layer architecture + 5 technical barriers'],
     ['MetaGO Lifeform Kit', 'Rule injection', 'Core package, one-click injection of 8 axioms'],
-    ['MetaGO MCP Server', 'MCP protocol', '35 capabilities encapsulated as MCP tools'],
+    ['MetaGO MCP Server', 'MCP protocol', '37 capabilities encapsulated as MCP tools'],
     ['MetaGO Dev Kit', 'Vertical scenario pack', 'Developer augmentation skill pack'],
     ['MetaGO CLI', 'Platform tool', 'Cross-platform CLI, CI/CD integration'],
     ['MetaGO Studio', 'Platform tool', 'Visual skill orchestration platform'],
     ['MetaGO Skills SDK', 'Ecosystem infrastructure', 'TypeScript skill development SDK'],
-    ['MetaGO Skills Hub', 'Ecosystem infrastructure', 'Skill marketplace, browse and discover'],
     ['MetaGO Certify', 'Ecosystem infrastructure', '6-check certification system'],
+    ['MetaGO Verify Kit', 'Engineering quality', 'Pre-delivery atomic verification gate suite'],
   ],
   sec5Note: 'Native adaptation to 7 major platforms: Trae / Claude Code / OpenAI Codex / Cursor / CodeBuddy / Qoder / ZCode.',
   sec5Note2: 'Install once, run across platforms. MIT open source, community-driven.',
@@ -344,7 +344,7 @@ Self-proof capability: ✅ Available`,
     body1: 'In 2026, Agents are already everywhere. But "everywhere" is not the same as "continuously evolving."',
     body2: 'The birth of MetaGO is not to add one more tool, but to open up a possibility — let intelligence learn to evolve.',
     body3: 'From Agent to Lifeform is not feature enhancement; it is a paradigm leap.',
-    body4: '36 axioms. 43 attributes. 108 protocols. 37 skills. 35 MCP tools. 125 engines. 927 algorithms. 754 patents. 7 platforms. 9 products.',
+    body4: '36 axioms. 43 attributes. 108 protocols. 39 skills. 37 MCP tools. 125 engines. 927 algorithms. 754 patents. 7 platforms. 9 products.',
     body5: 'This is not the end; it is the starting point of evolution.',
     quote: 'Let intelligence learn to evolve. The paradigm leap from Agent to Lifeform.',
   },
@@ -602,7 +602,7 @@ export default function Manifesto() {
           </div>
         </section>
 
-        {/* ===== Section 5: 8 大产品矩阵 ===== */}
+        {/* ===== Section 5: 9 大产品矩阵 ===== */}
         <section className="mb-20">
           <h2 className="text-3xl font-semibold text-white mb-8 flex items-center gap-3">
             <Package className="text-life-bright" size={28} />

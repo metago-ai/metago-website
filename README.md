@@ -19,7 +19,6 @@
 
 - **官方线上地址**：<https://metago.life/>
 - **Studio 可视化编排**：<https://metago.life/studio/>
-- **GitHub Pages 备用**：<https://metago-ai.github.io/metago-website/>
 - **产品仓库（Gitee）**：<https://gitee.com/metago/metagolifeform>
 - **产品仓库（GitHub）**：<https://github.com/metago-ai/metagolifeform>
 

@@ -41,7 +41,11 @@ const docs: DocItem[] = [
   { key: 'faq', icon: CircleQuestionMark, descKey: 'docs.docList.faq', link: 'https://gitee.com/metago/metagolifeform/blob/main/docs/GETTING_STARTED.md#常见问题-faq', hue: 'life' },
 ];
 
-const installCommands = `git clone https://gitee.com/metago/metagolifeform.git
+const installCommands = `# 方式一：npm 包
+npm install metago-lifeform
+
+# 方式二：Gitee 源码安装
+git clone https://gitee.com/metago/metagolifeform.git
 cd metagolifeform
 
 # Windows (PowerShell)
@@ -135,7 +139,7 @@ function Docs() {
             </p>
             {/* npm 安装命令 */}
             <McpInstallBlock className="mb-6" />
-            {/* 35 Tools / 8 Prompts 概览 */}
+            {/* 37 Tools / 8 Prompts 概览 */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div
                 className="rounded-lg p-5"

@@ -4,6 +4,7 @@ import {
   Layers, Box, Cpu, Brain, Database, Network, Sparkles, Scale,
   Target, Zap, BookOpen, Shield, Workflow, Repeat,
   Lock, Eye, Activity, FileCheck, Check, Coins, Package, Dna,
+  ShieldCheck,
 } from 'lucide-react';
 import McpInstallBlock from '../components/McpInstallBlock';
 import McpConfigGrid from '../components/McpConfigGrid';
@@ -68,6 +69,7 @@ const skillFamilies: SkillFamily[] = [
   { nameKey: 'product.skills.consciousnessActivation', hue: 'gov', skills: ['metago-activate'], icon: Sparkles },
   { nameKey: 'product.skills.methodology', hue: 'life', skills: ['metago-org-diagnosis', 'metago-momentum-weave', 'metago-minimal-intervention', 'metago-value-assess', 'metago-coupling-measure'], icon: Target },
   { nameKey: 'product.skills.architecture', hue: 'evo', skills: ['metago-deep-reasoning', 'metago-paradigm-analysis', 'metago-balance-optimize', 'metago-memory-manage', 'metago-consensus-prototype'], icon: Layers },
+  { nameKey: 'product.skills.engineeringQuality', hue: 'gov', skills: ['metago-delivery-gate', 'metago-discipline'], icon: ShieldCheck },
 ];
 
 const axioms: Axiom[] = [
