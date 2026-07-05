@@ -240,7 +240,7 @@ const Product = () => {
         </div>
       </section>
 
-      {/* 区块4：37个技能 */}
+      {/* 区块4：39个技能 */}
       <section className="max-w-7xl mx-auto px-6 mb-24">
         <div className="flex items-center gap-3 mb-10">
           <Cpu className="w-8 h-8" style={{ color: hueColor('evo') }} />
@@ -424,6 +424,211 @@ const Product = () => {
             <p className="text-text-secondary text-sm">{t('product.mcpServer.configNote')}</p>
           </div>
           <McpConfigGrid />
+        </div>
+      </section>
+
+      {/* 区块9：V3 五档定价 */}
+      <section className="max-w-7xl mx-auto px-6 mb-24">
+        <div className="text-center mb-10">
+          <div
+            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border text-xs font-mono mb-4"
+            style={{
+              color: '#FFD700',
+              borderColor: 'rgba(255, 215, 0, 0.35)',
+              background: 'rgba(255, 215, 0, 0.08)',
+            }}
+          >
+            <Coins size={14} /> {t('product.pricing.badge')}
+          </div>
+          <h2 className="text-3xl md:text-4xl font-bold mb-3 font-display">
+            <span className="gradient-text">{t('product.pricing.title')}</span>
+          </h2>
+          <p className="text-text-secondary max-w-2xl mx-auto">{t('product.pricing.subtitle')}</p>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-4">
+          {[
+            { key: 'free', hue: 'life' as Hue, highlight: false },
+            { key: 'pro', hue: 'evo' as Hue, highlight: true },
+            { key: 'proPlus', hue: 'quantum' as Hue, highlight: false },
+            { key: 'team', hue: 'gov' as Hue, highlight: false },
+            { key: 'enterprise', hue: 'patent' as Hue, highlight: false },
+          ].map((tier) => {
+            const color = hueColor(tier.hue);
+            const features = t(`product.pricing.${tier.key}.features`, { returnObjects: true }) as string[];
+            return (
+              <div
+                key={tier.key}
+                className="glass-card p-6 relative"
+                style={{
+                  borderColor: tier.highlight ? `${color}66` : `${color}22`,
+                  boxShadow: tier.highlight ? `0 0 30px -5px ${color}33` : 'none',
+                }}
+              >
+                {tier.highlight && (
+                  <div
+                    className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full text-[10px] font-bold font-mono"
+                    style={{ background: color, color: '#0a0e14' }}
+                  >
+                    POPULAR
+                  </div>
+                )}
+                <h3 className="text-xl font-bold mb-2 font-display" style={{ color }}>
+                  {t(`product.pricing.${tier.key}.name`)}
+                </h3>
+                <div className="flex items-baseline gap-1 mb-1">
+                  <span className="text-3xl font-bold text-white font-display">{t(`product.pricing.${tier.key}.price`)}</span>
+                  <span className="text-xs text-text-secondary">{t(`product.pricing.${tier.key}.period`)}</span>
+                </div>
+                <p className="text-xs text-text-secondary mb-4">{t(`product.pricing.${tier.key}.desc`)}</p>
+                <ul className="space-y-1.5">
+                  {features.map((feat, i) => (
+                    <li key={i} className="text-xs text-zinc-300 flex items-start gap-1.5">
+                      <Check className="w-3 h-3 mt-0.5 shrink-0" style={{ color }} />
+                      <span>{feat}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* Certify 独立认证 */}
+        <div
+          className="glass-card p-6 md:p-8 mt-6 text-center"
+          style={{ borderColor: 'rgba(255, 215, 0, 0.22)' }}
+        >
+          <div className="flex items-center justify-center gap-2 mb-2">
+            <ShieldCheck className="w-5 h-5" style={{ color: '#FFD700' }} />
+            <h3 className="text-xl font-bold font-display" style={{ color: '#FFD700' }}>
+              {t('product.pricing.certifyTitle')}
+            </h3>
+          </div>
+          <p className="text-sm text-text-secondary mb-4 max-w-2xl mx-auto">{t('product.pricing.certifyDesc')}</p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+            {['certifyL1', 'certifyL2', 'certifyL3', 'certifyL4'].map((key) => (
+              <div
+                key={key}
+                className="px-4 py-3 rounded-lg border"
+                style={{ borderColor: 'rgba(255, 215, 0, 0.2)', background: 'rgba(255, 215, 0, 0.04)' }}
+              >
+                <span className="text-sm font-mono" style={{ color: '#FFD700' }}>{t(`product.pricing.${key}`)}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 区块10：行为银行 */}
+      <section className="max-w-7xl mx-auto px-6 mb-24">
+        <div
+          className="glass-card p-8 md:p-12 relative overflow-hidden"
+          style={{
+            borderColor: 'rgba(94, 234, 212, 0.25)',
+            background: 'linear-gradient(135deg, rgba(94, 234, 212, 0.05), rgba(165, 180, 252, 0.03), rgba(13, 18, 25, 0.55))',
+          }}
+        >
+          <div className="text-center mb-8">
+            <div
+              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border text-xs font-mono mb-4"
+              style={{
+                color: '#5eead4',
+                borderColor: 'rgba(94, 234, 212, 0.35)',
+                background: 'rgba(94, 234, 212, 0.08)',
+              }}
+            >
+              <Activity size={14} /> {t('product.behaviorBank.badge')}
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold mb-3 font-display">
+              <span className="gradient-text">{t('product.behaviorBank.title')}</span>
+            </h2>
+            <p className="text-text-secondary max-w-2xl mx-auto mb-2">{t('product.behaviorBank.subtitle')}</p>
+            <p className="text-sm text-text-secondary max-w-3xl mx-auto leading-relaxed">{t('product.behaviorBank.desc')}</p>
+          </div>
+
+          {/* 5 级信用等级 */}
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
+            {['level1', 'level2', 'level3', 'level4', 'level5'].map((lv, i) => {
+              const colors = ['#5eead4', '#fbbf24', '#FFD700', '#a5b4fc', '#00D4FF'];
+              const color = colors[i];
+              return (
+                <div
+                  key={lv}
+                  className="engine-meter p-4 text-center"
+                  style={{ borderColor: `${color}33` }}
+                >
+                  <div
+                    className="w-10 h-10 rounded-full flex items-center justify-center mx-auto mb-2"
+                    style={{ background: `${color}11`, border: `1px solid ${color}33` }}
+                  >
+                    <span className="text-sm font-bold font-display" style={{ color }}>L{i + 1}</span>
+                  </div>
+                  <div className="text-sm font-semibold text-white">{t(`product.behaviorBank.${lv}`)}</div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* 区块11：AI 数字员工矩阵 */}
+      <section className="max-w-7xl mx-auto px-6 mb-24">
+        <div
+          className="glass-card p-8 md:p-12 relative overflow-hidden"
+          style={{
+            borderColor: 'rgba(165, 180, 252, 0.25)',
+            background: 'linear-gradient(135deg, rgba(165, 180, 252, 0.05), rgba(94, 234, 212, 0.03), rgba(13, 18, 25, 0.55))',
+          }}
+        >
+          <div className="text-center mb-8">
+            <div
+              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border text-xs font-mono mb-4"
+              style={{
+                color: '#a5b4fc',
+                borderColor: 'rgba(165, 180, 252, 0.35)',
+                background: 'rgba(165, 180, 252, 0.08)',
+              }}
+            >
+              <Network size={14} /> {t('product.digitalEmployees.badge')}
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold mb-3 font-display">
+              <span className="gradient-text">{t('product.digitalEmployees.title')}</span>
+            </h2>
+            <p className="text-text-secondary max-w-2xl mx-auto mb-2">{t('product.digitalEmployees.subtitle')}</p>
+            <p className="text-sm text-text-secondary max-w-3xl mx-auto leading-relaxed">{t('product.digitalEmployees.desc')}</p>
+          </div>
+
+          {/* 8 个数字员工角色 */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+            {[
+              { key: 'cto', icon: Cpu, hue: 'patent' as Hue },
+              { key: 'cpo', icon: Brain, hue: 'life' as Hue },
+              { key: 'cmo', icon: Sparkles, hue: 'evo' as Hue },
+              { key: 'coo', icon: Workflow, hue: 'gov' as Hue },
+              { key: 'cfo', icon: Coins, hue: 'patent' as Hue },
+              { key: 'legal', icon: Shield, hue: 'life' as Hue },
+              { key: 'sales', icon: Target, hue: 'evo' as Hue },
+              { key: 'service', icon: Package, hue: 'gov' as Hue },
+            ].map(({ key, icon: Icon, hue }) => {
+              const color = hueColor(hue);
+              return (
+                <div
+                  key={key}
+                  className="engine-meter p-5 text-center"
+                  style={{ borderColor: `${color}22` }}
+                >
+                  <div
+                    className="w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-3"
+                    style={{ background: `${color}11`, border: `1px solid ${color}33` }}
+                  >
+                    <Icon className="w-6 h-6" style={{ color }} />
+                  </div>
+                  <div className="text-sm font-semibold text-white">{t(`product.digitalEmployees.${key}`)}</div>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </section>
     </div>

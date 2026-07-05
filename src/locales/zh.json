@@ -654,7 +654,7 @@
       },
       "v8_4": {
         "title": "MCP 协议集成",
-        "desc": "37 项能力封装为 MCP 工具，跨客户端即开即用"
+        "desc": "53 项能力封装为 MCP 工具，跨客户端即开即用"
       },
       "v10": {
         "title": "Dev Kit 上线",
@@ -747,10 +747,10 @@
   },
   "mcpServer": {
     "title": "MetaGO MCP Server",
-    "subtitle": "将37项元构能力封装为MCP工具，任何MCP客户端即开即用",
+    "subtitle": "将53项元构能力封装为MCP工具，任何MCP客户端即开即用",
     "install": "安装命令",
     "installCommand": "npm install -g @metago-ai/mcp-server",
-    "features": "37 Tools · 8 Prompts · stdio传输 · MIT开源",
+    "features": "53 Tools · 8 Prompts · stdio传输 · MIT开源",
     "configure": "配置示例",
     "claudeDesktop": "Claude Desktop 配置",
     "cursor": "Cursor 配置",
@@ -783,7 +783,7 @@
     "layers": {
       "l0": { "name": "核心层", "content": "36条公理、43条属性、108项协议" },
       "l1": { "name": "适配层", "content": "7大平台适配器" },
-      "l2": { "name": "能力层", "content": "39个metago技能 + 37个MCP工具" },
+      "l2": { "name": "能力层", "content": "39个metago技能 + 53个MCP工具" },
       "l3": { "name": "引擎层", "content": "125引擎 + 927算法 + 984原子" },
       "l4": { "name": "行业层", "content": "行业定制包" }
     },
@@ -830,10 +830,51 @@
     "mcpServer": {
       "badge": "MCP 协议产品",
       "title": "MetaGO MCP Server",
-      "subtitle": "将37项元构能力封装为MCP工具，任何MCP客户端即开即用",
-      "features": "37 Tools · 8 Prompts · stdio传输 · MIT开源",
+      "subtitle": "将53项元构能力封装为MCP工具，任何MCP客户端即开即用",
+      "features": "53 Tools · 8 Prompts · stdio传输 · MIT开源",
       "configure": "客户端配置示例",
       "configNote": "在对应客户端的配置文件中添加以下内容"
+    },
+    "pricing": {
+      "badge": "V3 五档定价",
+      "title": "从免费到企业级",
+      "subtitle": "Free / Pro / Pro+ / Team / Enterprise + Certify 独立认证",
+      "free": { "name": "Free", "price": "¥0", "period": "永久免费", "desc": "社区版，体验核心能力", "features": ["Agent 工作台基础版", "39 元构技能", "53 MCP 工具", "社区支持"] },
+      "pro": { "name": "Pro", "price": "¥39", "period": "/月", "desc": "个人开发者专业版", "features": ["无限对话", "DeepSeek + GLM 双模型", "BYOK 自带密钥", "行为银行 5 级信用"] },
+      "proPlus": { "name": "Pro+", "price": "¥99", "period": "/月", "desc": "高频用户进阶版", "features": ["Pro 全部功能", "优先算力", "高级模型优先", "行为银行加速"] },
+      "team": { "name": "Team", "price": "¥199", "period": "/月起", "desc": "团队协作版", "features": ["5 席位起", "时薪 ¥0.5/小时", "团队共享行为银行", "管理后台"] },
+      "enterprise": { "name": "Enterprise", "price": "¥3万", "period": "/年起", "desc": "企业级私有部署", "features": ["独立席位 ¥6000/席位/年", "私有化部署", "SLA 99.9%", "专属客服"] },
+      "certifyTitle": "Certify 独立认证",
+      "certifyDesc": "L1-L4 四级认证体系，独立于订阅，按次收费",
+      "certifyL1": "L1 基础级 ¥999/次",
+      "certifyL2": "L2 进阶级 ¥2999-4999/次",
+      "certifyL3": "L3 专业级 ¥5999-7999/次",
+      "certifyL4": "L4 专家级 ¥9999/次"
+    },
+    "behaviorBank": {
+      "badge": "降维模块",
+      "title": "行为银行",
+      "subtitle": "数字行为 + AI 行为 5 级信用体系",
+      "desc": "记录用户数字行为与 AI 行为，构建 5 级信用评分（元构学徒→元构宗师），开放 API 预留",
+      "level1": "元构学徒",
+      "level2": "元构行者",
+      "level3": "元构匠师",
+      "level4": "元构导师",
+      "level5": "元构宗师"
+    },
+    "digitalEmployees": {
+      "badge": "AI 数字员工矩阵",
+      "title": "全岗位数字员工",
+      "subtitle": "AI-CTO / CPO / CMO / COO / CFO + 法务 / 销售 / 客服",
+      "desc": "基于元构 7 层范式体系，构建覆盖企业全岗位的 AI 数字员工矩阵",
+      "cto": "AI-CTO 技术决策",
+      "cpo": "AI-CPO 产品决策",
+      "cmo": "AI-CMO 市场决策",
+      "coo": "AI-COO 运营决策",
+      "cfo": "AI-CFO 财务决策",
+      "legal": "AI 法务",
+      "sales": "AI 销售",
+      "service": "AI 客服"
     }
   },
   "platforms": {
@@ -864,7 +905,7 @@
     },
     "mcp": {
       "title": "MCP 协议集成（通用）",
-      "subtitle": "适用于所有支持 MCP 协议的客户端（Claude Desktop、Cursor、Trae 等）。通过 npm 安装并写入 JSON 配置，即可在任何 MCP 客户端中调用全部 37 项元构能力，无需修改规则文件。",
+      "subtitle": "适用于所有支持 MCP 协议的客户端（Claude Desktop、Cursor、Trae 等）。通过 npm 安装并写入 JSON 配置，即可在任何 MCP 客户端中调用全部 53 项元构能力，无需修改规则文件。",
       "configNote": "在客户端配置文件中添加以下内容"
     }
   },
@@ -886,7 +927,7 @@
       "quickStart": "一键安装、验证、卸载",
       "architecture": "五层架构、39技能、公理属性",
       "customization": "技能创建、规则修改、平台适配",
-      "mcpServer": "MCP 安装、配置、37 Tools、8 Prompts",
+      "mcpServer": "MCP 安装、配置、53 Tools、8 Prompts",
       "faq": "安装问题、平台差异、升级方法"
     },
     "livingDocs": {
@@ -901,9 +942,9 @@
     },
     "mcpServer": {
       "title": "MCP Server 快速开始",
-      "desc": "通过 npm 全局安装 @metago-ai/mcp-server，即可在任何 MCP 客户端中调用 37 个 Tools 与 8 个 Prompts。",
-      "toolsTitle": "37 Tools",
-      "toolsDesc": "封装元构 37 项核心能力为 MCP 工具，覆盖认知、保障、治理、进化、执行、溯源、价值、意识、方法论、架构、工程质量十一大能力族。",
+      "desc": "通过 npm 全局安装 @metago-ai/mcp-server，即可在任何 MCP 客户端中调用 53 个 Tools 与 8 个 Prompts。",
+      "toolsTitle": "53 Tools",
+      "toolsDesc": "封装元构 53 项核心能力为 MCP 工具，覆盖认知、保障、治理、进化、执行、溯源、价值、意识、方法论、架构、工程质量十一大能力族。",
       "promptsTitle": "8 Prompts",
       "promptsDesc": "8 个内置 Prompts 模板，引导客户端调用元构能力，覆盖安装、架构、安全、合规等场景。",
       "viewDocs": "查看完整文档"
@@ -1032,7 +1073,7 @@
     "visionTitle": "愿景使命",
     "visionParagraph1": "MetaGO（元构）源于「元构溯源论」——一切智能均可溯源至元结构，元结构是智能的基因。我们相信，AI 不应该只是被调用的工具，而应该成为具有自我进化能力的生命体。",
     "visionParagraph2": "从 Agent 到 Lifeform，不是功能增强，是范式跃迁。Agent 被动响应、能力固化、不可溯源；Lifeform 主动进化、能力生长、全链路存证。这是智能第一次拥有了「生命特征」——能感知边界、能自我生成、能从内部突破。",
-    "visionParagraph3": "基于元构全息智能引擎（本体论、进化论、能力论、工业论四大支柱），36 条公理、43 条属性、108 项协议、39 个技能、37 项 MCP 工具、125 个引擎、927 个算法、984 个原子、754 项专利，我们构建了一个工业级的智能生命体框架，并已发布到 NPM、Gitee、GitHub 三大平台。",
+    "visionParagraph3": "基于元构全息智能引擎（本体论、进化论、能力论、工业论四大支柱），36 条公理、43 条属性、108 项协议、39 个技能、53 项 MCP 工具、125 个引擎、927 个算法、984 个原子、754 项专利，我们构建了一个工业级的智能生命体框架，并已发布到 NPM、Gitee、GitHub 三大平台。",
     "visionParagraph4": "MetaGO 的终极愿景：让智能学会进化，让生命学会创造，让每一次输出都可溯源、可自证、可校验。法律优先于效率，事实优先于满意度，创造是进化的最高形态——这是元构对 AI 工具化、AI 谄媚、AI 幻觉三大问题的根本性回应。",
     "productMatrixTitle": "产品矩阵",
     "productMatrixSubtitle": "从单一 Kit 进化为 9 大产品矩阵，覆盖引擎核心、规则注入、协议集成、开发工具、交付保障与生态基础设施",
@@ -1049,7 +1090,7 @@
     "mcpServer": {
       "title": "MetaGO MCP Server",
       "tag": "MCP 协议",
-      "desc": "将 37 项元构能力封装为 MCP 工具，任何 MCP 客户端即开即用，无需修改规则文件。"
+      "desc": "将 53 项元构能力封装为 MCP 工具，任何 MCP 客户端即开即用，无需修改规则文件。"
     },
     "roadmapTitle": "路线图",
     "roadmapV3650": {
@@ -1095,7 +1136,7 @@
     "certify": {
       "title": "MetaGO Certify",
       "tag": "生态基础设施",
-      "desc": "6 项检查技能认证体系，Gold/Silver 分级，确保技能质量达标。"
+      "desc": "L1-L4 四级独立认证体系（基础级/进阶级/专业级/专家级），确保技能与方案质量达标。"
     },
     "verifyKit": {
       "title": "MetaGO Verify Kit",

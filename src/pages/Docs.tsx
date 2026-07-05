@@ -139,7 +139,7 @@ function Docs() {
             </p>
             {/* npm 安装命令 */}
             <McpInstallBlock className="mb-6" />
-            {/* 37 Tools / 8 Prompts 概览 */}
+            {/* 53 Tools / 8 Prompts 概览 */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div
                 className="rounded-lg p-5"

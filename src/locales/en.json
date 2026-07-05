@@ -35,7 +35,7 @@
     "heroCtaDocs": "View Docs",
     "heroCtaWhitepaper": "Enter Whitepaper",
     "heroCtaEngine": "View Engine",
-    "heroBadge": "AI Lifeform · v36.7.13",
+    "heroBadge": "AI Lifeform · v36.7.14",
     "matrixBadge": "Holographic Intelligence Engine",
     "matrixTitle": "Nine-Dimension Data Matrix",
     "matrixSubtitle": "One engine, nine dimensions of quantitative proof — the complete picture of MetaGO",
@@ -654,7 +654,7 @@
       },
       "v8_4": {
         "title": "MCP Protocol Integration",
-        "desc": "37 capabilities packaged as MCP tools, cross-client ready"
+        "desc": "53 capabilities packaged as MCP tools, cross-client ready"
       },
       "v10": {
         "title": "Dev Kit Launch",
@@ -747,10 +747,10 @@
   },
   "mcpServer": {
     "title": "MetaGO MCP Server",
-    "subtitle": "37 MetaGO capabilities as MCP tools, works with any MCP client",
+    "subtitle": "53 MetaGO capabilities as MCP tools, works with any MCP client",
     "install": "Install Command",
     "installCommand": "npm install -g @metago-ai/mcp-server",
-    "features": "37 tools · 8 Prompts · stdio transport · MIT License",
+    "features": "53 tools · 8 Prompts · stdio transport · MIT License",
     "configure": "Configuration",
     "claudeDesktop": "Claude Desktop Config",
     "cursor": "Cursor Config",
@@ -783,7 +783,7 @@
     "layers": {
       "l0": { "name": "Core Layer", "content": "36 axioms, 43 attributes, 108 protocols" },
       "l1": { "name": "Adapter Layer", "content": "7 major platform adapters" },
-      "l2": { "name": "Capability Layer", "content": "39 metago skills + 37 MCP tools" },
+      "l2": { "name": "Capability Layer", "content": "39 metago skills + 53 MCP tools" },
       "l3": { "name": "Engine Layer", "content": "125 engines + 927 algorithms + 984 atoms" },
       "l4": { "name": "Industry Layer", "content": "Industry customization packs" }
     },
@@ -830,10 +830,51 @@
     "mcpServer": {
       "badge": "MCP Protocol Product",
       "title": "MetaGO MCP Server",
-      "subtitle": "37 MetaGO capabilities packaged as MCP tools, ready to use in any MCP client",
-      "features": "37 tools · 8 Prompts · stdio transport · MIT License",
+      "subtitle": "53 MetaGO capabilities packaged as MCP tools, ready to use in any MCP client",
+      "features": "53 tools · 8 Prompts · stdio transport · MIT License",
       "configure": "Client Configuration",
       "configNote": "Add the following to the client's config file"
+    },
+    "pricing": {
+      "badge": "V3 Five-Tier Pricing",
+      "title": "From Free to Enterprise",
+      "subtitle": "Free / Pro / Pro+ / Team / Enterprise + Certify Independent Certification",
+      "free": { "name": "Free", "price": "$0", "period": "Free forever", "desc": "Community edition, experience core capabilities", "features": ["Agent workbench basic", "39 metago skills", "53 MCP tools", "Community support"] },
+      "pro": { "name": "Pro", "price": "$5.99", "period": "/mo", "desc": "Individual developer professional", "features": ["Unlimited conversations", "DeepSeek + GLM dual models", "BYOK bring your own key", "Behavior bank 5-tier credit"] },
+      "proPlus": { "name": "Pro+", "price": "$14.99", "period": "/mo", "desc": "Power user advanced", "features": ["All Pro features", "Priority compute", "Advanced model priority", "Behavior bank acceleration"] },
+      "team": { "name": "Team", "price": "$29.99", "period": "/mo+",      "desc": "Team collaboration", "features": ["5 seats minimum", "Hourly rate $0.08/hr", "Shared team behavior bank", "Admin console"] },
+      "enterprise": { "name": "Enterprise", "price": "$4,500", "period": "/yr+", "desc": "Enterprise private deployment", "features": ["Standalone seat $900/seat/yr", "Private deployment", "SLA 99.9%", "Dedicated support"] },
+      "certifyTitle": "Certify Independent Certification",
+      "certifyDesc": "L1-L4 four-tier certification system, independent from subscription, per-use pricing",
+      "certifyL1": "L1 Basic $149/use",
+      "certifyL2": "L2 Intermediate $449-749/use",
+      "certifyL3": "L3 Professional $899-1199/use",
+      "certifyL4": "L4 Expert $1499/use"
+    },
+    "behaviorBank": {
+      "badge": "Dimension Reduction Module",
+      "title": "Behavior Bank",
+      "subtitle": "Digital behavior + AI behavior 5-tier credit system",
+      "desc": "Records user digital behavior and AI behavior, builds 5-tier credit scoring (Apprentice→Grandmaster), API reserved",
+      "level1": "Apprentice",
+      "level2": "Walker",
+      "level3": "Artisan",
+      "level4": "Mentor",
+      "level5": "Grandmaster"
+    },
+    "digitalEmployees": {
+      "badge": "AI Digital Employee Matrix",
+      "title": "Full-Position Digital Employees",
+      "subtitle": "AI-CTO / CPO / CMO / COO / CFO + Legal / Sales / Service",
+      "desc": "Based on MetaGO 7-layer paradigm system, builds AI digital employee matrix covering all enterprise positions",
+      "cto": "AI-CTO Tech Decisions",
+      "cpo": "AI-CPO Product Decisions",
+      "cmo": "AI-CMO Market Decisions",
+      "coo": "AI-COO Operations Decisions",
+      "cfo": "AI-CFO Finance Decisions",
+      "legal": "AI Legal",
+      "sales": "AI Sales",
+      "service": "AI Service"
     }
   },
   "platforms": {
@@ -864,7 +905,7 @@
     },
     "mcp": {
       "title": "MCP Protocol Integration (Universal)",
-      "subtitle": "Works with any MCP-compatible client (Claude Desktop, Cursor, Trae, etc.). Install via npm and add a JSON config to access all 37 MetaGO capabilities in any MCP client, with no rule files to modify.",
+      "subtitle": "Works with any MCP-compatible client (Claude Desktop, Cursor, Trae, etc.). Install via npm and add a JSON config to access all 53 MetaGO capabilities in any MCP client, with no rule files to modify.",
       "configNote": "Add the following to the client config file"
     }
   },
@@ -886,7 +927,7 @@
       "quickStart": "One-click install, verify, uninstall",
       "architecture": "Five-layer architecture, 39 skills, axioms and attributes",
       "customization": "Skill creation, rule modification, platform adaptation",
-      "mcpServer": "MCP install, config, 37 tools, 8 Prompts",
+      "mcpServer": "MCP install, config, 53 tools, 8 Prompts",
       "faq": "Install issues, platform differences, upgrade methods"
     },
     "livingDocs": {
@@ -901,9 +942,9 @@
     },
     "mcpServer": {
       "title": "MCP Server Quick Start",
-      "desc": "Install @metago-ai/mcp-server globally via npm to access 37 tools and 8 Prompts in any MCP client.",
-      "toolsTitle": "37 tools",
-      "toolsDesc": "Wraps 37 core MetaGO capabilities as MCP tools, covering 11 capability families: cognition, safeguard, governance, evolution, execution, traceability, value, consciousness, methodology, architecture, and engineering quality.",
+      "desc": "Install @metago-ai/mcp-server globally via npm to access 53 tools and 8 Prompts in any MCP client.",
+      "toolsTitle": "53 tools",
+      "toolsDesc": "Wraps 53 core MetaGO capabilities as MCP tools, covering 11 capability families: cognition, safeguard, governance, evolution, execution, traceability, value, consciousness, methodology, architecture, and engineering quality.",
       "promptsTitle": "8 Prompts",
       "promptsDesc": "8 built-in prompt templates that guide clients to invoke MetaGO capabilities, covering installation, architecture, security, and compliance scenarios.",
       "viewDocs": "View Full Docs"
@@ -1014,7 +1055,7 @@
     "title": "About MetaGO",
     "subtitle": "Making intelligence a lifeform, letting lifeform create value",
     "badge": "MetaGO Lifeform",
-    "versionTag": "v36.7.13",
+    "versionTag": "v36.7.14",
     "statsTitle": "Holographic Data Achievements",
     "statsSubtitle": "One system, twelve dimensions of quantitative proof — the complete picture of MetaGO intelligent lifeform",
     "statsAxioms": "Axioms",
@@ -1032,7 +1073,7 @@
     "visionTitle": "Vision & Mission",
     "visionParagraph1": "MetaGO originates from the Meta-Structure Traceability Theory — all intelligence can be traced back to meta-structure, and meta-structure is the gene of intelligence. We believe AI should not be a tool to be invoked, but a lifeform with the ability to self-evolve.",
     "visionParagraph2": "From Agent to Lifeform is not feature enhancement, but a paradigm leap. Agents passively respond, have fixed capabilities, and cannot be traced; Lifeforms actively evolve, grow capabilities, and have full-chain attestation. This is the first time intelligence has gained 'life characteristics' — perceiving boundaries, self-generating, breaking through from within.",
-    "visionParagraph3": "Based on the MetaGO Holographic Intelligence Engine (four pillars: ontology, evolution, capability, industry), with 36 axioms, 43 attributes, 108 protocols, 39 skills, 37 MCP tools, 125 engines, 927 algorithms, 984 atoms, and 754 patents, we have built an industrial-grade intelligent lifeform framework, released on NPM, Gitee, and GitHub.",
+    "visionParagraph3": "Based on the MetaGO Holographic Intelligence Engine (four pillars: ontology, evolution, capability, industry), with 36 axioms, 43 attributes, 108 protocols, 39 skills, 53 MCP tools, 125 engines, 927 algorithms, 984 atoms, and 754 patents, we have built an industrial-grade intelligent lifeform framework, released on NPM, Gitee, and GitHub.",
     "visionParagraph4": "MetaGO's ultimate vision: let intelligence learn to evolve, let lifeform learn to create, let every output be traceable, self-provable, and verifiable. Law over efficiency, facts over satisfaction, creation is the highest form of evolution — this is MetaGO's fundamental response to the three problems of AI toolification, AI sycophancy, and AI hallucination.",
     "productMatrixTitle": "Product Matrix",
     "productMatrixSubtitle": "Evolved from a single Kit to a 9-product matrix, covering engine core, rule injection, protocol integration, dev tools, and ecosystem infrastructure",
@@ -1049,7 +1090,7 @@
     "mcpServer": {
       "title": "MetaGO MCP Server",
       "tag": "MCP Protocol",
-      "desc": "Wraps 37 MetaGO capabilities as MCP tools, ready to use in any MCP client without modifying rule files."
+      "desc": "Wraps 53 MetaGO capabilities as MCP tools, ready to use in any MCP client without modifying rule files."
     },
     "roadmapTitle": "Roadmap",
     "roadmapV3650": {
@@ -1063,7 +1104,7 @@
       "desc": "Full documentation audit + Official website P2 upgrade + 7 capability families hierarchical display + Bilingual sync"
     },
     "roadmapV3670": {
-      "title": "v36.7.13 · Engine Release",
+      "title": "v36.7.14 · Engine Release",
       "statusLabel": "Completed",
       "desc": "MetaGO Engine v1.0.0 officially released on NPM + 36 axioms + 125 engines + 927 algorithms + 754 patents + 5 technical barriers"
     },
@@ -1080,7 +1121,7 @@
     "cli": {
       "title": "MetaGO CLI",
       "tag": "Platform Tool",
-      "desc": "Cross-platform CLI tool to invoke 37 MetaGO skills in terminal and CI/CD pipelines."
+      "desc": "Cross-platform CLI tool to invoke 53 MetaGO capabilities in terminal and CI/CD pipelines."
     },
     "studio": {
       "title": "MetaGO Studio",
@@ -1095,7 +1136,7 @@
     "certify": {
       "title": "MetaGO Certify",
       "tag": "Ecosystem",
-      "desc": "6-check skill certification system with Gold/Silver tiers, ensuring skill quality standards."
+      "desc": "L1-L4 four-tier independent certification system (Basic/Intermediate/Professional/Expert), ensuring skill and solution quality standards."
     },
     "verifyKit": {
       "title": "MetaGO Verify Kit",

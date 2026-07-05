@@ -150,8 +150,8 @@ export default function Home() {
 
   const row1: Metric[] = [
     { end: 39, label: t('home.statsSkills') },
-    { end: 37, label: t('home.statsMcpTools') },
-    { end: 10, label: t('home.statsProducts') },
+    { end: 53, label: t('home.statsMcpTools') },
+    { end: 9, label: t('home.statsProducts') },
     { end: 17, label: t('home.statsCoreEngines') },
   ];
 
@@ -243,7 +243,7 @@ export default function Home() {
               <p className="text-white/85 text-sm md:text-base max-w-xl leading-relaxed">
                 AI 直接读写文件、执行搜索、运行 Git 操作。
                 内置 DeepSeek V4 Pro + GLM-5V Turbo 双模型，
-                支持 37 MCP 工具、39 元构技能自动调用。
+                支持 53 MCP 工具、39 元构技能自动调用。
                 Web 端在线使用，桌面端 exe 完整体验。
               </p>
             </div>
