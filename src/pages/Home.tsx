@@ -174,10 +174,13 @@ export default function Home() {
               <span className="inline-block w-1.5 h-1.5 rounded-full bg-life-bright animate-pulse" />
               {t('home.heroBadge')}
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight font-display">
+            <h1 className="text-4xl md:text-6xl font-bold mb-3 leading-tight font-display">
               {t('home.heroTitle')}{' '}
               <span className="gradient-text">{t('home.heroTitleHighlight')}</span>
             </h1>
+            <h2 className="text-2xl md:text-3xl font-bold mb-6 leading-tight font-display gradient-text">
+              {t('home.heroSubtitleName')}
+            </h2>
             <p className="text-base md:text-lg text-text-secondary mb-4 max-w-2xl leading-relaxed">
               {t('home.heroSubtitle')}
             </p>

@@ -14,6 +14,10 @@ import {
   Truck,
   Mail,
   ArrowRight,
+  Rocket,
+  Users,
+  Workflow,
+  CheckCircle2,
 } from 'lucide-react';
 
 type Hue = 'life' | 'evo' | 'gov' | 'patent' | 'quantum';
@@ -179,7 +183,85 @@ function Enterprise() {
           </div>
         </div>
 
-        {/* 区块4: 联系方式 */}
+        {/* 区块4: FDE 前沿部署工程服务 */}
+        <div className="mb-20">
+          <div className="text-center mb-10">
+            <div
+              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-4"
+              style={{ background: `${hueColor('evo')}1a`, border: `1px solid ${hueColor('evo')}33` }}
+            >
+              <Rocket className="w-4 h-4" style={{ color: hueColor('evo') }} />
+              <span className="text-sm font-medium" style={{ color: hueColor('evo') }}>
+                {t('enterprise.fdeTitle')}
+              </span>
+            </div>
+            <h2 className="text-3xl md:text-4xl font-semibold text-white mb-3 font-display">
+              {t('enterprise.fdeSubtitle')}
+            </h2>
+            <p className="text-text-secondary max-w-3xl mx-auto leading-relaxed">
+              {t('enterprise.fdeDesc')}
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            {/* 5 阶段交付流程 */}
+            <div className="glass-card p-8">
+              <div className="flex items-center gap-3 mb-6">
+                <Workflow className="w-6 h-6" style={{ color: hueColor('life') }} />
+                <h3 className="text-xl font-semibold text-white font-display">
+                  {t('enterprise.fdeStageTitle')}
+                </h3>
+              </div>
+              <div className="space-y-3">
+                {['s1', 's2', 's3', 's4', 's5'].map((stage, idx) => (
+                  <div key={stage} className="flex items-center gap-3">
+                    <div
+                      className="w-8 h-8 flex items-center justify-center rounded-lg text-sm font-bold shrink-0"
+                      style={{ background: `${hueColor('life')}1a`, color: hueColor('life') }}
+                    >
+                      {idx + 1}
+                    </div>
+                    <span className="text-text-secondary">{t(`enterprise.fdeStages.${stage}`)}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* 5 角色团队 */}
+            <div className="glass-card p-8">
+              <div className="flex items-center gap-3 mb-6">
+                <Users className="w-6 h-6" style={{ color: hueColor('gov') }} />
+                <h3 className="text-xl font-semibold text-white font-display">
+                  {t('enterprise.fdeRoleTitle')}
+                </h3>
+              </div>
+              <div className="grid grid-cols-1 gap-3">
+                {['r1', 'r2', 'r3', 'r4', 'r5'].map((role) => (
+                  <div key={role} className="flex items-center gap-3">
+                    <CheckCircle2 className="w-5 h-5 shrink-0" style={{ color: hueColor('gov') }} />
+                    <span className="text-text-secondary">{t(`enterprise.fdeRoles.${role}`)}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div className="glass-card p-8 mt-6 text-center">
+            <p className="text-2xl font-bold gradient-text font-display mb-4">
+              {t('enterprise.fdePrice')}
+            </p>
+            <a
+              href="mailto:researcher.yi@youfer.cn"
+              className="btn-primary inline-flex items-center gap-2"
+            >
+              <Rocket className="w-4 h-4" />
+              {t('enterprise.fdeCta')}
+              <ArrowRight className="w-4 h-4" />
+            </a>
+          </div>
+        </div>
+
+        {/* 区块5: 联系方式 */}
         <div className="glass-card p-10 text-center">
           <h2 className="text-3xl font-semibold text-white mb-4 font-display">
             {t('enterprise.contactTitle')}

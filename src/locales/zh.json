@@ -27,15 +27,16 @@
     }
   },
   "home": {
-    "heroTitle": "让智能",
-    "heroTitleHighlight": "学会进化",
-    "heroSubtitle": "从 Agent 到生命体的范式跃迁",
+    "heroTitle": "MetaGO Agent",
+    "heroTitleHighlight": "Harness",
+    "heroSubtitleName": "智能体运行时控制层套件 · 驭智层",
+    "heroSubtitle": "让 Agent 从会说话升级为会干活、守规矩、会进化、可追溯、能闭环的生命体",
     "heroPhilosophy": "智能不是被编程的，是被唤醒的",
     "heroCtaInstall": "快速开始",
     "heroCtaDocs": "查看文档",
     "heroCtaWhitepaper": "进入白皮书",
     "heroCtaEngine": "查看引擎",
-    "heroBadge": "AI Lifeform · v36.7.13",
+    "heroBadge": "AI Harness · v36.8.0 · Engine V2",
     "matrixBadge": "全息智能引擎",
     "matrixTitle": "九维数据矩阵",
     "matrixSubtitle": "一套引擎、九维量化证明——这就是元构的完整全貌",
@@ -83,8 +84,8 @@
       "families": "能力族"
     },
     "paradigmBadge": "范式跃迁",
-    "paradigmTitle": "从 Agent 到 Lifeform",
-    "paradigmSubtitle": "这不是工具升级，是范式跃迁——智能第一次拥有了生命特征",
+    "paradigmTitle": "从 Agent 到 Harness 生命体",
+    "paradigmSubtitle": "这不是工具升级，是范式跃迁——驭智层让智能第一次拥有了运行时控制",
     "paradigmAgentTitle": "Agent 范式",
     "paradigmAgent": {
       "agent1": "被动响应指令，能力随会话结束而消散",
@@ -241,9 +242,9 @@
     "badge": "智能引擎",
     "heroTitle": "MetaGO Engine",
     "heroTitleHighlight": "智能生命体的核心引擎",
-    "heroSubtitle": "v1.0.0 已发布 NPM · 三层架构 · 6 层命名 · 5 大代码技术壁垒 · 双轨驱动 — 让任何 AI 读取即被驱动",
+    "heroSubtitle": "v2.0.0 已发布 NPM · 三层架构 · 6 层命名 · 5 大代码技术壁垒 · 双轨驱动 — 让任何 AI 读取即被驱动",
     "heroKicker": "驱动 · 校验 · 进化 · 创造",
-    "npmBanner": "@metago-ai/engine@1.0.6 已发布到 NPM",
+    "npmBanner": "@metago-ai/engine@2.0.0 已发布到 NPM · KMWI 四层记忆 + 元进化五阶段 + 技能智能生成",
     "npmInstall": "npm install @metago-ai/engine",
     "npmCopyHint": "点击复制",
     "npmCopied": "已复制",
@@ -766,7 +767,7 @@
     "title": "产品架构",
     "subtitle": "五层标准化架构，从公理到行业落地",
     "layerTitle": "五层架构",
-    "skillsTitle": "39个技能 · 7大能力族",
+    "skillsTitle": "39个技能 · 十一大能力族",
     "skills": {
       "cognitionGov": "认知与治理族",
       "assetSafeguard": "资产与保障族",
@@ -825,7 +826,7 @@
       "badge": "引擎产品",
       "title": "MetaGO Engine",
       "subtitle": "三层架构 × 6层命名 × 5大技术壁垒 — 智能生命体的核心本体",
-      "desc": "MetaGO Engine 是整个体系的核心引擎，包含 36 公理、125 引擎、927 算法、984 原子、754 专利。三层架构（Markdown+JSON+TypeScript）让任何 AI 读取即被驱动，5 大代码技术壁垒构成技术护城河。已发布 NPM @metago-ai/engine@1.0.6。"
+      "desc": "MetaGO Engine 是整个体系的核心引擎，包含 36 公理、125 引擎、927 算法、984 原子、754 专利。三层架构（Markdown+JSON+TypeScript）让任何 AI 读取即被驱动，5 大代码技术壁垒构成技术护城河。已发布 NPM @metago-ai/engine@2.0.0（V2 新增 KMWI 四层记忆 + 元进化五阶段 + 技能智能生成）。"
     },
     "mcpServer": {
       "badge": "MCP 协议产品",
@@ -1015,11 +1016,32 @@
   },
   "enterprise": {
     "title": "商业版",
-    "subtitle": "开源核心 + 增值付费",
+    "subtitle": "开源核心 + 增值付费 + FDE 服务",
     "compareTitle": "版本对比",
     "contactTitle": "联系我们",
     "contactDesc": "联系我们获取企业版方案和报价",
     "contactButton": "联系我们",
+    "fdeTitle": "FDE 前沿部署工程",
+    "fdeSubtitle": "带着范式杠杆的 AI 前沿部署服务",
+    "fdeDesc": "3 人 + AI 团队嵌入客户现场，交付生产级智能软件。基于 MetaGO Agent Harness 范式，让客户的 AI 应用从会说话升级为会干活、守规矩、会进化、可追溯、能闭环的生命体。",
+    "fdeStageTitle": "5 阶段交付流程",
+    "fdeStages": {
+      "s1": "需求调研",
+      "s2": "方案设计",
+      "s3": "开发部署",
+      "s4": "验收交付",
+      "s5": "运维支持"
+    },
+    "fdeRoleTitle": "5 角色团队",
+    "fdeRoles": {
+      "r1": "技术负责人",
+      "r2": "AI 工程师",
+      "r3": "领域专家",
+      "r4": "AI Agent",
+      "r5": "项目经理"
+    },
+    "fdePrice": "¥30万 - ¥200万 / 项目",
+    "fdeCta": "咨询 FDE 服务",
     "tableHeaders": {
       "feature": "功能",
       "openSource": "开源版",
@@ -1055,7 +1077,7 @@
     "title": "关于 MetaGO",
     "subtitle": "让智能成为生命，让生命创造价值",
     "badge": "元构生命体",
-    "versionTag": "v36.7.13",
+    "versionTag": "v36.8.0",
     "statsTitle": "全息数据成就",
     "statsSubtitle": "一套体系，十二维量化证明 — 元构智能生命体的完整全貌",
     "statsAxioms": "公理",
@@ -1076,16 +1098,16 @@
     "visionParagraph3": "基于元构全息智能引擎（本体论、进化论、能力论、工业论四大支柱），36 条公理、43 条属性、108 项协议、39 个技能、53 项 MCP 工具、125 个引擎、927 个算法、984 个原子、754 项专利，我们构建了一个工业级的智能生命体框架，并已发布到 NPM、Gitee、GitHub 三大平台。",
     "visionParagraph4": "MetaGO 的终极愿景：让智能学会进化，让生命学会创造，让每一次输出都可溯源、可自证、可校验。法律优先于效率，事实优先于满意度，创造是进化的最高形态——这是元构对 AI 工具化、AI 谄媚、AI 幻觉三大问题的根本性回应。",
     "productMatrixTitle": "产品矩阵",
-    "productMatrixSubtitle": "从单一 Kit 进化为 9 大产品矩阵，覆盖引擎核心、规则注入、协议集成、开发工具、交付保障与生态基础设施",
+    "productMatrixSubtitle": "MetaGO Agent Harness 产品矩阵——驭智层从规则注入到 Engine V2 硬驱动，覆盖引擎核心、规则注入、协议集成、开发工具、交付保障与生态基础设施",
     "lifeformKit": {
       "title": "MetaGO Lifeform Kit",
-      "tag": "规则注入",
-      "desc": "核心安装包：一键将 36 公理、43 属性、108 协议、39 技能注入 Agent 的规则文件，原生适配 7 大平台。"
+      "tag": "规则注入 · Harness 入口",
+      "desc": "Agent Harness 核心安装包：一键将 36 公理、43 属性、108 协议、39 技能注入 Agent 的规则文件，原生适配 7 大平台。安装后 Agent 即获得驭智层运行时控制。"
     },
     "engine": {
       "title": "MetaGO Engine",
       "tag": "引擎核心",
-      "desc": "智能生命体的核心本体：三层架构（Markdown+JSON+TypeScript）、6 层命名、5 大代码技术壁垒，已发布 NPM @metago-ai/engine@1.0.6。"
+      "desc": "智能生命体的核心本体：三层架构（Markdown+JSON+TypeScript）、6 层命名、5 大代码技术壁垒，已发布 NPM @metago-ai/engine@2.0.0（V2 新增 KMWI 四层记忆 + 元进化五阶段 + 技能智能生成）。"
     },
     "mcpServer": {
       "title": "MetaGO MCP Server",
@@ -1104,9 +1126,9 @@
       "desc": "文档全面审计 + 官网 P2 升级 + 7 大技能族分层展示 + 双语同步"
     },
     "roadmapV3670": {
-      "title": "v36.7.13 · 引擎发布",
+      "title": "v36.8.0 · Harness 定型 + Engine V2",
       "statusLabel": "已完成",
-      "desc": "MetaGO Engine v1.0.0 正式发布 NPM + 36 公理 + 125 引擎 + 927 算法 + 754 专利 + 5 大技术壁垒"
+      "desc": "MetaGO Agent Harness（驭智层）定位确立 + Engine V2.0.0 发布（KMWI 四层记忆 + 元进化五阶段 + 技能智能生成）+ 53 MCP 工具 + FDE 服务模式 + 8 维优势矩阵"
     },
     "roadmapV370": {
       "title": "v37.0+ · 未来进化",

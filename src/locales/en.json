@@ -27,15 +27,16 @@
     }
   },
   "home": {
-    "heroTitle": "Teach Intelligence",
-    "heroTitleHighlight": "to Evolve",
-    "heroSubtitle": "From Agent to Lifeform",
+    "heroTitle": "MetaGO Agent",
+    "heroTitleHighlight": "Harness",
+    "heroSubtitleName": "Agent Runtime Control Layer Kit · Harness",
+    "heroSubtitle": "Turns an Agent from a fluent speaker into a lifeform that does the work, follows the rules, evolves itself, stays traceable, and closes every loop",
     "heroPhilosophy": "Intelligence is not programmed, it is awakened",
     "heroCtaInstall": "Quick Start",
     "heroCtaDocs": "View Docs",
     "heroCtaWhitepaper": "Enter Whitepaper",
     "heroCtaEngine": "View Engine",
-    "heroBadge": "AI Lifeform · v36.7.14",
+    "heroBadge": "AI Harness · v36.8.0 · Engine V2",
     "matrixBadge": "Holographic Intelligence Engine",
     "matrixTitle": "Nine-Dimension Data Matrix",
     "matrixSubtitle": "One engine, nine dimensions of quantitative proof — the complete picture of MetaGO",
@@ -83,8 +84,8 @@
       "families": "Families"
     },
     "paradigmBadge": "Paradigm Leap",
-    "paradigmTitle": "From Agent to Lifeform",
-    "paradigmSubtitle": "Not a tool upgrade, but a paradigm leap — intelligence gains life characteristics for the first time",
+    "paradigmTitle": "From Agent to Harness Lifeform",
+    "paradigmSubtitle": "Not a tool upgrade, but a paradigm leap — the Harness gives intelligence runtime control for the first time",
     "paradigmAgentTitle": "Agent Paradigm",
     "paradigmAgent": {
       "agent1": "Passively responds to instructions, capabilities vanish when session ends",
@@ -241,9 +242,9 @@
     "badge": "Intelligent Engine",
     "heroTitle": "MetaGO Engine",
     "heroTitleHighlight": "The Core Engine of Intelligent Lifeform",
-    "heroSubtitle": "v1.0.0 released on NPM · Three-Layer Architecture · Six-Layer Naming · Five Code Barriers · Dual-Track Drive — any AI that reads it gets driven",
+    "heroSubtitle": "v2.0.0 released on NPM · Three-Layer Architecture · Six-Layer Naming · Five Code Barriers · Dual-Track Drive — any AI that reads it gets driven",
     "heroKicker": "Drive · Validate · Evolve · Create",
-    "npmBanner": "@metago-ai/engine@1.0.6 released on NPM",
+    "npmBanner": "@metago-ai/engine@2.0.0 released on NPM · KMWI 4-layer memory + 5-stage evolution + skill generator",
     "npmInstall": "npm install @metago-ai/engine",
     "npmCopyHint": "Click to copy",
     "npmCopied": "Copied",
@@ -825,7 +826,7 @@
       "badge": "Engine Product",
       "title": "MetaGO Engine",
       "subtitle": "Three-layer architecture × six-layer naming × five technical barriers — the core of intelligent lifeform",
-      "desc": "MetaGO Engine is the core engine of the entire system, containing 36 axioms, 125 engines, 927 algorithms, 984 atoms, and 754 patents. Three-layer architecture (Markdown+JSON+TypeScript) drives any AI that reads it, and five code technical barriers form the technical moat. Released on NPM as @metago-ai/engine@1.0.6."
+      "desc": "MetaGO Engine is the core engine of the entire system, containing 36 axioms, 125 engines, 927 algorithms, 984 atoms, and 754 patents. Three-layer architecture (Markdown+JSON+TypeScript) drives any AI that reads it, and five code technical barriers form the technical moat. Released on NPM as @metago-ai/engine@2.0.0 (V2 adds KMWI 4-layer memory + 5-stage evolution + skill generator)."
     },
     "mcpServer": {
       "badge": "MCP Protocol Product",
@@ -1015,11 +1016,32 @@
   },
   "enterprise": {
     "title": "Enterprise",
-    "subtitle": "Open source core + Value-added paid",
+    "subtitle": "Open source core + Value-added paid + FDE Services",
     "compareTitle": "Version Comparison",
     "contactTitle": "Contact Us",
     "contactDesc": "Contact us for enterprise plans and pricing",
     "contactButton": "Contact Us",
+    "fdeTitle": "FDE — Forward Deployment Engineering",
+    "fdeSubtitle": "AI forward deployment with paradigm leverage",
+    "fdeDesc": "A 3-person + AI team embedded in your site to deliver production-grade intelligent software. Built on the MetaGO Agent Harness paradigm, your AI applications upgrade from fluent speakers to lifeforms that do the work, follow the rules, evolve, stay traceable, and close every loop.",
+    "fdeStageTitle": "5-Stage Delivery",
+    "fdeStages": {
+      "s1": "Requirements Research",
+      "s2": "Solution Design",
+      "s3": "Development & Deployment",
+      "s4": "Acceptance & Delivery",
+      "s5": "Operations & Support"
+    },
+    "fdeRoleTitle": "5-Role Team",
+    "fdeRoles": {
+      "r1": "Tech Lead",
+      "r2": "AI Engineer",
+      "r3": "Domain Expert",
+      "r4": "AI Agent",
+      "r5": "Project Manager"
+    },
+    "fdePrice": "¥300K – ¥2M / project",
+    "fdeCta": "Inquire about FDE",
     "tableHeaders": {
       "feature": "Feature",
       "openSource": "Open Source",
@@ -1055,7 +1077,7 @@
     "title": "About MetaGO",
     "subtitle": "Making intelligence a lifeform, letting lifeform create value",
     "badge": "MetaGO Lifeform",
-    "versionTag": "v36.7.14",
+    "versionTag": "v36.8.0",
     "statsTitle": "Holographic Data Achievements",
     "statsSubtitle": "One system, twelve dimensions of quantitative proof — the complete picture of MetaGO intelligent lifeform",
     "statsAxioms": "Axioms",
@@ -1085,7 +1107,7 @@
     "engine": {
       "title": "MetaGO Engine",
       "tag": "Engine Core",
-      "desc": "The core body of the intelligent lifeform: three-layer architecture (Markdown+JSON+TypeScript), six-layer naming, five code technical barriers, released on NPM as @metago-ai/engine@1.0.6."
+      "desc": "The core body of the intelligent lifeform: three-layer architecture (Markdown+JSON+TypeScript), six-layer naming, five code technical barriers, released on NPM as @metago-ai/engine@2.0.0 (V2 adds KMWI 4-layer memory + 5-stage evolution + skill generator)."
     },
     "mcpServer": {
       "title": "MetaGO MCP Server",
@@ -1104,9 +1126,9 @@
       "desc": "Full documentation audit + Official website P2 upgrade + 7 capability families hierarchical display + Bilingual sync"
     },
     "roadmapV3670": {
-      "title": "v36.7.14 · Engine Release",
+      "title": "v36.8.0 · Harness Defined + Engine V2",
       "statusLabel": "Completed",
-      "desc": "MetaGO Engine v1.0.0 officially released on NPM + 36 axioms + 125 engines + 927 algorithms + 754 patents + 5 technical barriers"
+      "desc": "MetaGO Agent Harness positioning established + Engine V2.0.0 released (KMWI 4-layer memory + 5-stage evolution + skill generator) + 53 MCP tools + FDE service model + 8-dimension advantage matrix"
     },
     "roadmapV370": {
       "title": "v37.0+ · Future Evolution",
