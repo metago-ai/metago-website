@@ -36,7 +36,7 @@
     "heroCtaDocs": "查看文档",
     "heroCtaWhitepaper": "进入白皮书",
     "heroCtaEngine": "查看引擎",
-    "heroBadge": "AI Harness · v36.8.0 · Engine V2",
+    "heroBadge": "Agent Harness · v36.8.0 · Engine V2",
     "matrixBadge": "全息智能引擎",
     "matrixTitle": "九维数据矩阵",
     "matrixSubtitle": "一套引擎、九维量化证明——这就是元构的完整全貌",
@@ -84,7 +84,7 @@
       "families": "能力族"
     },
     "paradigmBadge": "范式跃迁",
-    "paradigmTitle": "从 Agent 到 Harness 生命体",
+    "paradigmTitle": "从 Agent 到生命体（Harness 是桥梁）",
     "paradigmSubtitle": "这不是工具升级，是范式跃迁——驭智层让智能第一次拥有了运行时控制",
     "paradigmAgentTitle": "Agent 范式",
     "paradigmAgent": {
@@ -208,8 +208,8 @@
         "tag": "ENGINEERING-CLOSURE",
         "title": "工程闭环：从公理到产品",
         "subtitle": "9 大产品矩阵覆盖规则注入到生态基础设施",
-        "body": "理论必须形成闭环。元构的 9 大产品矩阵——Lifeform Kit、MCP Server、Dev Kit、CLI、Studio、Skills SDK、Certify——构成了从公理到产品的完整工程闭环。",
-        "point1": "Lifeform Kit：规则注入的入口",
+        "body": "理论必须形成闭环。元构的 9 大产品矩阵——Agent Harness、MCP Server、Dev Kit、CLI、Studio、Skills SDK、Certify——构成了从公理到产品的完整工程闭环。",
+        "point1": "Agent Harness：规则注入的入口",
         "point2": "MCP Server：协议集成的桥梁",
         "point3": "Certify：生态基础设施"
       },
@@ -643,7 +643,7 @@
     "versions": {
       "v1": {
         "title": "起源：规则套件 v1.0",
-        "desc": "MetaGO Lifeform Kit 诞生，8 公理 + 7 属性 + 6 协议首次注入 Agent 规则文件"
+        "desc": "MetaGO Agent Harness 诞生，8 公理 + 7 属性 + 6 协议首次注入 Agent 规则文件"
       },
       "v3_2": {
         "title": "文档体系化",
@@ -1100,7 +1100,7 @@
     "productMatrixTitle": "产品矩阵",
     "productMatrixSubtitle": "MetaGO Agent Harness 产品矩阵——驭智层从规则注入到 Engine V2 硬驱动，覆盖引擎核心、规则注入、协议集成、开发工具、交付保障与生态基础设施",
     "lifeformKit": {
-      "title": "MetaGO Lifeform Kit",
+      "title": "MetaGO Agent Harness",
       "tag": "规则注入 · Harness 入口",
       "desc": "Agent Harness 核心安装包：一键将 36 公理、43 属性、108 协议、39 技能注入 Agent 的规则文件，原生适配 7 大平台。安装后 Agent 即获得驭智层运行时控制。"
     },

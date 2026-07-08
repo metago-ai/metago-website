@@ -1,4 +1,4 @@
-# MetaGO Lifeform Kit 官方网站 robots.txt
+# MetaGO Agent Harness 官方网站 robots.txt
 # 主源：https://metago-ai.github.io/metago-website/
 # 镜像：https://metago.life/
 

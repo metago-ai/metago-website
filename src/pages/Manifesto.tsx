@@ -141,7 +141,7 @@ const ZH_CONTENT = {
   table5Header: ['产品', '形态', '定位'],
   table5Rows: [
     ['MetaGO Engine', '引擎核心', '智能生命体核心本体，三层架构+5大技术壁垒'],
-    ['MetaGO Lifeform Kit', '规则注入', '核心安装包，8 公理一键注入'],
+    ['MetaGO Agent Harness', '规则注入', '核心安装包，8 公理一键注入'],
     ['MetaGO MCP Server', 'MCP 协议', '53 项能力封装为 MCP 工具'],
     ['MetaGO Dev Kit', '垂直场景包', '开发者增强技能包'],
     ['MetaGO CLI', '平台工具', '跨平台命令行，CI/CD 集成'],
@@ -186,7 +186,7 @@ const ZH_CONTENT = {
   ctaDocs: '查看文档',
   ctaReadGitee: '在 Gitee 阅读',
   ctaReadGitHub: '在 GitHub 阅读',
-  signature: 'MetaGO Lifeform Kit · MIT 开源 · 2026',
+  signature: 'MetaGO Agent Harness · MIT 开源 · 2026',
 };
 
 // 英文版宣言内容
@@ -309,7 +309,7 @@ Self-proof capability: ✅ Available`,
   table5Header: ['Product', 'Form', 'Positioning'],
   table5Rows: [
     ['MetaGO Engine', 'Engine Core', 'Core body of intelligent lifeform, three-layer architecture + 5 technical barriers'],
-    ['MetaGO Lifeform Kit', 'Rule injection', 'Core package, one-click injection of 8 axioms'],
+    ['MetaGO Agent Harness', 'Rule injection', 'Core package, one-click injection of 8 axioms'],
     ['MetaGO MCP Server', 'MCP protocol', '53 capabilities encapsulated as MCP tools'],
     ['MetaGO Dev Kit', 'Vertical scenario pack', 'Developer augmentation skill pack'],
     ['MetaGO CLI', 'Platform tool', 'Cross-platform CLI, CI/CD integration'],
@@ -354,7 +354,7 @@ Self-proof capability: ✅ Available`,
   ctaDocs: 'View Docs',
   ctaReadGitee: 'Read on Gitee',
   ctaReadGitHub: 'Read on GitHub',
-  signature: 'MetaGO Lifeform Kit · MIT Open Source · 2026',
+  signature: 'MetaGO Agent Harness · MIT Open Source · 2026',
 };
 
 // 复制按钮组件

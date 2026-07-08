@@ -1,4 +1,4 @@
-# MetaGO Lifeform Kit — 官方网站
+# MetaGO Agent Harness — 官方网站
 
 > 元构超级智能生命体标准安装包的官方网站与文档门户。
 >
@@ -15,7 +15,7 @@
 
 ## 简介
 
-本仓库托管 MetaGO Lifeform Kit 的官方网站源码，提供产品介绍、平台支持、文档入口与企业服务对接。网站采用中英双语，已部署至腾讯云 CloudBase。
+本仓库托管 MetaGO Agent Harness 的官方网站源码，提供产品介绍、平台支持、文档入口与企业服务对接。网站采用中英双语，已部署至腾讯云 CloudBase。
 
 - **官方线上地址**：<https://metago.life/>
 - **Studio 可视化编排**：<https://metago.life/studio/>
@@ -118,7 +118,7 @@ MetaGO 已从单一 Kit 进化为完整的产品矩阵：
 
 | 产品线 | 产品 | 描述 |
 |--------|------|------|
-| **核心** | [Lifeform Kit](https://gitee.com/metago/metagolifeform) | 37 技能 + 7 平台适配器（MIT 开源） |
+| **核心** | [Agent Harness](https://gitee.com/metago/metagolifeform) | 37 技能 + 7 平台适配器（MIT 开源） |
 | **核心** | [MCP Server](https://www.npmjs.com/package/@metago-ai/mcp-server) | 35 tools + 8 prompts 的 MCP 服务 |
 | **平台工具** | [Studio](https://metago.life/studio/) | 可视化技能编排平台（SaaS） |
 | **平台工具** | [CLI](https://www.npmjs.com/package/metago-cli) | 跨平台命令行工具 |
@@ -131,7 +131,7 @@ MetaGO 已从单一 Kit 进化为完整的产品矩阵：
 
 ## 相关仓库
 
-- **MetaGO Lifeform Kit（产品）**：<https://gitee.com/metago/metagolifeform>
+- **MetaGO Agent Harness（产品）**：<https://gitee.com/metago/metagolifeform>
 - **MetaGO Studio（可视化编排）**：<https://gitee.com/metago/metago-studio>
 - **GitHub 主组织**：<https://github.com/metago-ai>
 - **GitHub 镜像**：<https://github.com/metago-ai/metago-website>

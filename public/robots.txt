@@ -1,4 +1,4 @@
-# MetaGO Lifeform Kit 官方网站 robots.txt
+# MetaGO Agent Harness 官方网站 robots.txt
 # 主域名：https://metago.life/
 
 User-agent: *

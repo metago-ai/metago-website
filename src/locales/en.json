@@ -36,7 +36,7 @@
     "heroCtaDocs": "View Docs",
     "heroCtaWhitepaper": "Enter Whitepaper",
     "heroCtaEngine": "View Engine",
-    "heroBadge": "AI Harness · v36.8.0 · Engine V2",
+    "heroBadge": "Agent Harness · v36.8.0 · Engine V2",
     "matrixBadge": "Holographic Intelligence Engine",
     "matrixTitle": "Nine-Dimension Data Matrix",
     "matrixSubtitle": "One engine, nine dimensions of quantitative proof — the complete picture of MetaGO",
@@ -84,7 +84,7 @@
       "families": "Families"
     },
     "paradigmBadge": "Paradigm Leap",
-    "paradigmTitle": "From Agent to Harness Lifeform",
+    "paradigmTitle": "From Agent to Lifeform (via Harness)",
     "paradigmSubtitle": "Not a tool upgrade, but a paradigm leap — the Harness gives intelligence runtime control for the first time",
     "paradigmAgentTitle": "Agent Paradigm",
     "paradigmAgent": {
@@ -208,8 +208,8 @@
         "tag": "ENGINEERING-CLOSURE",
         "title": "Engineering Closure: From Axioms to Products",
         "subtitle": "9-product matrix covering rule injection to ecosystem infrastructure",
-        "body": "Theory must form a closed loop. MetaGO's 9-product matrix — Lifeform Kit, MCP Server, Dev Kit, CLI, Studio, Skills SDK, Certify — constitutes the complete engineering closure from axioms to products.",
-        "point1": "Lifeform Kit: the entry point of rule injection",
+        "body": "Theory must form a closed loop. MetaGO's 9-product matrix — Agent Harness, MCP Server, Dev Kit, CLI, Studio, Skills SDK, Certify — constitutes the complete engineering closure from axioms to products.",
+        "point1": "Agent Harness: the entry point of rule injection",
         "point2": "MCP Server: the bridge of protocol integration",
         "point3": "Certify: ecosystem infrastructure"
       },
@@ -643,7 +643,7 @@
     "versions": {
       "v1": {
         "title": "Origin: Rule Kit v1.0",
-        "desc": "MetaGO Lifeform Kit born, 8 axioms + 7 attributes + 6 protocols first injected into Agent rule files"
+        "desc": "MetaGO Agent Harness born, 8 axioms + 7 attributes + 6 protocols first injected into Agent rule files"
       },
       "v3_2": {
         "title": "Documentation Systematization",
@@ -1100,7 +1100,7 @@
     "productMatrixTitle": "Product Matrix",
     "productMatrixSubtitle": "Evolved from a single Kit to a 9-product matrix, covering engine core, rule injection, protocol integration, dev tools, and ecosystem infrastructure",
     "lifeformKit": {
-      "title": "MetaGO Lifeform Kit",
+      "title": "MetaGO Agent Harness",
       "tag": "Rule Injection",
       "desc": "Core install kit: one command injects 36 axioms, 43 attributes, 108 protocols, and 39 skills into the Agent's rule files, with native support for 7 platforms."
     },
