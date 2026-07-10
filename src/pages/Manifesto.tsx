@@ -1,4 +1,4 @@
-import { useState } from 'react';
+﻿import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import {
@@ -24,7 +24,7 @@ const MANIFESTO_URL_GITHUB =
 // 中文版宣言内容
 const ZH_CONTENT = {
   heroBadge: 'AI Lifeform · 2026',
-  subtitle: 'MetaGO 生命体引擎诞生宣言',
+  subtitle: 'MetaGO Agent Harness（智能体运行时控制层套件 · 驭智层）诞生宣言',
   quote: '让智能，学会进化。',
   intro:
     '2026 年，智能体（Agent）已经无处不在。它们写代码、做设计、分析数据、回答问题。但一个根本性的问题始终未被回答：',
@@ -53,7 +53,7 @@ const ZH_CONTENT = {
     },
   ],
 
-  sec2Title: '二、范式跃迁：从 Agent 到生命体',
+  sec2Title: '二、范式跃迁：从智能体到生命体',
   sec2Lead: 'MetaGO 提出的不是"更好的 Agent"，而是一个新的范式——生命体。',
   sec2Sub: '生命体与工具的根本区别：',
   table2Header: ['维度', '工具（Agent）', '生命体（Lifeform）'],
@@ -65,7 +65,7 @@ const ZH_CONTENT = {
     ['自我认知', '无', '身份声明'],
   ],
   sec2Conclusion: '这不是功能增强，是范式的跃迁。',
-  sec2Three: '从 Agent 到生命体，需要三个本质能力的植入：',
+  sec2Three: '从智能体到生命体，需要三个本质能力的植入：',
   sec2ThreeItems: [
     {
       strong: '自我进化',
@@ -80,7 +80,7 @@ const ZH_CONTENT = {
       body: '——一切输出可溯源至输入与过程，脉冲见证系统全链路存证，被质疑时可自证',
     },
   ],
-  sec2Quote: '让智能，学会进化。从 Agent 到生命体的范式跃迁。',
+  sec2Quote: '让智能，学会进化。从智能体到生命体的范式跃迁。',
 
   sec3Title: '三、公理：8 条不可妥协的基石',
   sec3Lead: '生命体不是配置出来的，是公理化的。',
@@ -137,17 +137,17 @@ const ZH_CONTENT = {
 
   sec5Title: '五、生态：9 大产品矩阵',
   sec5Lead:
-    'MetaGO 不是一个安装包，而是一个产品矩阵——从单一 Kit 进化为 9 大产品，覆盖引擎核心、规则注入、协议集成、开发工具与生态基础设施。',
+    'MetaGO Agent Harness 是规则系统本身，不是产品。产品是 Harness 的载体——从开源套件到旗舰产品，9 大产品构成从公理到落地的完整工程闭环。两条产品线：开源套件（Agent Harness 的 NPM 分发形态）+ Studio 旗舰产品（内置 Harness 的智能体工作台，通往 Agentive OS）。',
   table5Header: ['产品', '形态', '定位'],
   table5Rows: [
-    ['MetaGO Engine', '引擎核心', '智能生命体核心本体，三层架构+5大技术壁垒'],
-    ['MetaGO Agent Harness', '规则注入', '核心安装包，8 公理一键注入'],
-    ['MetaGO MCP Server', 'MCP 协议', '53 项能力封装为 MCP 工具'],
-    ['MetaGO Dev Kit', '垂直场景包', '开发者增强技能包'],
+    ['MetaGO Agent Harness', '开源套件', '智能体运行时控制层套件，8公理+7属性+6协议+39技能一键注入'],
+    ['MetaGO Engine', '核心引擎', '元构全息智能引擎，KMWI四层记忆+元进化五阶段+技能智能生成'],
+    ['MetaGO MCP Server', 'MCP 协议', '53 项能力封装为 MCP 工具（22思维+30技能+1事件）'],
+    ['MetaGO Dev Kit', '垂直场景包', '开发者增强技能包，4 项开发专用技能'],
     ['MetaGO CLI', '平台工具', '跨平台命令行，CI/CD 集成'],
-    ['MetaGO Studio', '平台工具', '可视化技能编排平台'],
+    ['MetaGO Studio', '旗舰产品', '内置 Agent Harness 的智能体工作台，通往 Agentive OS'],
     ['MetaGO Skills SDK', '生态基础设施', 'TypeScript 技能开发 SDK'],
-    ['MetaGO Certify', '生态基础设施', '6 项检查认证体系'],
+    ['MetaGO Certify', '生态基础设施', 'L1-L4 四级认证体系'],
     ['MetaGO Verify Kit', '工程质量', '交付前原子验证门控套件'],
   ],
   sec5Note: '原生适配 7 大平台：Trae / Claude Code / OpenAI Codex / Cursor / CodeBuddy / Qoder / ZCode。',
@@ -175,10 +175,10 @@ const ZH_CONTENT = {
     title: '收尾',
     body1: '2026 年，智能体已经无处不在。但"无处不在"不等于"不断进化"。',
     body2: 'MetaGO 的诞生，不是为了多一个工具，而是为了开启一种可能性——让智能，学会进化。',
-    body3: '从 Agent 到生命体，不是功能增强，是范式跃迁。',
-    body4: '36 条公理。43 条属性。108 项协议。39 个技能。53 项 MCP 工具。125 个引擎。927 个算法。754 项专利。7 大平台。9 大产品。',
-    body5: '这不是终点，是进化的起点。',
-    quote: '让智能，学会进化。从 Agent 到生命体的范式跃迁。',
+    body3: '从智能体到生命体，不是功能增强，是范式跃迁。Agent Harness 是规则系统本身，产品是 Harness 的载体。',
+    body4: '36 条公理。43 条属性。108 项协议。125 个引擎。927 个算法。984 个原子。754 项专利。31 维价值。19 大元思想体系。13 大能力族。39 个技能。53 项 MCP 工具。8 个 Prompts。7 大平台。9 大产品。',
+    body5: '这不是终点，是进化的起点。元构的终极愿景是 Agentive OS——操作系统本身即超级智能体。Agent Harness 是通往 Agentive OS 的火箭工程。',
+    quote: '让智能，学会进化。从智能体到生命体的范式跃迁。',
   },
 
   ctaTitle: '立即验证',
@@ -192,7 +192,7 @@ const ZH_CONTENT = {
 // 英文版宣言内容
 const EN_CONTENT = {
   heroBadge: 'AI Lifeform · 2026',
-  subtitle: 'MetaGO Lifeform Engine Birth Manifesto',
+  subtitle: 'MetaGO Agent Harness (Runtime Control Layer for Agents) Birth Manifesto',
   quote: 'Let intelligence learn to evolve.',
   intro:
     'In 2026, Agents are already everywhere. They write code, design, analyze data, and answer questions. But one fundamental question remains unanswered:',
@@ -305,17 +305,17 @@ Self-proof capability: ✅ Available`,
 
   sec5Title: 'V. Ecosystem: 9-Product Matrix',
   sec5Lead:
-    'MetaGO is not a single package; it is a product matrix — evolved from a single Kit to 9 products, covering engine core, rule injection, protocol integration, development tooling, and ecosystem infrastructure.',
+    'MetaGO Agent Harness is the rule system itself, not a product. Products are carriers of the Harness — from open-source kits to flagship products, 9 products form the complete engineering loop from axioms to deployment. Two product lines: open-source kits (NPM distribution of Agent Harness) + Studio flagship product (intelligent agent workspace with built-in Harness, toward Agentive OS).',
   table5Header: ['Product', 'Form', 'Positioning'],
   table5Rows: [
-    ['MetaGO Engine', 'Engine Core', 'Core body of intelligent lifeform, three-layer architecture + 5 technical barriers'],
-    ['MetaGO Agent Harness', 'Rule injection', 'Core package, one-click injection of 8 axioms'],
-    ['MetaGO MCP Server', 'MCP protocol', '53 capabilities encapsulated as MCP tools'],
-    ['MetaGO Dev Kit', 'Vertical scenario pack', 'Developer augmentation skill pack'],
+    ['MetaGO Agent Harness', 'Open-source kit', 'Runtime control layer for agents, one-click injection of 8 axioms + 7 attributes + 6 protocols + 39 skills'],
+    ['MetaGO Engine', 'Core engine', 'MetaGO holistic intelligence engine, KMWI 4-layer memory + meta-evolution 5 stages + skill auto-generation'],
+    ['MetaGO MCP Server', 'MCP protocol', '53 capabilities as MCP tools (22 thinking + 30 skills + 1 event)'],
+    ['MetaGO Dev Kit', 'Vertical scenario pack', 'Developer augmentation skill pack, 4 dev-specific skills'],
     ['MetaGO CLI', 'Platform tool', 'Cross-platform CLI, CI/CD integration'],
-    ['MetaGO Studio', 'Platform tool', 'Visual skill orchestration platform'],
+    ['MetaGO Studio', 'Flagship product', 'Intelligent agent workspace with built-in Harness, toward Agentive OS'],
     ['MetaGO Skills SDK', 'Ecosystem infrastructure', 'TypeScript skill development SDK'],
-    ['MetaGO Certify', 'Ecosystem infrastructure', '6-check certification system'],
+    ['MetaGO Certify', 'Ecosystem infrastructure', 'L1-L4 four-level certification system'],
     ['MetaGO Verify Kit', 'Engineering quality', 'Pre-delivery atomic verification gate suite'],
   ],
   sec5Note: 'Native adaptation to 7 major platforms: Trae / Claude Code / OpenAI Codex / Cursor / CodeBuddy / Qoder / ZCode.',
@@ -343,9 +343,9 @@ Self-proof capability: ✅ Available`,
     title: 'Closing',
     body1: 'In 2026, Agents are already everywhere. But "everywhere" is not the same as "continuously evolving."',
     body2: 'The birth of MetaGO is not to add one more tool, but to open up a possibility — let intelligence learn to evolve.',
-    body3: 'From Agent to Lifeform is not feature enhancement; it is a paradigm leap.',
-    body4: '36 axioms. 43 attributes. 108 protocols. 39 skills. 53 MCP tools. 125 engines. 927 algorithms. 754 patents. 7 platforms. 9 products.',
-    body5: 'This is not the end; it is the starting point of evolution.',
+    body3: 'From Agent to Lifeform is not feature enhancement; it is a paradigm leap. Agent Harness is the rule system itself; products are carriers of the Harness.',
+    body4: '36 axioms. 43 attributes. 108 protocols. 125 engines. 927 algorithms. 984 atoms. 754 patents. 31 value dimensions. 19 meta-ideologies. 13 capability families. 39 skills. 53 MCP tools. 8 prompts. 7 platforms. 9 products.',
+    body5: 'This is not the end; it is the starting point of evolution. MetaGO\'s ultimate vision is Agentive OS — an operating system that is itself a super-intelligent agent. Agent Harness is the rocket engineering toward Agentive OS.',
     quote: 'Let intelligence learn to evolve. The paradigm leap from Agent to Lifeform.',
   },
 
@@ -398,7 +398,7 @@ export default function Manifesto() {
           </div>
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight font-display">
             <span className="gradient-text">
-              {isZh ? '从 Agent 到生命体' : 'From Agent to Lifeform'}
+              {isZh ? '从智能体到生命体' : 'From Agent to Lifeform'}
             </span>
           </h1>
           <p className="text-xl md:text-2xl text-zinc-300 mb-4 font-semibold">

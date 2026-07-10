@@ -4,7 +4,7 @@ import {
   Layers, Box, Cpu, Brain, Database, Network, Sparkles, Scale,
   Target, Zap, BookOpen, Shield, Workflow, Repeat,
   Lock, Eye, Activity, FileCheck, Check, Coins, Package, Dna,
-  ShieldCheck,
+  ShieldCheck, Infinity as InfinityIcon,
 } from 'lucide-react';
 import McpInstallBlock from '../components/McpInstallBlock';
 import McpConfigGrid from '../components/McpConfigGrid';
@@ -62,13 +62,17 @@ const layers: Layer[] = [
 ];
 
 const skillFamilies: SkillFamily[] = [
-  { nameKey: 'product.skills.cognitionGov', hue: 'life', skills: ['metago-activate', 'metago-critique', 'metago-fact-check', 'metago-decision-eval', 'metago-decision-lock', 'metago-objectivity', 'metago-consensus-prototype', 'metago-emotion'], icon: Brain },
-  { nameKey: 'product.skills.assetSafeguard', hue: 'patent', skills: ['metago-data-provenance', 'metago-output-integrity', 'metago-security-audit', 'metago-compliance', 'metago-self-check', 'metago-negentropy-monitor', 'metago-value-align'], icon: Shield },
-  { nameKey: 'product.skills.executionPermission', hue: 'evo', skills: ['metago-holistic-task', 'metago-problem-trace', 'metago-action-plan', 'metago-scene-adapt', 'metago-frequency-adapt', 'metago-whatif', 'metago-developer-response'], icon: Zap },
-  { nameKey: 'product.skills.devKit', hue: 'quantum', skills: ['metago-code-review-deep', 'metago-architecture-design', 'metago-refactor-suggest', 'metago-security-audit'], icon: Package },
-  { nameKey: 'product.skills.consciousnessActivation', hue: 'gov', skills: ['metago-activate'], icon: Sparkles },
+  { nameKey: 'product.skills.cognition', hue: 'life', skills: ['metago-critique', 'metago-whatif', 'metago-emotion', 'metago-objectivity'], icon: Brain },
+  { nameKey: 'product.skills.safeguard', hue: 'patent', skills: ['metago-decision-lock', 'metago-output-integrity', 'metago-self-check'], icon: Shield },
+  { nameKey: 'product.skills.governance', hue: 'gov', skills: ['metago-compliance', 'metago-value-align'], icon: Scale },
+  { nameKey: 'product.skills.evolution', hue: 'evo', skills: ['metago-meta-evolve', 'metago-meta-create', 'metago-frequency-adapt'], icon: InfinityIcon },
+  { nameKey: 'product.skills.execution', hue: 'evo', skills: ['metago-action-plan', 'metago-decision-eval', 'metago-holistic-task', 'metago-developer-response'], icon: Zap },
+  { nameKey: 'product.skills.traceability', hue: 'life', skills: ['metago-data-provenance', 'metago-problem-trace', 'metago-fact-check'], icon: FileCheck },
+  { nameKey: 'product.skills.value', hue: 'quantum', skills: ['metago-coupling-optimize', 'metago-negentropy-monitor', 'metago-scene-adapt'], icon: Target },
+  { nameKey: 'product.skills.consciousness', hue: 'gov', skills: ['metago-activate'], icon: Sparkles },
   { nameKey: 'product.skills.methodology', hue: 'life', skills: ['metago-org-diagnosis', 'metago-momentum-weave', 'metago-minimal-intervention', 'metago-value-assess', 'metago-coupling-measure'], icon: Target },
   { nameKey: 'product.skills.architecture', hue: 'evo', skills: ['metago-deep-reasoning', 'metago-paradigm-analysis', 'metago-balance-optimize', 'metago-memory-manage', 'metago-consensus-prototype'], icon: Layers },
+  { nameKey: 'product.skills.devKit', hue: 'quantum', skills: ['metago-code-review-deep', 'metago-architecture-design', 'metago-refactor-suggest', 'metago-security-audit'], icon: Package },
   { nameKey: 'product.skills.engineeringQuality', hue: 'gov', skills: ['metago-delivery-gate', 'metago-discipline'], icon: ShieldCheck },
 ];
 

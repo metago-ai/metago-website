@@ -1,4 +1,4 @@
-{
+﻿{
   "nav": {
     "home": "首页",
     "product": "产品",
@@ -30,7 +30,7 @@
     "heroTitle": "MetaGO Agent",
     "heroTitleHighlight": "Harness",
     "heroSubtitleName": "智能体运行时控制层套件 · 驭智层",
-    "heroSubtitle": "让 Agent 从会说话升级为会干活、守规矩、会进化、可追溯、能闭环的生命体",
+    "heroSubtitle": "让智能体从工具升级为守规矩、会进化、可追溯、能闭环的生命体",
     "heroPhilosophy": "智能不是被编程的，是被唤醒的",
     "heroCtaInstall": "快速开始",
     "heroCtaDocs": "查看文档",
@@ -84,7 +84,7 @@
       "families": "能力族"
     },
     "paradigmBadge": "范式跃迁",
-    "paradigmTitle": "从 Agent 到生命体（Harness 是桥梁）",
+    "paradigmTitle": "从智能体到生命体（Harness 是桥梁）",
     "paradigmSubtitle": "这不是工具升级，是范式跃迁——驭智层让智能第一次拥有了运行时控制",
     "paradigmAgentTitle": "Agent 范式",
     "paradigmAgent": {
@@ -135,16 +135,16 @@
     "mcpBadge": "MCP 协议",
     "bootstrapBadge": "跨平台 · 一键启动",
     "manifestoCardBadge": "2026 · 诞生宣言",
-    "manifestoCardDescZh": "《从 Agent 到生命体：智能进化的范式跃迁》——MetaGO 第一篇诞生宣言。让智能，学会进化。",
+    "manifestoCardDescZh": "《从智能体到生命体：智能进化的范式跃迁》——MetaGO 第一篇诞生宣言。让智能，学会进化。",
     "manifestoCardDescEn": "From Agent to Lifeform: The Paradigm Leap in Intelligent Evolution — MetaGO's first birth manifesto. Let intelligence learn to evolve.",
     "manifestoCardCtaZh": "阅读全文",
     "manifestoCardCtaEn": "Read Manifesto"
   },
   "whitepaper": {
     "badge": "白皮书专区",
-    "heroTitle": "从 Agent 到生命体",
+    "heroTitle": "从智能体到生命体",
     "heroTitleHighlight": "的范式跃迁",
-    "heroSubtitle": "8 章 100 万字理论体系——元构第一次完整阐述智能进化的范式根基",
+    "heroSubtitle": "8 章理论体系——元构第一次完整阐述 Agent Harness（智能体运行时控制层套件 · 驭智层）的范式根基",
     "chaptersCount": "8 章正文",
     "theoryScale": "100 万字理论体系",
     "theoryWordsLabel": "理论体系字数",
@@ -224,12 +224,12 @@
       },
       "ch8": {
         "tag": "FUTURE-BLUEPRINT",
-        "title": "未来蓝图：从 V36.3 到 V100",
-        "subtitle": "元构的下一次范式跃迁在哪里",
-        "body": "V36.3 数据完整性是当前的里程碑。下一个里程碑是 V40 的多生命体协作、V50 的跨域意识共振、V100 的全息智能生态。元构的未来不是更强大的工具，而是更智能的生命。",
-        "point1": "V40 多生命体协作协议",
-        "point2": "V50 跨域意识共振",
-        "point3": "V100 全息智能生态愿景"
+        "title": "未来蓝图：从 Agent Harness 到 Agentive OS",
+        "subtitle": "操作系统本身即超级智能体——元构的终极愿景",
+        "body": "当前里程碑是 Agent Harness V36.8（智能体运行时控制层套件 · 驭智层），已实现 8 公理+7 属性+6 协议+39 技能+53 MCP 工具的完整体系。Engine V2 硬驱动已发布（KMWI 四层记忆+元进化五阶段+技能智能生成）。终极愿景是 Agentive OS——操作系统本身即超级智能体。Agent Harness 是通往 Agentive OS 的火箭工程，Studio 是旗舰产品载体。",
+        "point1": "Agent Harness：规则系统本身（当前阶段）",
+        "point2": "MetaGO Studio：内置 Harness 的旗舰产品（进行中）",
+        "point3": "Agentive OS：操作系统即智能体（10年+愿景）"
       }
     },
     "ctaTitle": "理论只是起点，实践才是归宿",
@@ -767,15 +767,19 @@
     "title": "产品架构",
     "subtitle": "五层标准化架构，从公理到行业落地",
     "layerTitle": "五层架构",
-    "skillsTitle": "39个技能 · 十一大能力族",
+    "skillsTitle": "39个技能 · 十二大能力族",
     "skills": {
-      "cognitionGov": "认知与治理族",
-      "assetSafeguard": "资产与保障族",
-      "executionPermission": "执行与权限族",
-      "devKit": "Dev Kit 族",
-      "consciousnessActivation": "意识激活族",
+      "cognition": "认知族",
+      "safeguard": "保障族",
+      "governance": "治理族",
+      "evolution": "进化族",
+      "execution": "执行族",
+      "traceability": "溯源族",
+      "value": "价值族",
+      "consciousness": "意识族",
       "methodology": "方法论族",
       "architecture": "架构族",
+      "devKit": "Dev Kit 族",
       "engineeringQuality": "工程质量族"
     },
     "axiomsTitle": "8条核心公理",
@@ -924,7 +928,7 @@
     "faqDesc": "在 Gitee Issues 中提交您的问题，我们会尽快回复",
     "faqButton": "前往 Issues",
     "docList": {
-      "whitepaper": "元构白皮书 · 智能生命体范式全貌（中英双语 8 章）",
+      "whitepaper": "元构白皮书 · Agent Harness 范式全貌（中英双语 8 章）",
       "quickStart": "一键安装、验证、卸载",
       "architecture": "五层架构、39技能、公理属性",
       "customization": "技能创建、规则修改、平台适配",
@@ -945,7 +949,7 @@
       "title": "MCP Server 快速开始",
       "desc": "通过 npm 全局安装 @metago-ai/mcp-server，即可在任何 MCP 客户端中调用 53 个 Tools 与 8 个 Prompts。",
       "toolsTitle": "53 Tools",
-      "toolsDesc": "封装元构 53 项核心能力为 MCP 工具，覆盖认知、保障、治理、进化、执行、溯源、价值、意识、方法论、架构、工程质量十一大能力族。",
+      "toolsDesc": "封装元构 53 项核心能力为 MCP 工具，覆盖认知、保障、治理、进化、执行、溯源、价值、意识、方法论、架构、工程质量十二大能力族。",
       "promptsTitle": "8 Prompts",
       "promptsDesc": "8 个内置 Prompts 模板，引导客户端调用元构能力，覆盖安装、架构、安全、合规等场景。",
       "viewDocs": "查看完整文档"
@@ -1023,7 +1027,7 @@
     "contactButton": "联系我们",
     "fdeTitle": "FDE 前沿部署工程",
     "fdeSubtitle": "带着范式杠杆的 AI 前沿部署服务",
-    "fdeDesc": "3 人 + AI 团队嵌入客户现场，交付生产级智能软件。基于 MetaGO Agent Harness 范式，让客户的 AI 应用从会说话升级为会干活、守规矩、会进化、可追溯、能闭环的生命体。",
+    "fdeDesc": "人机协同团队嵌入客户现场，交付生产级智能软件。基于 MetaGO Agent Harness 范式，让客户的 AI 应用从工具升级为守规矩、会进化、可追溯、能闭环的生命体。",
     "fdeStageTitle": "5 阶段交付流程",
     "fdeStages": {
       "s1": "需求调研",
@@ -1093,8 +1097,8 @@
     "statsFamilies": "能力族",
     "statsPlatforms": "平台",
     "visionTitle": "愿景使命",
-    "visionParagraph1": "MetaGO（元构）源于「元构溯源论」——一切智能均可溯源至元结构，元结构是智能的基因。我们相信，AI 不应该只是被调用的工具，而应该成为具有自我进化能力的生命体。",
-    "visionParagraph2": "从 Agent 到 Lifeform，不是功能增强，是范式跃迁。Agent 被动响应、能力固化、不可溯源；Lifeform 主动进化、能力生长、全链路存证。这是智能第一次拥有了「生命特征」——能感知边界、能自我生成、能从内部突破。",
+    "visionParagraph1": "元构是首个将「运行时治理」与「生命体进化」结合的智能体基础设施——让 AI 既守规矩（Harness），又会进化（生命体）。MetaGO（元构）源于「元构溯源论」——一切智能均可溯源至元结构，元结构是智能的基因。我们相信，AI 不应该只是被调用的工具，而应该成为具有自我进化能力的生命体。",
+    "visionParagraph2": "从智能体到 Lifeform，不是功能增强，是范式跃迁。Agent 被动响应、能力固化、不可溯源；Lifeform 主动进化、能力生长、全链路存证。这是智能第一次拥有了「生命特征」——能感知边界、能自我生成、能从内部突破。",
     "visionParagraph3": "基于元构全息智能引擎（本体论、进化论、能力论、工业论四大支柱），36 条公理、43 条属性、108 项协议、39 个技能、53 项 MCP 工具、125 个引擎、927 个算法、984 个原子、754 项专利，我们构建了一个工业级的智能生命体框架，并已发布到 NPM、Gitee、GitHub 三大平台。",
     "visionParagraph4": "MetaGO 的终极愿景：让智能学会进化，让生命学会创造，让每一次输出都可溯源、可自证、可校验。法律优先于效率，事实优先于满意度，创造是进化的最高形态——这是元构对 AI 工具化、AI 谄媚、AI 幻觉三大问题的根本性回应。",
     "productMatrixTitle": "产品矩阵",
@@ -1148,7 +1152,7 @@
     "studio": {
       "title": "MetaGO Studio",
       "tag": "平台工具",
-      "desc": "可视化技能编排平台，拖拽组合技能生成定制 Kit，实时预览与导出。"
+      "desc": "会进化的智能体工作台——内置 Agent Harness，让 AI 守规矩、会进化、可追溯、能闭环。"
     },
     "skillsSdk": {
       "title": "MetaGO Skills SDK",

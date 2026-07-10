@@ -241,7 +241,7 @@ export default function Home() {
                 <span className="text-sm font-medium opacity-90 tracking-wider">NEW · 全新上线</span>
               </div>
               <h2 className="text-2xl md:text-4xl font-bold mb-3 font-display">
-                MetaGO Agent 智能体工作台
+                MetaGO Studio 智能体工作台
               </h2>
               <p className="text-white/85 text-sm md:text-base max-w-xl leading-relaxed">
                 AI 直接读写文件、执行搜索、运行 Git 操作。

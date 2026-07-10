@@ -1,5 +1,5 @@
-import { lazy, Suspense } from 'react';
-import { HashRouter, Routes, Route, Link } from 'react-router-dom';
+import { lazy, Suspense, useEffect } from 'react';
+import { HashRouter, Routes, Route, Link, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -15,6 +15,14 @@ const Demo = lazy(() => import('./pages/Demo'));
 const Enterprise = lazy(() => import('./pages/Enterprise'));
 const About = lazy(() => import('./pages/About'));
 const Manifesto = lazy(() => import('./pages/Manifesto'));
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
+}
 
 function PageLoading() {
   return (
@@ -44,6 +52,7 @@ function NotFound() {
 function App() {
   return (
     <HashRouter>
+      <ScrollToTop />
       <div className="min-h-screen flex flex-col bg-bg-deep">
         <Navbar />
         <main className="flex-1">

@@ -1,13 +1,13 @@
-# MetaGO Agent Harness — 官方网站
+﻿# MetaGO Agent Harness — 官方网站
 
 > 元构超级智能生命体标准安装包的官方网站与文档门户。
 >
-> **让智能，学会进化。从 Agent 到生命体的范式跃迁。**
+> **让智能，学会进化。从智能体到生命体的范式跃迁。**
 
 <p align="center">
   <a href="https://metago.life"><img alt="Website" src="https://img.shields.io/badge/Website-MetaGO-00d4ff"></a>
-  <a href="https://metago.life/studio/"><img alt="Studio" src="https://img.shields.io/badge/Studio-可视化编排-10d985?logo=react"></a>
-  <a href="https://github.com/metago-ai/metagolifeform/releases"><img alt="Release" src="https://img.shields.io/badge/Release-v36.7.10-blue"></a>
+  <a href="https://metago.life/studio/"><img alt="Studio" src="https://img.shields.io/badge/Studio-智能体工作台-10d985?logo=react"></a>
+  <a href="https://github.com/metago-ai/metagolifeform/releases"><img alt="Release" src="https://img.shields.io/badge/Release-v36.8.3-blue"></a>
   <a href="https://www.npmjs.com/package/metago-lifeform"><img alt="npm" src="https://img.shields.io/npm/v/metago-lifeform.svg?logo=npm&color=CB3837"></a>
   <a href="https://www.npmjs.com/package/metago-lifeform"><img alt="npm downloads" src="https://img.shields.io/npm/dm/metago-lifeform.svg?logo=npm&color=10d985&label=downloads"></a>
   <a href="./LICENSE"><img alt="License" src="https://img.shields.io/badge/license-MIT-success"></a>
@@ -18,7 +18,7 @@
 本仓库托管 MetaGO Agent Harness 的官方网站源码，提供产品介绍、平台支持、文档入口与企业服务对接。网站采用中英双语，已部署至腾讯云 CloudBase。
 
 - **官方线上地址**：<https://metago.life/>
-- **Studio 可视化编排**：<https://metago.life/studio/>
+- **Studio 智能体工作台**：<https://metago.life/studio/>
 - **产品仓库（Gitee）**：<https://gitee.com/metago/metagolifeform>
 - **产品仓库（GitHub）**：<https://github.com/metago-ai/metagolifeform>
 
@@ -36,7 +36,7 @@
 | 路由 | 页面 | 说明 |
 |------|------|------|
 | `/` | 首页 | Hero、核心特性、平台支持、快速安装、指标统计 |
-| `/product` | 产品 | 37 技能族分组、五大能力支柱 |
+| `/product` | 产品 | 39 技能族分组、五大能力支柱 |
 | `/platforms` | 平台支持 | 7 大平台安装命令与配置路径 |
 | `/docs` | 文档 | 快速开始、安装指南、FAQ 链接 |
 | `/enterprise` | 企业版 | 商业版能力与联系方式 |
@@ -118,8 +118,8 @@ MetaGO 已从单一 Kit 进化为完整的产品矩阵：
 
 | 产品线 | 产品 | 描述 |
 |--------|------|------|
-| **核心** | [Agent Harness](https://gitee.com/metago/metagolifeform) | 37 技能 + 7 平台适配器（MIT 开源） |
-| **核心** | [MCP Server](https://www.npmjs.com/package/@metago-ai/mcp-server) | 35 tools + 8 prompts 的 MCP 服务 |
+| **核心** | [Agent Harness](https://gitee.com/metago/metagolifeform) | 39 技能 + 7 平台适配器（MIT 开源） |
+| **核心** | [MCP Server](https://www.npmjs.com/package/@metago-ai/mcp-server) | 53 tools + 8 prompts 的 MCP 服务 |
 | **平台工具** | [Studio](https://metago.life/studio/) | 可视化技能编排平台（SaaS） |
 | **平台工具** | [CLI](https://www.npmjs.com/package/metago-cli) | 跨平台命令行工具 |
 | **垂直包** | [Dev Kit](https://www.npmjs.com/package/@metago-ai/dev-kit) | 开发者增强包（4 专用技能） |
@@ -132,7 +132,7 @@ MetaGO 已从单一 Kit 进化为完整的产品矩阵：
 ## 相关仓库
 
 - **MetaGO Agent Harness（产品）**：<https://gitee.com/metago/metagolifeform>
-- **MetaGO Studio（可视化编排）**：<https://gitee.com/metago/metago-studio>
+- **MetaGO Studio（智能体工作台）**：<https://gitee.com/metago/metago-studio>
 - **GitHub 主组织**：<https://github.com/metago-ai>
 - **GitHub 镜像**：<https://github.com/metago-ai/metago-website>
 

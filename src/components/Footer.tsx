@@ -148,12 +148,23 @@ export default function Footer() {
               >
                 蜀ICP备2026035958号
               </a>
+              <a
+                href="https://beian.mps.gov.cn"
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center gap-1.5 hover:text-zinc-300 transition-colors"
+              >
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#2d5db3" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 2L3 5v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V5l-9-3z"/>
+                </svg>
+                川公网安备51019002009914号
+              </a>
             </div>
             <span className="font-mono flex items-center gap-2">
               <span className="inline-block w-1 h-1 rounded-full bg-life-bright" />
               <span className="inline-block w-1 h-1 rounded-full bg-evo-bright" />
               <span className="inline-block w-1 h-1 rounded-full bg-gov-bright" />
-              <span className="ml-2">Lifeform v36.8.0</span>
+              <span className="ml-2">Lifeform v36.8.4</span>
             </span>
           </div>
         </div>
