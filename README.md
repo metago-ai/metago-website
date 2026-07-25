@@ -1,4 +1,4 @@
-﻿# MetaGO Agent Harness — 官方网站
+# MetaGO Agent Harness — 官方网站
 
 > 元构超级智能生命体标准安装包的官方网站与文档门户。
 >
@@ -36,7 +36,7 @@
 | 路由 | 页面 | 说明 |
 |------|------|------|
 | `/` | 首页 | Hero、核心特性、平台支持、快速安装、指标统计 |
-| `/product` | 产品 | 39 技能族分组、五大能力支柱 |
+| `/product` | 产品 | 95 技能族分组、五大能力支柱 |
 | `/platforms` | 平台支持 | 7 大平台安装命令与配置路径 |
 | `/docs` | 文档 | 快速开始、安装指南、FAQ 链接 |
 | `/enterprise` | 企业版 | 商业版能力与联系方式 |
@@ -118,7 +118,7 @@ MetaGO 已从单一 Kit 进化为完整的产品矩阵：
 
 | 产品线 | 产品 | 描述 |
 |--------|------|------|
-| **核心** | [Agent Harness](https://gitee.com/metago/metagolifeform) | 39 技能 + 7 平台适配器（MIT 开源） |
+| **核心** | [Agent Harness](https://github.com/metago-ai/metagolifeform) | 95 技能 + 7 平台适配器（MIT 开源） |
 | **核心** | [MCP Server](https://www.npmjs.com/package/@metago-ai/mcp-server) | 53 tools + 8 prompts 的 MCP 服务 |
 | **平台工具** | [Studio](https://metago.life/studio/) | 可视化技能编排平台（SaaS） |
 | **平台工具** | [CLI](https://www.npmjs.com/package/metago-cli) | 跨平台命令行工具 |
@@ -150,4 +150,4 @@ MIT License — 详见 [LICENSE](./LICENSE)
 
 ---
 
-© 2026 MetaGO Lightyear. 元构超级智能生命体标准安装包.
+© 2026 易霄 / 元构光年（成都）人工智能科技有限公司. 元构超级智能生命体标准安装包.
