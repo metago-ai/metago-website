@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
@@ -593,7 +593,7 @@ async function playScenario(key){
   // ===== Banner =====
   await typeLine('', 'banner');
   await typeLine(' MetaGO Lifeform 杀手级 Demo v0.2.0 ', 'banner', 0, 10, 200);
-  await typeLine(' "让智能，学会进化" — 从 Agent 到生命体的范式跃迁 ', 'banner', 0, 8, 120);
+  await typeLine(' "让智能，学会进化" — 从智能体到生命体的范式跃迁 ', 'banner', 0, 8, 120);
   await typeLine('', 'dim');
   await typeLine('本演示为零依赖本地模拟，按真实公理/属性/协议运行。', 'dim', 0, 8, 30);
   await typeLine('不调用外部 AI 服务，不发起网络请求，运行 < 5 秒。', 'dim', 0, 8, 80);
@@ -745,14 +745,14 @@ async function playScenario(key){
   await typeLine('', '');
   await typeLine('  不是被动执行指令，而是主动感知、批判、合规、进化。', 'bold', 0, 8, 100);
   await typeLine('', '');
-  await typeLine('  想在自己的 AI 平台体验？安装 MetaGO Lifeform Kit:', 'dim', 0, 6, 40);
+  await typeLine('  想在自己的 AI 平台体验？安装 MetaGO Agent Harness:', 'dim', 0, 6, 40);
   await typeLine('  $ npx metago-lifeform install', 'cyan', 0, 8, 60);
   await typeLine('', '');
   await typeLine('  想让你的 MCP 客户端即开即用？安装 MCP Server:', 'dim', 0, 6, 40);
   await typeLine('  $ npm install -g @metago-ai/mcp-server', 'cyan', 0, 8, 60);
   await typeLine('', '');
   await typeLine('  📚 文档: https://gitee.com/metago/metagolifeform', 'dim', 0, 6, 40);
-  await typeLine('  🏠 官网: https://metago-d6gfw1e4rf2a5bcad-1257074864.tcloudbaseapp.com/', 'dim', 0, 6, 60);
+  await typeLine('  🏠 官网: https://metago.life/', 'dim', 0, 6, 60);
   
   // 移除光标
   const lastCursor = screen.querySelector('.cursor');
