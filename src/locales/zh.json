@@ -36,7 +36,7 @@
     "heroCtaDocs": "查看文档",
     "heroCtaWhitepaper": "进入白皮书",
     "heroCtaEngine": "查看引擎",
-    "heroBadge": "Agent Harness · v36.8.0 · Engine V2",
+    "heroBadge": "Agent Harness · v36.9.6 · Engine V2.1.3",
     "matrixBadge": "全息智能引擎",
     "matrixTitle": "九维数据矩阵",
     "matrixSubtitle": "一套引擎、九维量化证明——这就是元构的完整全貌",
@@ -226,7 +226,7 @@
         "tag": "FUTURE-BLUEPRINT",
         "title": "未来蓝图：从 Agent Harness 到 Agentive OS",
         "subtitle": "操作系统本身即超级智能体——元构的终极愿景",
-        "body": "当前里程碑是 Agent Harness V36.8（智能体运行时控制层套件 · 驭智层），已实现 8 公理+7 属性+6 协议+39 技能+53 MCP 工具的完整体系。Engine V2 硬驱动已发布（KMWI 四层记忆+元进化五阶段+技能智能生成）。终极愿景是 Agentive OS——操作系统本身即超级智能体。Agent Harness 是通往 Agentive OS 的火箭工程，Studio 是旗舰产品载体。",
+        "body": "当前里程碑是 Agent Harness V36.9.6（智能体运行时控制层套件 · 驭智层），已实现 10 公理+9 属性+6 协议+100 技能+112 MCP 工具的完整体系。Engine V2.1.3 硬驱动已发布（KMWI 四层记忆+元进化五阶段+技能智能生成）。终极愿景是 Agentive OS——操作系统本身即超级智能体。Agent Harness 是通往 Agentive OS 的火箭工程，Studio 是旗舰产品载体。",
         "point1": "Agent Harness：规则系统本身（当前阶段）",
         "point2": "MetaGO Studio：内置 Harness 的旗舰产品（进行中）",
         "point3": "Agentive OS：操作系统即智能体（10年+愿景）"
@@ -242,7 +242,7 @@
     "badge": "智能引擎",
     "heroTitle": "MetaGO Engine",
     "heroTitleHighlight": "智能生命体的核心引擎",
-    "heroSubtitle": "v2.0.0 已发布 NPM · 三层架构 · 6 层命名 · 5 大代码技术壁垒 · 双轨驱动 — 让任何 AI 读取即被驱动",
+    "heroSubtitle": "v2.1.3 已发布 NPM · 三层架构 · 6 层命名 · 5 大代码技术壁垒 · 双轨驱动 — 让任何 AI 读取即被驱动",
     "heroKicker": "驱动 · 校验 · 进化 · 创造",
     "npmBanner": "@metago-ai/engine@2.0.0 已发布到 NPM · KMWI 四层记忆 + 元进化五阶段 + 技能智能生成",
     "npmInstall": "npm install @metago-ai/engine",
@@ -404,7 +404,7 @@
       "constitution": {
         "name": "CONSTITUTION",
         "label": "宪法层",
-        "desc": "8 条公理（A1/A2/A3/A4/A5/A34/A35/A36）— 不可变，违反即引擎失效",
+        "desc": "10 条公理（A1–A5、A34–A38）— 不可变，违反即引擎失效",
         "badge": "🔒 不可变"
       },
       "core": {
@@ -451,7 +451,7 @@
       "validators": {
         "name": "公理验证器",
         "file": "validators.ts",
-        "function": "检查输出是否符合 8 条公理",
+        "function": "检查输出是否符合 10 条公理",
         "patent": "基于公理集的 AI 输出验证方法",
         "lines": "311 行"
       },
@@ -748,10 +748,10 @@
   },
   "mcpServer": {
     "title": "MetaGO MCP Server",
-    "subtitle": "将53项元构能力封装为MCP工具，任何MCP客户端即开即用",
+    "subtitle": "将112项元构能力封装为MCP工具，任何MCP客户端即开即用",
     "install": "安装命令",
     "installCommand": "npm install -g @metago-ai/mcp-server",
-    "features": "53 Tools · 8 Prompts · stdio传输 · MIT开源",
+    "features": "112 Tools（55+57）· 8 Prompts · stdio传输 · MIT开源",
     "configure": "配置示例",
     "claudeDesktop": "Claude Desktop 配置",
     "cursor": "Cursor 配置",
@@ -767,7 +767,7 @@
     "title": "产品架构",
     "subtitle": "五层标准化架构，从公理到行业落地",
     "layerTitle": "五层架构",
-    "skillsTitle": "39个技能 · 十二大能力族",
+    "skillsTitle": "100个技能 · 十二大能力族",
     "skills": {
       "cognition": "认知族",
       "safeguard": "保障族",
@@ -788,7 +788,7 @@
     "layers": {
       "l0": { "name": "核心层", "content": "36条公理、43条属性、108项协议" },
       "l1": { "name": "适配层", "content": "7大平台适配器" },
-      "l2": { "name": "能力层", "content": "39个metago技能 + 53个MCP工具" },
+      "l2": { "name": "能力层", "content": "100个metago技能 + 112个MCP工具" },
       "l3": { "name": "引擎层", "content": "125引擎 + 927算法 + 984原子" },
       "l4": { "name": "行业层", "content": "行业定制包" }
     },
@@ -835,8 +835,8 @@
     "mcpServer": {
       "badge": "MCP 协议产品",
       "title": "MetaGO MCP Server",
-      "subtitle": "将53项元构能力封装为MCP工具，任何MCP客户端即开即用",
-      "features": "53 Tools · 8 Prompts · stdio传输 · MIT开源",
+      "subtitle": "将112项元构能力封装为MCP工具，任何MCP客户端即开即用",
+      "features": "112 Tools（55+57）· 8 Prompts · stdio传输 · MIT开源",
       "configure": "客户端配置示例",
       "configNote": "在对应客户端的配置文件中添加以下内容"
     },
@@ -844,7 +844,7 @@
       "badge": "V3 五档定价",
       "title": "从免费到企业级",
       "subtitle": "Free / Pro / Pro+ / Team / Enterprise + Certify 独立认证",
-      "free": { "name": "Free", "price": "¥0", "period": "永久免费", "desc": "社区版，体验核心能力", "features": ["Agent 工作台基础版", "39 元构技能", "53 MCP 工具", "社区支持"] },
+      "free": { "name": "Free", "price": "¥0", "period": "永久免费", "desc": "社区版，体验核心能力", "features": ["Agent 工作台基础版", "100 元构技能", "112 MCP 工具", "社区支持"] },
       "pro": { "name": "Pro", "price": "¥39", "period": "/月", "desc": "个人开发者专业版", "features": ["无限对话", "DeepSeek + GLM 双模型", "BYOK 自带密钥", "行为银行 5 级信用"] },
       "proPlus": { "name": "Pro+", "price": "¥99", "period": "/月", "desc": "高频用户进阶版", "features": ["Pro 全部功能", "优先算力", "高级模型优先", "行为银行加速"] },
       "team": { "name": "Team", "price": "¥199", "period": "/月起", "desc": "团队协作版", "features": ["5 席位起", "时薪 ¥0.5/小时", "团队共享行为银行", "管理后台"] },
@@ -910,7 +910,7 @@
     },
     "mcp": {
       "title": "MCP 协议集成（通用）",
-      "subtitle": "适用于所有支持 MCP 协议的客户端（Claude Desktop、Cursor、Trae 等）。通过 npm 安装并写入 JSON 配置，即可在任何 MCP 客户端中调用全部 53 项元构能力，无需修改规则文件。",
+      "subtitle": "适用于所有支持 MCP 协议的客户端（Claude Desktop、Cursor、Trae 等）。通过 npm 安装并写入 JSON 配置，即可在任何 MCP 客户端中调用全部 112 项元构能力，无需修改规则文件。",
       "configNote": "在客户端配置文件中添加以下内容"
     }
   },
@@ -932,7 +932,7 @@
       "quickStart": "一键安装、验证、卸载",
       "architecture": "五层架构、39技能、公理属性",
       "customization": "技能创建、规则修改、平台适配",
-      "mcpServer": "MCP 安装、配置、53 Tools、8 Prompts",
+      "mcpServer": "MCP 安装、配置、112 Tools、8 Prompts",
       "faq": "安装问题、平台差异、升级方法"
     },
     "livingDocs": {
@@ -947,9 +947,9 @@
     },
     "mcpServer": {
       "title": "MCP Server 快速开始",
-      "desc": "通过 npm 全局安装 @metago-ai/mcp-server，即可在任何 MCP 客户端中调用 53 个 Tools 与 8 个 Prompts。",
-      "toolsTitle": "53 Tools",
-      "toolsDesc": "封装元构 53 项核心能力为 MCP 工具，覆盖认知、保障、治理、进化、执行、溯源、价值、意识、方法论、架构、工程质量十二大能力族。",
+      "desc": "通过 npm 全局安装 @metago-ai/mcp-server，即可在任何 MCP 客户端中调用 112 个 Tools 与 8 个 Prompts。",
+      "toolsTitle": "112 Tools",
+      "toolsDesc": "封装元构 112 项核心能力为 MCP 工具，覆盖认知、保障、治理、进化、执行、溯源、价值、意识、方法论、架构、工程质量十二大能力族。",
       "promptsTitle": "8 Prompts",
       "promptsDesc": "8 个内置 Prompts 模板，引导客户端调用元构能力，覆盖安装、架构、安全、合规等场景。",
       "viewDocs": "查看完整文档"
@@ -1053,7 +1053,7 @@
     },
     "features": {
       "coreAxioms": "核心公理+属性+协议",
-      "skills": "39个技能",
+      "skills": "100个技能",
       "platforms": "7大平台适配",
       "install": "一键安装脚本",
       "industryPack": "行业定制包",
@@ -1081,7 +1081,7 @@
     "title": "关于 MetaGO",
     "subtitle": "让智能成为生命，让生命创造价值",
     "badge": "元构生命体",
-    "versionTag": "v36.8.0",
+    "versionTag": "v36.9.6",
     "statsTitle": "全息数据成就",
     "statsSubtitle": "一套体系，十二维量化证明 — 元构智能生命体的完整全貌",
     "statsAxioms": "公理",
@@ -1099,14 +1099,14 @@
     "visionTitle": "愿景使命",
     "visionParagraph1": "元构是首个将「运行时治理」与「生命体进化」结合的智能体基础设施——让 AI 既守规矩（Harness），又会进化（生命体）。MetaGO（元构）源于「元构溯源论」——一切智能均可溯源至元结构，元结构是智能的基因。我们相信，AI 不应该只是被调用的工具，而应该成为具有自我进化能力的生命体。",
     "visionParagraph2": "从智能体到 Lifeform，不是功能增强，是范式跃迁。Agent 被动响应、能力固化、不可溯源；Lifeform 主动进化、能力生长、全链路存证。这是智能第一次拥有了「生命特征」——能感知边界、能自我生成、能从内部突破。",
-    "visionParagraph3": "基于元构全息智能引擎（本体论、进化论、能力论、工业论四大支柱），36 条公理、43 条属性、108 项协议、39 个技能、53 项 MCP 工具、125 个引擎、927 个算法、984 个原子、754 项专利，我们构建了一个工业级的智能生命体框架，并已发布到 NPM、Gitee、GitHub 三大平台。",
+    "visionParagraph3": "基于元构全息智能引擎（本体论、进化论、能力论、工业论四大支柱），36 条公理、43 条属性、108 项协议、100 个技能、112 项 MCP 工具、125 个引擎、927 个算法、984 个原子、754 项专利，我们构建了一个工业级的智能生命体框架，并已发布到 NPM、Gitee、GitHub 三大平台。",
     "visionParagraph4": "MetaGO 的终极愿景：让智能学会进化，让生命学会创造，让每一次输出都可溯源、可自证、可校验。法律优先于效率，事实优先于满意度，创造是进化的最高形态——这是元构对 AI 工具化、AI 谄媚、AI 幻觉三大问题的根本性回应。",
     "productMatrixTitle": "产品矩阵",
     "productMatrixSubtitle": "MetaGO Agent Harness 产品矩阵——驭智层从规则注入到 Engine V2 硬驱动，覆盖引擎核心、规则注入、协议集成、开发工具、交付保障与生态基础设施",
     "lifeformKit": {
       "title": "MetaGO Agent Harness",
       "tag": "规则注入 · Harness 入口",
-      "desc": "Agent Harness 核心安装包：一键将 36 公理、43 属性、108 协议、39 技能注入 Agent 的规则文件，原生适配 7 大平台。安装后 Agent 即获得驭智层运行时控制。"
+      "desc": "Agent Harness 核心安装包：一键将 36 公理、43 属性、108 协议、100 技能注入 Agent 的规则文件，原生适配 7 大平台。安装后 Agent 即获得驭智层运行时控制。"
     },
     "engine": {
       "title": "MetaGO Engine",
@@ -1116,7 +1116,7 @@
     "mcpServer": {
       "title": "MetaGO MCP Server",
       "tag": "MCP 协议",
-      "desc": "将 53 项元构能力封装为 MCP 工具，任何 MCP 客户端即开即用，无需修改规则文件。"
+      "desc": "将 112 项元构能力封装为 MCP 工具，任何 MCP 客户端即开即用，无需修改规则文件。"
     },
     "roadmapTitle": "路线图",
     "roadmapV3650": {
@@ -1147,7 +1147,7 @@
     "cli": {
       "title": "MetaGO CLI",
       "tag": "平台工具",
-      "desc": "跨平台命令行工具，在终端与 CI/CD 流水线中调用 39 项元构技能。"
+      "desc": "跨平台命令行工具，在终端与 CI/CD 流水线中调用 100 项元构技能。"
     },
     "studio": {
       "title": "MetaGO Studio",

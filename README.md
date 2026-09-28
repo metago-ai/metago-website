@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://metago.life"><img alt="Website" src="https://img.shields.io/badge/Website-MetaGO-00d4ff"></a>
   <a href="https://metago.life/studio/"><img alt="Studio" src="https://img.shields.io/badge/Studio-智能体工作台-10d985?logo=react"></a>
-  <a href="https://github.com/metago-ai/metagolifeform/releases"><img alt="Release" src="https://img.shields.io/badge/Release-v36.8.3-blue"></a>
+  <a href="https://github.com/metago-ai/metagolifeform/releases"><img alt="Release" src="https://img.shields.io/badge/Release-v36.9.6-blue"></a>
   <a href="https://www.npmjs.com/package/metago-lifeform"><img alt="npm" src="https://img.shields.io/npm/v/metago-lifeform.svg?logo=npm&color=CB3837"></a>
   <a href="https://www.npmjs.com/package/metago-lifeform"><img alt="npm downloads" src="https://img.shields.io/npm/dm/metago-lifeform.svg?logo=npm&color=10d985&label=downloads"></a>
   <a href="./LICENSE"><img alt="License" src="https://img.shields.io/badge/license-MIT-success"></a>
@@ -36,8 +36,8 @@
 | 路由 | 页面 | 说明 |
 |------|------|------|
 | `/` | 首页 | Hero、核心特性、平台支持、快速安装、指标统计 |
-| `/product` | 产品 | 95 技能族分组、五大能力支柱 |
-| `/platforms` | 平台支持 | 7 大平台安装命令与配置路径 |
+| `/product` | 产品 | 100 技能族分组、五大能力支柱 |
+| `/platforms` | 平台支持 | 11 大平台安装命令与配置路径 |
 | `/docs` | 文档 | 快速开始、安装指南、FAQ 链接 |
 | `/enterprise` | 企业版 | 商业版能力与联系方式 |
 | `/about` | 关于 | 愿景使命、路线图、仓库链接 |
@@ -118,11 +118,11 @@ MetaGO 已从单一 Kit 进化为完整的产品矩阵：
 
 | 产品线 | 产品 | 描述 |
 |--------|------|------|
-| **核心** | [Agent Harness](https://github.com/metago-ai/metagolifeform) | 95 技能 + 7 平台适配器（MIT 开源） |
-| **核心** | [MCP Server](https://www.npmjs.com/package/@metago-ai/mcp-server) | 53 tools + 8 prompts 的 MCP 服务 |
+| **核心** | [Agent Harness](https://github.com/metago-ai/metagolifeform) | 100 技能 + 11 平台适配器（MIT 开源） |
+| **核心** | [MCP Server](https://www.npmjs.com/package/@metago-ai/mcp-server) | 112 tools（55+57）+ 8 prompts 的 MCP 服务 |
 | **平台工具** | [Studio](https://metago.life/studio/) | 可视化技能编排平台（SaaS） |
 | **平台工具** | [CLI](https://www.npmjs.com/package/metago-cli) | 跨平台命令行工具 |
-| **垂直包** | [Dev Kit](https://www.npmjs.com/package/@metago-ai/dev-kit) | 开发者增强包（4 专用技能） |
+| **垂直包** | [Dev Kit](https://www.npmjs.com/package/@metago-ai/dev-kit) | 开发者增强包（8 专用技能：4 复用 + 4 新增） |
 | **生态** | [Engine](https://www.npmjs.com/package/@metago-ai/engine) | 元构全息智能引擎核心本体 |
 | **生态** | [Skills SDK](https://gitee.com/metago/skills-sdk) | TypeScript 技能开发 SDK |
 | **生态** | [Certify](https://www.npmjs.com/package/@metago-ai/certify) | 技能认证体系（Gold/Silver） |

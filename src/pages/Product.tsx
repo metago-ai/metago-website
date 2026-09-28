@@ -244,7 +244,7 @@ const Product = () => {
         </div>
       </section>
 
-      {/* 区块4：39个技能 */}
+      {/* 区块4：100个技能 */}
       <section className="max-w-7xl mx-auto px-6 mb-24">
         <div className="flex items-center gap-3 mb-10">
           <Cpu className="w-8 h-8" style={{ color: hueColor('evo') }} />

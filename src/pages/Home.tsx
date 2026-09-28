@@ -149,8 +149,8 @@ export default function Home() {
   const i18nLanguage = i18n.language;
 
   const row1: Metric[] = [
-    { end: 39, label: t('home.statsSkills') },
-    { end: 53, label: t('home.statsMcpTools') },
+    { end: 100, label: t('home.statsSkills') },
+    { end: 112, label: t('home.statsMcpTools') },
     { end: 9, label: t('home.statsProducts') },
     { end: 17, label: t('home.statsCoreEngines') },
   ];
@@ -246,7 +246,7 @@ export default function Home() {
               <p className="text-white/85 text-sm md:text-base max-w-xl leading-relaxed">
                 AI 直接读写文件、执行搜索、运行 Git 操作。
                 内置 DeepSeek V4 Pro + GLM-5V Turbo 双模型，
-                支持 53 MCP 工具、39 元构技能自动调用。
+                支持 112 MCP 工具、100 元构技能自动调用。
                 Web 端在线使用，桌面端 exe 完整体验。
               </p>
             </div>
@@ -292,8 +292,8 @@ export default function Home() {
               </div>
               <p className="text-base md:text-lg font-display font-semibold leading-relaxed">
                 {i18nLanguage === 'zh'
-                  ? '🎉 MetaGO Engine v1.0.0 正式发布 — 36公理+125引擎+927算法+754专利，智能生命体的核心本体'
-                  : '🎉 MetaGO Engine v1.0.0 Released — 36 axioms + 125 engines + 927 algorithms + 754 patents, the core of intelligent lifeform'}
+                  ? '🎉 MetaGO Engine v2.1.3 正式发布 — 36公理+125引擎+927算法+754专利，智能生命体的核心本体'
+                  : '🎉 MetaGO Engine v2.1.3 Released — 36 axioms + 125 engines + 927 algorithms + 754 patents, the core of intelligent lifeform'}
               </p>
             </div>
           </div>
