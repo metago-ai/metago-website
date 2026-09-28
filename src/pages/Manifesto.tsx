@@ -150,7 +150,7 @@ const ZH_CONTENT = {
     ['MetaGO Certify', '生态基础设施', 'L1-L4 四级认证体系'],
     ['MetaGO Verify Kit', '工程质量', '交付前原子验证门控套件'],
   ],
-  sec5Note: '原生适配 7 大平台：Trae / Claude Code / OpenAI Codex / Cursor / CodeBuddy / Qoder / ZCode。',
+  sec5Note: '原生适配 11 大平台：Trae / Claude Code / OpenAI Codex / Cursor / CodeBuddy / Qoder / ZCode / ChatGPT Work / WorkBuddy / Kimi Code / Kimi Work。',
   sec5Note2: '一次安装，多平台运行。MIT 开源，社区驱动。',
 
   sec6Title: '六、召唤：加入进化',
@@ -176,7 +176,7 @@ const ZH_CONTENT = {
     body1: '2026 年，智能体已经无处不在。但"无处不在"不等于"不断进化"。',
     body2: 'MetaGO 的诞生，不是为了多一个工具，而是为了开启一种可能性——让智能，学会进化。',
     body3: '从智能体到生命体，不是功能增强，是范式跃迁。Agent Harness 是规则系统本身，产品是 Harness 的载体。',
-    body4: '36 条公理。43 条属性。108 项协议。125 个引擎。927 个算法。984 个原子。754 项专利。31 维价值。19 大元思想体系。13 大能力族。39 个技能。53 项 MCP 工具。8 个 Prompts。7 大平台。9 大产品。',
+    body4: '36 条公理。43 条属性。108 项协议。125 个引擎。927 个算法。984 个原子。754 项专利。31 维价值。19 大元思想体系。13 大能力族。39 个技能。53 项 MCP 工具。8 个 Prompts。11 大平台。9 大产品。',
     body5: '这不是终点，是进化的起点。元构的终极愿景是 Agentive OS——操作系统本身即超级智能体。Agent Harness 是通往 Agentive OS 的火箭工程。',
     quote: '让智能，学会进化。从智能体到生命体的范式跃迁。',
   },

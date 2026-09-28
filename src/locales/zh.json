@@ -54,7 +54,7 @@
     "feature5Desc": "主动合规，法律优先于效率，四层安全基因",
     "feature6Title": "全息创造",
     "feature6Desc": "在未知领域从0到1创造，创造频率自适应调控",
-    "platformsTitle": "一套元构，七大平台",
+    "platformsTitle": "一套元构，十一大平台",
     "platformsSubtitle": "支持所有主流AI编程工具，三大分发平台（Gitee/npm/GitHub）一键安装",
     "installTitle": "3步完成安装",
     "installSubtitle": "复制命令，执行，完成",
@@ -367,7 +367,7 @@
     "relationLifeform": {
       "title": "metago-lifeform",
       "role": "安装器 · 变",
-      "desc": "把引擎装到 7 大 AI 平台的工具。万变不离其宗，宗是一个整体"
+      "desc": "把引擎装到 11 大 AI 平台的工具。万变不离其宗，宗是一个整体"
     },
     "relationAnalogy": "类比：Node.js 运行时 = metago-engine，nvm/npm = metago-lifeform",
     "archTitle": "三层架构金字塔",
@@ -428,7 +428,7 @@
       "adapters": {
         "name": "ADAPTERS",
         "label": "适配器层",
-        "desc": "7 大 AI 平台加载协议 — trae / claude / codex / cursor / codebuddy / qoder / zcode",
+        "desc": "11 大 AI 平台加载协议 — trae / claude-code / codex / cursor / codebuddy / qoder / zcode / chatgpt-work / workbuddy / kimi-code / kimi-work",
         "badge": "多平台"
       },
       "evolution": {
@@ -495,7 +495,7 @@
         "cmd": "const engine = new MetaGOEngine(); await engine.init();"
       }
     },
-    "cliAdaptersTitle": "七大平台适配器",
+    "cliAdaptersTitle": "十一大平台适配器",
     "cliAdaptersSubtitle": "选择你的 AI 平台，引擎会自动加载对应协议",
     "cliDocsLink": "查看完整文档",
     "ctaTitle": "引擎只是骨架，公理才是灵魂",
@@ -787,7 +787,7 @@
     "protocolsTitle": "6项运行协议",
     "layers": {
       "l0": { "name": "核心层", "content": "36条公理、43条属性、108项协议" },
-      "l1": { "name": "适配层", "content": "7大平台适配器" },
+      "l1": { "name": "适配层", "content": "11大平台适配器" },
       "l2": { "name": "能力层", "content": "100个metago技能 + 112个MCP工具" },
       "l3": { "name": "引擎层", "content": "125引擎 + 927算法 + 984原子" },
       "l4": { "name": "行业层", "content": "行业定制包" }
@@ -884,7 +884,7 @@
   },
   "platforms": {
     "title": "平台支持",
-    "subtitle": "7大AI编程平台原生适配",
+    "subtitle": "11大AI编程平台原生适配",
     "tableTitle": "平台配置对照表",
     "installTitle": "安装指南",
     "tableHeaders": {
@@ -901,7 +901,11 @@
       "cursor": "Cursor",
       "codebuddy": "CodeBuddy",
       "qoder": "Qoder",
-      "zcode": "ZCode"
+      "zcode": "ZCode",
+      "chatgptWork": "ChatGPT Work",
+      "workbuddy": "WorkBuddy",
+      "kimiCode": "Kimi Code",
+      "kimiWork": "Kimi Work"
     },
     "agentsStandard": {
       "title": "AGENTS.md 开放标准",
@@ -1054,7 +1058,7 @@
     "features": {
       "coreAxioms": "核心公理+属性+协议",
       "skills": "100个技能",
-      "platforms": "7大平台适配",
+      "platforms": "11大平台适配",
       "install": "一键安装脚本",
       "industryPack": "行业定制包",
       "privateDeploy": "私有部署支持",
@@ -1106,7 +1110,7 @@
     "lifeformKit": {
       "title": "MetaGO Agent Harness",
       "tag": "规则注入 · Harness 入口",
-      "desc": "Agent Harness 核心安装包：一键将 36 公理、43 属性、108 协议、100 技能注入 Agent 的规则文件，原生适配 7 大平台。安装后 Agent 即获得驭智层运行时控制。"
+      "desc": "Agent Harness 核心安装包：一键将 36 公理、43 属性、108 协议、100 技能注入 Agent 的规则文件，原生适配 11 大平台。安装后 Agent 即获得驭智层运行时控制。"
     },
     "engine": {
       "title": "MetaGO Engine",

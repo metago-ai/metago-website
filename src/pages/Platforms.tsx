@@ -29,6 +29,10 @@ const platforms: PlatformRow[] = [
   { name: 'CodeBuddy', configFile: 'CODEBUDDY.md', globalPath: '-', projectPath: './CODEBUDDY.md', adapterDir: 'adapters/codebuddy/', hue: 'quantum' },
   { name: 'Qoder', configFile: '.md', globalPath: '-', projectPath: '.qoder/rules/metago.md', adapterDir: 'adapters/qoder/', hue: 'life' },
   { name: 'ZCode', configFile: 'CLAUDE.md', globalPath: '~/.claude/CLAUDE.md', projectPath: './CLAUDE.md', adapterDir: 'adapters/zcode/', hue: 'evo' },
+  { name: 'ChatGPT Work', configFile: 'AGENTS.md', globalPath: '~/.chatgpt/AGENTS.md', projectPath: '-', adapterDir: 'adapters/chatgpt-work/', hue: 'life' },
+  { name: 'WorkBuddy', configFile: 'AGENTS.md', globalPath: '~/.workbuddy/AGENTS.md', projectPath: '-', adapterDir: 'adapters/workbuddy/', hue: 'evo' },
+  { name: 'Kimi Code', configFile: 'AGENTS.md', globalPath: '~/.kimi-code/AGENTS.md', projectPath: './AGENTS.md', adapterDir: 'adapters/kimi/', hue: 'gov' },
+  { name: 'Kimi Work', configFile: 'AGENTS.md', globalPath: '~/.kimi-work/AGENTS.md', projectPath: '-', adapterDir: 'adapters/kimi/', hue: 'patent' },
 ];
 
 interface InstallCommand {
@@ -47,6 +51,10 @@ const installCommands: InstallCommand[] = [
   { cmd: '.\\scripts\\install.ps1 -Platform codebuddy', bashCmd: 'bash scripts/install.sh --platform codebuddy', commentKey: 'platforms.installCommands.codebuddy' },
   { cmd: '.\\scripts\\install.ps1 -Platform qoder', bashCmd: 'bash scripts/install.sh --platform qoder', commentKey: 'platforms.installCommands.qoder' },
   { cmd: '.\\scripts\\install.ps1 -Platform zcode', bashCmd: 'bash scripts/install.sh --platform zcode', commentKey: 'platforms.installCommands.zcode' },
+  { cmd: '.\\scripts\\install.ps1 -Platform chatgpt-work', bashCmd: 'bash scripts/install.sh --platform chatgpt-work', commentKey: 'platforms.installCommands.chatgptWork' },
+  { cmd: '.\\scripts\\install.ps1 -Platform workbuddy', bashCmd: 'bash scripts/install.sh --platform workbuddy', commentKey: 'platforms.installCommands.workbuddy' },
+  { cmd: '.\\scripts\\install.ps1 -Platform kimi-code', bashCmd: 'bash scripts/install.sh --platform kimi-code', commentKey: 'platforms.installCommands.kimiCode' },
+  { cmd: '.\\scripts\\install.ps1 -Platform kimi-work', bashCmd: 'bash scripts/install.sh --platform kimi-work', commentKey: 'platforms.installCommands.kimiWork' },
 ];
 
 const agentsCompatible = ['OpenAI Codex', 'Cursor', 'CodeBuddy', 'Qoder'];

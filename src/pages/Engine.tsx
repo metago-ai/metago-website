@@ -167,7 +167,7 @@ const barriersData = [
   },
 ];
 
-/** 7 大平台适配器 */
+/** 11 大平台适配器 */
 const adapters = ['trae', 'claude', 'codex', 'cursor', 'codebuddy', 'qoder', 'zcode'];
 
 export default function Engine() {
@@ -700,7 +700,7 @@ export default function Engine() {
           })}
         </div>
 
-        {/* 7 大平台适配器 */}
+        {/* 11 大平台适配器 */}
         <div className="text-center mb-8">
           <h3 className="text-xl font-bold mb-2 font-display">
             {t('engine.cliAdaptersTitle')}

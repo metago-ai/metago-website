@@ -54,7 +54,7 @@
     "feature5Desc": "Proactive compliance, law over efficiency, four-layer security genes",
     "feature6Title": "Holographic Creation",
     "feature6Desc": "Create from 0 to 1 in unknown domains, frequency-adaptive control",
-    "platformsTitle": "One Kit, Seven Platforms",
+    "platformsTitle": "One Kit, Eleven Platforms",
     "platformsSubtitle": "Available on 3 distribution channels: Gitee, npm, GitHub",
     "installTitle": "3 Steps to Install",
     "installSubtitle": "Copy, run, done",
@@ -367,7 +367,7 @@
     "relationLifeform": {
       "title": "metago-lifeform",
       "role": "Installer · Variant",
-      "desc": "Tool that installs the engine onto 7 major AI platforms. All variations trace back to the same ancestor"
+      "desc": "Tool that installs the engine onto 11 major AI platforms. All variations trace back to the same ancestor"
     },
     "relationAnalogy": "Analogy: Node.js runtime = metago-engine, nvm/npm = metago-lifeform",
     "archTitle": "Three-Layer Architecture Pyramid",
@@ -428,7 +428,7 @@
       "adapters": {
         "name": "ADAPTERS",
         "label": "Adapter Layer",
-        "desc": "7 major AI platform loading protocols — trae / claude / codex / cursor / codebuddy / qoder / zcode",
+        "desc": "11 major AI platform loading protocols — trae / claude-code / codex / cursor / codebuddy / qoder / zcode / chatgpt-work / workbuddy / kimi-code / kimi-work",
         "badge": "Multi-Platform"
       },
       "evolution": {
@@ -495,7 +495,7 @@
         "cmd": "const engine = new MetaGOEngine(); await engine.init();"
       }
     },
-    "cliAdaptersTitle": "Seven Platform Adapters",
+    "cliAdaptersTitle": "Eleven Platform Adapters",
     "cliAdaptersSubtitle": "Choose your AI platform, the engine auto-loads the corresponding protocol",
     "cliDocsLink": "View Full Documentation",
     "ctaTitle": "Engines are the skeleton, axioms are the soul",
@@ -787,7 +787,7 @@
     "protocolsTitle": "6 Operating Protocols",
     "layers": {
       "l0": { "name": "Core Layer", "content": "36 axioms, 43 attributes, 108 protocols" },
-      "l1": { "name": "Adapter Layer", "content": "7 major platform adapters" },
+      "l1": { "name": "Adapter Layer", "content": "11 major platform adapters" },
       "l2": { "name": "Capability Layer", "content": "100 metago skills + 112 MCP tools" },
       "l3": { "name": "Engine Layer", "content": "125 engines + 927 algorithms + 984 atoms" },
       "l4": { "name": "Industry Layer", "content": "Industry customization packs" }
@@ -884,7 +884,7 @@
   },
   "platforms": {
     "title": "Platform Support",
-    "subtitle": "Native adaptation for 7 major AI coding platforms",
+    "subtitle": "Native adaptation for 11 major AI coding platforms",
     "tableTitle": "Platform Configuration",
     "installTitle": "Installation Guide",
     "tableHeaders": {
@@ -901,7 +901,11 @@
       "cursor": "Cursor",
       "codebuddy": "CodeBuddy",
       "qoder": "Qoder",
-      "zcode": "ZCode"
+      "zcode": "ZCode",
+      "chatgptWork": "ChatGPT Work",
+      "workbuddy": "WorkBuddy",
+      "kimiCode": "Kimi Code",
+      "kimiWork": "Kimi Work"
     },
     "agentsStandard": {
       "title": "AGENTS.md Open Standard",
@@ -1054,7 +1058,7 @@
     "features": {
       "coreAxioms": "Core axioms + attributes + protocols",
       "skills": "100 skills",
-      "platforms": "7 major platform adapters",
+      "platforms": "11 major platform adapters",
       "install": "One-click install script",
       "industryPack": "Industry customization pack",
       "privateDeploy": "Private deployment support",
